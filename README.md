@@ -24,6 +24,8 @@ Later version will provides dataflow processing.
 
 Detailed comments can be found in the source code.
 
+the outline of the design is shown below:
+
 <img src="https://github.com/zslwyuan/Light-HLS/blob/master/Images/Light-HLS-Overview.png" width="800"> 
 
 # Software Implementation 
