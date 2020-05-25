@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# xsim v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue May 26 00:38:35 2020
+# Process ID: 26961
+# Current directory: /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/karastuba_mul/xsim_script.tcl}
+# Log file: /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/xsim.log
+# Journal file: /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/karastuba_mul/xsim_script.tcl
+# xsim {karastuba_mul} -autoloadwcfg -tclbatch {karastuba_mul.tcl}
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source karastuba_mul.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set res_output_group [add_wave_group res_output(axis) -into $coutputgroup]
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/res_output_TREADY -into $res_output_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/res_output_TVALID -into $res_output_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/res_output_TDATA -into $res_output_group -radix hex
+## set return_group [add_wave_group return(axi_slave) -into $coutputgroup]
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/interrupt -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_BRESP -into $return_group -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_BREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_BVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_RRESP -into $return_group -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_RDATA -into $return_group -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_RREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_RVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_ARREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_ARVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_ARADDR -into $return_group -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_WSTRB -into $return_group -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_WDATA -into $return_group -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_WREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_WVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_AWREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_AWVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/s_axi_AXILiteS_AWADDR -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set hs_input_group [add_wave_group hs_input(axis) -into $cinputgroup]
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/hs_input_TREADY -into $hs_input_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/hs_input_TVALID -into $hs_input_group -color #ffff00 -radix hex
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/hs_input_TDATA -into $hs_input_group -radix hex
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_karastuba_mul_top/AESL_inst_karastuba_mul/ap_clk -into $clockgroup
+## save_wave_config karastuba_mul.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "107000"
+// RTL Simulation : 1 / 1 [100.00%] @ "1925000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1936500 ps : File "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/karastuba_mul.autotb.v" Line 352
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue May 26 00:38:45 2020...

@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../multest.cc in debug mode
+   Generating csim.exe
+HARDWARE RESULT:
+c=2862f454f06b2c981edfa30acdbe3f7088747dac56edcb541dfbb79d592a0b47c8d731ff570c1df23733e97742ab95ad0fcd4f86e232d5749bac9d8a0ef42eba1d1320ffcbefd04e2fd149ef6eaebfc71929378b03c3d724d221230321835c80f0ebee6552469c67ba633b91b60701379685e3a73a01b7cc0b6807373133dd1c
+SOFTWARE RESULT:
+c=2862f454f06b2c981edfa30acdbe3f7088747dac56edcb541dfbb79d592a0b47c8d731ff570c1df23733e97742ab95ad0fcd4f86e232d5749bac9d8a0ef42eba1d1320ffcbefd04e2fd149ef6eaebfc71929378b03c3d724d221230321835c80f0ebee6552469c67ba633b91b60701379685e3a73a01b7cc0b6807373133dd1c
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

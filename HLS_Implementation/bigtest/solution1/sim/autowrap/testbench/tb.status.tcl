@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/./sim/autowrap/testbench/multest.cc_pre.cc.tb.cc
