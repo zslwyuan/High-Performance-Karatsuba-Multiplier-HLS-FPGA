@@ -6,7 +6,7 @@ Based on Vivado HLS 2019.2, implement High-Performance Karatsuba Multiplier in H
 
 When handling 4096x4096=>8192, the performance and resource cost are shown below:
 
-<img src="https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/blob/master/image/report.png" width="800"> 
+<img src="https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/blob/master/image/report.png" width="400"> 
 
 
 (^\_^) if this project helps you, a star will be encouragement. 
@@ -26,7 +26,7 @@ Detailed comments can be found in the source code.
 
 the outline of the design is shown below:
 
-<img src="https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/blob/master/image/design.png" width="800"> 
+<img src="https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/blob/master/image/design.png" width="400"> 
 
 # Software Implementation 
 
