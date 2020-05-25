@@ -1,5 +1,7 @@
 # High-Performance-Karatsuba-Multiplier-HLS-FPGA
-Based on Vivado HLS 2019.2, implement High-Performance Karatsuba Multiplier in High-Level Synthesis (HLS) for FPGA Based on Recursive Template
+Based on Vivado HLS 2019.2, implement High-Performance Karatsuba Multiplier in High-Level Synthesis (HLS) for FPGA Based on Recursive Template.
+The design provides parameters which can help user to customize the multiplier according to different requirements of operand bitwidth, performance and resource cost.
+
 (^\_^) if this project helps you, a star will be encouragement. 
 
 
