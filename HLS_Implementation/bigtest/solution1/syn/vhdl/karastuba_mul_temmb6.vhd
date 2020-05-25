@@ -10,7 +10,7 @@ use ieee.std_logic_unsigned.all;
 entity karastuba_mul_temmb6_ram is 
     generic(
             MEM_TYPE    : string := "block"; 
-            DWIDTH     : integer := 32; 
+            DWIDTH     : integer := 64; 
             AWIDTH     : integer := 4; 
             MEM_SIZE    : integer := 16
     ); 
@@ -101,7 +101,7 @@ use IEEE.std_logic_1164.all;
 
 entity karastuba_mul_temmb6 is
     generic (
-        DataWidth : INTEGER := 32;
+        DataWidth : INTEGER := 64;
         AddressRange : INTEGER := 16;
         AddressWidth : INTEGER := 4);
     port (

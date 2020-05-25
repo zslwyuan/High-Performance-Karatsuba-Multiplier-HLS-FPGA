@@ -1,0 +1,57 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'karastuba_mul_templa_5'" level="0">
+<item name = "Date">Tue May 26 00:44:50 2020
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">bigtest</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexu</item>
+<item name = "Target device">xcvu095-ffva2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.00 ns, 2.474 ns, 0.38 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">604, 687, 1.812 us, 2.061 us, 604, 687, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_karastuba_mul_templa_2_fu_585">karastuba_mul_templa_2, 379, 421, 1.137 us, 1.263 us, 379, 421, none</column>
+<column name="grp_mul_I_O_fu_594">mul_I_O, 356, 398, 1.068 us, 1.194 us, 356, 398, none</column>
+<column name="grp_mul_I_O_fu_605">mul_I_O, 356, 398, 1.068 us, 1.194 us, 356, 398, none</column>
+<column name="grp_CAT_I_I_I_O_2_fu_616">CAT_I_I_I_O_2, 111, 111, 0.333 us, 0.333 us, 111, 111, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">16, 16, 2, -, -, 8, no</column>
+<column name="- Loop 2">16, 16, 2, -, -, 8, no</column>
+<column name="- Loop 3">16, 16, 2, -, -, 8, no</column>
+<column name="- Loop 4">16, 16, 2, -, -, 8, no</column>
+<column name="- Loop 5">19, 19, 5, 1, 1, 16, yes</column>
+<column name="- Loop 6">19, 19, 5, 1, 1, 16, yes</column>
+<column name="- Loop 7">19, 19, 5, 1, 1, 16, yes</column>
+<column name="- Loop 8">19, 19, 5, 1, 1, 16, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

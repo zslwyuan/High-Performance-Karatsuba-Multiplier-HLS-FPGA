@@ -1,14 +1,14 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 24
+set ID 58
 set hasByteEnable 0
-set MemName karastuba_mul_restde
+set MemName karastuba_mul_resXh4
 set CoreName ap_simcore_mem
 set PortList { 2 2 }
-set DataWd 32
-set AddrRange 32
-set AddrWd 5
+set DataWd 64
+set AddrRange 128
+set AddrWd 7
 set impl_style block
 set TrueReset 0
 set HasInitializer 0
@@ -106,7 +106,7 @@ dict set axilite_register_dict AXILiteS $port_AXILiteS
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 25 \
+			id 59 \
 			corename karastuba_mul_AXILiteS_axilite \
 			name karastuba_mul_AXILiteS_s_axi \
 			ports {$port_AXILiteS} \
@@ -126,17 +126,17 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 26 \
-    name hs_input \
+    id 60 \
+    name hs_input_V \
     reset_level 0 \
     sync_rst true \
     corename {} \
     metadata {  } \
     op interface \
-    ports { hs_input_TDATA { I 32 vector } hs_input_TVALID { I 1 bit } hs_input_TREADY { O 1 bit } } \
+    ports { hs_input_V_TDATA { I 64 vector } hs_input_V_TVALID { I 1 bit } hs_input_V_TREADY { O 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'hs_input'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'hs_input_V'"
 }
 }
 
@@ -145,17 +145,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 27 \
-    name res_output \
+    id 61 \
+    name res_output_V \
     reset_level 0 \
     sync_rst true \
     corename {} \
     metadata {  } \
     op interface \
-    ports { res_output_TDATA { O 32 vector } res_output_TVALID { O 1 bit } res_output_TREADY { I 1 bit } } \
+    ports { res_output_V_TDATA { O 64 vector } res_output_V_TVALID { O 1 bit } res_output_V_TREADY { I 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'res_output'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'res_output_V'"
 }
 }
 
@@ -211,7 +211,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 
 # RegSlice definition:
-set ID 28
+set ID 62
 set RegSliceName regslice_core
 set RegSliceInstName regslice_core_U
 set CoreName ap_simcore_regslice_core

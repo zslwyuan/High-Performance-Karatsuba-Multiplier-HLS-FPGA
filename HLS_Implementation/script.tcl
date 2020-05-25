@@ -16,7 +16,7 @@ config_sdx -target none
 config_export -format ip_catalog -rtl verilog -vivado_optimization_level 2 -vivado_phys_opt place -vivado_report_level 0
 set_clock_uncertainty 12.5%
 #source "./bigtest/solution1/directives.tcl"
-csim_design
+#csim_design
 csynth_design
-cosim_design -trace_level port -tool xsim
+#cosim_design -trace_level port -tool xsim
 #export_design -rtl verilog -format ip_catalog

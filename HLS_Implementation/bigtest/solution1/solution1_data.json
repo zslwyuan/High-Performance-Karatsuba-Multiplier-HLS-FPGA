@@ -26,9 +26,9 @@
       "type": {
         "kinds": ["array"],
         "dataType": "unsigned",
-        "dataWidth": "32",
+        "dataWidth": "64",
         "arraySizes": ["32"],
-        "interfaceRef": "hs_input",
+        "interfaceRef": "hs_input_V",
         "portRef": "TDATA"
       }
     },
@@ -37,9 +37,9 @@
       "type": {
         "kinds": ["array"],
         "dataType": "unsigned",
-        "dataWidth": "32",
+        "dataWidth": "64",
         "arraySizes": ["32"],
-        "interfaceRef": "res_output",
+        "interfaceRef": "res_output_V",
         "portRef": "TDATA"
       }
     }
@@ -52,7 +52,7 @@
     "ClockPeriod": "3",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "582",
+    "Latency": "2394",
     "Uncertainty": "0.375"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 3.000 [get_ports ap_clk]"]},
@@ -68,34 +68,51 @@
     "AutoFamilySupport": ""
   },
   "Files": {
-    "CSource": [
-      "..\/..\/BigIntegerHLS.h",
-      "..\/..\/multest.cc"
-    ],
+    "CSource": ["..\/..\/multest.cc"],
     "Vhdl": [
       "impl\/vhdl\/CAT_I_I_I_O.vhd",
+      "impl\/vhdl\/CAT_I_I_I_O_1.vhd",
+      "impl\/vhdl\/CAT_I_I_I_O_2.vhd",
       "impl\/vhdl\/karastuba_mul_AXILiteS_s_axi.vhd",
       "impl\/vhdl\/karastuba_mul_mulbkb.vhd",
-      "impl\/vhdl\/karastuba_mul_restde.vhd",
+      "impl\/vhdl\/karastuba_mul_resXh4.vhd",
+      "impl\/vhdl\/karastuba_mul_temBew.vhd",
       "impl\/vhdl\/karastuba_mul_temcud.vhd",
+      "impl\/vhdl\/karastuba_mul_temEe0.vhd",
       "impl\/vhdl\/karastuba_mul_temmb6.vhd",
       "impl\/vhdl\/karastuba_mul_tempcA.vhd",
       "impl\/vhdl\/karastuba_mul_templa.vhd",
       "impl\/vhdl\/karastuba_mul_templa_1.vhd",
+      "impl\/vhdl\/karastuba_mul_templa_2.vhd",
+      "impl\/vhdl\/karastuba_mul_templa_3.vhd",
+      "impl\/vhdl\/karastuba_mul_templa_4.vhd",
+      "impl\/vhdl\/karastuba_mul_templa_5.vhd",
+      "impl\/vhdl\/karastuba_mul_temQgW.vhd",
+      "impl\/vhdl\/karastuba_mul_temThq.vhd",
       "impl\/vhdl\/mul_I_O.vhd",
       "impl\/vhdl\/regslice_core.vhd",
       "impl\/vhdl\/karastuba_mul.vhd"
     ],
     "Verilog": [
       "impl\/verilog\/CAT_I_I_I_O.v",
+      "impl\/verilog\/CAT_I_I_I_O_1.v",
+      "impl\/verilog\/CAT_I_I_I_O_2.v",
       "impl\/verilog\/karastuba_mul_AXILiteS_s_axi.v",
       "impl\/verilog\/karastuba_mul_mulbkb.v",
-      "impl\/verilog\/karastuba_mul_restde.v",
+      "impl\/verilog\/karastuba_mul_resXh4.v",
+      "impl\/verilog\/karastuba_mul_temBew.v",
       "impl\/verilog\/karastuba_mul_temcud.v",
+      "impl\/verilog\/karastuba_mul_temEe0.v",
       "impl\/verilog\/karastuba_mul_temmb6.v",
       "impl\/verilog\/karastuba_mul_tempcA.v",
       "impl\/verilog\/karastuba_mul_templa.v",
       "impl\/verilog\/karastuba_mul_templa_1.v",
+      "impl\/verilog\/karastuba_mul_templa_2.v",
+      "impl\/verilog\/karastuba_mul_templa_3.v",
+      "impl\/verilog\/karastuba_mul_templa_4.v",
+      "impl\/verilog\/karastuba_mul_templa_5.v",
+      "impl\/verilog\/karastuba_mul_temQgW.v",
+      "impl\/verilog\/karastuba_mul_temThq.v",
       "impl\/verilog\/mul_I_O.v",
       "impl\/verilog\/regslice_core.v",
       "impl\/verilog\/karastuba_mul.v"
@@ -126,7 +143,7 @@
       "ctype": {"CLK": {"Type": "bool"}},
       "bundle_name": "ap_clk",
       "bundle_role": "default",
-      "buses": "s_axi_AXILiteS hs_input res_output",
+      "buses": "s_axi_AXILiteS hs_input_V res_output_V",
       "reset": "ap_rst_n"
     },
     "ap_rst_n": {
@@ -136,20 +153,20 @@
       "bundle_name": "ap_rst_n",
       "bundle_role": "default"
     },
-    "hs_input": {
+    "hs_input_V": {
       "type": "axi4stream",
       "mode": "slave",
-      "port_prefix": "hs_input",
+      "port_prefix": "hs_input_V",
       "has_tready": "1",
       "ctype": {
         "TDATA": {
-          "Type": "integer unsigned",
-          "Width": "32"
+          "Type": "null",
+          "Width": "64"
         },
         "TVALID": {"Type": "bool"},
         "TREADY": {"Type": "bool"}
       },
-      "port_width": {"TDATA": "32"}
+      "port_width": {"TDATA": "64"}
     },
     "interrupt": {
       "type": "interrupt",
@@ -157,20 +174,20 @@
       "bundle_name": "AXILiteS",
       "bundle_role": "interrupt"
     },
-    "res_output": {
+    "res_output_V": {
       "type": "axi4stream",
       "mode": "master",
-      "port_prefix": "res_output",
+      "port_prefix": "res_output_V",
       "has_tready": "1",
       "ctype": {
         "TDATA": {
-          "Type": "integer unsigned",
-          "Width": "32"
+          "Type": "null",
+          "Width": "64"
         },
         "TVALID": {"Type": "bool"},
         "TREADY": {"Type": "bool"}
       },
-      "port_width": {"TDATA": "32"}
+      "port_width": {"TDATA": "64"}
     },
     "s_axi_AXILiteS": {
       "type": "axi4lite",
@@ -469,27 +486,27 @@
       "width": "1",
       "isVector": "true"
     },
-    "hs_input_TDATA": {
+    "hs_input_V_TDATA": {
       "dir": "in",
-      "width": "32"
+      "width": "64"
     },
-    "hs_input_TVALID": {
+    "hs_input_V_TVALID": {
       "dir": "in",
       "width": "1"
     },
-    "hs_input_TREADY": {
+    "hs_input_V_TREADY": {
       "dir": "out",
       "width": "1"
     },
-    "res_output_TDATA": {
+    "res_output_V_TDATA": {
       "dir": "out",
-      "width": "32"
+      "width": "64"
     },
-    "res_output_TVALID": {
+    "res_output_V_TVALID": {
       "dir": "out",
       "width": "1"
     },
-    "res_output_TREADY": {
+    "res_output_V_TREADY": {
       "dir": "in",
       "width": "1"
     }
@@ -498,34 +515,340 @@
     "Hierarchy": {
       "ModuleName": "karastuba_mul",
       "Instances": [{
-          "ModuleName": "karastuba_mul_templa_1",
-          "InstanceName": "grp_karastuba_mul_templa_1_fu_169",
+          "ModuleName": "karastuba_mul_templa_3",
+          "InstanceName": "grp_karastuba_mul_templa_3_fu_168",
           "Instances": [
             {
               "ModuleName": "karastuba_mul_templa",
-              "InstanceName": "grp_karastuba_mul_templa_fu_427",
+              "InstanceName": "grp_karastuba_mul_templa_fu_423",
               "Instances": [{
-                  "ModuleName": "mul_I_O",
-                  "InstanceName": "grp_mul_I_O_fu_180"
+                  "ModuleName": "karastuba_mul_templa_4",
+                  "InstanceName": "grp_karastuba_mul_templa_4_fu_180",
+                  "Instances": [
+                    {
+                      "ModuleName": "karastuba_mul_templa_1",
+                      "InstanceName": "grp_karastuba_mul_templa_1_fu_577",
+                      "Instances": [{
+                          "ModuleName": "karastuba_mul_templa_5",
+                          "InstanceName": "grp_karastuba_mul_templa_5_fu_180",
+                          "Instances": [
+                            {
+                              "ModuleName": "karastuba_mul_templa_2",
+                              "InstanceName": "grp_karastuba_mul_templa_2_fu_585",
+                              "Instances": [{
+                                  "ModuleName": "mul_I_O",
+                                  "InstanceName": "grp_mul_I_O_fu_180"
+                                }]
+                            },
+                            {
+                              "ModuleName": "mul_I_O",
+                              "InstanceName": "grp_mul_I_O_fu_594"
+                            },
+                            {
+                              "ModuleName": "mul_I_O",
+                              "InstanceName": "grp_mul_I_O_fu_605"
+                            },
+                            {
+                              "ModuleName": "CAT_I_I_I_O_2",
+                              "InstanceName": "grp_CAT_I_I_I_O_2_fu_616"
+                            }
+                          ]
+                        }]
+                    },
+                    {
+                      "ModuleName": "karastuba_mul_templa_5",
+                      "InstanceName": "grp_karastuba_mul_templa_5_fu_586",
+                      "Instances": [
+                        {
+                          "ModuleName": "karastuba_mul_templa_2",
+                          "InstanceName": "grp_karastuba_mul_templa_2_fu_585",
+                          "Instances": [{
+                              "ModuleName": "mul_I_O",
+                              "InstanceName": "grp_mul_I_O_fu_180"
+                            }]
+                        },
+                        {
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_594"
+                        },
+                        {
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_605"
+                        },
+                        {
+                          "ModuleName": "CAT_I_I_I_O_2",
+                          "InstanceName": "grp_CAT_I_I_I_O_2_fu_616"
+                        }
+                      ]
+                    },
+                    {
+                      "ModuleName": "karastuba_mul_templa_5",
+                      "InstanceName": "grp_karastuba_mul_templa_5_fu_597",
+                      "Instances": [
+                        {
+                          "ModuleName": "karastuba_mul_templa_2",
+                          "InstanceName": "grp_karastuba_mul_templa_2_fu_585",
+                          "Instances": [{
+                              "ModuleName": "mul_I_O",
+                              "InstanceName": "grp_mul_I_O_fu_180"
+                            }]
+                        },
+                        {
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_594"
+                        },
+                        {
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_605"
+                        },
+                        {
+                          "ModuleName": "CAT_I_I_I_O_2",
+                          "InstanceName": "grp_CAT_I_I_I_O_2_fu_616"
+                        }
+                      ]
+                    },
+                    {
+                      "ModuleName": "CAT_I_I_I_O_1",
+                      "InstanceName": "grp_CAT_I_I_I_O_1_fu_608"
+                    }
+                  ]
                 }]
             },
             {
-              "ModuleName": "mul_I_O",
-              "InstanceName": "grp_mul_I_O_fu_436"
+              "ModuleName": "karastuba_mul_templa_4",
+              "InstanceName": "grp_karastuba_mul_templa_4_fu_432",
+              "Instances": [
+                {
+                  "ModuleName": "karastuba_mul_templa_1",
+                  "InstanceName": "grp_karastuba_mul_templa_1_fu_577",
+                  "Instances": [{
+                      "ModuleName": "karastuba_mul_templa_5",
+                      "InstanceName": "grp_karastuba_mul_templa_5_fu_180",
+                      "Instances": [
+                        {
+                          "ModuleName": "karastuba_mul_templa_2",
+                          "InstanceName": "grp_karastuba_mul_templa_2_fu_585",
+                          "Instances": [{
+                              "ModuleName": "mul_I_O",
+                              "InstanceName": "grp_mul_I_O_fu_180"
+                            }]
+                        },
+                        {
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_594"
+                        },
+                        {
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_605"
+                        },
+                        {
+                          "ModuleName": "CAT_I_I_I_O_2",
+                          "InstanceName": "grp_CAT_I_I_I_O_2_fu_616"
+                        }
+                      ]
+                    }]
+                },
+                {
+                  "ModuleName": "karastuba_mul_templa_5",
+                  "InstanceName": "grp_karastuba_mul_templa_5_fu_586",
+                  "Instances": [
+                    {
+                      "ModuleName": "karastuba_mul_templa_2",
+                      "InstanceName": "grp_karastuba_mul_templa_2_fu_585",
+                      "Instances": [{
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_180"
+                        }]
+                    },
+                    {
+                      "ModuleName": "mul_I_O",
+                      "InstanceName": "grp_mul_I_O_fu_594"
+                    },
+                    {
+                      "ModuleName": "mul_I_O",
+                      "InstanceName": "grp_mul_I_O_fu_605"
+                    },
+                    {
+                      "ModuleName": "CAT_I_I_I_O_2",
+                      "InstanceName": "grp_CAT_I_I_I_O_2_fu_616"
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "karastuba_mul_templa_5",
+                  "InstanceName": "grp_karastuba_mul_templa_5_fu_597",
+                  "Instances": [
+                    {
+                      "ModuleName": "karastuba_mul_templa_2",
+                      "InstanceName": "grp_karastuba_mul_templa_2_fu_585",
+                      "Instances": [{
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_180"
+                        }]
+                    },
+                    {
+                      "ModuleName": "mul_I_O",
+                      "InstanceName": "grp_mul_I_O_fu_594"
+                    },
+                    {
+                      "ModuleName": "mul_I_O",
+                      "InstanceName": "grp_mul_I_O_fu_605"
+                    },
+                    {
+                      "ModuleName": "CAT_I_I_I_O_2",
+                      "InstanceName": "grp_CAT_I_I_I_O_2_fu_616"
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "CAT_I_I_I_O_1",
+                  "InstanceName": "grp_CAT_I_I_I_O_1_fu_608"
+                }
+              ]
             },
             {
-              "ModuleName": "mul_I_O",
-              "InstanceName": "grp_mul_I_O_fu_447"
+              "ModuleName": "karastuba_mul_templa_4",
+              "InstanceName": "grp_karastuba_mul_templa_4_fu_443",
+              "Instances": [
+                {
+                  "ModuleName": "karastuba_mul_templa_1",
+                  "InstanceName": "grp_karastuba_mul_templa_1_fu_577",
+                  "Instances": [{
+                      "ModuleName": "karastuba_mul_templa_5",
+                      "InstanceName": "grp_karastuba_mul_templa_5_fu_180",
+                      "Instances": [
+                        {
+                          "ModuleName": "karastuba_mul_templa_2",
+                          "InstanceName": "grp_karastuba_mul_templa_2_fu_585",
+                          "Instances": [{
+                              "ModuleName": "mul_I_O",
+                              "InstanceName": "grp_mul_I_O_fu_180"
+                            }]
+                        },
+                        {
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_594"
+                        },
+                        {
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_605"
+                        },
+                        {
+                          "ModuleName": "CAT_I_I_I_O_2",
+                          "InstanceName": "grp_CAT_I_I_I_O_2_fu_616"
+                        }
+                      ]
+                    }]
+                },
+                {
+                  "ModuleName": "karastuba_mul_templa_5",
+                  "InstanceName": "grp_karastuba_mul_templa_5_fu_586",
+                  "Instances": [
+                    {
+                      "ModuleName": "karastuba_mul_templa_2",
+                      "InstanceName": "grp_karastuba_mul_templa_2_fu_585",
+                      "Instances": [{
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_180"
+                        }]
+                    },
+                    {
+                      "ModuleName": "mul_I_O",
+                      "InstanceName": "grp_mul_I_O_fu_594"
+                    },
+                    {
+                      "ModuleName": "mul_I_O",
+                      "InstanceName": "grp_mul_I_O_fu_605"
+                    },
+                    {
+                      "ModuleName": "CAT_I_I_I_O_2",
+                      "InstanceName": "grp_CAT_I_I_I_O_2_fu_616"
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "karastuba_mul_templa_5",
+                  "InstanceName": "grp_karastuba_mul_templa_5_fu_597",
+                  "Instances": [
+                    {
+                      "ModuleName": "karastuba_mul_templa_2",
+                      "InstanceName": "grp_karastuba_mul_templa_2_fu_585",
+                      "Instances": [{
+                          "ModuleName": "mul_I_O",
+                          "InstanceName": "grp_mul_I_O_fu_180"
+                        }]
+                    },
+                    {
+                      "ModuleName": "mul_I_O",
+                      "InstanceName": "grp_mul_I_O_fu_594"
+                    },
+                    {
+                      "ModuleName": "mul_I_O",
+                      "InstanceName": "grp_mul_I_O_fu_605"
+                    },
+                    {
+                      "ModuleName": "CAT_I_I_I_O_2",
+                      "InstanceName": "grp_CAT_I_I_I_O_2_fu_616"
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "CAT_I_I_I_O_1",
+                  "InstanceName": "grp_CAT_I_I_I_O_1_fu_608"
+                }
+              ]
             },
             {
               "ModuleName": "CAT_I_I_I_O",
-              "InstanceName": "grp_CAT_I_I_I_O_fu_458"
+              "InstanceName": "grp_CAT_I_I_I_O_fu_454"
             }
           ]
         }]
     },
     "Info": {
       "mul_I_O": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "karastuba_mul_templa_2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "CAT_I_I_I_O_2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "karastuba_mul_templa_5": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "karastuba_mul_templa_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "CAT_I_I_I_O_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "karastuba_mul_templa_4": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -546,7 +869,7 @@
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "karastuba_mul_templa_1": {
+      "karastuba_mul_templa_3": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -564,19 +887,19 @@
     "Metrics": {
       "mul_I_O": {
         "Latency": {
-          "LatencyBest": "284",
-          "LatencyAvg": "304",
-          "LatencyWorst": "314",
-          "PipelineIIMin": "284",
-          "PipelineIIMax": "314",
-          "PipelineII": "284 ~ 314",
+          "LatencyBest": "356",
+          "LatencyAvg": "378",
+          "LatencyWorst": "398",
+          "PipelineIIMin": "356",
+          "PipelineIIMax": "398",
+          "PipelineII": "356 ~ 398",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "3.00",
           "Uncertainty": "0.38",
-          "Estimate": "2.268"
+          "Estimate": "2.346"
         },
         "Loops": [
           {
@@ -589,59 +912,59 @@
           {
             "Name": "Loop 2",
             "TripCount": "8",
-            "LatencyMin": "264",
-            "LatencyMax": "272",
-            "Latency": "264 ~ 272",
+            "LatencyMin": "336",
+            "LatencyMax": "352",
+            "Latency": "336 ~ 352",
             "PipelineII": "",
-            "PipelineDepthMin": "33",
-            "PipelineDepthMax": "34",
-            "PipelineDepth": "33 ~ 34",
+            "PipelineDepthMin": "42",
+            "PipelineDepthMax": "44",
+            "PipelineDepth": "42 ~ 44",
             "Loops": [{
                 "Name": "Loop 2.1",
                 "TripCount": "8",
-                "Latency": "29",
-                "PipelineII": "3",
-                "PipelineDepth": "9"
+                "Latency": "38",
+                "PipelineII": "4",
+                "PipelineDepth": "11"
               }]
           },
           {
             "Name": "Loop 3",
             "TripCount": "8",
-            "Latency": "9",
+            "Latency": "11",
             "PipelineII": "1",
-            "PipelineDepth": "3"
+            "PipelineDepth": "5"
           },
           {
             "Name": "Loop 4",
             "TripCount": "8",
-            "Latency": "9",
+            "Latency": "11",
             "PipelineII": "1",
-            "PipelineDepth": "3"
+            "PipelineDepth": "5"
           }
         ],
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "4",
-          "FF": "784",
-          "LUT": "1142",
+          "DSP48E": "1",
+          "FF": "2064",
+          "LUT": "1965",
           "URAM": "0"
         }
       },
-      "karastuba_mul_templa": {
+      "karastuba_mul_templa_2": {
         "Latency": {
-          "LatencyBest": "307",
-          "LatencyAvg": "327",
-          "LatencyWorst": "337",
-          "PipelineIIMin": "307",
-          "PipelineIIMax": "337",
-          "PipelineII": "307 ~ 337",
+          "LatencyBest": "379",
+          "LatencyAvg": "401",
+          "LatencyWorst": "421",
+          "PipelineIIMin": "379",
+          "PipelineIIMax": "421",
+          "PipelineII": "379 ~ 421",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "3.00",
           "Uncertainty": "0.38",
-          "Estimate": "2.268"
+          "Estimate": "2.346"
         },
         "Loops": [
           {
@@ -661,25 +984,25 @@
         ],
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "4",
-          "FF": "1155",
-          "LUT": "1673",
+          "DSP48E": "1",
+          "FF": "2755",
+          "LUT": "2760",
           "URAM": "0"
         }
       },
-      "CAT_I_I_I_O": {
+      "CAT_I_I_I_O_2": {
         "Latency": {
-          "LatencyBest": "95",
-          "LatencyAvg": "95",
-          "LatencyWorst": "95",
-          "PipelineII": "95",
+          "LatencyBest": "111",
+          "LatencyAvg": "111",
+          "LatencyWorst": "111",
+          "PipelineII": "111",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "3.00",
           "Uncertainty": "0.38",
-          "Estimate": "2.568"
+          "Estimate": "1.768"
         },
         "Loops": [
           {
@@ -692,9 +1015,9 @@
           {
             "Name": "Loop 2",
             "TripCount": "16",
-            "Latency": "32",
+            "Latency": "48",
             "PipelineII": "",
-            "PipelineDepth": "2"
+            "PipelineDepth": "3"
           },
           {
             "Name": "Loop 3",
@@ -713,27 +1036,27 @@
         ],
         "Area": {
           "BRAM_18K": "0",
-          "FF": "671",
-          "LUT": "910",
+          "FF": "1239",
+          "LUT": "1208",
           "DSP48E": "0",
           "URAM": "0"
         }
       },
-      "karastuba_mul_templa_1": {
+      "karastuba_mul_templa_5": {
         "Latency": {
-          "LatencyBest": "510",
-          "LatencyAvg": "530",
-          "LatencyWorst": "540",
-          "PipelineIIMin": "510",
-          "PipelineIIMax": "540",
-          "PipelineII": "510 ~ 540",
+          "LatencyBest": "604",
+          "LatencyAvg": "647",
+          "LatencyWorst": "687",
+          "PipelineIIMin": "604",
+          "PipelineIIMax": "687",
+          "PipelineII": "604 ~ 687",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "3.00",
           "Uncertainty": "0.38",
-          "Estimate": "2.568"
+          "Estimate": "2.474"
         },
         "Loops": [
           {
@@ -767,70 +1090,418 @@
           {
             "Name": "Loop 5",
             "TripCount": "16",
-            "Latency": "17",
+            "Latency": "19",
             "PipelineII": "1",
-            "PipelineDepth": "3"
+            "PipelineDepth": "5"
           },
           {
             "Name": "Loop 6",
             "TripCount": "16",
-            "Latency": "17",
+            "Latency": "19",
             "PipelineII": "1",
-            "PipelineDepth": "3"
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 7",
+            "TripCount": "16",
+            "Latency": "19",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 8",
+            "TripCount": "16",
+            "Latency": "19",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
           }
         ],
         "Area": {
-          "BRAM_18K": "6",
-          "DSP48E": "12",
-          "FF": "4291",
-          "LUT": "6092",
+          "BRAM_18K": "16",
+          "DSP48E": "3",
+          "FF": "11197",
+          "LUT": "10628",
           "URAM": "0"
         }
       },
-      "karastuba_mul": {
+      "karastuba_mul_templa_1": {
         "Latency": {
-          "LatencyBest": "582",
-          "LatencyAvg": "602",
-          "LatencyWorst": "612",
-          "PipelineIIMin": "583",
-          "PipelineIIMax": "613",
-          "PipelineII": "583 ~ 613",
+          "LatencyBest": "647",
+          "LatencyAvg": "690",
+          "LatencyWorst": "730",
+          "PipelineIIMin": "647",
+          "PipelineIIMax": "730",
+          "PipelineII": "647 ~ 730",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "3.00",
           "Uncertainty": "0.38",
-          "Estimate": "2.568"
+          "Estimate": "2.474"
         },
         "Loops": [
           {
             "Name": "Loop 1",
             "TripCount": "16",
-            "Latency": "16",
+            "Latency": "19",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "16",
+            "Latency": "19",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "20",
+          "DSP48E": "3",
+          "FF": "12274",
+          "LUT": "11559",
+          "URAM": "0"
+        }
+      },
+      "CAT_I_I_I_O_1": {
+        "Latency": {
+          "LatencyBest": "207",
+          "LatencyAvg": "207",
+          "LatencyWorst": "207",
+          "PipelineII": "207",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.38",
+          "Estimate": "1.768"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "32",
+            "Latency": "32",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "32",
+            "Latency": "96",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "32",
+            "Latency": "35",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 4",
+            "TripCount": "32",
+            "Latency": "35",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "FF": "1249",
+          "LUT": "1208",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "karastuba_mul_templa_4": {
+        "Latency": {
+          "LatencyBest": "1128",
+          "LatencyAvg": "1208",
+          "LatencyWorst": "1284",
+          "PipelineIIMin": "1128",
+          "PipelineIIMax": "1284",
+          "PipelineII": "1128 ~ 1284",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.38",
+          "Estimate": "2.474"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "16",
+            "Latency": "48",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "16",
+            "Latency": "48",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "16",
+            "Latency": "48",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "Loop 4",
+            "TripCount": "16",
+            "Latency": "48",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "Loop 5",
+            "TripCount": "32",
+            "Latency": "35",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 6",
+            "TripCount": "32",
+            "Latency": "35",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 7",
+            "TripCount": "32",
+            "Latency": "35",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 8",
+            "TripCount": "32",
+            "Latency": "35",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "84",
+          "DSP48E": "9",
+          "FF": "37992",
+          "LUT": "36719",
+          "URAM": "0"
+        }
+      },
+      "karastuba_mul_templa": {
+        "Latency": {
+          "LatencyBest": "1203",
+          "LatencyAvg": "1283",
+          "LatencyWorst": "1359",
+          "PipelineIIMin": "1203",
+          "PipelineIIMax": "1359",
+          "PipelineII": "1203 ~ 1359",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.38",
+          "Estimate": "2.474"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "32",
+            "Latency": "35",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "32",
+            "Latency": "35",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "88",
+          "DSP48E": "9",
+          "FF": "39073",
+          "LUT": "37650",
+          "URAM": "0"
+        }
+      },
+      "CAT_I_I_I_O": {
+        "Latency": {
+          "LatencyBest": "399",
+          "LatencyAvg": "399",
+          "LatencyWorst": "399",
+          "PipelineII": "399",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.38",
+          "Estimate": "1.768"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "64",
+            "Latency": "64",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "64",
+            "Latency": "192",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "64",
+            "Latency": "67",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 4",
+            "TripCount": "64",
+            "Latency": "67",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "FF": "1259",
+          "LUT": "1210",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "karastuba_mul_templa_3": {
+        "Latency": {
+          "LatencyBest": "2130",
+          "LatencyAvg": "2210",
+          "LatencyWorst": "2286",
+          "PipelineIIMin": "2130",
+          "PipelineIIMax": "2286",
+          "PipelineII": "2130 ~ 2286",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.38",
+          "Estimate": "2.474"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "32",
+            "Latency": "96",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "32",
+            "Latency": "96",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "32",
+            "Latency": "96",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "Loop 4",
+            "TripCount": "32",
+            "Latency": "96",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "Loop 5",
+            "TripCount": "64",
+            "Latency": "67",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 6",
+            "TripCount": "64",
+            "Latency": "67",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "288",
+          "DSP48E": "27",
+          "FF": "117496",
+          "LUT": "113893",
+          "URAM": "0"
+        }
+      },
+      "karastuba_mul": {
+        "Latency": {
+          "LatencyBest": "2394",
+          "LatencyAvg": "2474",
+          "LatencyWorst": "2550",
+          "PipelineIIMin": "2395",
+          "PipelineIIMax": "2551",
+          "PipelineII": "2395 ~ 2551",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.38",
+          "Estimate": "2.474"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "64",
+            "Latency": "64",
             "PipelineII": "1",
             "PipelineDepth": "1"
           },
           {
             "Name": "Loop 2",
-            "TripCount": "16",
-            "Latency": "16",
+            "TripCount": "64",
+            "Latency": "64",
             "PipelineII": "1",
-            "PipelineDepth": "1"
+            "PipelineDepth": "2"
           },
           {
             "Name": "Loop 3",
-            "TripCount": "32",
-            "Latency": "33",
+            "TripCount": "128",
+            "Latency": "129",
             "PipelineII": "1",
             "PipelineDepth": "3"
           }
         ],
         "Area": {
-          "BRAM_18K": "8",
-          "DSP48E": "12",
-          "FF": "4486",
-          "LUT": "6479",
+          "BRAM_18K": "296",
+          "DSP48E": "27",
+          "FF": "117644",
+          "LUT": "114289",
           "URAM": "0"
         }
       }
@@ -846,7 +1517,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-05-26 00:38:22 CST",
+    "Time": "2020-05-26 00:45:17 CST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

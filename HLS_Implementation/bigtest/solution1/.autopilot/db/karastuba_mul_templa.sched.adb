@@ -15,7 +15,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>lhs0_tmp_digits_data</name>
+						<name>lhs0_tmp_digits_data_V</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -24,15 +24,15 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>lhs0_tmp.digits.data</originalName>
+						<originalName>lhs0_tmp.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>8</array_size>
+				<array_size>32</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -43,7 +43,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>lhs1_tmp_digits_data</name>
+						<name>lhs1_tmp_digits_data_V</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -52,15 +52,15 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>lhs1_tmp.digits.data</originalName>
+						<originalName>lhs1_tmp.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>8</array_size>
+				<array_size>32</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -71,7 +71,7 @@
 					<Obj>
 						<type>1</type>
 						<id>3</id>
-						<name>rhs0_tmp_digits_data</name>
+						<name>rhs0_tmp_digits_data_V</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -80,15 +80,15 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>rhs0_tmp.digits.data</originalName>
+						<originalName>rhs0_tmp.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>8</array_size>
+				<array_size>32</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -99,7 +99,7 @@
 					<Obj>
 						<type>1</type>
 						<id>4</id>
-						<name>rhs1_tmp_digits_data</name>
+						<name>rhs1_tmp_digits_data_V</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -108,15 +108,15 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>rhs1_tmp.digits.data</originalName>
+						<originalName>rhs1_tmp.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>8</array_size>
+				<array_size>32</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -127,7 +127,7 @@
 					<Obj>
 						<type>1</type>
 						<id>5</id>
-						<name>cross_mul_digits_data</name>
+						<name>cross_mul_digits_data_V</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -136,15 +136,15 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>cross_mul.digits.data</originalName>
+						<originalName>cross_mul.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
-				<array_size>16</array_size>
+				<array_size>64</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -159,11 +159,11 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>add0_digits_data</name>
+						<name>add0_digits_data_V</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>227</lineNumber>
-						<contextFuncName>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</contextFuncName>
+						<contextFuncName>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -175,18 +175,18 @@
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>227</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>add0.digits.data</originalName>
+						<originalName>add0.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -207,11 +207,11 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>add1_digits_data</name>
+						<name>add1_digits_data_V</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>229</lineNumber>
-						<contextFuncName>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</contextFuncName>
+						<contextFuncName>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -223,18 +223,18 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>229</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>w.digits.data</originalName>
+						<originalName>w.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -259,7 +259,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -271,14 +271,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -310,11 +310,11 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>tmp_0_i</name>
+						<name>p_088_0_i</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>59</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -326,14 +326,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>59</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -381,7 +381,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -409,7 +409,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -421,14 +421,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -465,7 +465,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -477,14 +477,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -495,7 +495,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -508,7 +508,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.87</m_delay>
+				<m_delay>1.02</m_delay>
 				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -521,7 +521,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -533,14 +533,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -578,7 +578,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -590,14 +590,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -608,7 +608,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -633,7 +633,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -645,14 +645,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -684,11 +684,11 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>lhs0_tmp_digits_data_2</name>
+						<name>lhs0_tmp_digits_data</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -700,14 +700,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -718,7 +718,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -741,11 +741,11 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>lhs0_tmp_digits_data_3</name>
+						<name>lhs0_tmp_digits_data_6</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -757,14 +757,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -775,7 +775,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -787,7 +787,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
+				<m_delay>1.76</m_delay>
 				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -796,11 +796,11 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>zext_ln57</name>
+						<name>zext_ln209</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -812,14 +812,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -830,7 +830,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -851,11 +851,11 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>lhs1_tmp_digits_data_2</name>
+						<name>lhs1_tmp_digits_data</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -867,14 +867,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -885,7 +885,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -908,11 +908,11 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>lhs1_tmp_digits_data_3</name>
+						<name>lhs1_tmp_digits_data_6</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -924,14 +924,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -942,7 +942,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -954,7 +954,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
+				<m_delay>1.76</m_delay>
 				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -963,11 +963,11 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>zext_ln56_1</name>
+						<name>zext_ln700</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -979,14 +979,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -997,7 +997,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1018,11 +1018,11 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>zext_ln56_3</name>
+						<name>zext_ln700_9</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1034,14 +1034,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1052,7 +1052,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1073,11 +1073,11 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>add_ln57</name>
+						<name>add_ln700</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1089,14 +1089,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1107,7 +1107,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1120,7 +1120,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.46</m_delay>
+				<m_delay>1.64</m_delay>
 				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1129,11 +1129,11 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>zext_ln57_1</name>
+						<name>zext_ln700_10</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1145,14 +1145,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1163,7 +1163,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1184,11 +1184,11 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>tmp</name>
+						<name>tmp_V</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1200,25 +1200,25 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>tmp</originalName>
+						<originalName>tmp.V</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1231,7 +1231,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.46</m_delay>
+				<m_delay>1.64</m_delay>
 				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1240,11 +1240,11 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>add_ln58_2</name>
+						<name>add_ln209</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1256,14 +1256,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1274,7 +1274,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1296,11 +1296,11 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>add_ln58</name>
+						<name>add_ln209_6</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1312,14 +1312,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1330,7 +1330,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1343,7 +1343,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.08</m_delay>
+				<m_delay>1.20</m_delay>
 				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1352,11 +1352,11 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>add0_digits_data_add</name>
+						<name>add0_digits_data_V_a</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1368,14 +1368,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1386,7 +1386,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1401,7 +1401,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
+				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_29">
@@ -1409,11 +1409,11 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>add0_digits_data_add_write_ln58</name>
+						<name>add0_digits_data_V_a_write_ln58</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1425,14 +1425,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1456,8 +1456,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
-				<m_topoIndex>24</m_topoIndex>
+				<m_delay>1.76</m_delay>
+				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_30">
@@ -1469,7 +1469,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>59</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1481,14 +1481,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>59</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1515,7 +1515,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>25</m_topoIndex>
+				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_31">
@@ -1527,7 +1527,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1539,14 +1539,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1582,7 +1582,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1594,14 +1594,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1633,11 +1633,11 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>tmp_0_i1</name>
+						<name>p_088_0_i1</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>59</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1649,14 +1649,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>59</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1704,7 +1704,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -1732,7 +1732,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1744,14 +1744,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1784,11 +1784,11 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>i_7</name>
+						<name>i_23</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1800,14 +1800,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1818,7 +1818,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1831,7 +1831,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.87</m_delay>
+				<m_delay>1.02</m_delay>
 				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1844,7 +1844,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1856,14 +1856,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1901,7 +1901,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1913,14 +1913,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1931,7 +1931,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1952,11 +1952,11 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>zext_ln56_2</name>
+						<name>zext_ln56_1</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1968,14 +1968,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2007,11 +2007,11 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>rhs0_tmp_digits_data_2</name>
+						<name>rhs0_tmp_digits_data</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2023,14 +2023,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2041,7 +2041,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2064,11 +2064,11 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>rhs0_tmp_digits_data_3</name>
+						<name>rhs0_tmp_digits_data_6</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2080,14 +2080,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2098,7 +2098,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2110,7 +2110,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
+				<m_delay>1.76</m_delay>
 				<m_topoIndex>35</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2119,11 +2119,11 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>zext_ln57_2</name>
+						<name>zext_ln209_1</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2135,14 +2135,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2153,7 +2153,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2174,11 +2174,11 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>rhs1_tmp_digits_data_2</name>
+						<name>rhs1_tmp_digits_data</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2190,14 +2190,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2208,7 +2208,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2231,11 +2231,11 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>rhs1_tmp_digits_data_3</name>
+						<name>rhs1_tmp_digits_data_6</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2247,14 +2247,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2265,7 +2265,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2277,7 +2277,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
+				<m_delay>1.76</m_delay>
 				<m_topoIndex>37</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2286,11 +2286,11 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>zext_ln56_4</name>
+						<name>zext_ln700_11</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2302,14 +2302,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2320,7 +2320,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2341,11 +2341,11 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>zext_ln56_5</name>
+						<name>zext_ln700_12</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2357,14 +2357,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2375,7 +2375,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2396,11 +2396,11 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>add_ln57_2</name>
+						<name>add_ln700_7</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2412,14 +2412,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2430,7 +2430,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2443,7 +2443,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.46</m_delay>
+				<m_delay>1.64</m_delay>
 				<m_topoIndex>40</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2452,11 +2452,11 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>zext_ln57_3</name>
+						<name>zext_ln700_13</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2468,14 +2468,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2486,7 +2486,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2507,11 +2507,11 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>tmp_6</name>
+						<name>tmp_V_14</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2523,25 +2523,25 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>tmp</originalName>
+						<originalName>tmp.V</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2554,7 +2554,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.46</m_delay>
+				<m_delay>1.64</m_delay>
 				<m_topoIndex>44</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2563,11 +2563,11 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>add_ln58_3</name>
+						<name>add_ln209_7</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2579,14 +2579,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2597,7 +2597,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2619,11 +2619,11 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>add_ln58_1</name>
+						<name>add_ln209_8</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2635,14 +2635,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2653,7 +2653,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2666,7 +2666,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.08</m_delay>
+				<m_delay>1.20</m_delay>
 				<m_topoIndex>46</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2675,11 +2675,11 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>add1_digits_data_add</name>
+						<name>add1_digits_data_V_a</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2691,14 +2691,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2709,7 +2709,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2724,7 +2724,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>47</m_topoIndex>
+				<m_topoIndex>48</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_53">
@@ -2732,11 +2732,11 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>add1_digits_data_add_write_ln58</name>
+						<name>add1_digits_data_V_a_write_ln58</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2748,14 +2748,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2779,8 +2779,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
-				<m_topoIndex>48</m_topoIndex>
+				<m_delay>1.76</m_delay>
+				<m_topoIndex>49</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_54">
@@ -2788,11 +2788,11 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>trunc_ln59_1</name>
+						<name>trunc_ln858_3</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>59</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2804,14 +2804,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>59</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2838,7 +2838,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>49</m_topoIndex>
+				<m_topoIndex>47</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_55">
@@ -2850,7 +2850,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2862,14 +2862,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2901,30 +2901,23 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>res_tmp_bits_write_a</name>
+						<name>cross_mul_tmp_bits_w</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
-						<lineNumber>214</lineNumber>
-						<contextFuncName>karastuba_mul_template&amp;lt;8, 32&amp;gt;</contextFuncName>
+						<lineNumber>231</lineNumber>
+						<contextFuncName>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template&amp;lt;8, 32&amp;gt;</second>
-										</first>
-										<second>214</second>
-									</item>
-									<item>
-										<first>
-											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>231</second>
 									</item>
@@ -2965,7 +2958,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>232</lineNumber>
-						<contextFuncName>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</contextFuncName>
+						<contextFuncName>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2977,7 +2970,7 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>232</second>
 									</item>
@@ -3072,7 +3065,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -3095,10 +3088,10 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>8</content>
+				<content>32</content>
 			</item>
 			<item class_id_reference="16" object_id="_62">
 				<Value>
@@ -3118,7 +3111,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -3167,7 +3160,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>32</content>
+				<content>64</content>
 			</item>
 			<item class_id_reference="16" object_id="_65">
 				<Value>
@@ -3190,14 +3183,14 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>33</content>
+				<content>65</content>
 			</item>
 			<item class_id_reference="16" object_id="_66">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>180</id>
-						<name>mul_I_O</name>
+						<name>karastuba_mul_templa_4</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3213,7 +3206,7 @@
 					<bitwidth>4</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mul_I_O&gt;</content>
+				<content>&lt;constant:karastuba_mul_templa.4&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -3275,7 +3268,7 @@
 				<Obj>
 					<type>3</type>
 					<id>38</id>
-					<name>hls_label_11</name>
+					<name>hls_label_20</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3365,7 +3358,7 @@
 				<Obj>
 					<type>3</type>
 					<id>69</id>
-					<name>hls_label_111</name>
+					<name>hls_label_201</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3405,7 +3398,7 @@
 				<Obj>
 					<type>3</type>
 					<id>72</id>
-					<name>add_I_O&lt;Bignum&lt;8, 32&gt;, Bignum&lt;8, 32&gt; &gt;.exit22</name>
+					<name>add_I_O&lt;Bignum&lt;32, 64&gt;, Bignum&lt;32, 64&gt; &gt;.exit23</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4232,8 +4225,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>307</mMinLatency>
-			<mMaxLatency>337</mMaxLatency>
+			<mMinLatency>1203</mMinLatency>
+			<mMaxLatency>1359</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4274,11 +4267,11 @@
 				<item>38</item>
 			</basic_blocks>
 			<mII>1</mII>
-			<mDepth>3</mDepth>
-			<mMinTripCount>8</mMinTripCount>
-			<mMaxTripCount>8</mMaxTripCount>
-			<mMinLatency>9</mMinLatency>
-			<mMaxLatency>9</mMaxLatency>
+			<mDepth>5</mDepth>
+			<mMinTripCount>32</mMinTripCount>
+			<mMaxTripCount>32</mMaxTripCount>
+			<mMinLatency>35</mMinLatency>
+			<mMaxLatency>35</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4319,11 +4312,11 @@
 				<item>69</item>
 			</basic_blocks>
 			<mII>1</mII>
-			<mDepth>3</mDepth>
-			<mMinTripCount>8</mMinTripCount>
-			<mMaxTripCount>8</mMaxTripCount>
-			<mMinLatency>9</mMinLatency>
-			<mMaxLatency>9</mMaxLatency>
+			<mDepth>5</mDepth>
+			<mMinTripCount>32</mMinTripCount>
+			<mMaxTripCount>32</mMaxTripCount>
+			<mMinLatency>35</mMinLatency>
+			<mMaxLatency>35</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4344,8 +4337,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>285</mMinLatency>
-			<mMaxLatency>315</mMaxLatency>
+			<mMinLatency>1129</mMinLatency>
+			<mMaxLatency>1285</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4379,7 +4372,7 @@
 		<item>
 			<first>10</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4414,7 +4407,7 @@
 		<item>
 			<first>17</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4442,7 +4435,7 @@
 		<item>
 			<first>23</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4463,259 +4456,259 @@
 		<item>
 			<first>26</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>28</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>29</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>31</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>33</first>
 			<second>
-				<first>3</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>34</first>
 			<second>
-				<first>3</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>35</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>37</first>
 			<second>
-				<first>3</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>39</first>
 			<second>
-				<first>4</first>
+				<first>6</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>41</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>42</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>43</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>45</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>46</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>48</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>51</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>52</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>53</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>54</first>
 			<second>
-				<first>6</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>55</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>56</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>57</first>
 			<second>
-				<first>6</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>58</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>59</first>
 			<second>
-				<first>6</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>60</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>61</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>62</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>63</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>64</first>
 			<second>
-				<first>7</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>65</first>
 			<second>
-				<first>7</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>66</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>68</first>
 			<second>
-				<first>7</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>70</first>
 			<second>
-				<first>8</first>
+				<first>12</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>71</first>
 			<second>
-				<first>9</first>
+				<first>13</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4741,7 +4734,7 @@
 			<first>38</first>
 			<second>
 				<first>1</first>
-				<second>3</second>
+				<second>5</second>
 			</second>
 		</item>
 		<item>
@@ -4762,7 +4755,7 @@
 			<first>69</first>
 			<second>
 				<first>3</first>
-				<second>5</second>
+				<second>7</second>
 			</second>
 		</item>
 		<item>
@@ -4791,7 +4784,7 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>1</interval>
-			<pipe_depth>3</pipe_depth>
+			<pipe_depth>5</pipe_depth>
 		</item>
 		<item class_id_reference="33" object_id="_192">
 			<region_name>Loop 2</region_name>
@@ -4808,7 +4801,7 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>1</interval>
-			<pipe_depth>3</pipe_depth>
+			<pipe_depth>5</pipe_depth>
 		</item>
 	</regions>
 	<dp_fu_nodes class_id="34" tracking_level="0" version="0">

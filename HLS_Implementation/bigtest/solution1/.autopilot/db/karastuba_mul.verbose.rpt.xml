@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'karastuba_mul'" level="0">
-<item name = "Date">Tue May 26 00:38:21 2020
+<item name = "Date">Tue May 26 00:45:12 2020
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">bigtest</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 2.568 ns, 0.38 ns</column>
+<column name="ap_clk">3.00 ns, 2.474 ns, 0.38 ns</column>
 </table>
 </item>
 </section>
@@ -24,21 +24,21 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">582, 612, 1.746 us, 1.836 us, 582, 612, none</column>
+<column name="">2394, 2550, 7.182 us, 7.650 us, 2394, 2550, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_karastuba_mul_templa_1_fu_169">karastuba_mul_templa_1, 510, 540, 1.530 us, 1.620 us, 510, 540, none</column>
+<column name="grp_karastuba_mul_templa_3_fu_168">karastuba_mul_templa_3, 2130, 2286, 6.390 us, 6.858 us, 2130, 2286, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">16, 16, 1, 1, 1, 16, yes</column>
-<column name="- Loop 2">16, 16, 1, 1, 1, 16, yes</column>
-<column name="- Loop 3">33, 33, 3, 1, 1, 32, yes</column>
+<column name="- Loop 1">64, 64, 1, 1, 1, 64, yes</column>
+<column name="- Loop 2">64, 64, 2, 1, 1, 64, yes</column>
+<column name="- Loop 3">129, 129, 3, 1, 1, 128, yes</column>
 </table>
 </item>
 </section>
@@ -51,14 +51,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 107, -</column>
+<column name="Expression">-, -, 0, 117, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">6, 12, 4327, 6132, 0</column>
-<column name="Memory">2, -, 128, 16, 0</column>
-<column name="Multiplexer">-, -, -, 224, -</column>
-<column name="Register">-, -, 31, -, -</column>
+<column name="Instance">288, 27, 117532, 113933, 0</column>
+<column name="Memory">8, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 239, -</column>
+<column name="Register">-, -, 112, -, -</column>
 <specialColumn name="Available">3456, 768, 1075200, 537600, 0</specialColumn>
-<specialColumn name="Utilization (%)">~0, 1, ~0, 1, 0</specialColumn>
+<specialColumn name="Utilization (%)">8, 3, 10, 21, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -66,7 +66,7 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="karastuba_mul_AXILiteS_s_axi_U">karastuba_mul_AXILiteS_s_axi, 0, 0, 36, 40, 0</column>
-<column name="grp_karastuba_mul_templa_1_fu_169">karastuba_mul_templa_1, 6, 12, 4291, 6092, 0</column>
+<column name="grp_karastuba_mul_templa_3_fu_168">karastuba_mul_templa_3, 288, 27, 117496, 113893, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -75,9 +75,9 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="res_digits_data_U">karastuba_mul_restde, 2, 0, 0, 0, 32, 32, 1, 1024</column>
-<column name="lhs_digits_data_U">karastuba_mul_tempcA, 0, 64, 8, 0, 16, 32, 1, 512</column>
-<column name="rhs_digits_data_U">karastuba_mul_tempcA, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="res_digits_data_V_U">karastuba_mul_resXh4, 4, 0, 0, 0, 128, 64, 1, 8192</column>
+<column name="lhs_digits_data_V_U">karastuba_mul_temThq, 2, 0, 0, 0, 64, 64, 1, 4096</column>
+<column name="rhs_digits_data_V_U">karastuba_mul_temThq, 2, 0, 0, 0, 64, 64, 1, 4096</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -86,55 +86,64 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln325_fu_199_p2">+, 0, 0, 15, 6, 6</column>
-<column name="i_8_fu_210_p2">+, 0, 0, 15, 6, 1</column>
-<column name="i_9_fu_222_p2">+, 0, 0, 15, 6, 1</column>
-<column name="i_fu_182_p2">+, 0, 0, 15, 5, 1</column>
+<column name="add_ln325_fu_198_p2">+, 0, 0, 15, 8, 8</column>
+<column name="i_24_fu_204_p2">+, 0, 0, 15, 8, 1</column>
+<column name="i_25_fu_220_p2">+, 0, 0, 15, 8, 1</column>
+<column name="i_fu_181_p2">+, 0, 0, 15, 7, 1</column>
+<column name="ap_block_pp1_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state10_io">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state2">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state4">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state8_io">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state4_pp1_stage0_iter0">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state9_io">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln317_fu_176_p2">icmp, 0, 0, 11, 5, 6</column>
-<column name="icmp_ln322_fu_193_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln331_fu_216_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln317_fu_175_p2">icmp, 0, 0, 11, 7, 8</column>
+<column name="icmp_ln322_fu_192_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln331_fu_214_p2">icmp, 0, 0, 13, 8, 9</column>
 <column name="ap_block_pp2_stage0_11001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp2">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp1_iter1">xor, 0, 0, 2, 2, 1</column>
 <column name="ap_enable_reg_pp2_iter1">xor, 0, 0, 2, 2, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">44, 9, 1, 9</column>
+<column name="ap_enable_reg_pp1_iter1">15, 3, 1, 3</column>
 <column name="ap_enable_reg_pp2_iter1">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp2_iter2">9, 2, 1, 2</column>
-<column name="hs_input_TDATA_blk_n">9, 2, 1, 2</column>
-<column name="i1_0_reg_147">9, 2, 6, 12</column>
-<column name="i2_0_reg_158">9, 2, 6, 12</column>
-<column name="i_0_reg_136">9, 2, 5, 10</column>
-<column name="lhs_digits_data_address0">15, 3, 4, 12</column>
-<column name="lhs_digits_data_ce0">15, 3, 1, 3</column>
-<column name="res_digits_data_address0">15, 3, 5, 15</column>
-<column name="res_digits_data_ce0">15, 3, 1, 3</column>
-<column name="res_digits_data_ce1">9, 2, 1, 2</column>
-<column name="res_digits_data_we0">9, 2, 1, 2</column>
-<column name="res_digits_data_we1">9, 2, 1, 2</column>
-<column name="res_output_TDATA_blk_n">9, 2, 1, 2</column>
-<column name="rhs_digits_data_address0">15, 3, 4, 12</column>
-<column name="rhs_digits_data_ce0">15, 3, 1, 3</column>
+<column name="hs_input_V_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="i1_0_reg_146">9, 2, 8, 16</column>
+<column name="i2_0_reg_157">9, 2, 8, 16</column>
+<column name="i_0_reg_135">9, 2, 7, 14</column>
+<column name="lhs_digits_data_V_address0">15, 3, 6, 18</column>
+<column name="lhs_digits_data_V_ce0">15, 3, 1, 3</column>
+<column name="res_digits_data_V_address0">15, 3, 7, 21</column>
+<column name="res_digits_data_V_ce0">15, 3, 1, 3</column>
+<column name="res_digits_data_V_ce1">9, 2, 1, 2</column>
+<column name="res_digits_data_V_we0">9, 2, 1, 2</column>
+<column name="res_digits_data_V_we1">9, 2, 1, 2</column>
+<column name="res_output_V_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="rhs_digits_data_V_address0">15, 3, 6, 18</column>
+<column name="rhs_digits_data_V_ce0">15, 3, 1, 3</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln325_reg_243">8, 0, 8, 0</column>
 <column name="ap_CS_fsm">8, 0, 8, 0</column>
+<column name="ap_enable_reg_pp1_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp2_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp2_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp2_iter2">1, 0, 1, 0</column>
-<column name="grp_karastuba_mul_templa_1_fu_169_ap_start_reg">1, 0, 1, 0</column>
-<column name="i1_0_reg_147">6, 0, 6, 0</column>
-<column name="i2_0_reg_158">6, 0, 6, 0</column>
-<column name="i_0_reg_136">5, 0, 5, 0</column>
-<column name="icmp_ln331_reg_249">1, 0, 1, 0</column>
-<column name="icmp_ln331_reg_249_pp2_iter1_reg">1, 0, 1, 0</column>
+<column name="grp_karastuba_mul_templa_3_fu_168_ap_start_reg">1, 0, 1, 0</column>
+<column name="hs_input_V_read_1_reg_248">64, 0, 64, 0</column>
+<column name="i1_0_reg_146">8, 0, 8, 0</column>
+<column name="i2_0_reg_157">8, 0, 8, 0</column>
+<column name="i_0_reg_135">7, 0, 7, 0</column>
+<column name="icmp_ln322_reg_239">1, 0, 1, 0</column>
+<column name="icmp_ln331_reg_258">1, 0, 1, 0</column>
+<column name="icmp_ln331_reg_258_pp2_iter1_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -164,12 +173,12 @@
 <column name="ap_clk">in, 1, ap_ctrl_hs, karastuba_mul, return value</column>
 <column name="ap_rst_n">in, 1, ap_ctrl_hs, karastuba_mul, return value</column>
 <column name="interrupt">out, 1, ap_ctrl_hs, karastuba_mul, return value</column>
-<column name="hs_input_TDATA">in, 32, axis, hs_input, pointer</column>
-<column name="hs_input_TVALID">in, 1, axis, hs_input, pointer</column>
-<column name="hs_input_TREADY">out, 1, axis, hs_input, pointer</column>
-<column name="res_output_TDATA">out, 32, axis, res_output, pointer</column>
-<column name="res_output_TVALID">out, 1, axis, res_output, pointer</column>
-<column name="res_output_TREADY">in, 1, axis, res_output, pointer</column>
+<column name="hs_input_V_TDATA">in, 64, axis, hs_input_V, pointer</column>
+<column name="hs_input_V_TVALID">in, 1, axis, hs_input_V, pointer</column>
+<column name="hs_input_V_TREADY">out, 1, axis, hs_input_V, pointer</column>
+<column name="res_output_V_TDATA">out, 64, axis, res_output_V, pointer</column>
+<column name="res_output_V_TVALID">out, 1, axis, res_output_V, pointer</column>
+<column name="res_output_V_TREADY">in, 1, axis, res_output_V, pointer</column>
 </table>
 </item>
 </section>

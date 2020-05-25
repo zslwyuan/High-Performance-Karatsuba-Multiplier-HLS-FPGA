@@ -1,4 +1,7 @@
 <AutoPilot:project xmlns:AutoPilot="com.autoesl.autopilot.project" projectType="C/C++" name="bigtest" top="karastuba_mul">
+    <Simulation argv="">
+        <SimFlow name="csim" setup="false" optimizeCompile="false" clean="false" ldflags="" mflags=""/>
+    </Simulation>
     <files>
         <file name="../../BigIntegerHLS.h" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
         <file name="../../multest.cc" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
@@ -8,8 +11,5 @@
     <solutions>
         <solution name="solution1" status=""/>
     </solutions>
-    <Simulation argv="">
-        <SimFlow name="csim" setup="false" optimizeCompile="false" clean="false" ldflags="" mflags=""/>
-    </Simulation>
 </AutoPilot:project>
 

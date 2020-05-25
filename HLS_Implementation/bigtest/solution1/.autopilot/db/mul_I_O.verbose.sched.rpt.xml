@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'mul_I_O'" level="0">
-<item name = "Date">Tue May 26 00:38:18 2020
+<item name = "Date">Tue May 26 00:44:48 2020
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">bigtest</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 2.268 ns, 0.38 ns</column>
+<column name="ap_clk">3.00 ns, 2.346 ns, 0.38 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">284, 314, 0.852 us, 0.942 us, 284, 314, none</column>
+<column name="">356, 398, 1.068 us, 1.194 us, 356, 398, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -36,10 +36,10 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">16, 16, 1, -, -, 16, no</column>
-<column name="- Loop 2">264, 272, 33 ~ 34, -, -, 8, no</column>
-<column name=" + Loop 2.1">29, 29, 9, 3, 1, 8, yes</column>
-<column name="- Loop 3">9, 9, 3, 1, 1, 8, yes</column>
-<column name="- Loop 4">9, 9, 3, 1, 1, 8, yes</column>
+<column name="- Loop 2">336, 352, 42 ~ 44, -, -, 8, no</column>
+<column name=" + Loop 2.1">38, 38, 11, 4, 1, 8, yes</column>
+<column name="- Loop 3">11, 11, 5, 1, 1, 8, yes</column>
+<column name="- Loop 4">11, 11, 5, 1, 1, 8, yes</column>
 </table>
 </item>
 </section>

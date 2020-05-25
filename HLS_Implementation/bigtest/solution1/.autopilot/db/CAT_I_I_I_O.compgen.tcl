@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 14 \
-    name x0_digits_data \
+    id 48 \
+    name x0_digits_data_V \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename x0_digits_data \
+    corename x0_digits_data_V \
     op interface \
-    ports { x0_digits_data_address0 { O 4 vector } x0_digits_data_ce0 { O 1 bit } x0_digits_data_q0 { I 32 vector } } \
+    ports { x0_digits_data_V_address0 { O 6 vector } x0_digits_data_V_ce0 { O 1 bit } x0_digits_data_V_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'x0_digits_data'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'x0_digits_data_V'"
 }
 }
 
@@ -30,17 +30,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 16 \
-    name x1_digits_data \
+    id 50 \
+    name x1_digits_data_V \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename x1_digits_data \
+    corename x1_digits_data_V \
     op interface \
-    ports { x1_digits_data_address0 { O 4 vector } x1_digits_data_ce0 { O 1 bit } x1_digits_data_q0 { I 32 vector } } \
+    ports { x1_digits_data_V_address0 { O 6 vector } x1_digits_data_V_ce0 { O 1 bit } x1_digits_data_V_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'x1_digits_data'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'x1_digits_data_V'"
 }
 }
 
@@ -49,17 +49,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 17 \
-    name x2_digits_data \
+    id 51 \
+    name x2_digits_data_V \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename x2_digits_data \
+    corename x2_digits_data_V \
     op interface \
-    ports { x2_digits_data_address0 { O 4 vector } x2_digits_data_ce0 { O 1 bit } x2_digits_data_q0 { I 32 vector } } \
+    ports { x2_digits_data_V_address0 { O 6 vector } x2_digits_data_V_ce0 { O 1 bit } x2_digits_data_V_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'x2_digits_data'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'x2_digits_data_V'"
 }
 }
 
@@ -68,17 +68,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 18 \
-    name w_digits_data \
+    id 52 \
+    name w_digits_data_V \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename w_digits_data \
+    corename w_digits_data_V \
     op interface \
-    ports { w_digits_data_address0 { O 5 vector } w_digits_data_ce0 { O 1 bit } w_digits_data_we0 { O 1 bit } w_digits_data_d0 { O 32 vector } w_digits_data_q0 { I 32 vector } w_digits_data_address1 { O 5 vector } w_digits_data_ce1 { O 1 bit } w_digits_data_we1 { O 1 bit } w_digits_data_d1 { O 32 vector } w_digits_data_q1 { I 32 vector } } \
+    ports { w_digits_data_V_address0 { O 7 vector } w_digits_data_V_ce0 { O 1 bit } w_digits_data_V_we0 { O 1 bit } w_digits_data_V_d0 { O 64 vector } w_digits_data_V_q0 { I 64 vector } w_digits_data_V_address1 { O 7 vector } w_digits_data_V_ce1 { O 1 bit } w_digits_data_V_we1 { O 1 bit } w_digits_data_V_d1 { O 64 vector } w_digits_data_V_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'w_digits_data'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'w_digits_data_V'"
 }
 }
 
@@ -86,7 +86,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 15 \
+    id 49 \
     name x1_tmp_bits_read \
     type other \
     dir I \

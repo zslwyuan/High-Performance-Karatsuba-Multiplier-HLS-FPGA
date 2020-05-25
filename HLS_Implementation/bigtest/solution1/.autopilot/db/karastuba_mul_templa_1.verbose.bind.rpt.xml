@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'karastuba_mul_templa_1'" level="0">
-<item name = "Date">Tue May 26 00:38:19 2020
+<item name = "Date">Tue May 26 00:44:50 2020
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">bigtest</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 2.568 ns, 0.38 ns</column>
+<column name="ap_clk">3.00 ns, 2.474 ns, 0.38 ns</column>
 </table>
 </item>
 </section>
@@ -24,27 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">510, 540, 1.530 us, 1.620 us, 510, 540, none</column>
+<column name="">647, 730, 1.941 us, 2.190 us, 647, 730, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_karastuba_mul_templa_fu_427">karastuba_mul_templa, 307, 337, 0.921 us, 1.011 us, 307, 337, none</column>
-<column name="grp_mul_I_O_fu_436">mul_I_O, 284, 314, 0.852 us, 0.942 us, 284, 314, none</column>
-<column name="grp_mul_I_O_fu_447">mul_I_O, 284, 314, 0.852 us, 0.942 us, 284, 314, none</column>
-<column name="grp_CAT_I_I_I_O_fu_458">CAT_I_I_I_O, 95, 95, 0.285 us, 0.285 us, 95, 95, none</column>
+<column name="grp_karastuba_mul_templa_5_fu_180">karastuba_mul_templa_5, 604, 687, 1.812 us, 2.061 us, 604, 687, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">16, 16, 2, -, -, 8, no</column>
-<column name="- Loop 2">16, 16, 2, -, -, 8, no</column>
-<column name="- Loop 3">16, 16, 2, -, -, 8, no</column>
-<column name="- Loop 4">16, 16, 2, -, -, 8, no</column>
-<column name="- Loop 5">17, 17, 3, 1, 1, 16, yes</column>
-<column name="- Loop 6">17, 17, 3, 1, 1, 16, yes</column>
+<column name="- Loop 1">19, 19, 5, 1, 1, 16, yes</column>
+<column name="- Loop 2">19, 19, 5, 1, 1, 16, yes</column>
 </table>
 </item>
 </section>

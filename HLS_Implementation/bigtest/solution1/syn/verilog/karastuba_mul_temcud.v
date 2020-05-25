@@ -5,7 +5,7 @@
 `timescale 1 ns / 1 ps
 module karastuba_mul_temcud_ram (addr0, ce0, d0, we0, q0,  clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 64;
 parameter AWIDTH = 3;
 parameter MEM_SIZE = 8;
 
@@ -43,7 +43,7 @@ module karastuba_mul_temcud(
     d0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd64;
 parameter AddressRange = 32'd8;
 parameter AddressWidth = 32'd3;
 input reset;

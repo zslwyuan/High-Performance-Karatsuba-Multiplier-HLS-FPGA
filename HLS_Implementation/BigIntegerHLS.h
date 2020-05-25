@@ -3,7 +3,7 @@
 
 
 // set this MACRO if you want to speed up C/RTL co-simulation
-#define C_RTL_COSIMULATION
+//#define C_RTL_COSIMULATION
 
 
 

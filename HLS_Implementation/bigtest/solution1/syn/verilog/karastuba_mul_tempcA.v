@@ -5,7 +5,7 @@
 `timescale 1 ns / 1 ps
 module karastuba_mul_tempcA_ram (addr0, ce0, d0, we0, q0,  clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 64;
 parameter AWIDTH = 4;
 parameter MEM_SIZE = 16;
 
@@ -16,7 +16,7 @@ input we0;
 output reg[DWIDTH-1:0] q0;
 input clk;
 
-(* ram_style = "distributed" *)reg [DWIDTH-1:0] ram[0:MEM_SIZE-1];
+(* ram_style = "block" *)reg [DWIDTH-1:0] ram[0:MEM_SIZE-1];
 
 
 
@@ -43,7 +43,7 @@ module karastuba_mul_tempcA(
     d0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd64;
 parameter AddressRange = 32'd16;
 parameter AddressWidth = 32'd4;
 input reset;

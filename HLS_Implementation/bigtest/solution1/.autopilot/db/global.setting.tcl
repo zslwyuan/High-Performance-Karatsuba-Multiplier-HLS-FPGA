@@ -40,8 +40,8 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xcvu095:-ffva2104:-2-e
-set SourceFiles {sc {} c {../../BigIntegerHLS.h ../../multest.cc}}
-set SourceFlags {sc {} c {{ } {} { } {}}}
+set SourceFiles {sc {} c ../../multest.cc}
+set SourceFlags {sc {} c {{}}}
 set DirectiveFile /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/solution1.directive
 set TBFiles {verilog {../../BigIntegerHLS.h ../../multest.cc} bc {../../BigIntegerHLS.h ../../multest.cc} sc {../../BigIntegerHLS.h ../../multest.cc} vhdl {../../BigIntegerHLS.h ../../multest.cc} c {} cas {../../BigIntegerHLS.h ../../multest.cc}}
 set SpecLanguage C

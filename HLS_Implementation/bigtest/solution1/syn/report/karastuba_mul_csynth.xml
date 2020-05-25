@@ -17,35 +17,35 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.568</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.474</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>582</Best-caseLatency>
-<Average-caseLatency>602</Average-caseLatency>
-<Worst-caseLatency>612</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.746 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.806 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>1.836 us</Worst-caseRealTimeLatency>
-<Interval-min>583</Interval-min>
-<Interval-max>613</Interval-max>
+<Best-caseLatency>2394</Best-caseLatency>
+<Average-caseLatency>2474</Average-caseLatency>
+<Worst-caseLatency>2550</Worst-caseLatency>
+<Best-caseRealTimeLatency>7.182 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>7.422 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>7.650 us</Worst-caseRealTimeLatency>
+<Interval-min>2395</Interval-min>
+<Interval-max>2551</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
-<TripCount>16</TripCount>
-<Latency>16</Latency>
+<TripCount>64</TripCount>
+<Latency>64</Latency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>1</PipelineDepth>
 </Loop1>
 <Loop2>
-<TripCount>16</TripCount>
-<Latency>16</Latency>
+<TripCount>64</TripCount>
+<Latency>64</Latency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>1</PipelineDepth>
+<PipelineDepth>2</PipelineDepth>
 </Loop2>
 <Loop3>
-<TripCount>32</TripCount>
-<Latency>33</Latency>
+<TripCount>128</TripCount>
+<Latency>129</Latency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
 </Loop3>
@@ -54,10 +54,10 @@
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>8</BRAM_18K>
-<DSP48E>12</DSP48E>
-<FF>4486</FF>
-<LUT>6479</LUT>
+<BRAM_18K>296</BRAM_18K>
+<DSP48E>27</DSP48E>
+<FF>117644</FF>
+<LUT>114289</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -325,20 +325,20 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>hs_input_TDATA</name>
-<Object>hs_input</Object>
+<name>hs_input_V_TDATA</name>
+<Object>hs_input_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>64</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
-<name>hs_input_TVALID</name>
-<Object>hs_input</Object>
+<name>hs_input_V_TVALID</name>
+<Object>hs_input_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -349,8 +349,8 @@
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
-<name>hs_input_TREADY</name>
-<Object>hs_input</Object>
+<name>hs_input_V_TREADY</name>
+<Object>hs_input_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -361,20 +361,20 @@
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
-<name>res_output_TDATA</name>
-<Object>res_output</Object>
+<name>res_output_V_TDATA</name>
+<Object>res_output_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>64</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
-<name>res_output_TVALID</name>
-<Object>res_output</Object>
+<name>res_output_V_TVALID</name>
+<Object>res_output_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -385,8 +385,8 @@
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
-<name>res_output_TREADY</name>
-<Object>res_output</Object>
+<name>res_output_V_TREADY</name>
+<Object>res_output_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>

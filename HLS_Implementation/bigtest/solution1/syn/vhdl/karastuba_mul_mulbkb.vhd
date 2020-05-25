@@ -10,29 +10,30 @@ entity karastuba_mul_mulbkb_MulnS_0 is
 port (
     clk: in std_logic;
     ce: in std_logic;
-    a: in std_logic_vector(32 - 1 downto 0);
-    b: in std_logic_vector(32 - 1 downto 0);
-    p: out std_logic_vector(64 - 1 downto 0));
+    a: in std_logic_vector(64 - 1 downto 0);
+    b: in std_logic_vector(64 - 1 downto 0);
+    p: out std_logic_vector(128 - 1 downto 0));
 end entity;
 
 architecture behav of karastuba_mul_mulbkb_MulnS_0 is
-    signal tmp_product : std_logic_vector(64 - 1 downto 0);
-    signal a_i : std_logic_vector(32 - 1 downto 0);
-    signal b_i : std_logic_vector(32 - 1 downto 0);
-    signal p_tmp : std_logic_vector(64 - 1 downto 0);
-    signal a_reg0 : std_logic_vector(32 - 1 downto 0);
-    signal b_reg0 : std_logic_vector(32 - 1 downto 0);
+    signal tmp_product : std_logic_vector(128 - 1 downto 0);
+    signal a_i : std_logic_vector(64 - 1 downto 0);
+    signal b_i : std_logic_vector(64 - 1 downto 0);
+    signal p_tmp : std_logic_vector(128 - 1 downto 0);
+    signal a_reg0 : std_logic_vector(64 - 1 downto 0);
+    signal b_reg0 : std_logic_vector(64 - 1 downto 0);
 
-    signal buff0 : std_logic_vector(64 - 1 downto 0);
-    signal buff1 : std_logic_vector(64 - 1 downto 0);
-    signal buff2 : std_logic_vector(64 - 1 downto 0);
+    signal buff0 : std_logic_vector(128 - 1 downto 0);
+    signal buff1 : std_logic_vector(128 - 1 downto 0);
+    signal buff2 : std_logic_vector(128 - 1 downto 0);
+    signal buff3 : std_logic_vector(128 - 1 downto 0);
 begin
     a_i <= a;
     b_i <= b;
     p <= p_tmp;
 
-    p_tmp <= buff2;
-    tmp_product <= std_logic_vector(resize(unsigned(a_reg0) * unsigned(b_reg0), 64));
+    p_tmp <= buff3;
+    tmp_product <= std_logic_vector(resize(unsigned(a_reg0) * unsigned(b_reg0), 128));
 
     process(clk)
     begin
@@ -43,6 +44,7 @@ begin
                 buff0 <= tmp_product;
                 buff1 <= buff0;
                 buff2 <= buff1;
+                buff3 <= buff2;
             end if;
         end if;
     end process;

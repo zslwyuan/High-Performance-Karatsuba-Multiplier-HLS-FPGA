@@ -23,7 +23,7 @@ SC_MODULE(karastuba_mul_mulbkb) {
 
 
 
-    ACMP_mul_uu<ID, 5, din0_WIDTH, din1_WIDTH, dout_WIDTH> ACMP_mul_uu_U;
+    ACMP_mul_uu<ID, 6, din0_WIDTH, din1_WIDTH, dout_WIDTH> ACMP_mul_uu_U;
 
     SC_CTOR(karastuba_mul_mulbkb):  ACMP_mul_uu_U ("ACMP_mul_uu_U") {
         ACMP_mul_uu_U.clk(clk);

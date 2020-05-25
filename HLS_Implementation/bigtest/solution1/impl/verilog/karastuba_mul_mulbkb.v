@@ -8,18 +8,19 @@
 module karastuba_mul_mulbkb_MulnS_0(clk, ce, a, b, p);
 input clk;
 input ce;
-input[32 - 1 : 0] a; 
-input[32 - 1 : 0] b; 
-output[64 - 1 : 0] p;
+input[64 - 1 : 0] a; 
+input[64 - 1 : 0] b; 
+output[128 - 1 : 0] p;
 
-reg [32 - 1 : 0] a_reg0;
-reg [32 - 1 : 0] b_reg0;
-wire [64 - 1 : 0] tmp_product;
-reg [64 - 1 : 0] buff0;
-reg [64 - 1 : 0] buff1;
-reg [64 - 1 : 0] buff2;
+reg [64 - 1 : 0] a_reg0;
+reg [64 - 1 : 0] b_reg0;
+wire [128 - 1 : 0] tmp_product;
+reg [128 - 1 : 0] buff0;
+reg [128 - 1 : 0] buff1;
+reg [128 - 1 : 0] buff2;
+reg [128 - 1 : 0] buff3;
 
-assign p = buff2;
+assign p = buff3;
 assign tmp_product = a_reg0 * b_reg0;
 always @ (posedge clk) begin
     if (ce) begin
@@ -28,6 +29,7 @@ always @ (posedge clk) begin
         buff0 <= tmp_product;
         buff1 <= buff0;
         buff2 <= buff1;
+        buff3 <= buff2;
     end
 end
 endmodule

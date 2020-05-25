@@ -15,7 +15,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>lhs0_tmp_digits_data</name>
+						<name>lhs0_tmp_digits_data_V</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -24,15 +24,15 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>lhs0_tmp.digits.data</originalName>
+						<originalName>lhs0_tmp.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>8</array_size>
+				<array_size>32</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -43,7 +43,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>lhs1_tmp_digits_data</name>
+						<name>lhs1_tmp_digits_data_V</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -52,15 +52,15 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>lhs1_tmp.digits.data</originalName>
+						<originalName>lhs1_tmp.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>8</array_size>
+				<array_size>32</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -71,7 +71,7 @@
 					<Obj>
 						<type>1</type>
 						<id>3</id>
-						<name>rhs0_tmp_digits_data</name>
+						<name>rhs0_tmp_digits_data_V</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -80,15 +80,15 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>rhs0_tmp.digits.data</originalName>
+						<originalName>rhs0_tmp.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>8</array_size>
+				<array_size>32</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -99,7 +99,7 @@
 					<Obj>
 						<type>1</type>
 						<id>4</id>
-						<name>rhs1_tmp_digits_data</name>
+						<name>rhs1_tmp_digits_data_V</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -108,15 +108,15 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>rhs1_tmp.digits.data</originalName>
+						<originalName>rhs1_tmp.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>8</array_size>
+				<array_size>32</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -127,7 +127,7 @@
 					<Obj>
 						<type>1</type>
 						<id>5</id>
-						<name>cross_mul_digits_data</name>
+						<name>cross_mul_digits_data_V</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -136,15 +136,15 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>cross_mul.digits.data</originalName>
+						<originalName>cross_mul.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
-				<array_size>16</array_size>
+				<array_size>64</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -159,11 +159,11 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>add0_digits_data</name>
+						<name>add0_digits_data_V</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>227</lineNumber>
-						<contextFuncName>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</contextFuncName>
+						<contextFuncName>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -175,18 +175,18 @@
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>227</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>add0.digits.data</originalName>
+						<originalName>add0.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -207,11 +207,11 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>add1_digits_data</name>
+						<name>add1_digits_data_V</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>229</lineNumber>
-						<contextFuncName>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</contextFuncName>
+						<contextFuncName>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -223,18 +223,18 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>229</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>w.digits.data</originalName>
+						<originalName>w.digits.data.V</originalName>
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -259,7 +259,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -271,14 +271,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -310,11 +310,11 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>tmp_0_i</name>
+						<name>p_088_0_i</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>59</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -326,14 +326,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>59</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -381,7 +381,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -409,7 +409,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -421,14 +421,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -465,7 +465,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -477,14 +477,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -495,7 +495,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -508,7 +508,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.87</m_delay>
+				<m_delay>1.02</m_delay>
 				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -521,7 +521,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -533,14 +533,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -578,7 +578,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -590,14 +590,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -608,7 +608,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -633,7 +633,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -645,14 +645,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -684,11 +684,11 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>lhs0_tmp_digits_data_2</name>
+						<name>lhs0_tmp_digits_data</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -700,14 +700,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -718,7 +718,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -741,11 +741,11 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>lhs0_tmp_digits_data_3</name>
+						<name>lhs0_tmp_digits_data_6</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -757,14 +757,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -775,7 +775,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -787,7 +787,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
+				<m_delay>1.76</m_delay>
 				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -796,11 +796,11 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>zext_ln57</name>
+						<name>zext_ln209</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -812,14 +812,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -830,7 +830,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -851,11 +851,11 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>lhs1_tmp_digits_data_2</name>
+						<name>lhs1_tmp_digits_data</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -867,14 +867,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -885,7 +885,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -908,11 +908,11 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>lhs1_tmp_digits_data_3</name>
+						<name>lhs1_tmp_digits_data_6</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -924,14 +924,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -942,7 +942,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -954,7 +954,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
+				<m_delay>1.76</m_delay>
 				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -963,11 +963,11 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>zext_ln56_1</name>
+						<name>zext_ln700</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -979,14 +979,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -997,7 +997,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1018,11 +1018,11 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>zext_ln56_3</name>
+						<name>zext_ln700_9</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1034,14 +1034,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1052,7 +1052,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1073,11 +1073,11 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>add_ln57</name>
+						<name>add_ln700</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1089,14 +1089,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1107,7 +1107,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1120,7 +1120,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.46</m_delay>
+				<m_delay>1.64</m_delay>
 				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1129,11 +1129,11 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>zext_ln57_1</name>
+						<name>zext_ln700_10</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1145,14 +1145,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1163,7 +1163,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1184,11 +1184,11 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>tmp</name>
+						<name>tmp_V</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1200,25 +1200,25 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>tmp</originalName>
+						<originalName>tmp.V</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1231,7 +1231,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.46</m_delay>
+				<m_delay>1.64</m_delay>
 				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1240,11 +1240,11 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>add_ln58_2</name>
+						<name>add_ln209</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1256,14 +1256,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1274,7 +1274,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1296,11 +1296,11 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>add_ln58</name>
+						<name>add_ln209_6</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1312,14 +1312,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1330,7 +1330,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1343,7 +1343,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.08</m_delay>
+				<m_delay>1.20</m_delay>
 				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1352,11 +1352,11 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>add0_digits_data_add</name>
+						<name>add0_digits_data_V_a</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1368,14 +1368,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1386,7 +1386,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1401,7 +1401,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
+				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_29">
@@ -1409,11 +1409,11 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>add0_digits_data_add_write_ln58</name>
+						<name>add0_digits_data_V_a_write_ln58</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1425,14 +1425,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1456,8 +1456,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
-				<m_topoIndex>24</m_topoIndex>
+				<m_delay>1.76</m_delay>
+				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_30">
@@ -1469,7 +1469,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>59</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1481,14 +1481,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>59</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1515,7 +1515,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>25</m_topoIndex>
+				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_31">
@@ -1527,7 +1527,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1539,14 +1539,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>228</second>
 									</item>
@@ -1582,7 +1582,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1594,14 +1594,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1633,11 +1633,11 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>tmp_0_i1</name>
+						<name>p_088_0_i1</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>59</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1649,14 +1649,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>59</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1704,7 +1704,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -1732,7 +1732,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1744,14 +1744,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1784,11 +1784,11 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>i_7</name>
+						<name>i_23</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1800,14 +1800,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1818,7 +1818,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1831,7 +1831,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.87</m_delay>
+				<m_delay>1.02</m_delay>
 				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1844,7 +1844,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1856,14 +1856,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1901,7 +1901,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1913,14 +1913,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -1931,7 +1931,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1952,11 +1952,11 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>zext_ln56_2</name>
+						<name>zext_ln56_1</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1968,14 +1968,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2007,11 +2007,11 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>rhs0_tmp_digits_data_2</name>
+						<name>rhs0_tmp_digits_data</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2023,14 +2023,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2041,7 +2041,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2064,11 +2064,11 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>rhs0_tmp_digits_data_3</name>
+						<name>rhs0_tmp_digits_data_6</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2080,14 +2080,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2098,7 +2098,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2110,7 +2110,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
+				<m_delay>1.76</m_delay>
 				<m_topoIndex>35</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2119,11 +2119,11 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>zext_ln57_2</name>
+						<name>zext_ln209_1</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2135,14 +2135,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2153,7 +2153,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2174,11 +2174,11 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>rhs1_tmp_digits_data_2</name>
+						<name>rhs1_tmp_digits_data</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2190,14 +2190,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2208,7 +2208,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2231,11 +2231,11 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>rhs1_tmp_digits_data_3</name>
+						<name>rhs1_tmp_digits_data_6</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2247,14 +2247,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2265,7 +2265,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2277,7 +2277,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
+				<m_delay>1.76</m_delay>
 				<m_topoIndex>37</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2286,11 +2286,11 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>zext_ln56_4</name>
+						<name>zext_ln700_11</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2302,14 +2302,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2320,7 +2320,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2341,11 +2341,11 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>zext_ln56_5</name>
+						<name>zext_ln700_12</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>56</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2357,14 +2357,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>56</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2375,7 +2375,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2396,11 +2396,11 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>add_ln57_2</name>
+						<name>add_ln700_7</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2412,14 +2412,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2430,7 +2430,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>33</bitwidth>
+					<bitwidth>65</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2443,7 +2443,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.46</m_delay>
+				<m_delay>1.64</m_delay>
 				<m_topoIndex>40</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2452,11 +2452,11 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>zext_ln57_3</name>
+						<name>zext_ln700_13</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2468,14 +2468,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2486,7 +2486,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2507,11 +2507,11 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>tmp_6</name>
+						<name>tmp_V_14</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>57</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2523,25 +2523,25 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>57</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>tmp</originalName>
+						<originalName>tmp.V</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>34</bitwidth>
+					<bitwidth>66</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2554,7 +2554,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.46</m_delay>
+				<m_delay>1.64</m_delay>
 				<m_topoIndex>44</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2563,11 +2563,11 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>add_ln58_3</name>
+						<name>add_ln209_7</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2579,14 +2579,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2597,7 +2597,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2619,11 +2619,11 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>add_ln58_1</name>
+						<name>add_ln209_8</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2635,14 +2635,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2653,7 +2653,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2666,7 +2666,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.08</m_delay>
+				<m_delay>1.20</m_delay>
 				<m_topoIndex>46</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2675,11 +2675,11 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>add1_digits_data_add</name>
+						<name>add1_digits_data_V_a</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2691,14 +2691,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2709,7 +2709,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2724,7 +2724,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>47</m_topoIndex>
+				<m_topoIndex>48</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_53">
@@ -2732,11 +2732,11 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>add1_digits_data_add_write_ln58</name>
+						<name>add1_digits_data_V_a_write_ln58</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>58</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2748,14 +2748,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>58</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2779,8 +2779,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
-				<m_topoIndex>48</m_topoIndex>
+				<m_delay>1.76</m_delay>
+				<m_topoIndex>49</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_54">
@@ -2788,11 +2788,11 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>trunc_ln59_1</name>
+						<name>trunc_ln858_3</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>59</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2804,14 +2804,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>59</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2838,7 +2838,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>49</m_topoIndex>
+				<m_topoIndex>47</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_55">
@@ -2850,7 +2850,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>51</lineNumber>
-						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2862,14 +2862,14 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>add_I_O&amp;lt;Bignum&amp;lt;8, 32&amp;gt;, Bignum&amp;lt;8, 32&amp;gt; &amp;gt;</second>
+											<second>add_I_O&amp;lt;Bignum&amp;lt;32, 64&amp;gt;, Bignum&amp;lt;32, 64&amp;gt; &amp;gt;</second>
 										</first>
 										<second>51</second>
 									</item>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>230</second>
 									</item>
@@ -2901,30 +2901,23 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>res_tmp_bits_write_a</name>
+						<name>cross_mul_tmp_bits_w</name>
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
-						<lineNumber>214</lineNumber>
-						<contextFuncName>karastuba_mul_template&amp;lt;8, 32&amp;gt;</contextFuncName>
+						<lineNumber>231</lineNumber>
+						<contextFuncName>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template&amp;lt;8, 32&amp;gt;</second>
-										</first>
-										<second>214</second>
-									</item>
-									<item>
-										<first>
-											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>231</second>
 									</item>
@@ -2965,7 +2958,7 @@
 						<fileName>multest.cc</fileName>
 						<fileDirectory>/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation</fileDirectory>
 						<lineNumber>232</lineNumber>
-						<contextFuncName>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</contextFuncName>
+						<contextFuncName>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2977,7 +2970,7 @@
 									<item>
 										<first>
 											<first>multest.cc</first>
-											<second>karastuba_mul_template_z1&amp;lt;16, 32&amp;gt;</second>
+											<second>karastuba_mul_template_z1&amp;lt;64, 64&amp;gt;</second>
 										</first>
 										<second>232</second>
 									</item>
@@ -3072,7 +3065,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -3095,10 +3088,10 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>8</content>
+				<content>32</content>
 			</item>
 			<item class_id_reference="16" object_id="_62">
 				<Value>
@@ -3118,7 +3111,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -3167,7 +3160,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>32</content>
+				<content>64</content>
 			</item>
 			<item class_id_reference="16" object_id="_65">
 				<Value>
@@ -3190,14 +3183,14 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>33</content>
+				<content>65</content>
 			</item>
 			<item class_id_reference="16" object_id="_66">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>180</id>
-						<name>mul_I_O</name>
+						<name>karastuba_mul_templa_4</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3213,7 +3206,7 @@
 					<bitwidth>4</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mul_I_O&gt;</content>
+				<content>&lt;constant:karastuba_mul_templa.4&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -3275,7 +3268,7 @@
 				<Obj>
 					<type>3</type>
 					<id>38</id>
-					<name>hls_label_11</name>
+					<name>hls_label_20</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3365,7 +3358,7 @@
 				<Obj>
 					<type>3</type>
 					<id>69</id>
-					<name>hls_label_111</name>
+					<name>hls_label_201</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3405,7 +3398,7 @@
 				<Obj>
 					<type>3</type>
 					<id>72</id>
-					<name>add_I_O&lt;Bignum&lt;8, 32&gt;, Bignum&lt;8, 32&gt; &gt;.exit22</name>
+					<name>add_I_O&lt;Bignum&lt;32, 64&gt;, Bignum&lt;32, 64&gt; &gt;.exit23</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4232,8 +4225,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>307</mMinLatency>
-			<mMaxLatency>337</mMaxLatency>
+			<mMinLatency>1203</mMinLatency>
+			<mMaxLatency>1359</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4274,11 +4267,11 @@
 				<item>38</item>
 			</basic_blocks>
 			<mII>1</mII>
-			<mDepth>3</mDepth>
-			<mMinTripCount>8</mMinTripCount>
-			<mMaxTripCount>8</mMaxTripCount>
-			<mMinLatency>9</mMinLatency>
-			<mMaxLatency>9</mMaxLatency>
+			<mDepth>5</mDepth>
+			<mMinTripCount>32</mMinTripCount>
+			<mMaxTripCount>32</mMaxTripCount>
+			<mMinLatency>35</mMinLatency>
+			<mMaxLatency>35</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4319,11 +4312,11 @@
 				<item>69</item>
 			</basic_blocks>
 			<mII>1</mII>
-			<mDepth>3</mDepth>
-			<mMinTripCount>8</mMinTripCount>
-			<mMaxTripCount>8</mMaxTripCount>
-			<mMinLatency>9</mMinLatency>
-			<mMaxLatency>9</mMaxLatency>
+			<mDepth>5</mDepth>
+			<mMinTripCount>32</mMinTripCount>
+			<mMaxTripCount>32</mMaxTripCount>
+			<mMinLatency>35</mMinLatency>
+			<mMaxLatency>35</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4344,15 +4337,15 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>285</mMinLatency>
-			<mMaxLatency>315</mMaxLatency>
+			<mMinLatency>1129</mMinLatency>
+			<mMaxLatency>1285</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
 	</cdfg_regions>
 	<fsm class_id="24" tracking_level="1" version="0" object_id="_191">
 		<states class_id="25" tracking_level="0" version="0">
-			<count>10</count>
+			<count>14</count>
 			<item_version>0</item_version>
 			<item class_id="26" tracking_level="1" version="0" object_id="_192">
 				<id>1</id>
@@ -4441,7 +4434,7 @@
 			<item class_id_reference="26" object_id="_208">
 				<id>3</id>
 				<operations>
-					<count>5</count>
+					<count>2</count>
 					<item_version>0</item_version>
 					<item class_id_reference="28" object_id="_209">
 						<id>22</id>
@@ -4449,300 +4442,328 @@
 						<latency>2</latency>
 					</item>
 					<item class_id_reference="28" object_id="_210">
-						<id>23</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_211">
 						<id>25</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
+				</operations>
+			</item>
+			<item class_id_reference="26" object_id="_211">
+				<id>4</id>
+				<operations>
+					<count>3</count>
+					<item_version>0</item_version>
 					<item class_id_reference="28" object_id="_212">
-						<id>26</id>
+						<id>23</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_213">
+						<id>26</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_214">
 						<id>28</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_214">
-				<id>4</id>
+			<item class_id_reference="26" object_id="_215">
+				<id>5</id>
 				<operations>
-					<count>13</count>
+					<count>7</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_215">
+					<item class_id_reference="28" object_id="_216">
 						<id>17</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_216">
-						<id>18</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
 					<item class_id_reference="28" object_id="_217">
-						<id>19</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_218">
 						<id>27</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_219">
+					<item class_id_reference="28" object_id="_218">
 						<id>29</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_220">
+					<item class_id_reference="28" object_id="_219">
 						<id>30</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_221">
+					<item class_id_reference="28" object_id="_220">
 						<id>31</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_222">
+					<item class_id_reference="28" object_id="_221">
 						<id>32</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_223">
-						<id>33</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_224">
-						<id>34</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_225">
+					<item class_id_reference="28" object_id="_222">
 						<id>35</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
+				</operations>
+			</item>
+			<item class_id_reference="26" object_id="_223">
+				<id>6</id>
+				<operations>
+					<count>6</count>
+					<item_version>0</item_version>
+					<item class_id_reference="28" object_id="_224">
+						<id>18</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_225">
+						<id>19</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
 					<item class_id_reference="28" object_id="_226">
-						<id>36</id>
+						<id>33</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_227">
+						<id>34</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_228">
+						<id>36</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_229">
 						<id>37</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_228">
-				<id>5</id>
+			<item class_id_reference="26" object_id="_230">
+				<id>7</id>
 				<operations>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_229">
+					<item class_id_reference="28" object_id="_231">
 						<id>39</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_230">
-				<id>6</id>
+			<item class_id_reference="26" object_id="_232">
+				<id>8</id>
 				<operations>
 					<count>11</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_231">
+					<item class_id_reference="28" object_id="_233">
 						<id>41</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_232">
+					<item class_id_reference="28" object_id="_234">
 						<id>42</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_233">
+					<item class_id_reference="28" object_id="_235">
 						<id>43</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_234">
+					<item class_id_reference="28" object_id="_236">
 						<id>44</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_235">
+					<item class_id_reference="28" object_id="_237">
 						<id>45</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_236">
+					<item class_id_reference="28" object_id="_238">
 						<id>46</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_237">
+					<item class_id_reference="28" object_id="_239">
 						<id>51</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_238">
+					<item class_id_reference="28" object_id="_240">
 						<id>52</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_239">
+					<item class_id_reference="28" object_id="_241">
 						<id>53</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_240">
+					<item class_id_reference="28" object_id="_242">
 						<id>55</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_241">
+					<item class_id_reference="28" object_id="_243">
 						<id>56</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_242">
-				<id>7</id>
+			<item class_id_reference="26" object_id="_244">
+				<id>9</id>
 				<operations>
-					<count>5</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_243">
+					<item class_id_reference="28" object_id="_245">
 						<id>53</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_244">
-						<id>54</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_245">
+					<item class_id_reference="28" object_id="_246">
 						<id>56</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_246">
+				</operations>
+			</item>
+			<item class_id_reference="26" object_id="_247">
+				<id>10</id>
+				<operations>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item class_id_reference="28" object_id="_248">
+						<id>54</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_249">
 						<id>57</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_247">
+					<item class_id_reference="28" object_id="_250">
 						<id>59</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_248">
-				<id>8</id>
+			<item class_id_reference="26" object_id="_251">
+				<id>11</id>
 				<operations>
-					<count>13</count>
+					<count>7</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_249">
+					<item class_id_reference="28" object_id="_252">
 						<id>48</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_250">
-						<id>49</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_251">
-						<id>50</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_252">
+					<item class_id_reference="28" object_id="_253">
 						<id>58</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_253">
+					<item class_id_reference="28" object_id="_254">
 						<id>60</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_254">
+					<item class_id_reference="28" object_id="_255">
 						<id>61</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_255">
+					<item class_id_reference="28" object_id="_256">
 						<id>62</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_256">
+					<item class_id_reference="28" object_id="_257">
 						<id>63</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_257">
-						<id>64</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
 					<item class_id_reference="28" object_id="_258">
-						<id>65</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_259">
 						<id>66</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
+				</operations>
+			</item>
+			<item class_id_reference="26" object_id="_259">
+				<id>12</id>
+				<operations>
+					<count>6</count>
+					<item_version>0</item_version>
 					<item class_id_reference="28" object_id="_260">
-						<id>67</id>
+						<id>49</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_261">
+						<id>50</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_262">
+						<id>64</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_263">
+						<id>65</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_264">
+						<id>67</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_265">
 						<id>68</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_262">
-				<id>9</id>
+			<item class_id_reference="26" object_id="_266">
+				<id>13</id>
 				<operations>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_263">
+					<item class_id_reference="28" object_id="_267">
 						<id>70</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_264">
-				<id>10</id>
+			<item class_id_reference="26" object_id="_268">
+				<id>14</id>
 				<operations>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_265">
+					<item class_id_reference="28" object_id="_269">
 						<id>70</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_266">
+					<item class_id_reference="28" object_id="_270">
 						<id>71</id>
 						<stage>1</stage>
 						<latency>1</latency>
@@ -4751,9 +4772,9 @@
 			</item>
 		</states>
 		<transitions class_id="29" tracking_level="0" version="0">
-			<count>11</count>
+			<count>15</count>
 			<item_version>0</item_version>
-			<item class_id="30" tracking_level="1" version="0" object_id="_267">
+			<item class_id="30" tracking_level="1" version="0" object_id="_271">
 				<inState>1</inState>
 				<outState>2</outState>
 				<condition class_id="31" tracking_level="0" version="0">
@@ -4768,9 +4789,9 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_268">
-				<inState>5</inState>
-				<outState>6</outState>
+			<item class_id_reference="30" object_id="_272">
+				<inState>7</inState>
+				<outState>8</outState>
 				<condition>
 					<id>-1</id>
 					<sop>
@@ -4783,9 +4804,9 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_269">
-				<inState>9</inState>
-				<outState>10</outState>
+			<item class_id_reference="30" object_id="_273">
+				<inState>13</inState>
+				<outState>14</outState>
 				<condition>
 					<id>-1</id>
 					<sop>
@@ -4798,7 +4819,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_270">
+			<item class_id_reference="30" object_id="_274">
 				<inState>3</inState>
 				<outState>4</outState>
 				<condition>
@@ -4813,8 +4834,38 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_271">
+			<item class_id_reference="30" object_id="_275">
 				<inState>4</inState>
+				<outState>5</outState>
+				<condition>
+					<id>-1</id>
+					<sop>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>
+							<count>0</count>
+							<item_version>0</item_version>
+						</item>
+					</sop>
+				</condition>
+			</item>
+			<item class_id_reference="30" object_id="_276">
+				<inState>5</inState>
+				<outState>6</outState>
+				<condition>
+					<id>-1</id>
+					<sop>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>
+							<count>0</count>
+							<item_version>0</item_version>
+						</item>
+					</sop>
+				</condition>
+			</item>
+			<item class_id_reference="30" object_id="_277">
+				<inState>6</inState>
 				<outState>2</outState>
 				<condition>
 					<id>-1</id>
@@ -4828,9 +4879,9 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_272">
+			<item class_id_reference="30" object_id="_278">
 				<inState>2</inState>
-				<outState>5</outState>
+				<outState>7</outState>
 				<condition>
 					<id>-1</id>
 					<sop>
@@ -4850,7 +4901,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_273">
+			<item class_id_reference="30" object_id="_279">
 				<inState>2</inState>
 				<outState>3</outState>
 				<condition>
@@ -4872,8 +4923,53 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_274">
-				<inState>7</inState>
+			<item class_id_reference="30" object_id="_280">
+				<inState>9</inState>
+				<outState>10</outState>
+				<condition>
+					<id>-1</id>
+					<sop>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>
+							<count>0</count>
+							<item_version>0</item_version>
+						</item>
+					</sop>
+				</condition>
+			</item>
+			<item class_id_reference="30" object_id="_281">
+				<inState>10</inState>
+				<outState>11</outState>
+				<condition>
+					<id>-1</id>
+					<sop>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>
+							<count>0</count>
+							<item_version>0</item_version>
+						</item>
+					</sop>
+				</condition>
+			</item>
+			<item class_id_reference="30" object_id="_282">
+				<inState>11</inState>
+				<outState>12</outState>
+				<condition>
+					<id>-1</id>
+					<sop>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>
+							<count>0</count>
+							<item_version>0</item_version>
+						</item>
+					</sop>
+				</condition>
+			</item>
+			<item class_id_reference="30" object_id="_283">
+				<inState>12</inState>
 				<outState>8</outState>
 				<condition>
 					<id>-1</id>
@@ -4887,24 +4983,9 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_275">
+			<item class_id_reference="30" object_id="_284">
 				<inState>8</inState>
-				<outState>6</outState>
-				<condition>
-					<id>-1</id>
-					<sop>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>
-							<count>0</count>
-							<item_version>0</item_version>
-						</item>
-					</sop>
-				</condition>
-			</item>
-			<item class_id_reference="30" object_id="_276">
-				<inState>6</inState>
-				<outState>9</outState>
+				<outState>13</outState>
 				<condition>
 					<id>-1</id>
 					<sop>
@@ -4924,9 +5005,9 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_277">
-				<inState>6</inState>
-				<outState>7</outState>
+			<item class_id_reference="30" object_id="_285">
+				<inState>8</inState>
+				<outState>9</outState>
 				<condition>
 					<id>-1</id>
 					<sop>
@@ -4976,7 +5057,7 @@
 		<item>
 			<first>10</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5011,7 +5092,7 @@
 		<item>
 			<first>17</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5039,7 +5120,7 @@
 		<item>
 			<first>23</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5060,259 +5141,259 @@
 		<item>
 			<first>26</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>28</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>29</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>31</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>33</first>
 			<second>
-				<first>3</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>34</first>
 			<second>
-				<first>3</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>35</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>37</first>
 			<second>
-				<first>3</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>39</first>
 			<second>
-				<first>4</first>
+				<first>6</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>41</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>42</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>43</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>45</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>46</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>48</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>51</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>52</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>53</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>54</first>
 			<second>
-				<first>6</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>55</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>56</first>
 			<second>
-				<first>5</first>
+				<first>7</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>57</first>
 			<second>
-				<first>6</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>58</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>59</first>
 			<second>
-				<first>6</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>60</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>61</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>62</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>63</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>64</first>
 			<second>
-				<first>7</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>65</first>
 			<second>
-				<first>7</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>66</first>
 			<second>
-				<first>7</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>68</first>
 			<second>
-				<first>7</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>70</first>
 			<second>
-				<first>8</first>
+				<first>12</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>71</first>
 			<second>
-				<first>9</first>
+				<first>13</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5338,7 +5419,7 @@
 			<first>38</first>
 			<second>
 				<first>1</first>
-				<second>3</second>
+				<second>5</second>
 			</second>
 		</item>
 		<item>
@@ -5359,7 +5440,7 @@
 			<first>69</first>
 			<second>
 				<first>3</first>
-				<second>5</second>
+				<second>7</second>
 			</second>
 		</item>
 		<item>
@@ -5373,7 +5454,7 @@
 	<regions class_id="43" tracking_level="0" version="0">
 		<count>2</count>
 		<item_version>0</item_version>
-		<item class_id="44" tracking_level="1" version="0" object_id="_278">
+		<item class_id="44" tracking_level="1" version="0" object_id="_286">
 			<region_name>Loop 1</region_name>
 			<basic_blocks>
 				<count>2</count>
@@ -5388,9 +5469,9 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>1</interval>
-			<pipe_depth>3</pipe_depth>
+			<pipe_depth>5</pipe_depth>
 		</item>
-		<item class_id_reference="44" object_id="_279">
+		<item class_id_reference="44" object_id="_287">
 			<region_name>Loop 2</region_name>
 			<basic_blocks>
 				<count>2</count>
@@ -5405,7 +5486,7 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>1</interval>
-			<pipe_depth>3</pipe_depth>
+			<pipe_depth>5</pipe_depth>
 		</item>
 	</regions>
 	<dp_fu_nodes class_id="45" tracking_level="0" version="0">
@@ -5601,7 +5682,7 @@
 			</second>
 		</item>
 		<item>
-			<first>214</first>
+			<first>213</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5609,7 +5690,7 @@
 			</second>
 		</item>
 		<item>
-			<first>218</first>
+			<first>216</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5617,7 +5698,7 @@
 			</second>
 		</item>
 		<item>
-			<first>224</first>
+			<first>222</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5625,7 +5706,7 @@
 			</second>
 		</item>
 		<item>
-			<first>228</first>
+			<first>226</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5633,7 +5714,7 @@
 			</second>
 		</item>
 		<item>
-			<first>232</first>
+			<first>230</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5641,7 +5722,7 @@
 			</second>
 		</item>
 		<item>
-			<first>235</first>
+			<first>233</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5649,7 +5730,7 @@
 			</second>
 		</item>
 		<item>
-			<first>241</first>
+			<first>239</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5657,7 +5738,7 @@
 			</second>
 		</item>
 		<item>
-			<first>246</first>
+			<first>244</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5665,7 +5746,7 @@
 			</second>
 		</item>
 		<item>
-			<first>252</first>
+			<first>249</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5673,7 +5754,7 @@
 			</second>
 		</item>
 		<item>
-			<first>262</first>
+			<first>259</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5681,7 +5762,7 @@
 			</second>
 		</item>
 		<item>
-			<first>268</first>
+			<first>265</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5689,7 +5770,7 @@
 			</second>
 		</item>
 		<item>
-			<first>274</first>
+			<first>271</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5697,7 +5778,7 @@
 			</second>
 		</item>
 		<item>
-			<first>280</first>
+			<first>277</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5705,7 +5786,7 @@
 			</second>
 		</item>
 		<item>
-			<first>284</first>
+			<first>280</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5713,7 +5794,7 @@
 			</second>
 		</item>
 		<item>
-			<first>288</first>
+			<first>283</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5721,7 +5802,7 @@
 			</second>
 		</item>
 		<item>
-			<first>294</first>
+			<first>289</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5729,7 +5810,7 @@
 			</second>
 		</item>
 		<item>
-			<first>298</first>
+			<first>293</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5737,7 +5818,7 @@
 			</second>
 		</item>
 		<item>
-			<first>302</first>
+			<first>297</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5745,7 +5826,7 @@
 			</second>
 		</item>
 		<item>
-			<first>305</first>
+			<first>300</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5753,7 +5834,7 @@
 			</second>
 		</item>
 		<item>
-			<first>311</first>
+			<first>306</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5761,7 +5842,7 @@
 			</second>
 		</item>
 		<item>
-			<first>316</first>
+			<first>311</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5769,7 +5850,7 @@
 			</second>
 		</item>
 		<item>
-			<first>322</first>
+			<first>316</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5781,7 +5862,7 @@
 		<count>38</count>
 		<item_version>0</item_version>
 		<item class_id="49" tracking_level="0" version="0">
-			<first>add0_digits_data_add_gep_fu_84</first>
+			<first>add0_digits_data_V_a_gep_fu_84</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5789,7 +5870,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add0_digits_data_alloca_fu_50</first>
+			<first>add0_digits_data_V_alloca_fu_50</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5797,7 +5878,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add1_digits_data_add_gep_fu_122</first>
+			<first>add1_digits_data_V_a_gep_fu_122</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5805,7 +5886,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add1_digits_data_alloca_fu_54</first>
+			<first>add1_digits_data_V_alloca_fu_54</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5813,39 +5894,15 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln57_2_fu_288</first>
+			<first>add_ln209_6_fu_244</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>59</item>
+				<item>32</item>
 			</second>
 		</item>
 		<item>
-			<first>add_ln57_fu_218</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>28</item>
-			</second>
-		</item>
-		<item>
-			<first>add_ln58_1_fu_316</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>63</item>
-			</second>
-		</item>
-		<item>
-			<first>add_ln58_2_fu_241</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>31</item>
-			</second>
-		</item>
-		<item>
-			<first>add_ln58_3_fu_311</first>
+			<first>add_ln209_7_fu_306</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5853,11 +5910,35 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln58_fu_246</first>
+			<first>add_ln209_8_fu_311</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>32</item>
+				<item>63</item>
+			</second>
+		</item>
+		<item>
+			<first>add_ln209_fu_239</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>31</item>
+			</second>
+		</item>
+		<item>
+			<first>add_ln700_7_fu_283</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>59</item>
+			</second>
+		</item>
+		<item>
+			<first>add_ln700_fu_216</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>28</item>
 			</second>
 		</item>
 		<item>
@@ -5877,7 +5958,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_7_fu_268</first>
+			<first>i_23_fu_265</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5893,7 +5974,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln51_1_fu_262</first>
+			<first>icmp_ln51_1_fu_259</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5909,7 +5990,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lhs0_tmp_digits_data_2_gep_fu_58</first>
+			<first>lhs0_tmp_digits_data_gep_fu_58</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5917,7 +5998,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lhs1_tmp_digits_data_2_gep_fu_71</first>
+			<first>lhs1_tmp_digits_data_gep_fu_71</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5925,23 +6006,7 @@
 			</second>
 		</item>
 		<item>
-			<first>rhs0_tmp_digits_data_2_gep_fu_96</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>52</item>
-			</second>
-		</item>
-		<item>
-			<first>rhs1_tmp_digits_data_2_gep_fu_109</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>55</item>
-			</second>
-		</item>
-		<item>
-			<first>tmp_0_i1_phi_fu_161</first>
+			<first>p_088_0_i1_phi_fu_161</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5949,7 +6014,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_0_i_phi_fu_138</first>
+			<first>p_088_0_i_phi_fu_138</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5957,7 +6022,23 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_6_fu_305</first>
+			<first>rhs0_tmp_digits_data_gep_fu_96</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>52</item>
+			</second>
+		</item>
+		<item>
+			<first>rhs1_tmp_digits_data_gep_fu_109</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>55</item>
+			</second>
+		</item>
+		<item>
+			<first>tmp_V_14_fu_300</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5965,7 +6046,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_fu_235</first>
+			<first>tmp_V_fu_233</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5973,7 +6054,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln59_1_fu_322</first>
+			<first>trunc_ln858_3_fu_316</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5981,7 +6062,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln_fu_252</first>
+			<first>trunc_ln_fu_249</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5989,7 +6070,23 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln51_1_fu_294</first>
+			<first>zext_ln209_1_fu_277</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>54</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln209_fu_210</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>23</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln51_1_fu_289</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5997,7 +6094,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln51_fu_224</first>
+			<first>zext_ln51_fu_222</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6005,43 +6102,11 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln56_1_fu_214</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>26</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln56_2_fu_274</first>
+			<first>zext_ln56_1_fu_271</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>51</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln56_3_fu_228</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>27</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln56_4_fu_284</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>57</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln56_5_fu_298</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>58</item>
 			</second>
 		</item>
 		<item>
@@ -6053,7 +6118,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln57_1_fu_232</first>
+			<first>zext_ln700_10_fu_230</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6061,15 +6126,23 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln57_2_fu_280</first>
+			<first>zext_ln700_11_fu_280</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>54</item>
+				<item>57</item>
 			</second>
 		</item>
 		<item>
-			<first>zext_ln57_3_fu_302</first>
+			<first>zext_ln700_12_fu_293</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>58</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln700_13_fu_297</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6077,11 +6150,19 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln57_fu_210</first>
+			<first>zext_ln700_9_fu_226</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>23</item>
+				<item>27</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln700_fu_213</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>26</item>
 			</second>
 		</item>
 	</dp_fu_nodes_expression>
@@ -6089,7 +6170,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_mul_I_O_fu_180</first>
+			<first>grp_karastuba_mul_templa_4_fu_180</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -6111,7 +6192,7 @@
 		<item_version>0</item_version>
 		<item class_id="51" tracking_level="0" version="0">
 			<first class_id="52" tracking_level="0" version="0">
-				<first>add0_digits_data</first>
+				<first>add0_digits_data_V</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -6122,7 +6203,7 @@
 		</item>
 		<item>
 			<first>
-				<first>add0_digits_data</first>
+				<first>add0_digits_data_V</first>
 				<second>100</second>
 			</first>
 			<second>
@@ -6133,7 +6214,7 @@
 		</item>
 		<item>
 			<first>
-				<first>add1_digits_data</first>
+				<first>add1_digits_data_V</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -6144,7 +6225,7 @@
 		</item>
 		<item>
 			<first>
-				<first>add1_digits_data</first>
+				<first>add1_digits_data_V</first>
 				<second>100</second>
 			</first>
 			<second>
@@ -6155,7 +6236,7 @@
 		</item>
 		<item>
 			<first>
-				<first>lhs0_tmp_digits_data</first>
+				<first>lhs0_tmp_digits_data_V</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -6167,7 +6248,7 @@
 		</item>
 		<item>
 			<first>
-				<first>lhs1_tmp_digits_data</first>
+				<first>lhs1_tmp_digits_data_V</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -6179,7 +6260,7 @@
 		</item>
 		<item>
 			<first>
-				<first>rhs0_tmp_digits_data</first>
+				<first>rhs0_tmp_digits_data_V</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -6191,7 +6272,7 @@
 		</item>
 		<item>
 			<first>
-				<first>rhs1_tmp_digits_data</first>
+				<first>rhs1_tmp_digits_data_V</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -6203,7 +6284,7 @@
 		</item>
 	</dp_mem_port_nodes>
 	<dp_reg_nodes>
-		<count>22</count>
+		<count>24</count>
 		<item_version>0</item_version>
 		<item>
 			<first>134</first>
@@ -6238,7 +6319,7 @@
 			</second>
 		</item>
 		<item>
-			<first>332</first>
+			<first>326</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6246,7 +6327,7 @@
 			</second>
 		</item>
 		<item>
-			<first>336</first>
+			<first>330</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6254,7 +6335,7 @@
 			</second>
 		</item>
 		<item>
-			<first>341</first>
+			<first>335</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6262,7 +6343,7 @@
 			</second>
 		</item>
 		<item>
-			<first>346</first>
+			<first>340</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6270,7 +6351,7 @@
 			</second>
 		</item>
 		<item>
-			<first>351</first>
+			<first>345</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6278,7 +6359,7 @@
 			</second>
 		</item>
 		<item>
-			<first>356</first>
+			<first>350</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6286,7 +6367,7 @@
 			</second>
 		</item>
 		<item>
-			<first>361</first>
+			<first>356</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6294,7 +6375,7 @@
 			</second>
 		</item>
 		<item>
-			<first>366</first>
+			<first>362</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6302,7 +6383,15 @@
 			</second>
 		</item>
 		<item>
-			<first>371</first>
+			<first>367</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>32</item>
+			</second>
+		</item>
+		<item>
+			<first>372</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6310,7 +6399,7 @@
 			</second>
 		</item>
 		<item>
-			<first>376</first>
+			<first>377</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6318,7 +6407,7 @@
 			</second>
 		</item>
 		<item>
-			<first>380</first>
+			<first>381</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6326,7 +6415,7 @@
 			</second>
 		</item>
 		<item>
-			<first>385</first>
+			<first>386</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6334,7 +6423,7 @@
 			</second>
 		</item>
 		<item>
-			<first>390</first>
+			<first>391</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6342,7 +6431,7 @@
 			</second>
 		</item>
 		<item>
-			<first>395</first>
+			<first>396</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6350,7 +6439,7 @@
 			</second>
 		</item>
 		<item>
-			<first>400</first>
+			<first>401</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6358,7 +6447,7 @@
 			</second>
 		</item>
 		<item>
-			<first>405</first>
+			<first>407</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6366,7 +6455,7 @@
 			</second>
 		</item>
 		<item>
-			<first>410</first>
+			<first>413</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6374,7 +6463,15 @@
 			</second>
 		</item>
 		<item>
-			<first>415</first>
+			<first>418</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>63</item>
+			</second>
+		</item>
+		<item>
+			<first>423</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6383,10 +6480,26 @@
 		</item>
 	</dp_reg_nodes>
 	<dp_regname_nodes>
-		<count>22</count>
+		<count>24</count>
 		<item_version>0</item_version>
 		<item>
-			<first>add_ln57_2_reg_410</first>
+			<first>add_ln209_6_reg_367</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>32</item>
+			</second>
+		</item>
+		<item>
+			<first>add_ln209_8_reg_418</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>63</item>
+			</second>
+		</item>
+		<item>
+			<first>add_ln700_7_reg_413</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6394,7 +6507,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln57_reg_366</first>
+			<first>add_ln700_reg_362</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6418,7 +6531,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_7_reg_380</first>
+			<first>i_23_reg_381</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6426,7 +6539,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_reg_336</first>
+			<first>i_reg_330</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6434,7 +6547,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln51_1_reg_376</first>
+			<first>icmp_ln51_1_reg_377</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6442,7 +6555,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln51_reg_332</first>
+			<first>icmp_ln51_reg_326</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6450,15 +6563,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lhs0_tmp_digits_data_2_reg_346</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>21</item>
-			</second>
-		</item>
-		<item>
-			<first>lhs0_tmp_digits_data_3_reg_356</first>
+			<first>lhs0_tmp_digits_data_6_reg_350</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6466,15 +6571,15 @@
 			</second>
 		</item>
 		<item>
-			<first>lhs1_tmp_digits_data_2_reg_351</first>
+			<first>lhs0_tmp_digits_data_reg_340</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>24</item>
+				<item>21</item>
 			</second>
 		</item>
 		<item>
-			<first>lhs1_tmp_digits_data_3_reg_361</first>
+			<first>lhs1_tmp_digits_data_6_reg_356</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6482,39 +6587,15 @@
 			</second>
 		</item>
 		<item>
-			<first>rhs0_tmp_digits_data_2_reg_390</first>
+			<first>lhs1_tmp_digits_data_reg_345</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>52</item>
+				<item>24</item>
 			</second>
 		</item>
 		<item>
-			<first>rhs0_tmp_digits_data_3_reg_400</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>53</item>
-			</second>
-		</item>
-		<item>
-			<first>rhs1_tmp_digits_data_2_reg_395</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>55</item>
-			</second>
-		</item>
-		<item>
-			<first>rhs1_tmp_digits_data_3_reg_405</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>56</item>
-			</second>
-		</item>
-		<item>
-			<first>tmp_0_i1_reg_157</first>
+			<first>p_088_0_i1_reg_157</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6522,7 +6603,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_0_i_reg_134</first>
+			<first>p_088_0_i_reg_134</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6530,7 +6611,39 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln59_1_reg_415</first>
+			<first>rhs0_tmp_digits_data_6_reg_401</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>53</item>
+			</second>
+		</item>
+		<item>
+			<first>rhs0_tmp_digits_data_reg_391</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>52</item>
+			</second>
+		</item>
+		<item>
+			<first>rhs1_tmp_digits_data_6_reg_407</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>56</item>
+			</second>
+		</item>
+		<item>
+			<first>rhs1_tmp_digits_data_reg_396</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>55</item>
+			</second>
+		</item>
+		<item>
+			<first>trunc_ln858_3_reg_423</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6538,7 +6651,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln_reg_371</first>
+			<first>trunc_ln_reg_372</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6546,7 +6659,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln56_2_reg_385</first>
+			<first>zext_ln56_1_reg_386</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6554,7 +6667,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln56_reg_341</first>
+			<first>zext_ln56_reg_335</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6618,7 +6731,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_0_i1_reg_157</first>
+			<first>p_088_0_i1_reg_157</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6626,7 +6739,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_0_i_reg_134</first>
+			<first>p_088_0_i_reg_134</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6638,7 +6751,7 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item class_id="54" tracking_level="0" version="0">
-			<first>lhs0_tmp_digits_data(p0)</first>
+			<first>lhs0_tmp_digits_data_V(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6654,7 +6767,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lhs1_tmp_digits_data(p0)</first>
+			<first>lhs1_tmp_digits_data_V(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6670,7 +6783,7 @@
 			</second>
 		</item>
 		<item>
-			<first>rhs0_tmp_digits_data(p0)</first>
+			<first>rhs0_tmp_digits_data_V(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6686,7 +6799,7 @@
 			</second>
 		</item>
 		<item>
-			<first>rhs1_tmp_digits_data(p0)</first>
+			<first>rhs1_tmp_digits_data_V(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -4,20 +4,20 @@ set id 1
 set name karastuba_mul_mulbkb
 set corename simcore_mul
 set op mul
-set stage_num 5
+set stage_num 6
 set max_latency -1
 set registered_input 1
 set clk_width 1
 set clk_signed 0
 set reset_width 1
 set reset_signed 0
-set in0_width 32
+set in0_width 64
 set in0_signed 0
-set in1_width 32
+set in1_width 64
 set in1_signed 0
 set ce_width 1
 set ce_signed 0
-set out_width 64
+set out_width 128
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
 eval "ap_gen_simcore_mul { \
@@ -97,16 +97,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 4 \
-    name u_digits_data \
+    name u_digits_data_V \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename u_digits_data \
+    corename u_digits_data_V \
     op interface \
-    ports { u_digits_data_address0 { O 3 vector } u_digits_data_ce0 { O 1 bit } u_digits_data_q0 { I 32 vector } } \
+    ports { u_digits_data_V_address0 { O 3 vector } u_digits_data_V_ce0 { O 1 bit } u_digits_data_V_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'u_digits_data'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'u_digits_data_V'"
 }
 }
 
@@ -116,16 +116,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 6 \
-    name v_digits_data \
+    name v_digits_data_V \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename v_digits_data \
+    corename v_digits_data_V \
     op interface \
-    ports { v_digits_data_address0 { O 3 vector } v_digits_data_ce0 { O 1 bit } v_digits_data_q0 { I 32 vector } } \
+    ports { v_digits_data_V_address0 { O 3 vector } v_digits_data_V_ce0 { O 1 bit } v_digits_data_V_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v_digits_data'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v_digits_data_V'"
 }
 }
 
@@ -135,16 +135,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 7 \
-    name w_digits_data \
+    name w_digits_data_V \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename w_digits_data \
+    corename w_digits_data_V \
     op interface \
-    ports { w_digits_data_address0 { O 4 vector } w_digits_data_ce0 { O 1 bit } w_digits_data_we0 { O 1 bit } w_digits_data_d0 { O 32 vector } w_digits_data_q0 { I 32 vector } w_digits_data_address1 { O 4 vector } w_digits_data_ce1 { O 1 bit } w_digits_data_we1 { O 1 bit } w_digits_data_d1 { O 32 vector } w_digits_data_q1 { I 32 vector } } \
+    ports { w_digits_data_V_address0 { O 4 vector } w_digits_data_V_ce0 { O 1 bit } w_digits_data_V_we0 { O 1 bit } w_digits_data_V_d0 { O 64 vector } w_digits_data_V_q0 { I 64 vector } w_digits_data_V_address1 { O 4 vector } w_digits_data_V_ce1 { O 1 bit } w_digits_data_V_we1 { O 1 bit } w_digits_data_V_d1 { O 64 vector } w_digits_data_V_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'w_digits_data'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'w_digits_data_V'"
 }
 }
 

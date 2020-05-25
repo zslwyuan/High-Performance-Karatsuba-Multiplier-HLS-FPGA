@@ -10,7 +10,7 @@ use ieee.std_logic_unsigned.all;
 entity karastuba_mul_temcud_ram is 
     generic(
             MEM_TYPE    : string := "distributed"; 
-            DWIDTH     : integer := 32; 
+            DWIDTH     : integer := 64; 
             AWIDTH     : integer := 3; 
             MEM_SIZE    : integer := 8
     ); 
@@ -71,7 +71,7 @@ use IEEE.std_logic_1164.all;
 
 entity karastuba_mul_temcud is
     generic (
-        DataWidth : INTEGER := 32;
+        DataWidth : INTEGER := 64;
         AddressRange : INTEGER := 8;
         AddressWidth : INTEGER := 3);
     port (

@@ -18,7 +18,7 @@ using namespace sc_dt;
 
 struct karastuba_mul_temmb6_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 32;
+  static const unsigned DataWidth = 64;
   static const unsigned AddressRange = 16;
   static const unsigned AddressWidth = 4;
 
@@ -108,7 +108,7 @@ void prc_write_1()
 SC_MODULE(karastuba_mul_temmb6) {
 
 
-static const unsigned DataWidth = 32;
+static const unsigned DataWidth = 64;
 static const unsigned AddressRange = 16;
 static const unsigned AddressWidth = 4;
 

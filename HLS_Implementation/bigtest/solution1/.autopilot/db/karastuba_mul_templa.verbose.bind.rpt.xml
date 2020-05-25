@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'karastuba_mul_templa'" level="0">
-<item name = "Date">Tue May 26 00:38:18 2020
+<item name = "Date">Tue May 26 00:44:53 2020
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">bigtest</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 2.268 ns, 0.38 ns</column>
+<column name="ap_clk">3.00 ns, 2.474 ns, 0.38 ns</column>
 </table>
 </item>
 </section>
@@ -24,20 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">307, 337, 0.921 us, 1.011 us, 307, 337, none</column>
+<column name="">1203, 1359, 3.609 us, 4.077 us, 1203, 1359, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mul_I_O_fu_180">mul_I_O, 284, 314, 0.852 us, 0.942 us, 284, 314, none</column>
+<column name="grp_karastuba_mul_templa_4_fu_180">karastuba_mul_templa_4, 1128, 1284, 3.384 us, 3.852 us, 1128, 1284, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">9, 9, 3, 1, 1, 8, yes</column>
-<column name="- Loop 2">9, 9, 3, 1, 1, 8, yes</column>
+<column name="- Loop 1">35, 35, 5, 1, 1, 32, yes</column>
+<column name="- Loop 2">35, 35, 5, 1, 1, 32, yes</column>
 </table>
 </item>
 </section>

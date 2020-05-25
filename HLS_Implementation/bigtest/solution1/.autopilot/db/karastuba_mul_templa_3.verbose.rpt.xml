@@ -1,0 +1,289 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'karastuba_mul_templa_3'" level="0">
+<item name = "Date">Tue May 26 00:45:09 2020
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">bigtest</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexu</item>
+<item name = "Target device">xcvu095-ffva2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.00 ns, 2.474 ns, 0.38 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2130, 2286, 6.390 us, 6.858 us, 2130, 2286, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_karastuba_mul_templa_fu_423">karastuba_mul_templa, 1203, 1359, 3.609 us, 4.077 us, 1203, 1359, none</column>
+<column name="grp_karastuba_mul_templa_4_fu_432">karastuba_mul_templa_4, 1128, 1284, 3.384 us, 3.852 us, 1128, 1284, none</column>
+<column name="grp_karastuba_mul_templa_4_fu_443">karastuba_mul_templa_4, 1128, 1284, 3.384 us, 3.852 us, 1128, 1284, none</column>
+<column name="grp_CAT_I_I_I_O_fu_454">CAT_I_I_I_O, 399, 399, 1.197 us, 1.197 us, 399, 399, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">96, 96, 3, -, -, 32, no</column>
+<column name="- Loop 2">96, 96, 3, -, -, 32, no</column>
+<column name="- Loop 3">96, 96, 3, -, -, 32, no</column>
+<column name="- Loop 4">96, 96, 3, -, -, 32, no</column>
+<column name="- Loop 5">67, 67, 5, 1, 1, 64, yes</column>
+<column name="- Loop 6">67, 67, 5, 1, 1, 64, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 734, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">256, 27, 116316, 112298, 0</column>
+<column name="Memory">32, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 733, -</column>
+<column name="Register">0, -, 1180, 128, -</column>
+<specialColumn name="Available">3456, 768, 1075200, 537600, 0</specialColumn>
+<specialColumn name="Utilization (%)">8, 3, 10, 21, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="grp_CAT_I_I_I_O_fu_454">CAT_I_I_I_O, 0, 0, 1259, 1210, 0</column>
+<column name="grp_karastuba_mul_templa_fu_423">karastuba_mul_templa, 88, 9, 39073, 37650, 0</column>
+<column name="grp_karastuba_mul_templa_4_fu_432">karastuba_mul_templa_4, 84, 9, 37992, 36719, 0</column>
+<column name="grp_karastuba_mul_templa_4_fu_443">karastuba_mul_templa_4, 84, 9, 37992, 36719, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="lhs0_digits_data_V_U">karastuba_mul_temEe0, 2, 0, 0, 0, 32, 64, 1, 2048</column>
+<column name="lhs1_digits_data_V_U">karastuba_mul_temEe0, 2, 0, 0, 0, 32, 64, 1, 2048</column>
+<column name="rhs0_digits_data_V_U">karastuba_mul_temEe0, 2, 0, 0, 0, 32, 64, 1, 2048</column>
+<column name="rhs1_digits_data_V_U">karastuba_mul_temEe0, 2, 0, 0, 0, 32, 64, 1, 2048</column>
+<column name="lhs0_tmp_digits_data_U">karastuba_mul_temEe0, 2, 0, 0, 0, 32, 64, 1, 2048</column>
+<column name="lhs1_tmp_digits_data_U">karastuba_mul_temEe0, 2, 0, 0, 0, 32, 64, 1, 2048</column>
+<column name="rhs0_tmp_digits_data_U">karastuba_mul_temEe0, 2, 0, 0, 0, 32, 64, 1, 2048</column>
+<column name="rhs1_tmp_digits_data_U">karastuba_mul_temEe0, 2, 0, 0, 0, 32, 64, 1, 2048</column>
+<column name="z0_digits_data_V_U">karastuba_mul_temQgW, 4, 0, 0, 0, 64, 64, 1, 4096</column>
+<column name="z2_digits_data_V_U">karastuba_mul_temQgW, 4, 0, 0, 0, 64, 64, 1, 4096</column>
+<column name="cross_mul_digits_dat_U">karastuba_mul_temQgW, 4, 0, 0, 0, 64, 64, 1, 4096</column>
+<column name="add2_digits_data_V_U">karastuba_mul_temThq, 2, 0, 0, 0, 64, 64, 1, 4096</column>
+<column name="z1_digits_data_V_U">karastuba_mul_temThq, 2, 0, 0, 0, 64, 64, 1, 4096</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add2_tmp_bits_fu_663_p2">+, 0, 0, 15, 6, 6</column>
+<column name="add_ln209_13_fu_623_p2">+, 0, 0, 64, 64, 64</column>
+<column name="add_ln209_fu_628_p2">+, 0, 0, 64, 64, 64</column>
+<column name="add_ln61_fu_653_p2">+, 0, 0, 15, 5, 5</column>
+<column name="add_ln700_15_fu_735_p2">+, 0, 0, 71, 64, 64</column>
+<column name="add_ln700_fu_600_p2">+, 0, 0, 72, 65, 65</column>
+<column name="add_ln92_fu_749_p2">+, 0, 0, 15, 5, 5</column>
+<column name="i_16_fu_503_p2">+, 0, 0, 15, 6, 1</column>
+<column name="i_17_fu_532_p2">+, 0, 0, 15, 6, 1</column>
+<column name="i_18_fu_549_p2">+, 0, 0, 15, 6, 1</column>
+<column name="i_19_fu_582_p2">+, 0, 0, 15, 7, 1</column>
+<column name="i_20_fu_679_p2">+, 0, 0, 15, 7, 1</column>
+<column name="i_fu_486_p2">+, 0, 0, 15, 6, 1</column>
+<column name="tmp_V_11_fu_722_p2">+, 0, 0, 72, 65, 65</column>
+<column name="tmp_V_fu_617_p2">+, 0, 0, 73, 66, 66</column>
+<column name="tmp_V_10_fu_697_p2">-, 0, 0, 72, 65, 65</column>
+<column name="z1_tmp_bits_fu_758_p2">-, 0, 0, 15, 7, 7</column>
+<column name="exitcond_i_fu_673_p2">icmp, 0, 0, 11, 7, 8</column>
+<column name="icmp_ln246_fu_480_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln247_fu_497_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln248_fu_526_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln249_fu_543_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln51_fu_576_p2">icmp, 0, 0, 11, 7, 8</column>
+<column name="ap_block_state14_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+<column name="empty_45_fu_741_p3">select, 0, 0, 2, 1, 2</column>
+<column name="select_ln701_3_fu_711_p3">select, 0, 0, 2, 1, 2</column>
+<column name="select_ln701_fu_703_p3">select, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
+<column name="ap_enable_reg_pp1_iter1">xor, 0, 0, 2, 2, 1</column>
+<column name="xor_ln247_fu_509_p2">xor, 0, 0, 7, 6, 7</column>
+<column name="xor_ln249_fu_555_p2">xor, 0, 0, 7, 6, 7</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="add2_digits_data_V_address0">15, 3, 6, 18</column>
+<column name="ap_NS_fsm">97, 20, 1, 20</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter4">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp1_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp1_iter4">9, 2, 1, 2</column>
+<column name="ap_phi_mux_op2_assign_phi_fu_404_p4">9, 2, 1, 2</column>
+<column name="ap_phi_mux_p_088_0_i_phi_fu_381_p4">9, 2, 2, 4</column>
+<column name="cross_mul_digits_dat_address0">15, 3, 6, 18</column>
+<column name="cross_mul_digits_dat_ce0">15, 3, 1, 3</column>
+<column name="cross_mul_digits_dat_ce1">9, 2, 1, 2</column>
+<column name="cross_mul_digits_dat_we0">9, 2, 1, 2</column>
+<column name="cross_mul_digits_dat_we1">9, 2, 1, 2</column>
+<column name="i1_0_reg_342">9, 2, 6, 12</column>
+<column name="i2_0_reg_354">9, 2, 6, 12</column>
+<column name="i3_0_reg_365">9, 2, 6, 12</column>
+<column name="i_0_i1_reg_412">9, 2, 7, 14</column>
+<column name="i_0_i_reg_389">9, 2, 7, 14</column>
+<column name="i_0_reg_331">9, 2, 6, 12</column>
+<column name="lhs0_digits_data_V_address0">15, 3, 5, 15</column>
+<column name="lhs0_digits_data_V_ce0">15, 3, 1, 3</column>
+<column name="lhs0_tmp_digits_data_address0">15, 3, 5, 15</column>
+<column name="lhs0_tmp_digits_data_ce0">15, 3, 1, 3</column>
+<column name="lhs1_digits_data_V_address0">15, 3, 5, 15</column>
+<column name="lhs1_digits_data_V_ce0">15, 3, 1, 3</column>
+<column name="lhs1_tmp_digits_data_address0">15, 3, 5, 15</column>
+<column name="lhs1_tmp_digits_data_ce0">15, 3, 1, 3</column>
+<column name="lhs_digits_data_V_address0">15, 3, 6, 18</column>
+<column name="op2_assign_reg_400">9, 2, 1, 2</column>
+<column name="p_088_0_i_reg_377">9, 2, 2, 4</column>
+<column name="rhs0_digits_data_V_address0">15, 3, 5, 15</column>
+<column name="rhs0_digits_data_V_ce0">15, 3, 1, 3</column>
+<column name="rhs0_tmp_digits_data_address0">15, 3, 5, 15</column>
+<column name="rhs0_tmp_digits_data_ce0">15, 3, 1, 3</column>
+<column name="rhs1_digits_data_V_address0">15, 3, 5, 15</column>
+<column name="rhs1_digits_data_V_ce0">15, 3, 1, 3</column>
+<column name="rhs1_tmp_digits_data_address0">15, 3, 5, 15</column>
+<column name="rhs1_tmp_digits_data_ce0">15, 3, 1, 3</column>
+<column name="rhs_digits_data_V_address0">15, 3, 6, 18</column>
+<column name="z0_digits_data_V_address0">21, 4, 6, 24</column>
+<column name="z0_digits_data_V_ce0">21, 4, 1, 4</column>
+<column name="z0_digits_data_V_ce1">9, 2, 1, 2</column>
+<column name="z0_digits_data_V_we0">9, 2, 1, 2</column>
+<column name="z0_digits_data_V_we1">9, 2, 1, 2</column>
+<column name="z1_digits_data_V_address0">15, 3, 6, 18</column>
+<column name="z1_digits_data_V_ce0">15, 3, 1, 3</column>
+<column name="z2_digits_data_V_address0">21, 4, 6, 24</column>
+<column name="z2_digits_data_V_ce0">21, 4, 1, 4</column>
+<column name="z2_digits_data_V_ce1">9, 2, 1, 2</column>
+<column name="z2_digits_data_V_we0">9, 2, 1, 2</column>
+<column name="z2_digits_data_V_we1">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add2_digits_data_V_l_reg_928">64, 0, 64, 0</column>
+<column name="add_ln209_reg_884">64, 0, 64, 0</column>
+<column name="add_ln700_15_reg_944">64, 0, 64, 0</column>
+<column name="add_ln700_reg_879">65, 0, 65, 0</column>
+<column name="ap_CS_fsm">19, 0, 19, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter4">1, 0, 1, 0</column>
+<column name="cross_mul_digits_dat_6_reg_923">64, 0, 64, 0</column>
+<column name="exitcond_i_reg_899">1, 0, 1, 0</column>
+<column name="grp_CAT_I_I_I_O_fu_454_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_karastuba_mul_templa_4_fu_432_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_karastuba_mul_templa_4_fu_443_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_karastuba_mul_templa_fu_423_ap_start_reg">1, 0, 1, 0</column>
+<column name="i1_0_reg_342">6, 0, 6, 0</column>
+<column name="i2_0_reg_354">6, 0, 6, 0</column>
+<column name="i3_0_reg_365">6, 0, 6, 0</column>
+<column name="i_0_i1_reg_412">7, 0, 7, 0</column>
+<column name="i_0_i_reg_389">7, 0, 7, 0</column>
+<column name="i_0_reg_331">6, 0, 6, 0</column>
+<column name="i_16_reg_786">6, 0, 6, 0</column>
+<column name="i_17_reg_799">6, 0, 6, 0</column>
+<column name="i_18_reg_818">6, 0, 6, 0</column>
+<column name="i_reg_767">6, 0, 6, 0</column>
+<column name="icmp_ln51_reg_843">1, 0, 1, 0</column>
+<column name="op2_assign_reg_400">1, 0, 1, 0</column>
+<column name="p_088_0_i_reg_377">2, 0, 2, 0</column>
+<column name="reg_464">64, 0, 64, 0</column>
+<column name="reg_472">64, 0, 64, 0</column>
+<column name="tmp_V_10_reg_933">65, 0, 65, 0</column>
+<column name="tmp_reg_939">1, 0, 1, 0</column>
+<column name="trunc_ln_reg_889">2, 0, 2, 0</column>
+<column name="z0_digits_data_V_loa_reg_867">64, 0, 64, 0</column>
+<column name="z0_digits_data_V_loa_reg_867_pp0_iter2_reg">64, 0, 64, 0</column>
+<column name="z0_tmp_bits_reg_828">4, 0, 4, 0</column>
+<column name="z1_tmp_bits_reg_949">7, 0, 7, 0</column>
+<column name="z2_digits_data_V_loa_reg_873">64, 0, 64, 0</column>
+<column name="z2_digits_data_V_loa_reg_873_pp0_iter2_reg">64, 0, 64, 0</column>
+<column name="z2_tmp_bits_reg_833">4, 0, 4, 0</column>
+<column name="zext_ln246_reg_772">6, 0, 64, 58</column>
+<column name="zext_ln248_reg_804">6, 0, 64, 58</column>
+<column name="zext_ln257_reg_838">4, 0, 5, 1</column>
+<column name="zext_ln56_reg_852">7, 0, 64, 57</column>
+<column name="zext_ln61_9_reg_894">6, 0, 7, 1</column>
+<column name="zext_ln77_reg_908">7, 0, 64, 57</column>
+<column name="exitcond_i_reg_899">64, 32, 1, 0</column>
+<column name="icmp_ln51_reg_843">64, 32, 1, 0</column>
+<column name="zext_ln56_reg_852">64, 32, 64, 57</column>
+<column name="zext_ln77_reg_908">64, 32, 64, 57</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, karastuba_mul_templa.3, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, karastuba_mul_templa.3, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, karastuba_mul_templa.3, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, karastuba_mul_templa.3, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, karastuba_mul_templa.3, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, karastuba_mul_templa.3, return value</column>
+<column name="lhs_digits_data_V_address0">out, 6, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_ce0">out, 1, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_q0">in, 64, ap_memory, lhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_address0">out, 6, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_ce0">out, 1, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_q0">in, 64, ap_memory, rhs_digits_data_V, array</column>
+<column name="res_digits_data_V_address0">out, 7, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_ce0">out, 1, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_we0">out, 1, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_d0">out, 64, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_q0">in, 64, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_address1">out, 7, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_ce1">out, 1, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_we1">out, 1, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_d1">out, 64, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_q1">in, 64, ap_memory, res_digits_data_V, array</column>
+</table>
+</item>
+</section>
+</profile>
