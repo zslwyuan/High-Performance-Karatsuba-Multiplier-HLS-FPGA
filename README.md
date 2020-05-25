@@ -20,7 +20,7 @@ which can make full use of parallelism of Karatsuba multiplier
 
 each loop are pipelined.
 
-Later version will provides dataflow processing.
+Later version will provide dataflow processing.
 
 Detailed comments can be found in the source code.
 
