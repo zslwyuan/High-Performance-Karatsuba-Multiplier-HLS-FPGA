@@ -26,7 +26,7 @@ which can make full use of parallelism of Karatsuba multiplier
 
 each loop are pipelined.
 
-One of the versions provides [dataflow processing]((https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/tree/master/HLS_Implementation_dataflow)) to increase throughput.
+One of the versions provides [dataflow processing](https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/tree/master/HLS_Implementation_dataflow) to increase throughput.
 However, although the design is validated by me on VivadoHLS 2019.2, dataflow implementation in VivadoHLS is not very reliable currently. If you use another version of VivadoHLS, please run
 C/RTL co-simulation before deploying the design in your project.
 
