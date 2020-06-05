@@ -8,7 +8,7 @@ The utilization of this open source project should follow the [GPL-3.0 License](
 
 
 
-When handling 4096x4096=>8192, the performance and resource cost are shown below (left is for non-dataflow design; right is for dataflow design):
+When handling 4096x4096=>8192, the performance and resource cost are shown below (left is for non-dataflow design; right is for dataflow design, throughput increased by 27.0%):
 
 <img src="https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/blob/master/image/report.png" width="400"> <img src="https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/blob/master/image/report_dataflow.png" width="400"> 
 
