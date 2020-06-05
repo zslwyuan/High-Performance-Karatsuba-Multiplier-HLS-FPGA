@@ -1,0 +1,200 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'karastuba_mul_templa_5'" level="0">
+<item name = "Date">Fri Jun  5 20:27:26 2020
+</item>
+<item name = "Version">2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)</item>
+<item name = "Project">bigtest</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexu</item>
+<item name = "Target device">xcvu095-ffva2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.00 ns, 2.616 ns, 0.38 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">734, 856, 2.202 us, 2.568 us, 496, 550, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="karastuba_mul_MUL_st_2_U0">karastuba_mul_MUL_st_2, 495, 549, 1.485 us, 1.647 us, 495, 549, none</column>
+<column name="karastuba_mul_ADD_SU_2_U0">karastuba_mul_ADD_SU_2, 238, 306, 0.714 us, 0.918 us, 238, 306, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 46, -</column>
+<column name="FIFO">0, -, 25, 220, -</column>
+<column name="Instance">12, 12, 9482, 9498, 0</column>
+<column name="Memory">10, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 90, -</column>
+<column name="Register">-, -, 10, -, -</column>
+<specialColumn name="Available">3456, 768, 1075200, 537600, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 1, ~0, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="karastuba_mul_ADD_SU_2_U0">karastuba_mul_ADD_SU_2, 6, 3, 2329, 2786, 0</column>
+<column name="karastuba_mul_MUL_st_2_U0">karastuba_mul_MUL_st_2, 6, 9, 7153, 6712, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="z0_digits_data_V_U">karastuba_mul_temtde, 2, 0, 0, 0, 16, 64, 2, 2048</column>
+<column name="z2_digits_data_V_U">karastuba_mul_temtde, 2, 0, 0, 0, 16, 64, 2, 2048</column>
+<column name="cross_mul_digits_dat_U">karastuba_mul_temtde, 2, 0, 0, 0, 16, 64, 2, 2048</column>
+<column name="inter_lhs_digits_dat_U">karastuba_mul_temtde, 2, 0, 0, 0, 16, 64, 2, 2048</column>
+<column name="inter_rhs_digits_dat_U">karastuba_mul_temtde, 2, 0, 0, 0, 16, 64, 2, 2048</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="cross_mul_tmp_bits_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="inter_lhs_tmp_bits_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="inter_rhs_tmp_bits_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="z0_tmp_bits_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="z2_tmp_bits_U">0, 5, 0, -, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_channel_done_cross_mul_digits_dat">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_cross_mul_tmp_bits">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_inter_lhs_digits_dat">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_inter_lhs_tmp_bits">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_inter_rhs_digits_dat">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_inter_rhs_tmp_bits">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_z0_digits_data_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_z0_tmp_bits">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_z2_digits_data_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_z2_tmp_bits">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="karastuba_mul_ADD_SU_2_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="karastuba_mul_MUL_st_2_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_cross_mul_digits_dat">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_cross_mul_tmp_bits">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_inter_lhs_digits_dat">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_inter_lhs_tmp_bits">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_inter_rhs_digits_dat">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_inter_rhs_tmp_bits">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_z0_digits_data_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_z0_tmp_bits">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_z2_digits_data_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_z2_tmp_bits">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_channel_write_cross_mul_digits_dat">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_cross_mul_tmp_bits">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_inter_lhs_digits_dat">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_inter_lhs_tmp_bits">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_inter_rhs_digits_dat">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_inter_rhs_tmp_bits">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_z0_digits_data_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_z0_tmp_bits">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_z2_digits_data_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_z2_tmp_bits">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_channel_write_cross_mul_digits_dat">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_cross_mul_tmp_bits">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_inter_lhs_digits_dat">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_inter_lhs_tmp_bits">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_inter_rhs_digits_dat">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_inter_rhs_tmp_bits">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_z0_digits_data_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_z0_tmp_bits">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_z2_digits_data_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_z2_tmp_bits">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, karastuba_mul_templa.5, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, karastuba_mul_templa.5, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, karastuba_mul_templa.5, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, karastuba_mul_templa.5, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, karastuba_mul_templa.5, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, karastuba_mul_templa.5, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, karastuba_mul_templa.5, return value</column>
+<column name="lhs_tmp_bits_read">in, 2, ap_none, lhs_tmp_bits_read, scalar</column>
+<column name="lhs_tmp_bits_read_ap_vld">in, 1, ap_none, lhs_tmp_bits_read, scalar</column>
+<column name="lhs_digits_data_V_address0">out, 4, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_ce0">out, 1, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_d0">out, 64, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_q0">in, 64, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_we0">out, 1, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_address1">out, 4, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_ce1">out, 1, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_d1">out, 64, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_q1">in, 64, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_we1">out, 1, ap_memory, lhs_digits_data_V, array</column>
+<column name="rhs_tmp_bits_read">in, 2, ap_none, rhs_tmp_bits_read, scalar</column>
+<column name="rhs_tmp_bits_read_ap_vld">in, 1, ap_none, rhs_tmp_bits_read, scalar</column>
+<column name="rhs_digits_data_V_address0">out, 4, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_ce0">out, 1, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_d0">out, 64, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_q0">in, 64, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_we0">out, 1, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_address1">out, 4, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_ce1">out, 1, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_d1">out, 64, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_q1">in, 64, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_we1">out, 1, ap_memory, rhs_digits_data_V, array</column>
+<column name="res_tmp_bits">out, 32, ap_vld, res_tmp_bits, pointer</column>
+<column name="res_tmp_bits_ap_vld">out, 1, ap_vld, res_tmp_bits, pointer</column>
+<column name="res_digits_data_V_address0">out, 5, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_ce0">out, 1, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_d0">out, 64, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_q0">in, 64, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_we0">out, 1, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_address1">out, 5, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_ce1">out, 1, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_d1">out, 64, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_q1">in, 64, ap_memory, res_digits_data_V, array</column>
+<column name="res_digits_data_V_we1">out, 1, ap_memory, res_digits_data_V, array</column>
+</table>
+</item>
+</section>
+</profile>

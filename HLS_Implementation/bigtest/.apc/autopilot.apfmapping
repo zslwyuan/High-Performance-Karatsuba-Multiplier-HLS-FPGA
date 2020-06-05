@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="BigIntegerHLS.h" path="/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/BigIntegerHLS.h"/>
+    <originFiles name="multest.cc" path="/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"/>
+  </source>
+  <testbench>
+    <originFiles name="BigIntegerHLS.h" path="/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/BigIntegerHLS.h"/>
+    <originFiles name="multest.cc" path="/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

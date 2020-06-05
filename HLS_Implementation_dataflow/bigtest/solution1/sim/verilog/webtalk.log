@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Fri Jun  5 20:26:08 2020
+# Process ID: 13275
+# Current directory: /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation_dataflow/bigtest/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation_dataflow/bigtest/solution1/sim/verilog/xsim.dir/karastuba_mul/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation_dataflow/bigtest/solution1/sim/verilog/webtalk.log
+# Journal file: /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation_dataflow/bigtest/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation_dataflow/bigtest/solution1/sim/verilog/xsim.dir/karastuba_mul/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:06 . Memory (MB): peak = 386.309 ; gain = 0.000 ; free physical = 19362 ; free virtual = 27105
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun  5 20:26:14 2020...

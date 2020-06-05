@@ -1,0 +1,147 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'karastuba_mul'" level="0">
+<item name = "Date">Fri Jun  5 20:27:41 2020
+</item>
+<item name = "Version">2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)</item>
+<item name = "Project">bigtest</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexu</item>
+<item name = "Target device">xcvu095-ffva2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.00 ns, 2.616 ns, 0.38 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3032, 3286, 9.096 us, 9.858 us, 1914, 2168, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="karastuba_mul_templa_3_U0">karastuba_mul_templa_3, 2769, 3023, 8.307 us, 9.069 us, 1914, 2168, dataflow</column>
+<column name="Loop_1_proc_U0">Loop_1_proc, 130, 130, 0.390 us, 0.390 us, 130, 130, none</column>
+<column name="Loop_2_proc_U0">Loop_2_proc, 131, 131, 0.393 us, 0.393 us, 131, 131, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 14, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">366, 117, 99684, 107108, 0</column>
+<column name="Memory">6, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 18, -</column>
+<column name="Register">-, -, 2, -, -</column>
+<specialColumn name="Available">3456, 768, 1075200, 537600, 0</specialColumn>
+<specialColumn name="Utilization (%)">10, 15, 9, 19, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="Loop_1_proc_U0">Loop_1_proc, 0, 0, 87, 128, 0</column>
+<column name="Loop_2_proc_U0">Loop_2_proc, 0, 0, 17, 106, 0</column>
+<column name="karastuba_mul_AXILiteS_s_axi_U">karastuba_mul_AXILiteS_s_axi, 0, 0, 36, 40, 0</column>
+<column name="karastuba_mul_templa_3_U0">karastuba_mul_templa_3, 366, 117, 99544, 106834, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="lhs_digits_data_V_U">karastuba_mul_lhsbek, 2, 0, 0, 0, 64, 64, 2, 8192</column>
+<column name="rhs_digits_data_V_U">karastuba_mul_lhsbek, 2, 0, 0, 0, 64, 64, 2, 8192</column>
+<column name="res_digits_data_V_U">karastuba_mul_resbgk, 2, 0, 0, 0, 128, 64, 2, 16384</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="Loop_1_proc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lhs_digits_data_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_rhs_digits_data_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="karastuba_mul_templa_3_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lhs_digits_data_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_rhs_digits_data_V">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_channel_write_lhs_digits_data_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_rhs_digits_data_V">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_channel_write_lhs_digits_data_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_rhs_digits_data_V">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 4, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 4, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, return void</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, karastuba_mul, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, karastuba_mul, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, karastuba_mul, return value</column>
+<column name="hs_input_V_TDATA">in, 64, axis, hs_input_V, pointer</column>
+<column name="hs_input_V_TVALID">in, 1, axis, hs_input_V, pointer</column>
+<column name="hs_input_V_TREADY">out, 1, axis, hs_input_V, pointer</column>
+<column name="res_output_V_TDATA">out, 64, axis, res_output_V, pointer</column>
+<column name="res_output_V_TVALID">out, 1, axis, res_output_V, pointer</column>
+<column name="res_output_V_TREADY">in, 1, axis, res_output_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

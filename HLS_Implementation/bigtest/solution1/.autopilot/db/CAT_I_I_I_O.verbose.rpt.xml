@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'CAT_I_I_I_O'" level="0">
-<item name = "Date">Tue May 26 00:45:08 2020
+<item name = "Date">Fri Jun  5 20:14:30 2020
 </item>
-<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Version">2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)</item>
 <item name = "Project">bigtest</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">virtexu</item>
@@ -97,10 +97,10 @@
 <column name="j_fu_266_p2">+, 0, 0, 15, 8, 1</column>
 <column name="tmp_V_17_fu_442_p2">+, 0, 0, 73, 66, 66</column>
 <column name="tmp_V_fu_341_p2">+, 0, 0, 73, 66, 66</column>
-<column name="icmp_ln162_fu_255_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln164_fu_272_p2">icmp, 0, 0, 11, 7, 8</column>
-<column name="icmp_ln169_fu_289_p2">icmp, 0, 0, 11, 7, 8</column>
-<column name="icmp_ln185_fu_390_p2">icmp, 0, 0, 11, 7, 8</column>
+<column name="icmp_ln167_fu_255_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln169_fu_272_p2">icmp, 0, 0, 11, 7, 8</column>
+<column name="icmp_ln174_fu_289_p2">icmp, 0, 0, 11, 7, 8</column>
+<column name="icmp_ln190_fu_390_p2">icmp, 0, 0, 11, 7, 8</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
@@ -154,8 +154,8 @@
 <column name="i3_0_reg_235">7, 0, 7, 0</column>
 <column name="i_0_reg_167">7, 0, 7, 0</column>
 <column name="i_reg_486">7, 0, 7, 0</column>
-<column name="icmp_ln169_reg_506">1, 0, 1, 0</column>
-<column name="icmp_ln185_reg_567">1, 0, 1, 0</column>
+<column name="icmp_ln174_reg_506">1, 0, 1, 0</column>
+<column name="icmp_ln190_reg_567">1, 0, 1, 0</column>
 <column name="j1_0_reg_190">7, 0, 7, 0</column>
 <column name="j1_1_reg_224">8, 0, 8, 0</column>
 <column name="j_0_reg_156">8, 0, 8, 0</column>
@@ -164,7 +164,7 @@
 <column name="reg_246">64, 0, 64, 0</column>
 <column name="reg_246_pp0_iter2_reg">64, 0, 64, 0</column>
 <column name="reg_246_pp1_iter2_reg">64, 0, 64, 0</column>
-<column name="sext_ln158_reg_469">32, 0, 32, 0</column>
+<column name="sext_ln162_reg_469">32, 0, 32, 0</column>
 <column name="trunc_ln858_s_reg_608">2, 0, 2, 0</column>
 <column name="trunc_ln_reg_547">2, 0, 2, 0</column>
 <column name="w_digits_data_V_addr_7_reg_520">7, 0, 7, 0</column>
@@ -174,9 +174,9 @@
 <column name="x1_digits_data_V_loa_reg_531_pp0_iter2_reg">64, 0, 64, 0</column>
 <column name="x2_digits_data_V_loa_reg_592">64, 0, 64, 0</column>
 <column name="x2_digits_data_V_loa_reg_592_pp1_iter2_reg">64, 0, 64, 0</column>
-<column name="zext_ln164_reg_491">7, 0, 64, 57</column>
-<column name="icmp_ln169_reg_506">64, 32, 1, 0</column>
-<column name="icmp_ln185_reg_567">64, 32, 1, 0</column>
+<column name="zext_ln169_reg_491">7, 0, 64, 57</column>
+<column name="icmp_ln174_reg_506">64, 32, 1, 0</column>
+<column name="icmp_ln190_reg_567">64, 32, 1, 0</column>
 <column name="w_digits_data_V_addr_7_reg_520">64, 32, 7, 0</column>
 <column name="w_digits_data_V_addr_8_reg_581">64, 32, 7, 0</column>
 </table>

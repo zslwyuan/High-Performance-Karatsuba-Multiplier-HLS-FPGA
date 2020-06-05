@@ -1,0 +1,143 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Loop_1_proc'" level="0">
+<item name = "Date">Fri Jun  5 20:27:23 2020
+</item>
+<item name = "Version">2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)</item>
+<item name = "Project">bigtest</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexu</item>
+<item name = "Target device">xcvu095-ffva2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.00 ns, 1.768 ns, 0.38 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">130, 130, 0.390 us, 0.390 us, 130, 130, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">128, 128, 2, 1, 1, 128, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 65, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 63, -</column>
+<column name="Register">-, -, 87, -, -</column>
+<specialColumn name="Available">3456, 768, 1075200, 537600, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln419_fu_126_p2">+, 0, 0, 15, 8, 8</column>
+<column name="i_fu_104_p2">+, 0, 0, 15, 8, 1</column>
+<column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op16_read_state2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op18_read_state2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln412_fu_98_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln416_fu_120_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state2_pp0_stage0_iter0">or, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">21, 4, 1, 4</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">15, 3, 1, 3</column>
+<column name="hs_input_V_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="i_0_i_reg_87">9, 2, 8, 16</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln419_reg_154">8, 0, 8, 0</column>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="hs_input_V_read_1_reg_159">64, 0, 64, 0</column>
+<column name="i_0_i_reg_87">8, 0, 8, 0</column>
+<column name="icmp_ln416_reg_150">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Loop_1_proc, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Loop_1_proc, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Loop_1_proc, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Loop_1_proc, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, Loop_1_proc, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Loop_1_proc, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Loop_1_proc, return value</column>
+<column name="hs_input_V_TDATA">in, 64, axis, hs_input_V, pointer</column>
+<column name="hs_input_V_TVALID">in, 1, axis, hs_input_V, pointer</column>
+<column name="hs_input_V_TREADY">out, 1, axis, hs_input_V, pointer</column>
+<column name="lhs_digits_data_V_address0">out, 6, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_ce0">out, 1, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_we0">out, 1, ap_memory, lhs_digits_data_V, array</column>
+<column name="lhs_digits_data_V_d0">out, 64, ap_memory, lhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_address0">out, 6, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_ce0">out, 1, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_we0">out, 1, ap_memory, rhs_digits_data_V, array</column>
+<column name="rhs_digits_data_V_d0">out, 64, ap_memory, rhs_digits_data_V, array</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'mul_I_O' (Loop: Loop 2.1): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between 'store' operation ('w_digits_data_V_addr_1_write_ln116', multest.cc:116) of variable 'add_ln209_1', multest.cc:116 on array 'w_digits_data_V' and 'load' operation ('w_digits_data_V_load_1', multest.cc:115) on array 'w_digits_data_V'." projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:09.465+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'mul_I_O' (Loop: Loop 2.1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between 'store' operation ('w_digits_data_V_addr_1_write_ln116', multest.cc:116) of variable 'add_ln209_1', multest.cc:116 on array 'w_digits_data_V' and 'load' operation ('w_digits_data_V_load_1', multest.cc:115) on array 'w_digits_data_V'." projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:09.462+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'mul_I_O' (Loop: Loop 2.1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between 'add' operation ('k.V', multest.cc:115) and 'add' operation ('add_ln700', multest.cc:115)." projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:09.460+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'karastuba_mul_templa.3' to 'karastuba_mul_templa_3'." projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:09.361+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'karastuba_mul_templa.4' to 'karastuba_mul_templa_4'." projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:09.359+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'CAT_I_I_I_O.1' to 'CAT_I_I_I_O_1'." projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:09.353+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'karastuba_mul_templa.1' to 'karastuba_mul_templa_1'." projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:09.351+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'karastuba_mul_templa.5' to 'karastuba_mul_templa_5'." projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:09.350+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'CAT_I_I_I_O.2' to 'CAT_I_I_I_O_2'." projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:09.340+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'karastuba_mul_templa.2' to 'karastuba_mul_templa_2'." projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:09.338+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'CAT_I_I_I_O&lt;Bignum&lt;16, 64>, Bignum&lt;16, 64>, Bignum&lt;16, 64>, Bignum&lt;32, 64> >' to 'CAT_I_I_I_O.2' (multest.cc:167:33)" projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:08.768+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'CAT_I_I_I_O&lt;Bignum&lt;32, 64>, Bignum&lt;32, 64>, Bignum&lt;32, 64>, Bignum&lt;64, 64> >' to 'CAT_I_I_I_O.1' (multest.cc:167:33)" projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:08.403+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'CAT_I_I_I_O&lt;Bignum&lt;64, 64>, Bignum&lt;64, 64>, Bignum&lt;64, 64>, Bignum&lt;128, 64> >' to 'CAT_I_I_I_O' (multest.cc:167:33)" projectName="bigtest" solutionName="solution1" date="2020-06-05T20:14:08.401+0800" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

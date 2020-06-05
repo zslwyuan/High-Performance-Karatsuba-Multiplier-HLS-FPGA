@@ -11,14 +11,14 @@
 
 <trans id="85" from="2" to="3">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln317" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln326" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="86" from="2" to="2">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln317" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln326" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -31,14 +31,14 @@
 
 <trans id="89" from="4" to="6">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="90" from="4" to="5">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -63,14 +63,14 @@
 
 <trans id="94" from="8" to="11">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="95" from="8" to="9">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -196,7 +196,7 @@
 :6  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln308"/></StgValue>
+<StgValue><ssdm name="specinterface_ln317"/></StgValue>
 </operation>
 
 <operation id="19" st_id="1" stage="1" lat="1">
@@ -211,7 +211,7 @@
 :7  call void (...)* @_ssdm_op_SpecInterface(i64* %hs_input_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 1024, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln309"/></StgValue>
+<StgValue><ssdm name="specinterface_ln318"/></StgValue>
 </operation>
 
 <operation id="20" st_id="1" stage="1" lat="1">
@@ -226,7 +226,7 @@
 :8  call void (...)* @_ssdm_op_SpecInterface(i64* %res_output_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 1024, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln310"/></StgValue>
+<StgValue><ssdm name="specinterface_ln319"/></StgValue>
 </operation>
 
 <operation id="21" st_id="1" stage="1" lat="1">
@@ -241,7 +241,7 @@
 :9  br label %1
 
 ]]></Node>
-<StgValue><ssdm name="br_ln317"/></StgValue>
+<StgValue><ssdm name="br_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -271,10 +271,10 @@
 
 <Node id="15" bw="1" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-:1  %icmp_ln317 = icmp eq i7 %i_0, -64
+:1  %icmp_ln326 = icmp eq i7 %i_0, -64
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln317"/></StgValue>
+<StgValue><ssdm name="icmp_ln326"/></StgValue>
 </operation>
 
 <operation id="24" st_id="2" stage="1" lat="1">
@@ -316,17 +316,17 @@
 
 <Node id="18" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:4  br i1 %icmp_ln317, label %.preheader.preheader, label %hls_label_0
+:4  br i1 %icmp_ln326, label %.preheader.preheader, label %hls_label_0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln317"/></StgValue>
+<StgValue><ssdm name="br_ln326"/></StgValue>
 </operation>
 
 <operation id="27" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln317" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln326" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -342,7 +342,7 @@ hls_label_0:0  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_st
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln317" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln326" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -351,30 +351,30 @@ hls_label_0:0  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_st
 hls_label_0:1  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specpipeline_ln319"/></StgValue>
+<StgValue><ssdm name="specpipeline_ln328"/></StgValue>
 </operation>
 
 <operation id="29" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln317" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln326" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="22" bw="64" op_0_bw="7">
 <![CDATA[
-hls_label_0:2  %zext_ln320 = zext i7 %i_0 to i64
+hls_label_0:2  %zext_ln329 = zext i7 %i_0 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln320"/></StgValue>
+<StgValue><ssdm name="zext_ln329"/></StgValue>
 </operation>
 
 <operation id="30" st_id="2" stage="1" lat="1">
 <core>AXI4Stream</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln317" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln326" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -390,13 +390,13 @@ hls_label_0:3  %hs_input_V_read = call i64 @_ssdm_op_Read.axis.volatile.i64P(i64
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln317" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln326" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="24" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_0:4  %lhs_digits_data_V_ad = getelementptr [64 x i64]* %lhs_digits_data_V, i64 0, i64 %zext_ln320
+hls_label_0:4  %lhs_digits_data_V_ad = getelementptr [64 x i64]* %lhs_digits_data_V, i64 0, i64 %zext_ln329
 
 ]]></Node>
 <StgValue><ssdm name="lhs_digits_data_V_ad"/></StgValue>
@@ -406,7 +406,7 @@ hls_label_0:4  %lhs_digits_data_V_ad = getelementptr [64 x i64]* %lhs_digits_dat
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln317" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln326" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -415,14 +415,14 @@ hls_label_0:4  %lhs_digits_data_V_ad = getelementptr [64 x i64]* %lhs_digits_dat
 hls_label_0:5  store i64 %hs_input_V_read, i64* %lhs_digits_data_V_ad, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln320"/></StgValue>
+<StgValue><ssdm name="store_ln329"/></StgValue>
 </operation>
 
 <operation id="33" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln317" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln326" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -438,7 +438,7 @@ hls_label_0:6  %empty_55 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln317" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln326" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -447,7 +447,7 @@ hls_label_0:6  %empty_55 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p
 hls_label_0:7  br label %1
 
 ]]></Node>
-<StgValue><ssdm name="br_ln317"/></StgValue>
+<StgValue><ssdm name="br_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -465,7 +465,7 @@ hls_label_0:7  br label %1
 .preheader.preheader:0  br label %.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln322"/></StgValue>
+<StgValue><ssdm name="br_ln331"/></StgValue>
 </operation>
 </state>
 
@@ -495,10 +495,10 @@ hls_label_0:7  br label %1
 
 <Node id="32" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-.preheader:1  %icmp_ln322 = icmp eq i8 %i1_0, -128
+.preheader:1  %icmp_ln331 = icmp eq i8 %i1_0, -128
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln322"/></StgValue>
+<StgValue><ssdm name="icmp_ln331"/></StgValue>
 </operation>
 
 <operation id="38" st_id="4" stage="1" lat="1">
@@ -525,33 +525,33 @@ hls_label_0:7  br label %1
 
 <Node id="34" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader:3  br i1 %icmp_ln322, label %2, label %hls_label_1
+.preheader:3  br i1 %icmp_ln331, label %2, label %hls_label_1
 
 ]]></Node>
-<StgValue><ssdm name="br_ln322"/></StgValue>
+<StgValue><ssdm name="br_ln331"/></StgValue>
 </operation>
 
 <operation id="40" st_id="4" stage="1" lat="1">
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="38" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-hls_label_1:2  %add_ln325 = add i8 %i1_0, -64
+hls_label_1:2  %add_ln334 = add i8 %i1_0, -64
 
 ]]></Node>
-<StgValue><ssdm name="add_ln325"/></StgValue>
+<StgValue><ssdm name="add_ln334"/></StgValue>
 </operation>
 
 <operation id="41" st_id="4" stage="1" lat="1">
 <core>AXI4Stream</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -567,7 +567,7 @@ hls_label_1:4  %hs_input_V_read_1 = call i64 @_ssdm_op_Read.axis.volatile.i64P(i
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -586,7 +586,7 @@ hls_label_1:8  %i_24 = add i8 %i1_0, 1
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -602,7 +602,7 @@ hls_label_1:0  %tmp_5 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -611,36 +611,36 @@ hls_label_1:0  %tmp_5 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_
 hls_label_1:1  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specpipeline_ln324"/></StgValue>
+<StgValue><ssdm name="specpipeline_ln333"/></StgValue>
 </operation>
 
 <operation id="45" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="39" bw="64" op_0_bw="8">
 <![CDATA[
-hls_label_1:3  %zext_ln325 = zext i8 %add_ln325 to i64
+hls_label_1:3  %zext_ln334 = zext i8 %add_ln334 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln325"/></StgValue>
+<StgValue><ssdm name="zext_ln334"/></StgValue>
 </operation>
 
 <operation id="46" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="41" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_1:5  %rhs_digits_data_V_ad = getelementptr [64 x i64]* %rhs_digits_data_V, i64 0, i64 %zext_ln325
+hls_label_1:5  %rhs_digits_data_V_ad = getelementptr [64 x i64]* %rhs_digits_data_V, i64 0, i64 %zext_ln334
 
 ]]></Node>
 <StgValue><ssdm name="rhs_digits_data_V_ad"/></StgValue>
@@ -650,7 +650,7 @@ hls_label_1:5  %rhs_digits_data_V_ad = getelementptr [64 x i64]* %rhs_digits_dat
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -659,14 +659,14 @@ hls_label_1:5  %rhs_digits_data_V_ad = getelementptr [64 x i64]* %rhs_digits_dat
 hls_label_1:6  store i64 %hs_input_V_read_1, i64* %rhs_digits_data_V_ad, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln325"/></StgValue>
+<StgValue><ssdm name="store_ln334"/></StgValue>
 </operation>
 
 <operation id="48" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -682,7 +682,7 @@ hls_label_1:7  %empty_57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln322" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -691,7 +691,7 @@ hls_label_1:7  %empty_57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p
 hls_label_1:9  br label %.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln322"/></StgValue>
+<StgValue><ssdm name="br_ln331"/></StgValue>
 </operation>
 </state>
 
@@ -709,7 +709,7 @@ hls_label_1:9  br label %.preheader
 :0  call fastcc void @karastuba_mul_templa.3([64 x i64]* %lhs_digits_data_V, [64 x i64]* %rhs_digits_data_V, [128 x i64]* %res_digits_data_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln329"/></StgValue>
+<StgValue><ssdm name="call_ln338"/></StgValue>
 </operation>
 </state>
 
@@ -727,7 +727,7 @@ hls_label_1:9  br label %.preheader
 :0  call fastcc void @karastuba_mul_templa.3([64 x i64]* %lhs_digits_data_V, [64 x i64]* %rhs_digits_data_V, [128 x i64]* %res_digits_data_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln329"/></StgValue>
+<StgValue><ssdm name="call_ln338"/></StgValue>
 </operation>
 
 <operation id="52" st_id="7" stage="1" lat="1">
@@ -742,7 +742,7 @@ hls_label_1:9  br label %.preheader
 :1  br label %3
 
 ]]></Node>
-<StgValue><ssdm name="br_ln331"/></StgValue>
+<StgValue><ssdm name="br_ln340"/></StgValue>
 </operation>
 </state>
 
@@ -772,10 +772,10 @@ hls_label_1:9  br label %.preheader
 
 <Node id="51" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-:1  %icmp_ln331 = icmp eq i8 %i2_0, -128
+:1  %icmp_ln340 = icmp eq i8 %i2_0, -128
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln331"/></StgValue>
+<StgValue><ssdm name="icmp_ln340"/></StgValue>
 </operation>
 
 <operation id="55" st_id="8" stage="1" lat="1">
@@ -817,39 +817,39 @@ hls_label_1:9  br label %.preheader
 
 <Node id="54" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:4  br i1 %icmp_ln331, label %4, label %hls_label_2
+:4  br i1 %icmp_ln340, label %4, label %hls_label_2
 
 ]]></Node>
-<StgValue><ssdm name="br_ln331"/></StgValue>
+<StgValue><ssdm name="br_ln340"/></StgValue>
 </operation>
 
 <operation id="58" st_id="8" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="58" bw="64" op_0_bw="8">
 <![CDATA[
-hls_label_2:2  %zext_ln334 = zext i8 %i2_0 to i64
+hls_label_2:2  %zext_ln343 = zext i8 %i2_0 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln334"/></StgValue>
+<StgValue><ssdm name="zext_ln343"/></StgValue>
 </operation>
 
 <operation id="59" st_id="8" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="59" bw="7" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:3  %res_digits_data_V_ad = getelementptr [128 x i64]* %res_digits_data_V, i64 0, i64 %zext_ln334
+hls_label_2:3  %res_digits_data_V_ad = getelementptr [128 x i64]* %res_digits_data_V, i64 0, i64 %zext_ln343
 
 ]]></Node>
 <StgValue><ssdm name="res_digits_data_V_ad"/></StgValue>
@@ -859,7 +859,7 @@ hls_label_2:3  %res_digits_data_V_ad = getelementptr [128 x i64]* %res_digits_da
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -878,7 +878,7 @@ hls_label_2:4  %res_digits_data_V_lo = load i64* %res_digits_data_V_ad, align 8
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -894,7 +894,7 @@ hls_label_2:4  %res_digits_data_V_lo = load i64* %res_digits_data_V_ad, align 8
 <core>AXI4Stream</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -903,7 +903,7 @@ hls_label_2:4  %res_digits_data_V_lo = load i64* %res_digits_data_V_ad, align 8
 hls_label_2:5  call void @_ssdm_op_Write.axis.volatile.i64P(i64* %res_output_V, i64 %res_digits_data_V_lo)
 
 ]]></Node>
-<StgValue><ssdm name="write_ln334"/></StgValue>
+<StgValue><ssdm name="write_ln343"/></StgValue>
 </operation>
 </state>
 
@@ -913,7 +913,7 @@ hls_label_2:5  call void @_ssdm_op_Write.axis.volatile.i64P(i64* %res_output_V, 
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -929,7 +929,7 @@ hls_label_2:0  %tmp_6 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -938,14 +938,14 @@ hls_label_2:0  %tmp_6 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_
 hls_label_2:1  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specpipeline_ln333"/></StgValue>
+<StgValue><ssdm name="specpipeline_ln342"/></StgValue>
 </operation>
 
 <operation id="65" st_id="10" stage="1" lat="2">
 <core>AXI4Stream</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -954,14 +954,14 @@ hls_label_2:1  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32
 hls_label_2:5  call void @_ssdm_op_Write.axis.volatile.i64P(i64* %res_output_V, i64 %res_digits_data_V_lo)
 
 ]]></Node>
-<StgValue><ssdm name="write_ln334"/></StgValue>
+<StgValue><ssdm name="write_ln343"/></StgValue>
 </operation>
 
 <operation id="66" st_id="10" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -977,7 +977,7 @@ hls_label_2:6  %empty_59 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln331" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln340" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -986,7 +986,7 @@ hls_label_2:6  %empty_59 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p
 hls_label_2:7  br label %3
 
 ]]></Node>
-<StgValue><ssdm name="br_ln331"/></StgValue>
+<StgValue><ssdm name="br_ln340"/></StgValue>
 </operation>
 </state>
 
@@ -1004,7 +1004,7 @@ hls_label_2:7  br label %3
 :0  ret void
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln337"/></StgValue>
+<StgValue><ssdm name="ret_ln346"/></StgValue>
 </operation>
 </state>
 </state_list>

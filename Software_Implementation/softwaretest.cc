@@ -39,6 +39,7 @@ void little_end_to_array(mpz_t a, unsigned int output[1024])
 template <typename In_T, typename Out_T>
 void add_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
     for (int j = u->N_ele; j < w->N_ele; ++j)  w->digits.data[j] = (0);
     bool needUp = false;
     WUnsignedDigit tmp = 0;
@@ -60,6 +61,7 @@ assert(false);
 template <typename In_T, typename Out_T>
 void sub_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
     // WARNING: WE ASSUME U>V
     int reset_start = u->N_ele < w->N_ele? u->N_ele : w->N_ele;
     for (int j = reset_start; j < w->N_ele; ++j)  w->digits.data[j] = (0);
@@ -91,6 +93,7 @@ void sub_I_O(const In_T *u, const In_T *v, Out_T *w)
 template <typename In_T, typename Out_T>
 void mul_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
     for (int j = 0; j < w->N_ele; ++j)  w->digits.data[j] = (0);
     int i,j;
     WUnsignedDigit k = 0;
@@ -151,6 +154,7 @@ void mul_I_O(const In_T *u, const In_T *v, Out_T *w)
 template <typename In_T0, typename In_T1, typename In_T2, typename Out_T>
 void CAT_I_I_I_O(const In_T0 *x0, const In_T1 *x1, const In_T2 *x2, Out_T *w)
 {
+    w->tmp_bits = 0;
 
     // WARNING: WE ASSUME U>V
     for (int j = x0->N_ele; j < w->N_ele; ++j)  w->digits.data[j] = (0);
@@ -219,11 +223,143 @@ void karastuba_mul_template_z1(
 {
 #pragma HLS inline off
     Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> add0;
-    add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(lhs0_tmp,lhs1_tmp, &add0);
     Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> add1;
+
+    add0.tmp_bits=add1.tmp_bits=0;
+
+    add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(lhs0_tmp,lhs1_tmp, &add0);    
     add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(rhs0_tmp,rhs1_tmp,&add1);
+
     karastuba_mul_template<MAX_N_ele_input / 2,BITS_PER_DIGIT>(&add0, &add1, cross_mul);
     return;
+}
+
+
+// MUL stage in dataflow 
+template <int MAX_N_ele_input, int BITS_PER_DIGIT>
+void karastuba_mul_MUL_stage(
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  *lhs,
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  *rhs,
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  *z0,
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  *z2,
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT> *cross_mul,
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  *inter_lhs,
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  *inter_rhs
+    )
+{
+    Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT> lhs0,lhs1,rhs0,rhs1,lhs0_tmp,lhs1_tmp,rhs0_tmp,rhs1_tmp;
+
+    lhs0.tmp_bits=lhs1.tmp_bits=rhs0.tmp_bits=rhs1.tmp_bits=lhs0_tmp.tmp_bits=lhs1_tmp.tmp_bits=rhs0_tmp.tmp_bits=rhs1_tmp.tmp_bits=0;
+
+    for (int i=0;i<lhs0.N_ele;i++)
+    {
+#pragma HLS pipeline
+        lhs0.digits.data[i]=lhs0_tmp.digits.data[i]=inter_lhs->digits.data[i]=lhs->digits.data[i];
+    }
+    for (int i=0;i<lhs1.N_ele;i++)
+    {
+#pragma HLS pipeline
+        lhs1.digits.data[i]=lhs1_tmp.digits.data[i]=inter_lhs->digits.data[i+MAX_N_ele_input / 2]=lhs->digits.data[i+MAX_N_ele_input / 2];
+    }
+    for (int i=0;i<rhs0.N_ele;i++)
+    {
+#pragma HLS pipeline
+        rhs0.digits.data[i]=rhs0_tmp.digits.data[i]=inter_rhs->digits.data[i]=rhs->digits.data[i];
+    }
+    for (int i=0;i<rhs1.N_ele;i++)
+    {
+#pragma HLS pipeline
+        rhs1.digits.data[i]=rhs1_tmp.digits.data[i]=inter_rhs->digits.data[i+MAX_N_ele_input / 2]=rhs->digits.data[i+MAX_N_ele_input / 2];
+    }
+    inter_rhs->tmp_bits = rhs->tmp_bits;
+    inter_lhs->tmp_bits = lhs->tmp_bits;
+
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  _z0;
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  _z2;
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT> _cross_mul;
+    _z0.tmp_bits=_z2.tmp_bits=_cross_mul.tmp_bits=0;
+
+    karastuba_mul_template<MAX_N_ele_input / 2,BITS_PER_DIGIT>(&lhs0, &rhs0, &_z0);    
+    karastuba_mul_template<MAX_N_ele_input / 2,BITS_PER_DIGIT>(&lhs1, &rhs1, &_z2);
+    karastuba_mul_template_z1<MAX_N_ele_input,BITS_PER_DIGIT>(&lhs0_tmp,&lhs1_tmp,&rhs0_tmp,&rhs1_tmp, &_cross_mul);
+
+    for (int i=0;i<_z0.N_ele;i++)
+    {
+#pragma HLS pipeline
+        z0->digits.data[i]=_z0.digits.data[i];
+    }
+    z0->tmp_bits = _z0.tmp_bits;
+    for (int i=0;i<_z2.N_ele;i++)
+    {
+#pragma HLS pipeline
+        z2->digits.data[i]=_z2.digits.data[i];
+    }
+    z2->tmp_bits = _z2.tmp_bits;
+    for (int i=0;i<_cross_mul.N_ele;i++)
+    {
+#pragma HLS pipeline
+        cross_mul->digits.data[i]=_cross_mul.digits.data[i];
+    }
+    cross_mul->tmp_bits = _cross_mul.tmp_bits;
+}
+
+// ADD_SUB_CAT stage in dataflow 
+template <int MAX_N_ele_input, int BITS_PER_DIGIT>
+void karastuba_mul_ADD_SUB_CAT_stage(
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  *z0,
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  *z2,
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT> *cross_mul,
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  *lhs,
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  *rhs,
+    Bignum<2*MAX_N_ele_input, BITS_PER_DIGIT>  *res
+    )
+{
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT> add2;    
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT> z1;
+    Bignum<2*MAX_N_ele_input, BITS_PER_DIGIT>  _res;
+    add2.tmp_bits=z1.tmp_bits=_res.tmp_bits=0;
+    add_I_O<Bignum<MAX_N_ele_input, BITS_PER_DIGIT> ,Bignum<MAX_N_ele_input, BITS_PER_DIGIT> >(z0,z2,&add2);
+    sub_I_O<Bignum<MAX_N_ele_input, BITS_PER_DIGIT>,Bignum<MAX_N_ele_input, BITS_PER_DIGIT> >(cross_mul,&add2,&z1);
+    CAT_I_I_I_O<Bignum<MAX_N_ele_input, BITS_PER_DIGIT> ,Bignum<MAX_N_ele_input, BITS_PER_DIGIT>,Bignum<MAX_N_ele_input, BITS_PER_DIGIT> ,Bignum<2 * MAX_N_ele_input, BITS_PER_DIGIT> >(z0,&z1,z2,&_res);
+
+
+    if (rhs->tmp_bits)
+    {
+        int offset = rhs->N_ele;
+        WUnsignedDigit tmp = 0;
+        for (int i = 0,j=offset; i < lhs->N_ele; i++,j++)
+        {
+    #pragma HLS pipeline
+            tmp += static_cast<WUnsignedDigit>(lhs->digits.data[i]);
+            tmp += static_cast<WUnsignedDigit>(_res.digits.data[j]);
+            _res.digits.data[j] = ( static_cast<UnsignedUnitDigit>(tmp));
+            tmp >>= UNIT_WORD_BITWIDTH;
+        }
+        _res.tmp_bits += tmp;
+    }
+    if (lhs->tmp_bits)
+    {
+        int offset = lhs->N_ele;
+        WUnsignedDigit tmp = 0;
+        for (int i = 0,j=offset; i < rhs->N_ele; i++,j++)
+        {
+    #pragma HLS pipeline
+            tmp += static_cast<WUnsignedDigit>(rhs->digits.data[i]);
+            tmp += static_cast<WUnsignedDigit>(_res.digits.data[j]);
+            _res.digits.data[j] = ( static_cast<UnsignedUnitDigit>(tmp));
+            tmp >>= UNIT_WORD_BITWIDTH;
+        }
+        _res.tmp_bits += tmp;
+    }
+    _res.tmp_bits += lhs->tmp_bits*rhs->tmp_bits;
+
+    for (int i=0;i<_res.N_ele;i++)
+    {
+#pragma HLS pipeline
+        res->digits.data[i]=_res.digits.data[i];
+    }
+    res->tmp_bits = _res.tmp_bits;
+
 }
 
 // declartion of overall karastuba_mul_template which can generate tree with template
@@ -235,60 +371,17 @@ void karastuba_mul_template(
     )
 {
 #pragma HLS inline off
-    Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT> lhs0,lhs1,rhs0,rhs1,lhs0_tmp,lhs1_tmp,rhs0_tmp,rhs1_tmp;
-
-    for (int i=0;i<lhs0.N_ele;i++)lhs0.digits.data[i]=lhs0_tmp.digits.data[i]=lhs->digits.data[i];
-    for (int i=0;i<lhs1.N_ele;i++)lhs1.digits.data[i]=lhs1_tmp.digits.data[i]=lhs->digits.data[i+MAX_N_ele_input / 2];
-    for (int i=0;i<rhs0.N_ele;i++)rhs0.digits.data[i]=rhs0_tmp.digits.data[i]=rhs->digits.data[i];
-    for (int i=0;i<rhs1.N_ele;i++)rhs1.digits.data[i]=rhs1_tmp.digits.data[i]=rhs->digits.data[i+MAX_N_ele_input / 2];
+#pragma HLS dataflow
 
 
     Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  z0;
-    karastuba_mul_template<MAX_N_ele_input / 2,BITS_PER_DIGIT>(&lhs0, &rhs0, &z0);
     Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  z2;
-    karastuba_mul_template<MAX_N_ele_input / 2,BITS_PER_DIGIT>(&lhs1, &rhs1, &z2);
     Bignum<MAX_N_ele_input, BITS_PER_DIGIT> cross_mul;
-    karastuba_mul_template_z1<MAX_N_ele_input,BITS_PER_DIGIT>(&lhs0_tmp,&lhs1_tmp,&rhs0_tmp,&rhs1_tmp, &cross_mul);
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  inter_lhs;
+    Bignum<MAX_N_ele_input, BITS_PER_DIGIT>  inter_rhs;
+    karastuba_mul_MUL_stage<MAX_N_ele_input, BITS_PER_DIGIT>(lhs,rhs,&z0,&z2,&cross_mul,&inter_lhs,&inter_rhs);
+    karastuba_mul_ADD_SUB_CAT_stage<MAX_N_ele_input, BITS_PER_DIGIT>(&z0,&z2,&cross_mul,&inter_lhs,&inter_rhs, res);
 
-    
-
-    Bignum<MAX_N_ele_input, BITS_PER_DIGIT> add2;
-    add_I_O<Bignum<MAX_N_ele_input, BITS_PER_DIGIT> ,Bignum<MAX_N_ele_input, BITS_PER_DIGIT> >(&z0,&z2,&add2);
-    Bignum<MAX_N_ele_input, BITS_PER_DIGIT> z1;
-    sub_I_O<Bignum<MAX_N_ele_input, BITS_PER_DIGIT>,Bignum<MAX_N_ele_input, BITS_PER_DIGIT> >(&cross_mul,&add2,&z1);
-
-    CAT_I_I_I_O<Bignum<MAX_N_ele_input, BITS_PER_DIGIT> ,Bignum<MAX_N_ele_input, BITS_PER_DIGIT>,Bignum<MAX_N_ele_input, BITS_PER_DIGIT> ,Bignum<2 * MAX_N_ele_input, BITS_PER_DIGIT> >(&z0,&z1,&z2,res);
-
-
-    if (rhs->tmp_bits)
-    {
-        int offset = rhs->N_ele;
-        WUnsignedDigit tmp = 0;
-        for (int i = 0,j=offset; i < lhs->N_ele; i++,j++)
-        {
-    #pragma HLS pipeline
-            tmp += static_cast<WUnsignedDigit>(lhs->digits.data[i]);
-            tmp += static_cast<WUnsignedDigit>(res->digits.data[j]);
-            res->digits.data[j] = ( static_cast<UnsignedUnitDigit>(tmp));
-            tmp >>= UNIT_WORD_BITWIDTH;
-        }
-        res->tmp_bits += tmp;
-    }
-    if (lhs->tmp_bits)
-    {
-        int offset = lhs->N_ele;
-        WUnsignedDigit tmp = 0;
-        for (int i = 0,j=offset; i < rhs->N_ele; i++,j++)
-        {
-    #pragma HLS pipeline
-            tmp += static_cast<WUnsignedDigit>(rhs->digits.data[i]);
-            tmp += static_cast<WUnsignedDigit>(res->digits.data[j]);
-            res->digits.data[j] = ( static_cast<UnsignedUnitDigit>(tmp));
-            tmp >>= UNIT_WORD_BITWIDTH;
-        }
-        res->tmp_bits += tmp;
-    }
-    res->tmp_bits += lhs->tmp_bits*rhs->tmp_bits;
 
     return;
 }
@@ -385,10 +478,11 @@ int main()
 
         Bignum<LARGE_BITWIDTH/UNIT_WORD_BITWIDTH, BITS_PER_DIGIT> my_A, my_B;
         Bignum<LARGE_BITWIDTH*2/UNIT_WORD_BITWIDTH, BITS_PER_DIGIT> my_C_check;
-
+        my_A.tmp_bits=my_B.tmp_bits=my_C_check.tmp_bits=0;
         for (int i=0;i<my_A.N_ele;i++)my_A.digits.data[i]=0;
         for (int i=0;i<my_B.N_ele;i++)my_B.digits.data[i]=0;
         for (int i=0;i<my_C_check.N_ele;i++)my_C_check.digits.data[i]=0;
+        
 
         little_end_to_array(a,my_A.digits.data);
         little_end_to_array(b,my_B.digits.data);
@@ -400,6 +494,8 @@ int main()
        
         
         Bignum<2 * LARGE_BITWIDTH/UNIT_WORD_BITWIDTH, UNIT_WORD_BITWIDTH> my_C;
+        my_C.tmp_bits=0;
+        for (int i=0;i<my_C_check.N_ele;i++)my_C.digits.data[i]=0;
         karastuba_mul_template<LARGE_BITWIDTH/UNIT_WORD_BITWIDTH,UNIT_WORD_BITWIDTH>(&my_A, &my_B, &my_C);
         gmp_printf("c=%Zx\n", a);
         printf("c=");

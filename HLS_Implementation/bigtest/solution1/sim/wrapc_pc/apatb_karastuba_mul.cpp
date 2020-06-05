@@ -1,5 +1,5 @@
 // ==============================================================
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2.1 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 
@@ -84,12 +84,12 @@ class INTER_TCL_FILE {
 };
 
 extern void karastuba_mul (
-unsigned int hs_input[32],
-unsigned int res_output[32]);
+unsigned int hs_input[256],
+unsigned int res_output[256]);
 
 void AESL_WRAP_karastuba_mul (
-unsigned int hs_input[32],
-unsigned int res_output[32])
+unsigned int hs_input[256],
+unsigned int res_output[256])
 {
 	refine_signal_handler();
 	fstream wrapc_switch_file_token;
@@ -116,7 +116,7 @@ unsigned int res_output[32])
 		{
 			aesl_fh.read(AUTOTB_TVOUT_PC_res_output, AESL_token); // data
 
-			sc_bv<32> *res_output_pc_buffer = new sc_bv<32>[32];
+			sc_bv<32> *res_output_pc_buffer = new sc_bv<32>[256];
 			int i = 0;
 
 			while (AESL_token != "[[/transaction]]")
@@ -189,7 +189,7 @@ unsigned int res_output[32])
 					// {
 						// celement: res_output(31, 0)
 						// {
-							sc_lv<32>* res_output_lv0_0_31_1 = new sc_lv<32>[32];
+							sc_lv<32>* res_output_lv0_0_255_1 = new sc_lv<32>[256];
 						// }
 					// }
 
@@ -198,12 +198,12 @@ unsigned int res_output[32])
 						int hls_map_index = 0;
 						// celement: res_output(31, 0)
 						{
-							// carray: (0) => (31) @ (1)
-							for (int i_0 = 0; i_0 <= 31; i_0 += 1)
+							// carray: (0) => (255) @ (1)
+							for (int i_0 = 0; i_0 <= 255; i_0 += 1)
 							{
 								if (&(res_output[0]) != NULL) // check the null address if the c port is array or others
 								{
-									res_output_lv0_0_31_1[hls_map_index].range(31, 0) = sc_bv<32>(res_output_pc_buffer[hls_map_index].range(31, 0));
+									res_output_lv0_0_255_1[hls_map_index].range(31, 0) = sc_bv<32>(res_output_pc_buffer[hls_map_index].range(31, 0));
 									hls_map_index++;
 								}
 							}
@@ -215,18 +215,18 @@ unsigned int res_output[32])
 						int hls_map_index = 0;
 						// celement: res_output(31, 0)
 						{
-							// carray: (0) => (31) @ (1)
-							for (int i_0 = 0; i_0 <= 31; i_0 += 1)
+							// carray: (0) => (255) @ (1)
+							for (int i_0 = 0; i_0 <= 255; i_0 += 1)
 							{
 								// sub                    : i_0
 								// ori_name               : res_output[i_0]
 								// sub_1st_elem           : 0
 								// ori_name_1st_elem      : res_output[0]
 								// output_left_conversion : res_output[i_0]
-								// output_type_conversion : (res_output_lv0_0_31_1[hls_map_index]).to_uint64()
+								// output_type_conversion : (res_output_lv0_0_255_1[hls_map_index]).to_uint64()
 								if (&(res_output[0]) != NULL) // check the null address if the c port is array or others
 								{
-									res_output[i_0] = (res_output_lv0_0_31_1[hls_map_index]).to_uint64();
+									res_output[i_0] = (res_output_lv0_0_255_1[hls_map_index]).to_uint64();
 									hls_map_index++;
 								}
 							}
@@ -266,7 +266,7 @@ unsigned int res_output[32])
 		sprintf(tvin_hs_input, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVIN_hs_input, tvin_hs_input);
 
-		sc_bv<32>* hs_input_tvin_wrapc_buffer = new sc_bv<32>[32];
+		sc_bv<32>* hs_input_tvin_wrapc_buffer = new sc_bv<32>[256];
 
 		// RTL Name: hs_input
 		{
@@ -275,8 +275,8 @@ unsigned int res_output[32])
 				int hls_map_index = 0;
 				// celement: hs_input(31, 0)
 				{
-					// carray: (0) => (31) @ (1)
-					for (int i_0 = 0; i_0 <= 31; i_0 += 1)
+					// carray: (0) => (255) @ (1)
+					for (int i_0 = 0; i_0 <= 255; i_0 += 1)
 					{
 						// sub                   : i_0
 						// ori_name              : hs_input[i_0]
@@ -297,13 +297,13 @@ unsigned int res_output[32])
 		}
 
 		// dump tv to file
-		for (int i = 0; i < 32; i++)
+		for (int i = 0; i < 256; i++)
 		{
 			sprintf(tvin_hs_input, "%s\n", (hs_input_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
 			aesl_fh.write(AUTOTB_TVIN_hs_input, tvin_hs_input);
 		}
 
-		tcl_file.set_num(32, &tcl_file.hs_input_depth);
+		tcl_file.set_num(256, &tcl_file.hs_input_depth);
 		sprintf(tvin_hs_input, "[[/transaction]] \n");
 		aesl_fh.write(AUTOTB_TVIN_hs_input, tvin_hs_input);
 
@@ -314,7 +314,7 @@ unsigned int res_output[32])
 		sprintf(tvin_res_output, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVIN_res_output, tvin_res_output);
 
-		sc_bv<32>* res_output_tvin_wrapc_buffer = new sc_bv<32>[32];
+		sc_bv<32>* res_output_tvin_wrapc_buffer = new sc_bv<32>[256];
 
 		// RTL Name: res_output
 		{
@@ -323,8 +323,8 @@ unsigned int res_output[32])
 				int hls_map_index = 0;
 				// celement: res_output(31, 0)
 				{
-					// carray: (0) => (31) @ (1)
-					for (int i_0 = 0; i_0 <= 31; i_0 += 1)
+					// carray: (0) => (255) @ (1)
+					for (int i_0 = 0; i_0 <= 255; i_0 += 1)
 					{
 						// sub                   : i_0
 						// ori_name              : res_output[i_0]
@@ -345,13 +345,13 @@ unsigned int res_output[32])
 		}
 
 		// dump tv to file
-		for (int i = 0; i < 32; i++)
+		for (int i = 0; i < 256; i++)
 		{
 			sprintf(tvin_res_output, "%s\n", (res_output_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
 			aesl_fh.write(AUTOTB_TVIN_res_output, tvin_res_output);
 		}
 
-		tcl_file.set_num(32, &tcl_file.res_output_depth);
+		tcl_file.set_num(256, &tcl_file.res_output_depth);
 		sprintf(tvin_res_output, "[[/transaction]] \n");
 		aesl_fh.write(AUTOTB_TVIN_res_output, tvin_res_output);
 
@@ -369,7 +369,7 @@ unsigned int res_output[32])
 		sprintf(tvout_res_output, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVOUT_res_output, tvout_res_output);
 
-		sc_bv<32>* res_output_tvout_wrapc_buffer = new sc_bv<32>[32];
+		sc_bv<32>* res_output_tvout_wrapc_buffer = new sc_bv<32>[256];
 
 		// RTL Name: res_output
 		{
@@ -378,8 +378,8 @@ unsigned int res_output[32])
 				int hls_map_index = 0;
 				// celement: res_output(31, 0)
 				{
-					// carray: (0) => (31) @ (1)
-					for (int i_0 = 0; i_0 <= 31; i_0 += 1)
+					// carray: (0) => (255) @ (1)
+					for (int i_0 = 0; i_0 <= 255; i_0 += 1)
 					{
 						// sub                   : i_0
 						// ori_name              : res_output[i_0]
@@ -400,13 +400,13 @@ unsigned int res_output[32])
 		}
 
 		// dump tv to file
-		for (int i = 0; i < 32; i++)
+		for (int i = 0; i < 256; i++)
 		{
 			sprintf(tvout_res_output, "%s\n", (res_output_tvout_wrapc_buffer[i]).to_string(SC_HEX).c_str());
 			aesl_fh.write(AUTOTB_TVOUT_res_output, tvout_res_output);
 		}
 
-		tcl_file.set_num(32, &tcl_file.res_output_depth);
+		tcl_file.set_num(256, &tcl_file.res_output_depth);
 		sprintf(tvout_res_output, "[[/transaction]] \n");
 		aesl_fh.write(AUTOTB_TVOUT_res_output, tvout_res_output);
 

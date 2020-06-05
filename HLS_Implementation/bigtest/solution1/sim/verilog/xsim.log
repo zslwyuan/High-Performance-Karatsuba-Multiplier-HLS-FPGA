@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# xsim v2019.2 (64-bit)
-# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
-# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue May 26 00:38:35 2020
-# Process ID: 26961
-# Current directory: /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog
+# xsim v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Fri Jun  5 20:10:43 2020
+# Process ID: 12406
+# Current directory: /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/karastuba_mul/xsim_script.tcl}
-# Log file: /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/xsim.log
-# Journal file: /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/xsim.jou
+# Log file: /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/xsim.log
+# Journal file: /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/karastuba_mul/xsim_script.tcl
 # xsim {karastuba_mul} -autoloadwcfg -tclbatch {karastuba_mul.tcl}
@@ -57,9 +57,19 @@ source karastuba_mul.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [0.00%] @ "107000"
-// RTL Simulation : 1 / 1 [100.00%] @ "1925000"
+// RTL Simulation : 0 / 10 [0.00%] @ "107000"
+// RTL Simulation : 1 / 10 [0.00%] @ "13895000"
+// RTL Simulation : 2 / 10 [0.00%] @ "27680000"
+// RTL Simulation : 3 / 10 [0.00%] @ "41465000"
+// RTL Simulation : 4 / 10 [0.00%] @ "55250000"
+// RTL Simulation : 5 / 10 [0.00%] @ "69035000"
+// RTL Simulation : 6 / 10 [0.00%] @ "82820000"
+// RTL Simulation : 7 / 10 [0.00%] @ "96605000"
+// RTL Simulation : 8 / 10 [0.00%] @ "110390000"
+// RTL Simulation : 9 / 10 [0.00%] @ "124175000"
+// RTL Simulation : 10 / 10 [100.00%] @ "137960000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 1936500 ps : File "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/karastuba_mul.autotb.v" Line 352
+$finish called at time : 137971500 ps : File "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/karastuba_mul.autotb.v" Line 352
+run: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:57 . Memory (MB): peak = 1628.090 ; gain = 128.000 ; free physical = 19853 ; free virtual = 27389
 ## quit
-INFO: [Common 17-206] Exiting xsim at Tue May 26 00:38:45 2020...
+INFO: [Common 17-206] Exiting xsim at Fri Jun  5 20:11:54 2020...

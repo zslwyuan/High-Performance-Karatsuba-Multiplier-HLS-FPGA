@@ -1,0 +1,232 @@
+
+
+================================================================
+== Vivado HLS Report for 'karastuba_mul_templa_4'
+================================================================
+* Date:           Fri Jun  5 20:27:29 2020
+
+* Version:        2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)
+* Project:        bigtest
+* Solution:       solution1
+* Product family: virtexu
+* Target device:  xcvu095-ffva2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 3.00 ns | 2.616 ns |   0.38 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+------+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval  | Pipeline |
+    |   min   |   max   |    min   |    max   | min |  max |   Type   |
+    +---------+---------+----------+----------+-----+------+----------+
+    |     1435|     1689| 4.305 us | 5.067 us |  989|  1111| dataflow |
+    +---------+---------+----------+----------+-----+------+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------+------------------------+---------+---------+----------+----------+-----+------+---------+
+        |                           |                        |  Latency (cycles) |  Latency (absolute) |  Interval  | Pipeline|
+        |          Instance         |         Module         |   min   |   max   |    min   |    max   | min |  max |   Type  |
+        +---------------------------+------------------------+---------+---------+----------+----------+-----+------+---------+
+        |karastuba_mul_MUL_st_1_U0  |karastuba_mul_MUL_st_1  |      988|     1110| 2.964 us | 3.330 us |  988|  1110|   none  |
+        |karastuba_mul_ADD_SU_1_U0  |karastuba_mul_ADD_SU_1  |      446|      578| 1.338 us | 1.734 us |  446|   578|   none  |
+        +---------------------------+------------------------+---------+---------+----------+----------+-----+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+---------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|    FF   |   LUT  | URAM|
++-----------------+---------+-------+---------+--------+-----+
+|DSP              |        -|      -|        -|       -|    -|
+|Expression       |        -|      -|        0|      46|    -|
+|FIFO             |        0|      -|       25|     220|    -|
+|Instance         |       98|     39|    32172|   33985|    0|
+|Memory           |       10|      -|        0|       0|    0|
+|Multiplexer      |        -|      -|        -|      90|    -|
+|Register         |        -|      -|       10|       -|    -|
++-----------------+---------+-------+---------+--------+-----+
+|Total            |      108|     39|    32207|   34341|    0|
++-----------------+---------+-------+---------+--------+-----+
+|Available        |     3456|    768|  1075200|  537600|    0|
++-----------------+---------+-------+---------+--------+-----+
+|Utilization (%)  |        3|      5|        2|       6|    0|
++-----------------+---------+-------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+------------------------+---------+-------+-------+-------+-----+
+    |          Instance         |         Module         | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
+    +---------------------------+------------------------+---------+-------+-------+-------+-----+
+    |karastuba_mul_ADD_SU_1_U0  |karastuba_mul_ADD_SU_1  |        6|      3|   2366|   2786|    0|
+    |karastuba_mul_MUL_st_1_U0  |karastuba_mul_MUL_st_1  |       92|     36|  29806|  31199|    0|
+    +---------------------------+------------------------+---------+-------+-------+-------+-----+
+    |Total                      |                        |       98|     39|  32172|  33985|    0|
+    +---------------------------+------------------------+---------+-------+-------+-------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |         Memory         |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |z0_digits_data_V_U      |karastuba_mul_temOgC  |        2|  0|   0|    0|    32|   64|     2|         4096|
+    |z2_digits_data_V_U      |karastuba_mul_temOgC  |        2|  0|   0|    0|    32|   64|     2|         4096|
+    |cross_mul_digits_dat_U  |karastuba_mul_temOgC  |        2|  0|   0|    0|    32|   64|     2|         4096|
+    |inter_lhs_digits_dat_U  |karastuba_mul_temOgC  |        2|  0|   0|    0|    32|   64|     2|         4096|
+    |inter_rhs_digits_dat_U  |karastuba_mul_temOgC  |        2|  0|   0|    0|    32|   64|     2|         4096|
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                   |                      |       10|  0|   0|    0|   160|  320|    10|        20480|
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    +----------------------+---------+---+----+-----+------+-----+---------+
+    |         Name         | BRAM_18K| FF| LUT| URAM| Depth| Bits| Size:D*B|
+    +----------------------+---------+---+----+-----+------+-----+---------+
+    |cross_mul_tmp_bits_U  |        0|  5|   0|    -|     2|   32|       64|
+    |inter_lhs_tmp_bits_U  |        0|  5|   0|    -|     2|   32|       64|
+    |inter_rhs_tmp_bits_U  |        0|  5|   0|    -|     2|   32|       64|
+    |z0_tmp_bits_U         |        0|  5|   0|    -|     2|   32|       64|
+    |z2_tmp_bits_U         |        0|  5|   0|    -|     2|   32|       64|
+    +----------------------+---------+---+----+-----+------+-----+---------+
+    |Total                 |        0| 25|   0|    0|    10|  160|      320|
+    +----------------------+---------+---+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+    |                Variable Name               | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+    |ap_channel_done_cross_mul_digits_dat        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_cross_mul_tmp_bits          |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_inter_lhs_digits_dat        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_inter_lhs_tmp_bits          |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_inter_rhs_digits_dat        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_inter_rhs_tmp_bits          |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_z0_digits_data_V            |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_z0_tmp_bits                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_z2_digits_data_V            |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_z2_tmp_bits                 |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                     |    and   |      0|  0|   2|           1|           1|
+    |karastuba_mul_ADD_SU_1_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |karastuba_mul_MUL_st_1_U0_ap_continue       |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_cross_mul_digits_dat  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_cross_mul_tmp_bits    |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_inter_lhs_digits_dat  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_inter_lhs_tmp_bits    |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_inter_rhs_digits_dat  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_inter_rhs_tmp_bits    |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_z0_digits_data_V      |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_z0_tmp_bits           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_z2_digits_data_V      |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_z2_tmp_bits           |    or    |      0|  0|   2|           1|           1|
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                       |          |      0|  0|  46|          23|          23|
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |                      Name                      | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_channel_write_cross_mul_digits_dat  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_cross_mul_tmp_bits    |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_inter_lhs_digits_dat  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_inter_lhs_tmp_bits    |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_inter_rhs_digits_dat  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_inter_rhs_tmp_bits    |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_z0_digits_data_V      |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_z0_tmp_bits           |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_z2_digits_data_V      |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_z2_tmp_bits           |   9|          2|    1|          2|
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                           |  90|         20|   10|         20|
+    +------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------+---+----+-----+-----------+
+    |                      Name                      | FF| LUT| Bits| Const Bits|
+    +------------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_channel_write_cross_mul_digits_dat  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_cross_mul_tmp_bits    |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_inter_lhs_digits_dat  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_inter_lhs_tmp_bits    |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_inter_rhs_digits_dat  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_inter_rhs_tmp_bits    |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_z0_digits_data_V      |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_z0_tmp_bits           |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_z2_digits_data_V      |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_z2_tmp_bits           |  1|   0|    1|          0|
+    +------------------------------------------------+---+----+-----+-----------+
+    |Total                                           | 10|   0|   10|          0|
+    +------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+------------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++----------------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                      |  in |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_rst                      |  in |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_start                    |  in |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_done                     | out |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_ready                    | out |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_idle                     | out |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_continue                 |  in |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|lhs_tmp_bits_read           |  in |    2|   ap_none  |    lhs_tmp_bits_read   |    scalar    |
+|lhs_tmp_bits_read_ap_vld    |  in |    1|   ap_none  |    lhs_tmp_bits_read   |    scalar    |
+|lhs_digits_data_V_address0  | out |    5|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_ce0       | out |    1|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_d0        | out |   64|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_q0        |  in |   64|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_we0       | out |    1|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_address1  | out |    5|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_ce1       | out |    1|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_d1        | out |   64|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_q1        |  in |   64|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_we1       | out |    1|  ap_memory |    lhs_digits_data_V   |     array    |
+|rhs_tmp_bits_read           |  in |    2|   ap_none  |    rhs_tmp_bits_read   |    scalar    |
+|rhs_tmp_bits_read_ap_vld    |  in |    1|   ap_none  |    rhs_tmp_bits_read   |    scalar    |
+|rhs_digits_data_V_address0  | out |    5|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_ce0       | out |    1|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_d0        | out |   64|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_q0        |  in |   64|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_we0       | out |    1|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_address1  | out |    5|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_ce1       | out |    1|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_d1        | out |   64|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_q1        |  in |   64|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_we1       | out |    1|  ap_memory |    rhs_digits_data_V   |     array    |
+|res_tmp_bits                | out |   32|   ap_vld   |      res_tmp_bits      |    pointer   |
+|res_tmp_bits_ap_vld         | out |    1|   ap_vld   |      res_tmp_bits      |    pointer   |
+|res_digits_data_V_address0  | out |    6|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_ce0       | out |    1|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_d0        | out |   64|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_q0        |  in |   64|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_we0       | out |    1|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_address1  | out |    6|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_ce1       | out |    1|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_d1        | out |   64|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_q1        |  in |   64|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_we1       | out |    1|  ap_memory |    res_digits_data_V   |     array    |
++----------------------------+-----+-----+------------+------------------------+--------------+
+

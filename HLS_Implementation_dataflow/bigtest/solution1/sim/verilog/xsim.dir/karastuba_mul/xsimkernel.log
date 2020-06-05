@@ -1,0 +1,7 @@
+Running: xsim.dir/karastuba_mul/xsimk -simmode gui -wdb karastuba_mul.wdb -simrunnum 0 -socket 38707
+Design successfully loaded
+Design Loading Memory Usage: 77696 KB (Peak: 77696 KB)
+Design Loading CPU Usage: 80 ms
+Simulation completed
+Simulation Memory Usage: 176728 KB (Peak: 216964 KB)
+Simulation CPU Usage: 105810 ms

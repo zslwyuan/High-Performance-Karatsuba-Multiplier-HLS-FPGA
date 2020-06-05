@@ -11,51 +11,51 @@
 
 <trans id="184" from="2" to="2">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln100" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln104" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="185" from="2" to="3">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln100" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln104" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="186" from="3" to="4">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln103" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln107" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="206" from="3" to="25">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln103" val="1"/>
-<literal name="icmp_ln124" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln107" val="1"/>
+<literal name="icmp_ln128" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="207" from="3" to="19">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln103" val="1"/>
-<literal name="icmp_ln124" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln107" val="1"/>
+<literal name="icmp_ln128" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="237" from="4" to="15">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="238" from="4" to="5">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -154,14 +154,14 @@
 
 <trans id="244" from="19" to="24">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="245" from="19" to="20">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -198,28 +198,28 @@
 
 <trans id="216" from="25" to="32">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln138" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln142" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="217" from="25" to="26">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln138" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="251" from="26" to="31">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="252" from="26" to="27">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -303,7 +303,7 @@
 :2  br label %1
 
 ]]></Node>
-<StgValue><ssdm name="br_ln100"/></StgValue>
+<StgValue><ssdm name="br_ln104"/></StgValue>
 </operation>
 </state>
 
@@ -333,10 +333,10 @@
 
 <Node id="11" bw="1" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-:1  %icmp_ln100 = icmp eq i5 %j_0, -16
+:1  %icmp_ln104 = icmp eq i5 %j_0, -16
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln100"/></StgValue>
+<StgValue><ssdm name="icmp_ln104"/></StgValue>
 </operation>
 
 <operation id="38" st_id="2" stage="1" lat="1">
@@ -378,39 +378,39 @@
 
 <Node id="14" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:4  br i1 %icmp_ln100, label %.preheader567.preheader, label %2
+:4  br i1 %icmp_ln104, label %.preheader567.preheader, label %2
 
 ]]></Node>
-<StgValue><ssdm name="br_ln100"/></StgValue>
+<StgValue><ssdm name="br_ln104"/></StgValue>
 </operation>
 
 <operation id="41" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln100" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln104" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="16" bw="64" op_0_bw="5">
 <![CDATA[
-:0  %zext_ln100 = zext i5 %j_0 to i64
+:0  %zext_ln104 = zext i5 %j_0 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln100"/></StgValue>
+<StgValue><ssdm name="zext_ln104"/></StgValue>
 </operation>
 
 <operation id="42" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln100" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln104" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="17" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:1  %w_digits_data_V_addr = getelementptr [16 x i64]* %w_digits_data_V, i64 0, i64 %zext_ln100
+:1  %w_digits_data_V_addr = getelementptr [16 x i64]* %w_digits_data_V, i64 0, i64 %zext_ln104
 
 ]]></Node>
 <StgValue><ssdm name="w_digits_data_V_addr"/></StgValue>
@@ -420,7 +420,7 @@
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln100" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln104" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -429,14 +429,14 @@
 :2  store i64 0, i64* %w_digits_data_V_addr, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln100"/></StgValue>
+<StgValue><ssdm name="store_ln104"/></StgValue>
 </operation>
 
 <operation id="44" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln100" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln104" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -445,14 +445,14 @@
 :3  br label %1
 
 ]]></Node>
-<StgValue><ssdm name="br_ln100"/></StgValue>
+<StgValue><ssdm name="br_ln104"/></StgValue>
 </operation>
 
 <operation id="45" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln100" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln104" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -461,7 +461,7 @@
 .preheader567.preheader:0  br label %.preheader567
 
 ]]></Node>
-<StgValue><ssdm name="br_ln103"/></StgValue>
+<StgValue><ssdm name="br_ln107"/></StgValue>
 </operation>
 </state>
 
@@ -491,10 +491,10 @@
 
 <Node id="24" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-.preheader567:1  %icmp_ln103 = icmp eq i4 %j1_0, -8
+.preheader567:1  %icmp_ln107 = icmp eq i4 %j1_0, -8
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln103"/></StgValue>
+<StgValue><ssdm name="icmp_ln107"/></StgValue>
 </operation>
 
 <operation id="48" st_id="3" stage="1" lat="1">
@@ -536,39 +536,39 @@
 
 <Node id="27" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader567:4  br i1 %icmp_ln103, label %4, label %.preheader566.preheader
+.preheader567:4  br i1 %icmp_ln107, label %4, label %.preheader566.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln103"/></StgValue>
+<StgValue><ssdm name="br_ln107"/></StgValue>
 </operation>
 
 <operation id="51" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln103" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln107" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="29" bw="64" op_0_bw="4">
 <![CDATA[
-.preheader566.preheader:0  %zext_ln111 = zext i4 %j1_0 to i64
+.preheader566.preheader:0  %zext_ln115 = zext i4 %j1_0 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln111"/></StgValue>
+<StgValue><ssdm name="zext_ln115"/></StgValue>
 </operation>
 
 <operation id="52" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln103" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln107" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="30" bw="3" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-.preheader566.preheader:1  %v_digits_data_V_addr = getelementptr [8 x i64]* %v_digits_data_V, i64 0, i64 %zext_ln111
+.preheader566.preheader:1  %v_digits_data_V_addr = getelementptr [8 x i64]* %v_digits_data_V, i64 0, i64 %zext_ln115
 
 ]]></Node>
 <StgValue><ssdm name="v_digits_data_V_addr"/></StgValue>
@@ -578,7 +578,7 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln103" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln107" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -587,47 +587,47 @@
 .preheader566.preheader:2  br label %.preheader566
 
 ]]></Node>
-<StgValue><ssdm name="br_ln106"/></StgValue>
+<StgValue><ssdm name="br_ln110"/></StgValue>
 </operation>
 
 <operation id="54" st_id="3" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln103" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln107" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="77" bw="1" op_0_bw="2" op_1_bw="2">
 <![CDATA[
-:0  %icmp_ln124 = icmp eq i2 %v_tmp_bits_read_1, 0
+:0  %icmp_ln128 = icmp eq i2 %v_tmp_bits_read_1, 0
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln124"/></StgValue>
+<StgValue><ssdm name="icmp_ln128"/></StgValue>
 </operation>
 
 <operation id="55" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln103" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln107" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="78" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:1  br i1 %icmp_ln124, label %._crit_edge569, label %.preheader565.preheader
+:1  br i1 %icmp_ln128, label %._crit_edge569, label %.preheader565.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln124"/></StgValue>
+<StgValue><ssdm name="br_ln128"/></StgValue>
 </operation>
 
 <operation id="56" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln103" val="1"/>
-<literal name="icmp_ln124" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln107" val="1"/>
+<literal name="icmp_ln128" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -636,7 +636,7 @@
 .preheader565.preheader:0  br label %.preheader565
 
 ]]></Node>
-<StgValue><ssdm name="br_ln128"/></StgValue>
+<StgValue><ssdm name="br_ln132"/></StgValue>
 </operation>
 </state>
 
@@ -666,7 +666,7 @@
 
 <Node id="34" bw="4" op_0_bw="4" op_1_bw="0" op_2_bw="4" op_3_bw="0">
 <![CDATA[
-.preheader566:1  %i_0 = phi i4 [ %add_ln106, %hls_label_12 ], [ 0, %.preheader566.preheader ]
+.preheader566:1  %i_0 = phi i4 [ %add_ln110, %hls_label_12 ], [ 0, %.preheader566.preheader ]
 
 ]]></Node>
 <StgValue><ssdm name="i_0"/></StgValue>
@@ -681,10 +681,10 @@
 
 <Node id="35" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-.preheader566:2  %icmp_ln106 = icmp eq i4 %i_0, -8
+.preheader566:2  %icmp_ln110 = icmp eq i4 %i_0, -8
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln106"/></StgValue>
+<StgValue><ssdm name="icmp_ln110"/></StgValue>
 </operation>
 
 <operation id="60" st_id="4" stage="1" lat="1">
@@ -711,10 +711,10 @@
 
 <Node id="37" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-.preheader566:4  %add_ln106 = add i4 %i_0, 1
+.preheader566:4  %add_ln110 = add i4 %i_0, 1
 
 ]]></Node>
-<StgValue><ssdm name="add_ln106"/></StgValue>
+<StgValue><ssdm name="add_ln110"/></StgValue>
 </operation>
 
 <operation id="62" st_id="4" stage="1" lat="1">
@@ -726,55 +726,55 @@
 
 <Node id="38" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader566:5  br i1 %icmp_ln106, label %3, label %hls_label_12
+.preheader566:5  br i1 %icmp_ln110, label %3, label %hls_label_12
 
 ]]></Node>
-<StgValue><ssdm name="br_ln106"/></StgValue>
+<StgValue><ssdm name="br_ln110"/></StgValue>
 </operation>
 
 <operation id="63" st_id="4" stage="1" lat="1">
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="43" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-hls_label_12:3  %add_ln109 = add i4 %i_0, %j1_0
+hls_label_12:3  %add_ln113 = add i4 %i_0, %j1_0
 
 ]]></Node>
-<StgValue><ssdm name="add_ln109"/></StgValue>
+<StgValue><ssdm name="add_ln113"/></StgValue>
 </operation>
 
 <operation id="64" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="44" bw="64" op_0_bw="4">
 <![CDATA[
-hls_label_12:4  %zext_ln111_1 = zext i4 %i_0 to i64
+hls_label_12:4  %zext_ln115_1 = zext i4 %i_0 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln111_1"/></StgValue>
+<StgValue><ssdm name="zext_ln115_1"/></StgValue>
 </operation>
 
 <operation id="65" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="45" bw="3" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_12:5  %u_digits_data_V_addr = getelementptr [8 x i64]* %u_digits_data_V, i64 0, i64 %zext_ln111_1
+hls_label_12:5  %u_digits_data_V_addr = getelementptr [8 x i64]* %u_digits_data_V, i64 0, i64 %zext_ln115_1
 
 ]]></Node>
 <StgValue><ssdm name="u_digits_data_V_addr"/></StgValue>
@@ -784,7 +784,7 @@ hls_label_12:5  %u_digits_data_V_addr = getelementptr [8 x i64]* %u_digits_data_
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -800,7 +800,7 @@ hls_label_12:6  %u_digits_data_V_load = load i64* %u_digits_data_V_addr, align 8
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -819,7 +819,7 @@ hls_label_12:8  %v_digits_data_V_load = load i64* %v_digits_data_V_addr, align 8
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -835,7 +835,7 @@ hls_label_12:6  %u_digits_data_V_load = load i64* %u_digits_data_V_addr, align 8
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -854,7 +854,7 @@ hls_label_12:8  %v_digits_data_V_load = load i64* %v_digits_data_V_addr, align 8
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -870,7 +870,7 @@ hls_label_12:7  %zext_ln700 = zext i64 %u_digits_data_V_load to i128
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -886,7 +886,7 @@ hls_label_12:9  %zext_ln700_1 = zext i64 %v_digits_data_V_load to i128
 <core>MulnS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -905,7 +905,7 @@ hls_label_12:10  %mul_ln700 = mul i128 %zext_ln700, %zext_ln700_1
 <core>MulnS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -924,7 +924,7 @@ hls_label_12:10  %mul_ln700 = mul i128 %zext_ln700, %zext_ln700_1
 <core>MulnS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -943,7 +943,7 @@ hls_label_12:10  %mul_ln700 = mul i128 %zext_ln700, %zext_ln700_1
 <core>MulnS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -962,7 +962,7 @@ hls_label_12:10  %mul_ln700 = mul i128 %zext_ln700, %zext_ln700_1
 <core>MulnS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -981,7 +981,7 @@ hls_label_12:10  %mul_ln700 = mul i128 %zext_ln700, %zext_ln700_1
 <core>MulnS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -997,29 +997,29 @@ hls_label_12:10  %mul_ln700 = mul i128 %zext_ln700, %zext_ln700_1
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="51" bw="64" op_0_bw="4">
 <![CDATA[
-hls_label_12:11  %zext_ln111_2 = zext i4 %add_ln109 to i64
+hls_label_12:11  %zext_ln115_2 = zext i4 %add_ln113 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln111_2"/></StgValue>
+<StgValue><ssdm name="zext_ln115_2"/></StgValue>
 </operation>
 
 <operation id="79" st_id="11" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="52" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_12:12  %w_digits_data_V_addr_1 = getelementptr [16 x i64]* %w_digits_data_V, i64 0, i64 %zext_ln111_2
+hls_label_12:12  %w_digits_data_V_addr_1 = getelementptr [16 x i64]* %w_digits_data_V, i64 0, i64 %zext_ln115_2
 
 ]]></Node>
 <StgValue><ssdm name="w_digits_data_V_addr_1"/></StgValue>
@@ -1029,7 +1029,7 @@ hls_label_12:12  %w_digits_data_V_addr_1 = getelementptr [16 x i64]* %w_digits_d
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1048,23 +1048,23 @@ hls_label_12:13  %w_digits_data_V_load_1 = load i64* %w_digits_data_V_addr_1, al
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="40" bw="128" op_0_bw="64">
 <![CDATA[
-hls_label_12:0  %zext_ln106 = zext i64 %p_0176_1 to i128
+hls_label_12:0  %zext_ln110 = zext i64 %p_0176_1 to i128
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln106"/></StgValue>
+<StgValue><ssdm name="zext_ln110"/></StgValue>
 </operation>
 
 <operation id="82" st_id="12" stage="1" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1080,13 +1080,13 @@ hls_label_12:13  %w_digits_data_V_load_1 = load i64* %w_digits_data_V_addr_1, al
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="55" bw="128" op_0_bw="128" op_1_bw="128">
 <![CDATA[
-hls_label_12:15  %add_ln700 = add i128 %zext_ln106, %mul_ln700
+hls_label_12:15  %add_ln700 = add i128 %zext_ln110, %mul_ln700
 
 ]]></Node>
 <StgValue><ssdm name="add_ln700"/></StgValue>
@@ -1096,7 +1096,7 @@ hls_label_12:15  %add_ln700 = add i128 %zext_ln106, %mul_ln700
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1115,7 +1115,7 @@ hls_label_12:16  %trunc_ln700 = trunc i128 %add_ln700 to i64
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1134,7 +1134,7 @@ hls_label_12:18  %add_ln209_1 = add i64 %trunc_ln700, %w_digits_data_V_load_1
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1150,7 +1150,7 @@ hls_label_12:1  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1159,14 +1159,14 @@ hls_label_12:1  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p
 hls_label_12:2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specpipeline_ln108"/></StgValue>
+<StgValue><ssdm name="specpipeline_ln112"/></StgValue>
 </operation>
 
 <operation id="88" st_id="14" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1182,7 +1182,7 @@ hls_label_12:14  %zext_ln700_2 = zext i64 %w_digits_data_V_load_1 to i128
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1198,7 +1198,7 @@ hls_label_12:17  %k_V = add i128 %zext_ln700_2, %add_ln700
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1207,14 +1207,14 @@ hls_label_12:17  %k_V = add i128 %zext_ln700_2, %add_ln700
 hls_label_12:19  store i64 %add_ln209_1, i64* %w_digits_data_V_addr_1, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln112"/></StgValue>
+<StgValue><ssdm name="store_ln116"/></StgValue>
 </operation>
 
 <operation id="91" st_id="14" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1230,7 +1230,7 @@ hls_label_12:20  %trunc_ln1 = call i64 @_ssdm_op_PartSelect.i64.i128.i32.i32(i12
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1246,7 +1246,7 @@ hls_label_12:21  %empty_9 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln106" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln110" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1255,7 +1255,7 @@ hls_label_12:21  %empty_9 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @
 hls_label_12:22  br label %.preheader566
 
 ]]></Node>
-<StgValue><ssdm name="br_ln106"/></StgValue>
+<StgValue><ssdm name="br_ln110"/></StgValue>
 </operation>
 </state>
 
@@ -1288,7 +1288,7 @@ hls_label_12:22  br label %.preheader566
 :1  br i1 %icmp_ln883, label %._crit_edge568, label %_ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16
 
 ]]></Node>
-<StgValue><ssdm name="br_ln116"/></StgValue>
+<StgValue><ssdm name="br_ln120"/></StgValue>
 </operation>
 
 <operation id="96" st_id="15" stage="1" lat="1">
@@ -1301,10 +1301,10 @@ hls_label_12:22  br label %.preheader566
 
 <Node id="67" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-_ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:0  %xor_ln118 = xor i4 %j1_0, -8
+_ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:0  %xor_ln122 = xor i4 %j1_0, -8
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln118"/></StgValue>
+<StgValue><ssdm name="xor_ln122"/></StgValue>
 </operation>
 
 <operation id="97" st_id="15" stage="1" lat="1">
@@ -1317,10 +1317,10 @@ _ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:0  %xor_ln118 = xor i4 %j1_
 
 <Node id="68" bw="64" op_0_bw="4">
 <![CDATA[
-_ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:1  %zext_ln118 = zext i4 %xor_ln118 to i64
+_ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:1  %zext_ln122 = zext i4 %xor_ln122 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln118"/></StgValue>
+<StgValue><ssdm name="zext_ln122"/></StgValue>
 </operation>
 
 <operation id="98" st_id="15" stage="1" lat="1">
@@ -1333,7 +1333,7 @@ _ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:1  %zext_ln118 = zext i4 %x
 
 <Node id="69" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:2  %w_digits_data_V_addr_3 = getelementptr [16 x i64]* %w_digits_data_V, i64 0, i64 %zext_ln118
+_ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:2  %w_digits_data_V_addr_3 = getelementptr [16 x i64]* %w_digits_data_V, i64 0, i64 %zext_ln122
 
 ]]></Node>
 <StgValue><ssdm name="w_digits_data_V_addr_3"/></StgValue>
@@ -1407,7 +1407,7 @@ _ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:4  %add_ln209_2 = add i64 %
 _ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:5  store i64 %add_ln209_2, i64* %w_digits_data_V_addr_3, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln119"/></StgValue>
+<StgValue><ssdm name="store_ln123"/></StgValue>
 </operation>
 
 <operation id="103" st_id="18" stage="1" lat="1">
@@ -1423,7 +1423,7 @@ _ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:5  store i64 %add_ln209_2, 
 _ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:6  br label %._crit_edge568
 
 ]]></Node>
-<StgValue><ssdm name="br_ln121"/></StgValue>
+<StgValue><ssdm name="br_ln125"/></StgValue>
 </operation>
 
 <operation id="104" st_id="18" stage="1" lat="1">
@@ -1438,7 +1438,7 @@ _ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:6  br label %._crit_edge568
 ._crit_edge568:0  br label %.preheader567
 
 ]]></Node>
-<StgValue><ssdm name="br_ln103"/></StgValue>
+<StgValue><ssdm name="br_ln107"/></StgValue>
 </operation>
 </state>
 
@@ -1498,10 +1498,10 @@ _ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:6  br label %._crit_edge568
 
 <Node id="85" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-.preheader565:3  %icmp_ln128 = icmp eq i4 %i2_0, -8
+.preheader565:3  %icmp_ln132 = icmp eq i4 %i2_0, -8
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln128"/></StgValue>
+<StgValue><ssdm name="icmp_ln132"/></StgValue>
 </operation>
 
 <operation id="109" st_id="19" stage="1" lat="1">
@@ -1543,39 +1543,39 @@ _ZrSILi128ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit16:6  br label %._crit_edge568
 
 <Node id="88" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader565:6  br i1 %icmp_ln128, label %._crit_edge569.loopexit, label %hls_label_13
+.preheader565:6  br i1 %icmp_ln132, label %._crit_edge569.loopexit, label %hls_label_13
 
 ]]></Node>
-<StgValue><ssdm name="br_ln128"/></StgValue>
+<StgValue><ssdm name="br_ln132"/></StgValue>
 </operation>
 
 <operation id="112" st_id="19" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="97" bw="64" op_0_bw="5">
 <![CDATA[
-hls_label_13:7  %zext_ln132 = zext i5 %j3_0 to i64
+hls_label_13:7  %zext_ln136 = zext i5 %j3_0 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln132"/></StgValue>
+<StgValue><ssdm name="zext_ln136"/></StgValue>
 </operation>
 
 <operation id="113" st_id="19" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="98" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_13:8  %w_digits_data_V_addr_2 = getelementptr [16 x i64]* %w_digits_data_V, i64 0, i64 %zext_ln132
+hls_label_13:8  %w_digits_data_V_addr_2 = getelementptr [16 x i64]* %w_digits_data_V, i64 0, i64 %zext_ln136
 
 ]]></Node>
 <StgValue><ssdm name="w_digits_data_V_addr_2"/></StgValue>
@@ -1585,7 +1585,7 @@ hls_label_13:8  %w_digits_data_V_addr_2 = getelementptr [16 x i64]* %w_digits_da
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1601,7 +1601,7 @@ hls_label_13:9  %w_digits_data_V_load_2 = load i64* %w_digits_data_V_addr_2, ali
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1620,29 +1620,29 @@ hls_label_13:20  %j_1 = add i5 %j3_0, 1
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="93" bw="64" op_0_bw="4">
 <![CDATA[
-hls_label_13:3  %zext_ln131 = zext i4 %i2_0 to i64
+hls_label_13:3  %zext_ln135 = zext i4 %i2_0 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln131"/></StgValue>
+<StgValue><ssdm name="zext_ln135"/></StgValue>
 </operation>
 
 <operation id="117" st_id="20" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="94" bw="3" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_13:4  %u_digits_data_V_addr_1 = getelementptr [8 x i64]* %u_digits_data_V, i64 0, i64 %zext_ln131
+hls_label_13:4  %u_digits_data_V_addr_1 = getelementptr [8 x i64]* %u_digits_data_V, i64 0, i64 %zext_ln135
 
 ]]></Node>
 <StgValue><ssdm name="u_digits_data_V_addr_1"/></StgValue>
@@ -1652,7 +1652,7 @@ hls_label_13:4  %u_digits_data_V_addr_1 = getelementptr [8 x i64]* %u_digits_dat
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1668,7 +1668,7 @@ hls_label_13:5  %u_digits_data_V_load_1 = load i64* %u_digits_data_V_addr_1, ali
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1687,7 +1687,7 @@ hls_label_13:9  %w_digits_data_V_load_2 = load i64* %w_digits_data_V_addr_2, ali
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1703,23 +1703,23 @@ hls_label_13:5  %u_digits_data_V_load_1 = load i64* %u_digits_data_V_addr_1, ali
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="96" bw="65" op_0_bw="64">
 <![CDATA[
-hls_label_13:6  %zext_ln132_1 = zext i64 %u_digits_data_V_load_1 to i65
+hls_label_13:6  %zext_ln136_1 = zext i64 %u_digits_data_V_load_1 to i65
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln132_1"/></StgValue>
+<StgValue><ssdm name="zext_ln136_1"/></StgValue>
 </operation>
 
 <operation id="122" st_id="21" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1735,13 +1735,13 @@ hls_label_13:10  %zext_ln700_3 = zext i64 %w_digits_data_V_load_2 to i65
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="102" bw="65" op_0_bw="65" op_1_bw="65">
 <![CDATA[
-hls_label_13:12  %add_ln700_2 = add i65 %zext_ln132_1, %zext_ln700_3
+hls_label_13:12  %add_ln700_2 = add i65 %zext_ln136_1, %zext_ln700_3
 
 ]]></Node>
 <StgValue><ssdm name="add_ln700_2"/></StgValue>
@@ -1754,23 +1754,23 @@ hls_label_13:12  %add_ln700_2 = add i65 %zext_ln132_1, %zext_ln700_3
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="90" bw="66" op_0_bw="2">
 <![CDATA[
-hls_label_13:0  %zext_ln128 = zext i2 %p_0288_0 to i66
+hls_label_13:0  %zext_ln132 = zext i2 %p_0288_0 to i66
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln128"/></StgValue>
+<StgValue><ssdm name="zext_ln132"/></StgValue>
 </operation>
 
 <operation id="125" st_id="22" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1786,7 +1786,7 @@ hls_label_13:11  %zext_ln700_4 = zext i2 %p_0288_0 to i64
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1802,13 +1802,13 @@ hls_label_13:13  %zext_ln700_5 = zext i65 %add_ln700_2 to i66
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="104" bw="66" op_0_bw="66" op_1_bw="66">
 <![CDATA[
-hls_label_13:14  %tmp_V = add i66 %zext_ln700_5, %zext_ln128
+hls_label_13:14  %tmp_V = add i66 %zext_ln700_5, %zext_ln132
 
 ]]></Node>
 <StgValue><ssdm name="tmp_V"/></StgValue>
@@ -1818,7 +1818,7 @@ hls_label_13:14  %tmp_V = add i66 %zext_ln700_5, %zext_ln128
 <core>TAddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1834,7 +1834,7 @@ hls_label_13:15  %add_ln209_4 = add i64 %w_digits_data_V_load_2, %zext_ln700_4
 <core>TAddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1850,7 +1850,7 @@ hls_label_13:16  %add_ln209 = add i64 %add_ln209_4, %u_digits_data_V_load_1
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1869,7 +1869,7 @@ hls_label_13:18  %trunc_ln858_1 = call i2 @_ssdm_op_PartSelect.i2.i66.i32.i32(i6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1885,7 +1885,7 @@ hls_label_13:1  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_s
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1894,14 +1894,14 @@ hls_label_13:1  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_s
 hls_label_13:2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specpipeline_ln130"/></StgValue>
+<StgValue><ssdm name="specpipeline_ln134"/></StgValue>
 </operation>
 
 <operation id="133" st_id="23" stage="1" lat="1">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1910,14 +1910,14 @@ hls_label_13:2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i3
 hls_label_13:17  store i64 %add_ln209, i64* %w_digits_data_V_addr_2, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln133"/></StgValue>
+<StgValue><ssdm name="store_ln137"/></StgValue>
 </operation>
 
 <operation id="134" st_id="23" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1933,7 +1933,7 @@ hls_label_13:19  %empty_11 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* 
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln128" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1942,7 +1942,7 @@ hls_label_13:19  %empty_11 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* 
 hls_label_13:21  br label %.preheader565
 
 ]]></Node>
-<StgValue><ssdm name="br_ln128"/></StgValue>
+<StgValue><ssdm name="br_ln132"/></StgValue>
 </operation>
 </state>
 
@@ -1990,10 +1990,10 @@ hls_label_13:21  br label %.preheader565
 
 <Node id="116" bw="3" op_0_bw="2">
 <![CDATA[
-._crit_edge569:1  %zext_ln138 = zext i2 %w_tmp_bits_0 to i3
+._crit_edge569:1  %zext_ln142 = zext i2 %w_tmp_bits_0 to i3
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln138"/></StgValue>
+<StgValue><ssdm name="zext_ln142"/></StgValue>
 </operation>
 
 <operation id="139" st_id="25" stage="1" lat="1">
@@ -2005,10 +2005,10 @@ hls_label_13:21  br label %.preheader565
 
 <Node id="117" bw="1" op_0_bw="2" op_1_bw="2">
 <![CDATA[
-._crit_edge569:2  %icmp_ln138 = icmp eq i2 %u_tmp_bits_read_1, 0
+._crit_edge569:2  %icmp_ln142 = icmp eq i2 %u_tmp_bits_read_1, 0
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln138"/></StgValue>
+<StgValue><ssdm name="icmp_ln142"/></StgValue>
 </operation>
 
 <operation id="140" st_id="25" stage="1" lat="1">
@@ -2020,17 +2020,17 @@ hls_label_13:21  br label %.preheader565
 
 <Node id="118" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-._crit_edge569:3  br i1 %icmp_ln138, label %._crit_edge570, label %.preheader.preheader
+._crit_edge569:3  br i1 %icmp_ln142, label %._crit_edge570, label %.preheader.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln138"/></StgValue>
+<StgValue><ssdm name="br_ln142"/></StgValue>
 </operation>
 
 <operation id="141" st_id="25" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln138" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2039,7 +2039,7 @@ hls_label_13:21  br label %.preheader565
 .preheader.preheader:0  br label %.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln142"/></StgValue>
+<StgValue><ssdm name="br_ln146"/></StgValue>
 </operation>
 </state>
 
@@ -2099,10 +2099,10 @@ hls_label_13:21  br label %.preheader565
 
 <Node id="125" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-.preheader:3  %icmp_ln142 = icmp eq i4 %i6_0, -8
+.preheader:3  %icmp_ln146 = icmp eq i4 %i6_0, -8
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln142"/></StgValue>
+<StgValue><ssdm name="icmp_ln146"/></StgValue>
 </operation>
 
 <operation id="146" st_id="26" stage="1" lat="1">
@@ -2144,39 +2144,39 @@ hls_label_13:21  br label %.preheader565
 
 <Node id="128" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader:6  br i1 %icmp_ln142, label %5, label %hls_label_14
+.preheader:6  br i1 %icmp_ln146, label %5, label %hls_label_14
 
 ]]></Node>
-<StgValue><ssdm name="br_ln142"/></StgValue>
+<StgValue><ssdm name="br_ln146"/></StgValue>
 </operation>
 
 <operation id="149" st_id="26" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="137" bw="64" op_0_bw="5">
 <![CDATA[
-hls_label_14:7  %zext_ln146 = zext i5 %j7_0 to i64
+hls_label_14:7  %zext_ln150 = zext i5 %j7_0 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln146"/></StgValue>
+<StgValue><ssdm name="zext_ln150"/></StgValue>
 </operation>
 
 <operation id="150" st_id="26" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="138" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_14:8  %w_digits_data_V_addr_4 = getelementptr [16 x i64]* %w_digits_data_V, i64 0, i64 %zext_ln146
+hls_label_14:8  %w_digits_data_V_addr_4 = getelementptr [16 x i64]* %w_digits_data_V, i64 0, i64 %zext_ln150
 
 ]]></Node>
 <StgValue><ssdm name="w_digits_data_V_addr_4"/></StgValue>
@@ -2186,7 +2186,7 @@ hls_label_14:8  %w_digits_data_V_addr_4 = getelementptr [16 x i64]* %w_digits_da
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2202,7 +2202,7 @@ hls_label_14:9  %w_digits_data_V_load_3 = load i64* %w_digits_data_V_addr_4, ali
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2221,29 +2221,29 @@ hls_label_14:20  %j_3 = add i5 %j7_0, 1
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="133" bw="64" op_0_bw="4">
 <![CDATA[
-hls_label_14:3  %zext_ln145 = zext i4 %i6_0 to i64
+hls_label_14:3  %zext_ln149 = zext i4 %i6_0 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln145"/></StgValue>
+<StgValue><ssdm name="zext_ln149"/></StgValue>
 </operation>
 
 <operation id="154" st_id="27" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="134" bw="3" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_14:4  %v_digits_data_V_addr_1 = getelementptr [8 x i64]* %v_digits_data_V, i64 0, i64 %zext_ln145
+hls_label_14:4  %v_digits_data_V_addr_1 = getelementptr [8 x i64]* %v_digits_data_V, i64 0, i64 %zext_ln149
 
 ]]></Node>
 <StgValue><ssdm name="v_digits_data_V_addr_1"/></StgValue>
@@ -2253,7 +2253,7 @@ hls_label_14:4  %v_digits_data_V_addr_1 = getelementptr [8 x i64]* %v_digits_dat
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2269,7 +2269,7 @@ hls_label_14:5  %v_digits_data_V_load_1 = load i64* %v_digits_data_V_addr_1, ali
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2288,7 +2288,7 @@ hls_label_14:9  %w_digits_data_V_load_3 = load i64* %w_digits_data_V_addr_4, ali
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2304,23 +2304,23 @@ hls_label_14:5  %v_digits_data_V_load_1 = load i64* %v_digits_data_V_addr_1, ali
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="136" bw="65" op_0_bw="64">
 <![CDATA[
-hls_label_14:6  %zext_ln146_1 = zext i64 %v_digits_data_V_load_1 to i65
+hls_label_14:6  %zext_ln150_1 = zext i64 %v_digits_data_V_load_1 to i65
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln146_1"/></StgValue>
+<StgValue><ssdm name="zext_ln150_1"/></StgValue>
 </operation>
 
 <operation id="159" st_id="28" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2336,13 +2336,13 @@ hls_label_14:10  %zext_ln700_6 = zext i64 %w_digits_data_V_load_3 to i65
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="142" bw="65" op_0_bw="65" op_1_bw="65">
 <![CDATA[
-hls_label_14:12  %add_ln700_4 = add i65 %zext_ln146_1, %zext_ln700_6
+hls_label_14:12  %add_ln700_4 = add i65 %zext_ln150_1, %zext_ln700_6
 
 ]]></Node>
 <StgValue><ssdm name="add_ln700_4"/></StgValue>
@@ -2355,23 +2355,23 @@ hls_label_14:12  %add_ln700_4 = add i65 %zext_ln146_1, %zext_ln700_6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="130" bw="66" op_0_bw="2">
 <![CDATA[
-hls_label_14:0  %zext_ln142 = zext i2 %p_0356_0 to i66
+hls_label_14:0  %zext_ln146 = zext i2 %p_0356_0 to i66
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln142"/></StgValue>
+<StgValue><ssdm name="zext_ln146"/></StgValue>
 </operation>
 
 <operation id="162" st_id="29" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2387,7 +2387,7 @@ hls_label_14:11  %zext_ln700_7 = zext i2 %p_0356_0 to i64
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2403,13 +2403,13 @@ hls_label_14:13  %zext_ln700_8 = zext i65 %add_ln700_4 to i66
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="144" bw="66" op_0_bw="66" op_1_bw="66">
 <![CDATA[
-hls_label_14:14  %tmp_V_1 = add i66 %zext_ln700_8, %zext_ln142
+hls_label_14:14  %tmp_V_1 = add i66 %zext_ln700_8, %zext_ln146
 
 ]]></Node>
 <StgValue><ssdm name="tmp_V_1"/></StgValue>
@@ -2419,7 +2419,7 @@ hls_label_14:14  %tmp_V_1 = add i66 %zext_ln700_8, %zext_ln142
 <core>TAddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2435,7 +2435,7 @@ hls_label_14:15  %add_ln209_5 = add i64 %w_digits_data_V_load_3, %zext_ln700_7
 <core>TAddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2451,7 +2451,7 @@ hls_label_14:16  %add_ln209_3 = add i64 %add_ln209_5, %v_digits_data_V_load_1
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2470,7 +2470,7 @@ hls_label_14:18  %trunc_ln858_2 = call i2 @_ssdm_op_PartSelect.i2.i66.i32.i32(i6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2486,7 +2486,7 @@ hls_label_14:1  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2495,14 +2495,14 @@ hls_label_14:1  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p
 hls_label_14:2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specpipeline_ln144"/></StgValue>
+<StgValue><ssdm name="specpipeline_ln148"/></StgValue>
 </operation>
 
 <operation id="170" st_id="30" stage="1" lat="1">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2511,14 +2511,14 @@ hls_label_14:2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i3
 hls_label_14:17  store i64 %add_ln209_3, i64* %w_digits_data_V_addr_4, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln147"/></StgValue>
+<StgValue><ssdm name="store_ln151"/></StgValue>
 </operation>
 
 <operation id="171" st_id="30" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2534,7 +2534,7 @@ hls_label_14:19  %empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* 
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln142" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln146" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2543,7 +2543,7 @@ hls_label_14:19  %empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* 
 hls_label_14:21  br label %.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln142"/></StgValue>
+<StgValue><ssdm name="br_ln146"/></StgValue>
 </operation>
 </state>
 
@@ -2558,10 +2558,10 @@ hls_label_14:21  br label %.preheader
 
 <Node id="153" bw="3" op_0_bw="2">
 <![CDATA[
-:0  %zext_ln150 = zext i2 %p_0356_0 to i3
+:0  %zext_ln154 = zext i2 %p_0356_0 to i3
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln150"/></StgValue>
+<StgValue><ssdm name="zext_ln154"/></StgValue>
 </operation>
 
 <operation id="174" st_id="31" stage="1" lat="1">
@@ -2573,10 +2573,10 @@ hls_label_14:21  br label %.preheader
 
 <Node id="154" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-:1  %add_ln150 = add i3 %zext_ln138, %zext_ln150
+:1  %add_ln154 = add i3 %zext_ln142, %zext_ln154
 
 ]]></Node>
-<StgValue><ssdm name="add_ln150"/></StgValue>
+<StgValue><ssdm name="add_ln154"/></StgValue>
 </operation>
 
 <operation id="175" st_id="31" stage="1" lat="1">
@@ -2591,7 +2591,7 @@ hls_label_14:21  br label %.preheader
 :2  br label %._crit_edge570
 
 ]]></Node>
-<StgValue><ssdm name="br_ln151"/></StgValue>
+<StgValue><ssdm name="br_ln155"/></StgValue>
 </operation>
 </state>
 
@@ -2606,7 +2606,7 @@ hls_label_14:21  br label %.preheader
 
 <Node id="157" bw="3" op_0_bw="3" op_1_bw="0" op_2_bw="3" op_3_bw="0">
 <![CDATA[
-._crit_edge570:0  %w_tmp_bits_1 = phi i3 [ %zext_ln138, %._crit_edge569 ], [ %add_ln150, %5 ]
+._crit_edge570:0  %w_tmp_bits_1 = phi i3 [ %zext_ln142, %._crit_edge569 ], [ %add_ln154, %5 ]
 
 ]]></Node>
 <StgValue><ssdm name="w_tmp_bits_1"/></StgValue>
@@ -2621,10 +2621,10 @@ hls_label_14:21  br label %.preheader
 
 <Node id="158" bw="4" op_0_bw="3">
 <![CDATA[
-._crit_edge570:1  %zext_ln152 = zext i3 %w_tmp_bits_1 to i4
+._crit_edge570:1  %zext_ln156 = zext i3 %w_tmp_bits_1 to i4
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln152"/></StgValue>
+<StgValue><ssdm name="zext_ln156"/></StgValue>
 </operation>
 
 <operation id="178" st_id="32" stage="1" lat="1">
@@ -2636,10 +2636,10 @@ hls_label_14:21  br label %.preheader
 
 <Node id="159" bw="4" op_0_bw="2">
 <![CDATA[
-._crit_edge570:2  %zext_ln152_1 = zext i2 %v_tmp_bits_read_1 to i4
+._crit_edge570:2  %zext_ln156_1 = zext i2 %v_tmp_bits_read_1 to i4
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln152_1"/></StgValue>
+<StgValue><ssdm name="zext_ln156_1"/></StgValue>
 </operation>
 
 <operation id="179" st_id="32" stage="1" lat="1">
@@ -2651,10 +2651,10 @@ hls_label_14:21  br label %.preheader
 
 <Node id="160" bw="4" op_0_bw="2">
 <![CDATA[
-._crit_edge570:3  %zext_ln152_2 = zext i2 %u_tmp_bits_read_1 to i4
+._crit_edge570:3  %zext_ln156_2 = zext i2 %u_tmp_bits_read_1 to i4
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln152_2"/></StgValue>
+<StgValue><ssdm name="zext_ln156_2"/></StgValue>
 </operation>
 
 <operation id="180" st_id="32" stage="1" lat="1">
@@ -2666,10 +2666,10 @@ hls_label_14:21  br label %.preheader
 
 <Node id="161" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-._crit_edge570:4  %mul_ln152 = mul i4 %zext_ln152_1, %zext_ln152_2
+._crit_edge570:4  %mul_ln156 = mul i4 %zext_ln156_1, %zext_ln156_2
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln152"/></StgValue>
+<StgValue><ssdm name="mul_ln156"/></StgValue>
 </operation>
 
 <operation id="181" st_id="32" stage="1" lat="1">
@@ -2681,10 +2681,10 @@ hls_label_14:21  br label %.preheader
 
 <Node id="162" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-._crit_edge570:5  %add_ln152 = add i4 %zext_ln152, %mul_ln152
+._crit_edge570:5  %add_ln156 = add i4 %zext_ln156, %mul_ln156
 
 ]]></Node>
-<StgValue><ssdm name="add_ln152"/></StgValue>
+<StgValue><ssdm name="add_ln156"/></StgValue>
 </operation>
 
 <operation id="182" st_id="32" stage="1" lat="1">
@@ -2696,10 +2696,10 @@ hls_label_14:21  br label %.preheader
 
 <Node id="163" bw="0" op_0_bw="4">
 <![CDATA[
-._crit_edge570:6  ret i4 %add_ln152
+._crit_edge570:6  ret i4 %add_ln156
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln153"/></StgValue>
+<StgValue><ssdm name="ret_ln157"/></StgValue>
 </operation>
 </state>
 </state_list>

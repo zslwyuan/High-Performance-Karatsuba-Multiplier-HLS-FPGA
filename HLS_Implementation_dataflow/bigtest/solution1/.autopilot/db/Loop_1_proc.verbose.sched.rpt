@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_1_proc'
+================================================================
+* Date:           Fri Jun  5 20:26:55 2020
+
+* Version:        2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)
+* Project:        bigtest
+* Solution:       solution1
+* Product family: virtexu
+* Target device:  xcvu095-ffva2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 3.00 ns | 1.768 ns |   0.38 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      130|      130| 0.390 us | 0.390 us |  130|  130|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |      128|      128|         2|          1|          1|   128|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 4 3 
+3 --> 2 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.95>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %hs_input_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 1024, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.95ns)   --->   "br label %0"   --->   Operation 6 'br' <Predicate = true> <Delay = 0.95>
+
+State 2 <SV = 1> <Delay = 1.76>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%i_0_i = phi i8 [ 0, %newFuncRoot ], [ %i, %hls_label_0_end ]"   --->   Operation 7 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.82ns)   --->   "%icmp_ln412 = icmp eq i8 %i_0_i, -128" [multest.cc:412]   --->   Operation 8 'icmp' 'icmp_ln412' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128)"   --->   Operation 9 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (1.18ns)   --->   "%i = add i8 %i_0_i, 1" [multest.cc:412]   --->   Operation 10 'add' 'i' <Predicate = true> <Delay = 1.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %icmp_ln412, label %karastuba_mul_.exit.exitStub, label %hls_label_0_begin" [multest.cc:412]   --->   Operation 11 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_4 = call i2 @_ssdm_op_PartSelect.i2.i8.i32.i32(i8 %i_0_i, i32 6, i32 7)" [multest.cc:416]   --->   Operation 12 'partselect' 'tmp_4' <Predicate = (!icmp_ln412)> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.41ns)   --->   "%icmp_ln416 = icmp eq i2 %tmp_4, 0" [multest.cc:416]   --->   Operation 13 'icmp' 'icmp_ln416' <Predicate = (!icmp_ln412)> <Delay = 0.41> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "br i1 %icmp_ln416, label %1, label %2" [multest.cc:416]   --->   Operation 14 'br' <Predicate = (!icmp_ln412)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (1.18ns)   --->   "%add_ln419 = add i8 %i_0_i, -64" [multest.cc:419]   --->   Operation 15 'add' 'add_ln419' <Predicate = (!icmp_ln412 & !icmp_ln416)> <Delay = 1.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%hs_input_V_read_1 = call i64 @_ssdm_op_Read.axis.volatile.i64P(i64* %hs_input_V)" [multest.cc:419]   --->   Operation 16 'read' 'hs_input_V_read_1' <Predicate = (!icmp_ln412 & !icmp_ln416)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln417 = zext i8 %i_0_i to i64" [multest.cc:417]   --->   Operation 17 'zext' 'zext_ln417' <Predicate = (!icmp_ln412 & icmp_ln416)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%hs_input_V_read = call i64 @_ssdm_op_Read.axis.volatile.i64P(i64* %hs_input_V)" [multest.cc:417]   --->   Operation 18 'read' 'hs_input_V_read' <Predicate = (!icmp_ln412 & icmp_ln416)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%lhs_digits_data_V_ad = getelementptr [64 x i64]* %lhs_digits_data_V, i64 0, i64 %zext_ln417" [multest.cc:417]   --->   Operation 19 'getelementptr' 'lhs_digits_data_V_ad' <Predicate = (!icmp_ln412 & icmp_ln416)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.76ns)   --->   "store i64 %hs_input_V_read, i64* %lhs_digits_data_V_ad, align 8" [multest.cc:417]   --->   Operation 20 'store' <Predicate = (!icmp_ln412 & icmp_ln416)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+
+State 3 <SV = 2> <Delay = 1.76>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)" [multest.cc:413]   --->   Operation 21 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [multest.cc:414]   --->   Operation 22 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln419 = zext i8 %add_ln419 to i64" [multest.cc:419]   --->   Operation 23 'zext' 'zext_ln419' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%rhs_digits_data_V_ad = getelementptr [64 x i64]* %rhs_digits_data_V, i64 0, i64 %zext_ln419" [multest.cc:419]   --->   Operation 24 'getelementptr' 'rhs_digits_data_V_ad' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (1.76ns)   --->   "store i64 %hs_input_V_read_1, i64* %rhs_digits_data_V_ad, align 8" [multest.cc:419]   --->   Operation 25 'store' <Predicate = (!icmp_ln416)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "br label %hls_label_0_end"   --->   Operation 26 'br' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [multest.cc:417]   --->   Operation 27 'br' <Predicate = (icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%empty_96 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp)" [multest.cc:420]   --->   Operation 28 'specregionend' 'empty_96' <Predicate = (!icmp_ln412)> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "br label %0" [multest.cc:412]   --->   Operation 29 'br' <Predicate = (!icmp_ln412)> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 30 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3ns, clock uncertainty: 0.375ns.
+
+ <State 1>: 0.952ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', multest.cc:412) [7]  (0.952 ns)
+
+ <State 2>: 1.77ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', multest.cc:412) [7]  (0 ns)
+	'getelementptr' operation ('lhs_digits_data_V_ad', multest.cc:417) [28]  (0 ns)
+	'store' operation ('store_ln417', multest.cc:417) of variable 'hs_input_V_read', multest.cc:417 on array 'lhs_digits_data_V' [29]  (1.77 ns)
+
+ <State 3>: 1.77ns
+The critical path consists of the following:
+	'getelementptr' operation ('rhs_digits_data_V_ad', multest.cc:419) [22]  (0 ns)
+	'store' operation ('store_ln419', multest.cc:419) of variable 'hs_input_V_read_1', multest.cc:419 on array 'rhs_digits_data_V' [23]  (1.77 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

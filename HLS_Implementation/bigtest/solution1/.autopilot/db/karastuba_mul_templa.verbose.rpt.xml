@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'karastuba_mul_templa'" level="0">
-<item name = "Date">Tue May 26 00:45:07 2020
+<item name = "Date">Fri Jun  5 20:14:29 2020
 </item>
-<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Version">2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)</item>
 <item name = "Project">bigtest</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">virtexu</item>
@@ -93,8 +93,8 @@
 <column name="i_fu_198_p2">+, 0, 0, 15, 6, 1</column>
 <column name="tmp_V_14_fu_300_p2">+, 0, 0, 73, 66, 66</column>
 <column name="tmp_V_fu_233_p2">+, 0, 0, 73, 66, 66</column>
-<column name="icmp_ln51_1_fu_259_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln51_fu_192_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln53_1_fu_259_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln53_fu_192_p2">icmp, 0, 0, 11, 6, 7</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
@@ -142,8 +142,8 @@
 <column name="grp_karastuba_mul_templa_4_fu_180_ap_start_reg">1, 0, 1, 0</column>
 <column name="i_0_i2_reg_169">6, 0, 6, 0</column>
 <column name="i_0_i_reg_146">6, 0, 6, 0</column>
-<column name="icmp_ln51_1_reg_377">1, 0, 1, 0</column>
-<column name="icmp_ln51_reg_326">1, 0, 1, 0</column>
+<column name="icmp_ln53_1_reg_377">1, 0, 1, 0</column>
+<column name="icmp_ln53_reg_326">1, 0, 1, 0</column>
 <column name="lhs0_tmp_digits_data_6_reg_350">64, 0, 64, 0</column>
 <column name="lhs0_tmp_digits_data_6_reg_350_pp0_iter2_reg">64, 0, 64, 0</column>
 <column name="lhs1_tmp_digits_data_6_reg_356">64, 0, 64, 0</column>
@@ -156,12 +156,12 @@
 <column name="rhs1_tmp_digits_data_6_reg_407_pp1_iter2_reg">64, 0, 64, 0</column>
 <column name="trunc_ln858_3_reg_423">2, 0, 2, 0</column>
 <column name="trunc_ln_reg_372">2, 0, 2, 0</column>
-<column name="zext_ln56_1_reg_386">6, 0, 64, 58</column>
-<column name="zext_ln56_reg_335">6, 0, 64, 58</column>
-<column name="icmp_ln51_1_reg_377">64, 32, 1, 0</column>
-<column name="icmp_ln51_reg_326">64, 32, 1, 0</column>
-<column name="zext_ln56_1_reg_386">64, 32, 64, 58</column>
-<column name="zext_ln56_reg_335">64, 32, 64, 58</column>
+<column name="zext_ln58_1_reg_386">6, 0, 64, 58</column>
+<column name="zext_ln58_reg_335">6, 0, 64, 58</column>
+<column name="icmp_ln53_1_reg_377">64, 32, 1, 0</column>
+<column name="icmp_ln53_reg_326">64, 32, 1, 0</column>
+<column name="zext_ln58_1_reg_386">64, 32, 64, 58</column>
+<column name="zext_ln58_reg_335">64, 32, 64, 58</column>
 </table>
 </item>
 </section>

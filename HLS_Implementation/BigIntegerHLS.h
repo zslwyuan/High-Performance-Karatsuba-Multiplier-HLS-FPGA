@@ -33,10 +33,6 @@ template <int MAX_DIGITS, int BITS>
 struct Bignum {
   const static int N_ele = MAX_DIGITS;
   unsigned int tmp_bits;
-  Bignum(): tmp_bits(0)
-  {
-//#pragma HLS RESOURCE variable=digits.data core=RAM_T2P_BRAM
-  }
 
   Array<UnsignedUnitDigit, MAX_DIGITS> digits;
 };

@@ -8,9 +8,9 @@ The utilization of this open source project should follow the [GPL-3.0 License](
 
 
 
-When handling 4096x4096=>8192, the performance and resource cost are shown below:
+When handling 4096x4096=>8192, the performance and resource cost are shown below (left is for non-dataflow design; right is for dataflow design):
 
-<img src="https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/blob/master/image/report.png" width="400"> 
+<img src="https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/blob/master/image/report.png" width="400"> <img src="https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/blob/master/image/report_dataflow.png" width="400"> 
 
 
 
@@ -24,7 +24,7 @@ which can make full use of parallelism of Karatsuba multiplier
 
 each loop are pipelined.
 
-Later version will provide dataflow processing.
+Another version will provide [dataflow processing]((https://github.com/zslwyuan/High-Performance-Karatsuba-Multiplier-HLS-FPGA/tree/master/HLS_Implementation_dataflow)).
 
 Detailed comments can be found in the source code.
 

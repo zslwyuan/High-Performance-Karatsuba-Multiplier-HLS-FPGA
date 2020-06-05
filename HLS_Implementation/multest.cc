@@ -20,7 +20,7 @@ const int BITS_PER_DIGIT = UNIT_WORD_BITWIDTH;
 	#define LARGE_BITWIDTH 4096
 #else
 	#define MIN_ELE 8
-	#define LARGE_BITWIDTH 512
+	#define LARGE_BITWIDTH 4096
 #endif
 
 using namespace std;
@@ -41,10 +41,12 @@ void little_end_to_array(mpz_t a, unsigned int output[1024])
     //printf("\n");
 }
 
+
 // Addition for Karatsuba Multiplier
 template <typename In_T, typename Out_T>
 void add_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
     for (int j = u->N_ele; j < w->N_ele; ++j)  w->digits.data[j] = (0);
     bool needUp = false;
     WUnsignedDigit tmp = 0;
@@ -66,6 +68,7 @@ assert(false);
 template <typename In_T, typename Out_T>
 void sub_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
     // WARNING: WE ASSUME U>V
     int reset_start = u->N_ele < w->N_ele? u->N_ele : w->N_ele;
     for (int j = reset_start; j < w->N_ele; ++j)  w->digits.data[j] = (0);
@@ -97,6 +100,7 @@ void sub_I_O(const In_T *u, const In_T *v, Out_T *w)
 template <typename In_T, typename Out_T>
 void mul_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
     for (int j = 0; j < w->N_ele; ++j)  w->digits.data[j] = (0);
     int i,j;
     WUnsignedDigit k = 0;
@@ -157,6 +161,7 @@ void mul_I_O(const In_T *u, const In_T *v, Out_T *w)
 template <typename In_T0, typename In_T1, typename In_T2, typename Out_T>
 void CAT_I_I_I_O(const In_T0 *x0, const In_T1 *x1, const In_T2 *x2, Out_T *w)
 {
+    w->tmp_bits = 0;
 
     // WARNING: WE ASSUME U>V
     for (int j = x0->N_ele; j < w->N_ele; ++j)  w->digits.data[j] = (0);
@@ -225,9 +230,13 @@ void karastuba_mul_template_z1(
 {
 #pragma HLS inline off
     Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> add0;
-    add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(lhs0_tmp,lhs1_tmp, &add0);
     Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> add1;
+
+    add0.tmp_bits=add1.tmp_bits=0;
+
+    add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(lhs0_tmp,lhs1_tmp, &add0);    
     add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(rhs0_tmp,rhs1_tmp,&add1);
+
     karastuba_mul_template<MAX_N_ele_input / 2,BITS_PER_DIGIT>(&add0, &add1, cross_mul);
     return;
 }
@@ -242,7 +251,7 @@ void karastuba_mul_template(
 {
 #pragma HLS inline off
     Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT> lhs0,lhs1,rhs0,rhs1,lhs0_tmp,lhs1_tmp,rhs0_tmp,rhs1_tmp;
-
+    lhs0.tmp_bits=lhs1.tmp_bits=rhs0.tmp_bits=rhs1.tmp_bits=lhs0_tmp.tmp_bits=lhs1_tmp.tmp_bits=rhs0_tmp.tmp_bits=rhs1_tmp.tmp_bits=0;
     for (int i=0;i<lhs0.N_ele;i++)lhs0.digits.data[i]=lhs0_tmp.digits.data[i]=lhs->digits.data[i];
     for (int i=0;i<lhs1.N_ele;i++)lhs1.digits.data[i]=lhs1_tmp.digits.data[i]=lhs->digits.data[i+MAX_N_ele_input / 2];
     for (int i=0;i<rhs0.N_ele;i++)rhs0.digits.data[i]=rhs0_tmp.digits.data[i]=rhs->digits.data[i];
@@ -375,35 +384,40 @@ void karastuba_mul_software(
 #ifdef C_RTL_COSIMULATION
 int main()
 {
-	UnsignedUnitDigit hs_input[2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH],
-					          res_output_hardware[2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH],
-					          res_output_software[2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH];
 
-
-    srand(0);
-
-	for (int i=0;i<2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH;i++)
-		 hs_input[i]=i+rand();
-
-
-	printf("HARDWARE RESULT:\nc=");
-	karastuba_mul(hs_input,res_output_hardware);
-  //for (int i=0;i<2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH;i++)
-	//for (int i=2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH-1;i>=0;i--)
-  for (int i=0;i<2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH;i++) printf("%08x",res_output_hardware[i]);
-
-
-	printf("\nSOFTWARE RESULT:\nc=");
-	karastuba_mul_software(hs_input,res_output_software);
-	//for (int i=2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH-1;i>=0;i--)
-  for (int i=0;i<2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH;i++) printf("%08x",res_output_software[i]);
-	printf("\n");
-
-	for (int i=2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH-1;i>=0;i--)
+	for (int seed=0;seed<10;seed++)
 	{
-		if (res_output_software[i]!=res_output_hardware[i])
-			return -1;
+		UnsignedUnitDigit hs_input[2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH],
+						          res_output_hardware[2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH],
+						          res_output_software[2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH];
+
+
+	    srand(0);
+
+		for (int i=0;i<2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH;i++)
+			 hs_input[i]=i+rand();
+
+
+		printf("HARDWARE RESULT:\nc=");
+		karastuba_mul(hs_input,res_output_hardware);
+	  //for (int i=0;i<2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH;i++)
+		//for (int i=2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH-1;i>=0;i--)
+		for (int i=0;i<2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH;i++) printf("%08x",res_output_hardware[i]);
+
+
+		printf("\nSOFTWARE RESULT:\nc=");
+		karastuba_mul_software(hs_input,res_output_software);
+		//for (int i=2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH-1;i>=0;i--)
+		for (int i=0;i<2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH;i++) printf("%08x",res_output_software[i]);
+		printf("\n");
+
+		for (int i=2*LARGE_BITWIDTH/UNIT_WORD_BITWIDTH-1;i>=0;i--)
+		{
+			if (res_output_software[i]!=res_output_hardware[i])
+				return -1;
+		}
 	}
+
 
     return 0;
 }

@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'CAT_I_I_I_O_2'
 ================================================================
-* Date:           Tue May 26 00:45:04 2020
+* Date:           Fri Jun  5 20:14:25 2020
 
-* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Version:        2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)
 * Project:        bigtest
 * Solution:       solution1
 * Product family: virtexu
@@ -104,10 +104,10 @@
     |j_fu_266_p2              |     +    |      0|  0|  15|           6|           1|
     |tmp_V_15_fu_442_p2       |     +    |      0|  0|  73|          66|          66|
     |tmp_V_fu_341_p2          |     +    |      0|  0|  73|          66|          66|
-    |icmp_ln162_fu_255_p2     |   icmp   |      0|  0|  11|           6|           7|
-    |icmp_ln164_fu_272_p2     |   icmp   |      0|  0|  11|           5|           6|
-    |icmp_ln169_fu_289_p2     |   icmp   |      0|  0|  11|           5|           6|
-    |icmp_ln185_fu_390_p2     |   icmp   |      0|  0|  11|           5|           6|
+    |icmp_ln167_fu_255_p2     |   icmp   |      0|  0|  11|           6|           7|
+    |icmp_ln169_fu_272_p2     |   icmp   |      0|  0|  11|           5|           6|
+    |icmp_ln174_fu_289_p2     |   icmp   |      0|  0|  11|           5|           6|
+    |icmp_ln190_fu_390_p2     |   icmp   |      0|  0|  11|           5|           6|
     |ap_enable_pp0            |    xor   |      0|  0|   2|           1|           2|
     |ap_enable_pp1            |    xor   |      0|  0|   2|           1|           2|
     |ap_enable_reg_pp0_iter1  |    xor   |      0|  0|   2|           2|           1|
@@ -169,8 +169,8 @@
     |i3_0_reg_235                                |   5|   0|    5|          0|
     |i_0_reg_167                                 |   5|   0|    5|          0|
     |i_reg_486                                   |   5|   0|    5|          0|
-    |icmp_ln169_reg_506                          |   1|   0|    1|          0|
-    |icmp_ln185_reg_567                          |   1|   0|    1|          0|
+    |icmp_ln174_reg_506                          |   1|   0|    1|          0|
+    |icmp_ln190_reg_567                          |   1|   0|    1|          0|
     |j1_0_reg_190                                |   5|   0|    5|          0|
     |j1_1_reg_224                                |   6|   0|    6|          0|
     |j_0_reg_156                                 |   6|   0|    6|          0|
@@ -179,7 +179,7 @@
     |reg_246                                     |  64|   0|   64|          0|
     |reg_246_pp0_iter2_reg                       |  64|   0|   64|          0|
     |reg_246_pp1_iter2_reg                       |  64|   0|   64|          0|
-    |sext_ln158_reg_469                          |  32|   0|   32|          0|
+    |sext_ln162_reg_469                          |  32|   0|   32|          0|
     |trunc_ln858_s_reg_608                       |   2|   0|    2|          0|
     |trunc_ln_reg_547                            |   2|   0|    2|          0|
     |w_digits_data_V_addr_7_reg_520              |   5|   0|    5|          0|
@@ -189,9 +189,9 @@
     |x1_digits_data_V_loa_reg_531_pp0_iter2_reg  |  64|   0|   64|          0|
     |x2_digits_data_V_loa_reg_592                |  64|   0|   64|          0|
     |x2_digits_data_V_loa_reg_592_pp1_iter2_reg  |  64|   0|   64|          0|
-    |zext_ln164_reg_491                          |   5|   0|   64|         59|
-    |icmp_ln169_reg_506                          |  64|  32|    1|          0|
-    |icmp_ln185_reg_567                          |  64|  32|    1|          0|
+    |zext_ln169_reg_491                          |   5|   0|   64|         59|
+    |icmp_ln174_reg_506                          |  64|  32|    1|          0|
+    |icmp_ln190_reg_567                          |  64|  32|    1|          0|
     |w_digits_data_V_addr_7_reg_520              |  64|  32|    5|          0|
     |w_digits_data_V_addr_8_reg_581              |  64|  32|    5|          0|
     +--------------------------------------------+----+----+-----+-----------+

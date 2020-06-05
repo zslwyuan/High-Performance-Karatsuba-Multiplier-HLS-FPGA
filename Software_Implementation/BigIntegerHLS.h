@@ -18,9 +18,6 @@ template <int MAX_DIGITS, int BITS>
 struct Bignum {
   const static int N_ele = MAX_DIGITS;
   unsigned int tmp_bits;
-  Bignum(): tmp_bits(0)
-  {
-  }
 
   Array<UnsignedUnitDigit, MAX_DIGITS> digits;
 };

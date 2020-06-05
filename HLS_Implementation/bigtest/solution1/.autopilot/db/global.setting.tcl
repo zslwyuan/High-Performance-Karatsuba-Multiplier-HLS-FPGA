@@ -42,8 +42,8 @@ set SCTraceOption all
 set TargetInfo xcvu095:-ffva2104:-2-e
 set SourceFiles {sc {} c ../../multest.cc}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/solution1.directive
-set TBFiles {verilog {../../BigIntegerHLS.h ../../multest.cc} bc {../../BigIntegerHLS.h ../../multest.cc} sc {../../BigIntegerHLS.h ../../multest.cc} vhdl {../../BigIntegerHLS.h ../../multest.cc} c {} cas {../../BigIntegerHLS.h ../../multest.cc}}
+set DirectiveFile /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/solution1.directive
+set TBFiles {verilog {../../multest.cc ../../BigIntegerHLS.h} bc {../../multest.cc ../../BigIntegerHLS.h} sc {../../multest.cc ../../BigIntegerHLS.h} vhdl {../../multest.cc ../../BigIntegerHLS.h} c {} cas {../../multest.cc ../../BigIntegerHLS.h}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

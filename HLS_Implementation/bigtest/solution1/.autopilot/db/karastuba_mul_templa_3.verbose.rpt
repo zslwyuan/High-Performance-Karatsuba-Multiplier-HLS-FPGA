@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'karastuba_mul_templa_3'
 ================================================================
-* Date:           Tue May 26 00:45:09 2020
+* Date:           Fri Jun  5 20:14:31 2020
 
-* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Version:        2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)
 * Project:        bigtest
 * Solution:       solution1
 * Product family: virtexu
@@ -128,10 +128,10 @@
     |add2_tmp_bits_fu_663_p2           |     +    |      0|  0|  15|           6|           6|
     |add_ln209_13_fu_623_p2            |     +    |      0|  0|  64|          64|          64|
     |add_ln209_fu_628_p2               |     +    |      0|  0|  64|          64|          64|
-    |add_ln61_fu_653_p2                |     +    |      0|  0|  15|           5|           5|
+    |add_ln63_fu_653_p2                |     +    |      0|  0|  15|           5|           5|
     |add_ln700_15_fu_735_p2            |     +    |      0|  0|  71|          64|          64|
     |add_ln700_fu_600_p2               |     +    |      0|  0|  72|          65|          65|
-    |add_ln92_fu_749_p2                |     +    |      0|  0|  15|           5|           5|
+    |add_ln95_fu_749_p2                |     +    |      0|  0|  15|           5|           5|
     |i_16_fu_503_p2                    |     +    |      0|  0|  15|           6|           1|
     |i_17_fu_532_p2                    |     +    |      0|  0|  15|           6|           1|
     |i_18_fu_549_p2                    |     +    |      0|  0|  15|           6|           1|
@@ -143,11 +143,11 @@
     |tmp_V_10_fu_697_p2                |     -    |      0|  0|  72|          65|          65|
     |z1_tmp_bits_fu_758_p2             |     -    |      0|  0|  15|           7|           7|
     |exitcond_i_fu_673_p2              |   icmp   |      0|  0|  11|           7|           8|
-    |icmp_ln246_fu_480_p2              |   icmp   |      0|  0|  11|           6|           7|
-    |icmp_ln247_fu_497_p2              |   icmp   |      0|  0|  11|           6|           7|
-    |icmp_ln248_fu_526_p2              |   icmp   |      0|  0|  11|           6|           7|
-    |icmp_ln249_fu_543_p2              |   icmp   |      0|  0|  11|           6|           7|
-    |icmp_ln51_fu_576_p2               |   icmp   |      0|  0|  11|           7|           8|
+    |icmp_ln255_fu_480_p2              |   icmp   |      0|  0|  11|           6|           7|
+    |icmp_ln256_fu_497_p2              |   icmp   |      0|  0|  11|           6|           7|
+    |icmp_ln257_fu_526_p2              |   icmp   |      0|  0|  11|           6|           7|
+    |icmp_ln258_fu_543_p2              |   icmp   |      0|  0|  11|           6|           7|
+    |icmp_ln53_fu_576_p2               |   icmp   |      0|  0|  11|           7|           8|
     |ap_block_state14_on_subcall_done  |    or    |      0|  0|   2|           1|           1|
     |empty_45_fu_741_p3                |  select  |      0|  0|   2|           1|           2|
     |select_ln701_3_fu_711_p3          |  select  |      0|  0|   2|           1|           2|
@@ -156,8 +156,8 @@
     |ap_enable_pp1                     |    xor   |      0|  0|   2|           1|           2|
     |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
     |ap_enable_reg_pp1_iter1           |    xor   |      0|  0|   2|           2|           1|
-    |xor_ln247_fu_509_p2               |    xor   |      0|  0|   7|           6|           7|
-    |xor_ln249_fu_555_p2               |    xor   |      0|  0|   7|           6|           7|
+    |xor_ln256_fu_509_p2               |    xor   |      0|  0|   7|           6|           7|
+    |xor_ln258_fu_555_p2               |    xor   |      0|  0|   7|           6|           7|
     +----------------------------------+----------+-------+---+----+------------+------------+
     |Total                             |          |      0|  0| 734|         574|         553|
     +----------------------------------+----------+-------+---+----+------------+------------+
@@ -256,7 +256,7 @@
     |i_17_reg_799                                    |   6|   0|    6|          0|
     |i_18_reg_818                                    |   6|   0|    6|          0|
     |i_reg_767                                       |   6|   0|    6|          0|
-    |icmp_ln51_reg_843                               |   1|   0|    1|          0|
+    |icmp_ln53_reg_843                               |   1|   0|    1|          0|
     |op2_assign_reg_400                              |   1|   0|    1|          0|
     |p_088_0_i_reg_377                               |   2|   0|    2|          0|
     |reg_464                                         |  64|   0|   64|          0|
@@ -271,16 +271,16 @@
     |z2_digits_data_V_loa_reg_873                    |  64|   0|   64|          0|
     |z2_digits_data_V_loa_reg_873_pp0_iter2_reg      |  64|   0|   64|          0|
     |z2_tmp_bits_reg_833                             |   4|   0|    4|          0|
-    |zext_ln246_reg_772                              |   6|   0|   64|         58|
-    |zext_ln248_reg_804                              |   6|   0|   64|         58|
-    |zext_ln257_reg_838                              |   4|   0|    5|          1|
-    |zext_ln56_reg_852                               |   7|   0|   64|         57|
-    |zext_ln61_9_reg_894                             |   6|   0|    7|          1|
-    |zext_ln77_reg_908                               |   7|   0|   64|         57|
+    |zext_ln255_reg_772                              |   6|   0|   64|         58|
+    |zext_ln257_reg_804                              |   6|   0|   64|         58|
+    |zext_ln266_reg_838                              |   4|   0|    5|          1|
+    |zext_ln58_reg_852                               |   7|   0|   64|         57|
+    |zext_ln63_9_reg_894                             |   6|   0|    7|          1|
+    |zext_ln80_reg_908                               |   7|   0|   64|         57|
     |exitcond_i_reg_899                              |  64|  32|    1|          0|
-    |icmp_ln51_reg_843                               |  64|  32|    1|          0|
-    |zext_ln56_reg_852                               |  64|  32|   64|         57|
-    |zext_ln77_reg_908                               |  64|  32|   64|         57|
+    |icmp_ln53_reg_843                               |  64|  32|    1|          0|
+    |zext_ln58_reg_852                               |  64|  32|   64|         57|
+    |zext_ln80_reg_908                               |  64|  32|   64|         57|
     +------------------------------------------------+----+----+-----+-----------+
     |Total                                           |1180| 128| 1286|        346|
     +------------------------------------------------+----+----+-----+-----------+
@@ -386,214 +386,214 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.76>
-ST_1 : Operation 28 [1/1] (1.76ns)   --->   "%lhs0_digits_data_V = alloca [32 x i64], align 8" [multest.cc:244]   --->   Operation 28 'alloca' 'lhs0_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 29 [1/1] (1.76ns)   --->   "%lhs1_digits_data_V = alloca [32 x i64], align 8" [multest.cc:244]   --->   Operation 29 'alloca' 'lhs1_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 30 [1/1] (1.76ns)   --->   "%rhs0_digits_data_V = alloca [32 x i64], align 8" [multest.cc:244]   --->   Operation 30 'alloca' 'rhs0_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 31 [1/1] (1.76ns)   --->   "%rhs1_digits_data_V = alloca [32 x i64], align 8" [multest.cc:244]   --->   Operation 31 'alloca' 'rhs1_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 32 [1/1] (1.76ns)   --->   "%lhs0_tmp_digits_data = alloca [32 x i64], align 8" [multest.cc:244]   --->   Operation 32 'alloca' 'lhs0_tmp_digits_data' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 33 [1/1] (1.76ns)   --->   "%lhs1_tmp_digits_data = alloca [32 x i64], align 8" [multest.cc:244]   --->   Operation 33 'alloca' 'lhs1_tmp_digits_data' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 34 [1/1] (1.76ns)   --->   "%rhs0_tmp_digits_data = alloca [32 x i64], align 8" [multest.cc:244]   --->   Operation 34 'alloca' 'rhs0_tmp_digits_data' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 35 [1/1] (1.76ns)   --->   "%rhs1_tmp_digits_data = alloca [32 x i64], align 8" [multest.cc:244]   --->   Operation 35 'alloca' 'rhs1_tmp_digits_data' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 36 [1/1] (1.76ns)   --->   "%z0_digits_data_V = alloca [64 x i64], align 8" [multest.cc:252]   --->   Operation 36 'alloca' 'z0_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 37 [1/1] (1.76ns)   --->   "%z2_digits_data_V = alloca [64 x i64], align 8" [multest.cc:254]   --->   Operation 37 'alloca' 'z2_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 28 [1/1] (1.76ns)   --->   "%lhs0_digits_data_V = alloca [32 x i64], align 8" [multest.cc:253]   --->   Operation 28 'alloca' 'lhs0_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 29 [1/1] (1.76ns)   --->   "%lhs1_digits_data_V = alloca [32 x i64], align 8" [multest.cc:253]   --->   Operation 29 'alloca' 'lhs1_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 30 [1/1] (1.76ns)   --->   "%rhs0_digits_data_V = alloca [32 x i64], align 8" [multest.cc:253]   --->   Operation 30 'alloca' 'rhs0_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 31 [1/1] (1.76ns)   --->   "%rhs1_digits_data_V = alloca [32 x i64], align 8" [multest.cc:253]   --->   Operation 31 'alloca' 'rhs1_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 32 [1/1] (1.76ns)   --->   "%lhs0_tmp_digits_data = alloca [32 x i64], align 8" [multest.cc:253]   --->   Operation 32 'alloca' 'lhs0_tmp_digits_data' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 33 [1/1] (1.76ns)   --->   "%lhs1_tmp_digits_data = alloca [32 x i64], align 8" [multest.cc:253]   --->   Operation 33 'alloca' 'lhs1_tmp_digits_data' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 34 [1/1] (1.76ns)   --->   "%rhs0_tmp_digits_data = alloca [32 x i64], align 8" [multest.cc:253]   --->   Operation 34 'alloca' 'rhs0_tmp_digits_data' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 35 [1/1] (1.76ns)   --->   "%rhs1_tmp_digits_data = alloca [32 x i64], align 8" [multest.cc:253]   --->   Operation 35 'alloca' 'rhs1_tmp_digits_data' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 36 [1/1] (1.76ns)   --->   "%z0_digits_data_V = alloca [64 x i64], align 8" [multest.cc:261]   --->   Operation 36 'alloca' 'z0_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 37 [1/1] (1.76ns)   --->   "%z2_digits_data_V = alloca [64 x i64], align 8" [multest.cc:263]   --->   Operation 37 'alloca' 'z2_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 ST_1 : Operation 38 [1/1] (1.76ns)   --->   "%cross_mul_digits_dat = alloca [64 x i64], align 8"   --->   Operation 38 'alloca' 'cross_mul_digits_dat' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 39 [1/1] (1.76ns)   --->   "%add2_digits_data_V = alloca [64 x i64], align 8" [multest.cc:261]   --->   Operation 39 'alloca' 'add2_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 40 [1/1] (1.76ns)   --->   "%z1_digits_data_V = alloca [64 x i64], align 8" [multest.cc:263]   --->   Operation 40 'alloca' 'z1_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_1 : Operation 41 [1/1] (0.95ns)   --->   "br label %1" [multest.cc:246]   --->   Operation 41 'br' <Predicate = true> <Delay = 0.95>
+ST_1 : Operation 39 [1/1] (1.76ns)   --->   "%add2_digits_data_V = alloca [64 x i64], align 8" [multest.cc:270]   --->   Operation 39 'alloca' 'add2_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 40 [1/1] (1.76ns)   --->   "%z1_digits_data_V = alloca [64 x i64], align 8" [multest.cc:272]   --->   Operation 40 'alloca' 'z1_digits_data_V' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_1 : Operation 41 [1/1] (0.95ns)   --->   "br label %1" [multest.cc:255]   --->   Operation 41 'br' <Predicate = true> <Delay = 0.95>
 
 State 2 <SV = 1> <Delay = 1.76>
 ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%i_0 = phi i6 [ 0, %0 ], [ %i, %2 ]"   --->   Operation 42 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 43 [1/1] (0.82ns)   --->   "%icmp_ln246 = icmp eq i6 %i_0, -32" [multest.cc:246]   --->   Operation 43 'icmp' 'icmp_ln246' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 43 [1/1] (0.82ns)   --->   "%icmp_ln255 = icmp eq i6 %i_0, -32" [multest.cc:255]   --->   Operation 43 'icmp' 'icmp_ln255' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 44 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 45 [1/1] (1.02ns)   --->   "%i = add i6 %i_0, 1" [multest.cc:246]   --->   Operation 45 'add' 'i' <Predicate = true> <Delay = 1.02> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 46 [1/1] (0.00ns)   --->   "br i1 %icmp_ln246, label %.preheader270.preheader, label %2" [multest.cc:246]   --->   Operation 46 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%zext_ln246 = zext i6 %i_0 to i64" [multest.cc:246]   --->   Operation 47 'zext' 'zext_ln246' <Predicate = (!icmp_ln246)> <Delay = 0.00>
-ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%lhs_digits_data_V_ad = getelementptr [64 x i64]* %lhs_digits_data_V, i64 0, i64 %zext_ln246" [multest.cc:246]   --->   Operation 48 'getelementptr' 'lhs_digits_data_V_ad' <Predicate = (!icmp_ln246)> <Delay = 0.00>
-ST_2 : Operation 49 [2/2] (1.76ns)   --->   "%lhs_digits_data_V_lo = load i64* %lhs_digits_data_V_ad, align 8" [multest.cc:246]   --->   Operation 49 'load' 'lhs_digits_data_V_lo' <Predicate = (!icmp_ln246)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_2 : Operation 50 [1/1] (0.95ns)   --->   "br label %.preheader270" [multest.cc:247]   --->   Operation 50 'br' <Predicate = (icmp_ln246)> <Delay = 0.95>
+ST_2 : Operation 45 [1/1] (1.02ns)   --->   "%i = add i6 %i_0, 1" [multest.cc:255]   --->   Operation 45 'add' 'i' <Predicate = true> <Delay = 1.02> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "br i1 %icmp_ln255, label %.preheader270.preheader, label %2" [multest.cc:255]   --->   Operation 46 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%zext_ln255 = zext i6 %i_0 to i64" [multest.cc:255]   --->   Operation 47 'zext' 'zext_ln255' <Predicate = (!icmp_ln255)> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%lhs_digits_data_V_ad = getelementptr [64 x i64]* %lhs_digits_data_V, i64 0, i64 %zext_ln255" [multest.cc:255]   --->   Operation 48 'getelementptr' 'lhs_digits_data_V_ad' <Predicate = (!icmp_ln255)> <Delay = 0.00>
+ST_2 : Operation 49 [2/2] (1.76ns)   --->   "%lhs_digits_data_V_lo = load i64* %lhs_digits_data_V_ad, align 8" [multest.cc:255]   --->   Operation 49 'load' 'lhs_digits_data_V_lo' <Predicate = (!icmp_ln255)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_2 : Operation 50 [1/1] (0.95ns)   --->   "br label %.preheader270" [multest.cc:256]   --->   Operation 50 'br' <Predicate = (icmp_ln255)> <Delay = 0.95>
 
 State 3 <SV = 2> <Delay = 1.76>
-ST_3 : Operation 51 [1/2] (1.76ns)   --->   "%lhs_digits_data_V_lo = load i64* %lhs_digits_data_V_ad, align 8" [multest.cc:246]   --->   Operation 51 'load' 'lhs_digits_data_V_lo' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_3 : Operation 51 [1/2] (1.76ns)   --->   "%lhs_digits_data_V_lo = load i64* %lhs_digits_data_V_ad, align 8" [multest.cc:255]   --->   Operation 51 'load' 'lhs_digits_data_V_lo' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 4 <SV = 3> <Delay = 1.76>
-ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%lhs0_tmp_digits_data_3 = getelementptr [32 x i64]* %lhs0_tmp_digits_data, i64 0, i64 %zext_ln246" [multest.cc:246]   --->   Operation 52 'getelementptr' 'lhs0_tmp_digits_data_3' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 53 [1/1] (1.76ns)   --->   "store i64 %lhs_digits_data_V_lo, i64* %lhs0_tmp_digits_data_3, align 8" [multest.cc:246]   --->   Operation 53 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%lhs0_digits_data_V_a = getelementptr [32 x i64]* %lhs0_digits_data_V, i64 0, i64 %zext_ln246" [multest.cc:246]   --->   Operation 54 'getelementptr' 'lhs0_digits_data_V_a' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 55 [1/1] (1.76ns)   --->   "store i64 %lhs_digits_data_V_lo, i64* %lhs0_digits_data_V_a, align 8" [multest.cc:246]   --->   Operation 55 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_4 : Operation 56 [1/1] (0.00ns)   --->   "br label %1" [multest.cc:246]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%lhs0_tmp_digits_data_3 = getelementptr [32 x i64]* %lhs0_tmp_digits_data, i64 0, i64 %zext_ln255" [multest.cc:255]   --->   Operation 52 'getelementptr' 'lhs0_tmp_digits_data_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (1.76ns)   --->   "store i64 %lhs_digits_data_V_lo, i64* %lhs0_tmp_digits_data_3, align 8" [multest.cc:255]   --->   Operation 53 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%lhs0_digits_data_V_a = getelementptr [32 x i64]* %lhs0_digits_data_V, i64 0, i64 %zext_ln255" [multest.cc:255]   --->   Operation 54 'getelementptr' 'lhs0_digits_data_V_a' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (1.76ns)   --->   "store i64 %lhs_digits_data_V_lo, i64* %lhs0_digits_data_V_a, align 8" [multest.cc:255]   --->   Operation 55 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "br label %1" [multest.cc:255]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
 
 State 5 <SV = 2> <Delay = 2.26>
 ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%i1_0 = phi i6 [ %i_16, %3 ], [ 0, %.preheader270.preheader ]"   --->   Operation 57 'phi' 'i1_0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 58 [1/1] (0.82ns)   --->   "%icmp_ln247 = icmp eq i6 %i1_0, -32" [multest.cc:247]   --->   Operation 58 'icmp' 'icmp_ln247' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 58 [1/1] (0.82ns)   --->   "%icmp_ln256 = icmp eq i6 %i1_0, -32" [multest.cc:256]   --->   Operation 58 'icmp' 'icmp_ln256' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%empty_38 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 59 'speclooptripcount' 'empty_38' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 60 [1/1] (1.02ns)   --->   "%i_16 = add i6 %i1_0, 1" [multest.cc:247]   --->   Operation 60 'add' 'i_16' <Predicate = true> <Delay = 1.02> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 61 [1/1] (0.00ns)   --->   "br i1 %icmp_ln247, label %.preheader269.preheader, label %3" [multest.cc:247]   --->   Operation 61 'br' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 62 [1/1] (0.49ns)   --->   "%xor_ln247 = xor i6 %i1_0, -32" [multest.cc:247]   --->   Operation 62 'xor' 'xor_ln247' <Predicate = (!icmp_ln247)> <Delay = 0.49> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln247_1 = zext i6 %xor_ln247 to i64" [multest.cc:247]   --->   Operation 63 'zext' 'zext_ln247_1' <Predicate = (!icmp_ln247)> <Delay = 0.00>
-ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%lhs_digits_data_V_ad_5 = getelementptr [64 x i64]* %lhs_digits_data_V, i64 0, i64 %zext_ln247_1" [multest.cc:247]   --->   Operation 64 'getelementptr' 'lhs_digits_data_V_ad_5' <Predicate = (!icmp_ln247)> <Delay = 0.00>
-ST_5 : Operation 65 [2/2] (1.76ns)   --->   "%lhs_digits_data_V_lo_5 = load i64* %lhs_digits_data_V_ad_5, align 8" [multest.cc:247]   --->   Operation 65 'load' 'lhs_digits_data_V_lo_5' <Predicate = (!icmp_ln247)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_5 : Operation 66 [1/1] (0.95ns)   --->   "br label %.preheader269" [multest.cc:248]   --->   Operation 66 'br' <Predicate = (icmp_ln247)> <Delay = 0.95>
+ST_5 : Operation 60 [1/1] (1.02ns)   --->   "%i_16 = add i6 %i1_0, 1" [multest.cc:256]   --->   Operation 60 'add' 'i_16' <Predicate = true> <Delay = 1.02> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "br i1 %icmp_ln256, label %.preheader269.preheader, label %3" [multest.cc:256]   --->   Operation 61 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 62 [1/1] (0.49ns)   --->   "%xor_ln256 = xor i6 %i1_0, -32" [multest.cc:256]   --->   Operation 62 'xor' 'xor_ln256' <Predicate = (!icmp_ln256)> <Delay = 0.49> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln256_1 = zext i6 %xor_ln256 to i64" [multest.cc:256]   --->   Operation 63 'zext' 'zext_ln256_1' <Predicate = (!icmp_ln256)> <Delay = 0.00>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%lhs_digits_data_V_ad_5 = getelementptr [64 x i64]* %lhs_digits_data_V, i64 0, i64 %zext_ln256_1" [multest.cc:256]   --->   Operation 64 'getelementptr' 'lhs_digits_data_V_ad_5' <Predicate = (!icmp_ln256)> <Delay = 0.00>
+ST_5 : Operation 65 [2/2] (1.76ns)   --->   "%lhs_digits_data_V_lo_5 = load i64* %lhs_digits_data_V_ad_5, align 8" [multest.cc:256]   --->   Operation 65 'load' 'lhs_digits_data_V_lo_5' <Predicate = (!icmp_ln256)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_5 : Operation 66 [1/1] (0.95ns)   --->   "br label %.preheader269" [multest.cc:257]   --->   Operation 66 'br' <Predicate = (icmp_ln256)> <Delay = 0.95>
 
 State 6 <SV = 3> <Delay = 1.76>
-ST_6 : Operation 67 [1/2] (1.76ns)   --->   "%lhs_digits_data_V_lo_5 = load i64* %lhs_digits_data_V_ad_5, align 8" [multest.cc:247]   --->   Operation 67 'load' 'lhs_digits_data_V_lo_5' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_6 : Operation 67 [1/2] (1.76ns)   --->   "%lhs_digits_data_V_lo_5 = load i64* %lhs_digits_data_V_ad_5, align 8" [multest.cc:256]   --->   Operation 67 'load' 'lhs_digits_data_V_lo_5' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 7 <SV = 4> <Delay = 1.76>
-ST_7 : Operation 68 [1/1] (0.00ns)   --->   "%zext_ln247 = zext i6 %i1_0 to i64" [multest.cc:247]   --->   Operation 68 'zext' 'zext_ln247' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 69 [1/1] (0.00ns)   --->   "%lhs1_tmp_digits_data_3 = getelementptr [32 x i64]* %lhs1_tmp_digits_data, i64 0, i64 %zext_ln247" [multest.cc:247]   --->   Operation 69 'getelementptr' 'lhs1_tmp_digits_data_3' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 70 [1/1] (1.76ns)   --->   "store i64 %lhs_digits_data_V_lo_5, i64* %lhs1_tmp_digits_data_3, align 8" [multest.cc:247]   --->   Operation 70 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_7 : Operation 71 [1/1] (0.00ns)   --->   "%lhs1_digits_data_V_a = getelementptr [32 x i64]* %lhs1_digits_data_V, i64 0, i64 %zext_ln247" [multest.cc:247]   --->   Operation 71 'getelementptr' 'lhs1_digits_data_V_a' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 72 [1/1] (1.76ns)   --->   "store i64 %lhs_digits_data_V_lo_5, i64* %lhs1_digits_data_V_a, align 8" [multest.cc:247]   --->   Operation 72 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_7 : Operation 73 [1/1] (0.00ns)   --->   "br label %.preheader270" [multest.cc:247]   --->   Operation 73 'br' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 68 [1/1] (0.00ns)   --->   "%zext_ln256 = zext i6 %i1_0 to i64" [multest.cc:256]   --->   Operation 68 'zext' 'zext_ln256' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 69 [1/1] (0.00ns)   --->   "%lhs1_tmp_digits_data_3 = getelementptr [32 x i64]* %lhs1_tmp_digits_data, i64 0, i64 %zext_ln256" [multest.cc:256]   --->   Operation 69 'getelementptr' 'lhs1_tmp_digits_data_3' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 70 [1/1] (1.76ns)   --->   "store i64 %lhs_digits_data_V_lo_5, i64* %lhs1_tmp_digits_data_3, align 8" [multest.cc:256]   --->   Operation 70 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_7 : Operation 71 [1/1] (0.00ns)   --->   "%lhs1_digits_data_V_a = getelementptr [32 x i64]* %lhs1_digits_data_V, i64 0, i64 %zext_ln256" [multest.cc:256]   --->   Operation 71 'getelementptr' 'lhs1_digits_data_V_a' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 72 [1/1] (1.76ns)   --->   "store i64 %lhs_digits_data_V_lo_5, i64* %lhs1_digits_data_V_a, align 8" [multest.cc:256]   --->   Operation 72 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_7 : Operation 73 [1/1] (0.00ns)   --->   "br label %.preheader270" [multest.cc:256]   --->   Operation 73 'br' <Predicate = true> <Delay = 0.00>
 
 State 8 <SV = 3> <Delay = 1.76>
 ST_8 : Operation 74 [1/1] (0.00ns)   --->   "%i2_0 = phi i6 [ %i_17, %4 ], [ 0, %.preheader269.preheader ]"   --->   Operation 74 'phi' 'i2_0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 75 [1/1] (0.82ns)   --->   "%icmp_ln248 = icmp eq i6 %i2_0, -32" [multest.cc:248]   --->   Operation 75 'icmp' 'icmp_ln248' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 75 [1/1] (0.82ns)   --->   "%icmp_ln257 = icmp eq i6 %i2_0, -32" [multest.cc:257]   --->   Operation 75 'icmp' 'icmp_ln257' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 76 [1/1] (0.00ns)   --->   "%empty_39 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 76 'speclooptripcount' 'empty_39' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 77 [1/1] (1.02ns)   --->   "%i_17 = add i6 %i2_0, 1" [multest.cc:248]   --->   Operation 77 'add' 'i_17' <Predicate = true> <Delay = 1.02> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 78 [1/1] (0.00ns)   --->   "br i1 %icmp_ln248, label %.preheader268.preheader, label %4" [multest.cc:248]   --->   Operation 78 'br' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln248 = zext i6 %i2_0 to i64" [multest.cc:248]   --->   Operation 79 'zext' 'zext_ln248' <Predicate = (!icmp_ln248)> <Delay = 0.00>
-ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%rhs_digits_data_V_ad = getelementptr [64 x i64]* %rhs_digits_data_V, i64 0, i64 %zext_ln248" [multest.cc:248]   --->   Operation 80 'getelementptr' 'rhs_digits_data_V_ad' <Predicate = (!icmp_ln248)> <Delay = 0.00>
-ST_8 : Operation 81 [2/2] (1.76ns)   --->   "%rhs_digits_data_V_lo = load i64* %rhs_digits_data_V_ad, align 8" [multest.cc:248]   --->   Operation 81 'load' 'rhs_digits_data_V_lo' <Predicate = (!icmp_ln248)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_8 : Operation 82 [1/1] (0.95ns)   --->   "br label %.preheader268" [multest.cc:249]   --->   Operation 82 'br' <Predicate = (icmp_ln248)> <Delay = 0.95>
+ST_8 : Operation 77 [1/1] (1.02ns)   --->   "%i_17 = add i6 %i2_0, 1" [multest.cc:257]   --->   Operation 77 'add' 'i_17' <Predicate = true> <Delay = 1.02> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 78 [1/1] (0.00ns)   --->   "br i1 %icmp_ln257, label %.preheader268.preheader, label %4" [multest.cc:257]   --->   Operation 78 'br' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln257 = zext i6 %i2_0 to i64" [multest.cc:257]   --->   Operation 79 'zext' 'zext_ln257' <Predicate = (!icmp_ln257)> <Delay = 0.00>
+ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%rhs_digits_data_V_ad = getelementptr [64 x i64]* %rhs_digits_data_V, i64 0, i64 %zext_ln257" [multest.cc:257]   --->   Operation 80 'getelementptr' 'rhs_digits_data_V_ad' <Predicate = (!icmp_ln257)> <Delay = 0.00>
+ST_8 : Operation 81 [2/2] (1.76ns)   --->   "%rhs_digits_data_V_lo = load i64* %rhs_digits_data_V_ad, align 8" [multest.cc:257]   --->   Operation 81 'load' 'rhs_digits_data_V_lo' <Predicate = (!icmp_ln257)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_8 : Operation 82 [1/1] (0.95ns)   --->   "br label %.preheader268" [multest.cc:258]   --->   Operation 82 'br' <Predicate = (icmp_ln257)> <Delay = 0.95>
 
 State 9 <SV = 4> <Delay = 1.76>
-ST_9 : Operation 83 [1/2] (1.76ns)   --->   "%rhs_digits_data_V_lo = load i64* %rhs_digits_data_V_ad, align 8" [multest.cc:248]   --->   Operation 83 'load' 'rhs_digits_data_V_lo' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_9 : Operation 83 [1/2] (1.76ns)   --->   "%rhs_digits_data_V_lo = load i64* %rhs_digits_data_V_ad, align 8" [multest.cc:257]   --->   Operation 83 'load' 'rhs_digits_data_V_lo' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 10 <SV = 5> <Delay = 1.76>
-ST_10 : Operation 84 [1/1] (0.00ns)   --->   "%rhs0_tmp_digits_data_3 = getelementptr [32 x i64]* %rhs0_tmp_digits_data, i64 0, i64 %zext_ln248" [multest.cc:248]   --->   Operation 84 'getelementptr' 'rhs0_tmp_digits_data_3' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 85 [1/1] (1.76ns)   --->   "store i64 %rhs_digits_data_V_lo, i64* %rhs0_tmp_digits_data_3, align 8" [multest.cc:248]   --->   Operation 85 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_10 : Operation 86 [1/1] (0.00ns)   --->   "%rhs0_digits_data_V_a = getelementptr [32 x i64]* %rhs0_digits_data_V, i64 0, i64 %zext_ln248" [multest.cc:248]   --->   Operation 86 'getelementptr' 'rhs0_digits_data_V_a' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 87 [1/1] (1.76ns)   --->   "store i64 %rhs_digits_data_V_lo, i64* %rhs0_digits_data_V_a, align 8" [multest.cc:248]   --->   Operation 87 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_10 : Operation 88 [1/1] (0.00ns)   --->   "br label %.preheader269" [multest.cc:248]   --->   Operation 88 'br' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 84 [1/1] (0.00ns)   --->   "%rhs0_tmp_digits_data_3 = getelementptr [32 x i64]* %rhs0_tmp_digits_data, i64 0, i64 %zext_ln257" [multest.cc:257]   --->   Operation 84 'getelementptr' 'rhs0_tmp_digits_data_3' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 85 [1/1] (1.76ns)   --->   "store i64 %rhs_digits_data_V_lo, i64* %rhs0_tmp_digits_data_3, align 8" [multest.cc:257]   --->   Operation 85 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_10 : Operation 86 [1/1] (0.00ns)   --->   "%rhs0_digits_data_V_a = getelementptr [32 x i64]* %rhs0_digits_data_V, i64 0, i64 %zext_ln257" [multest.cc:257]   --->   Operation 86 'getelementptr' 'rhs0_digits_data_V_a' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 87 [1/1] (1.76ns)   --->   "store i64 %rhs_digits_data_V_lo, i64* %rhs0_digits_data_V_a, align 8" [multest.cc:257]   --->   Operation 87 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_10 : Operation 88 [1/1] (0.00ns)   --->   "br label %.preheader269" [multest.cc:257]   --->   Operation 88 'br' <Predicate = true> <Delay = 0.00>
 
 State 11 <SV = 4> <Delay = 2.26>
 ST_11 : Operation 89 [1/1] (0.00ns)   --->   "%i3_0 = phi i6 [ %i_18, %5 ], [ 0, %.preheader268.preheader ]"   --->   Operation 89 'phi' 'i3_0' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 90 [1/1] (0.82ns)   --->   "%icmp_ln249 = icmp eq i6 %i3_0, -32" [multest.cc:249]   --->   Operation 90 'icmp' 'icmp_ln249' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 90 [1/1] (0.82ns)   --->   "%icmp_ln258 = icmp eq i6 %i3_0, -32" [multest.cc:258]   --->   Operation 90 'icmp' 'icmp_ln258' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_11 : Operation 91 [1/1] (0.00ns)   --->   "%empty_40 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 91 'speclooptripcount' 'empty_40' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 92 [1/1] (1.02ns)   --->   "%i_18 = add i6 %i3_0, 1" [multest.cc:249]   --->   Operation 92 'add' 'i_18' <Predicate = true> <Delay = 1.02> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 93 [1/1] (0.00ns)   --->   "br i1 %icmp_ln249, label %._crit_edge, label %5" [multest.cc:249]   --->   Operation 93 'br' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 94 [1/1] (0.49ns)   --->   "%xor_ln249 = xor i6 %i3_0, -32" [multest.cc:249]   --->   Operation 94 'xor' 'xor_ln249' <Predicate = (!icmp_ln249)> <Delay = 0.49> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 95 [1/1] (0.00ns)   --->   "%zext_ln249_1 = zext i6 %xor_ln249 to i64" [multest.cc:249]   --->   Operation 95 'zext' 'zext_ln249_1' <Predicate = (!icmp_ln249)> <Delay = 0.00>
-ST_11 : Operation 96 [1/1] (0.00ns)   --->   "%rhs_digits_data_V_ad_5 = getelementptr [64 x i64]* %rhs_digits_data_V, i64 0, i64 %zext_ln249_1" [multest.cc:249]   --->   Operation 96 'getelementptr' 'rhs_digits_data_V_ad_5' <Predicate = (!icmp_ln249)> <Delay = 0.00>
-ST_11 : Operation 97 [2/2] (1.76ns)   --->   "%rhs_digits_data_V_lo_5 = load i64* %rhs_digits_data_V_ad_5, align 8" [multest.cc:249]   --->   Operation 97 'load' 'rhs_digits_data_V_lo_5' <Predicate = (!icmp_ln249)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_11 : Operation 98 [2/2] (0.95ns)   --->   "%z0_tmp_bits = call fastcc i4 @karastuba_mul_templa.4(i2 0, [32 x i64]* %lhs0_digits_data_V, i2 0, [32 x i64]* %rhs0_digits_data_V, [64 x i64]* %z0_digits_data_V)" [multest.cc:253]   --->   Operation 98 'call' 'z0_tmp_bits' <Predicate = (icmp_ln249)> <Delay = 0.95> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_11 : Operation 99 [2/2] (0.95ns)   --->   "%z2_tmp_bits = call fastcc i4 @karastuba_mul_templa.4(i2 0, [32 x i64]* %lhs1_digits_data_V, i2 0, [32 x i64]* %rhs1_digits_data_V, [64 x i64]* %z2_digits_data_V)" [multest.cc:255]   --->   Operation 99 'call' 'z2_tmp_bits' <Predicate = (icmp_ln249)> <Delay = 0.95> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_11 : Operation 100 [2/2] (0.00ns)   --->   "%cross_mul_tmp_bits = call fastcc i4 @karastuba_mul_templa([32 x i64]* %lhs0_tmp_digits_data, [32 x i64]* %lhs1_tmp_digits_data, [32 x i64]* %rhs0_tmp_digits_data, [32 x i64]* %rhs1_tmp_digits_data, [64 x i64]* %cross_mul_digits_dat)" [multest.cc:257]   --->   Operation 100 'call' 'cross_mul_tmp_bits' <Predicate = (icmp_ln249)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 92 [1/1] (1.02ns)   --->   "%i_18 = add i6 %i3_0, 1" [multest.cc:258]   --->   Operation 92 'add' 'i_18' <Predicate = true> <Delay = 1.02> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 93 [1/1] (0.00ns)   --->   "br i1 %icmp_ln258, label %._crit_edge, label %5" [multest.cc:258]   --->   Operation 93 'br' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 94 [1/1] (0.49ns)   --->   "%xor_ln258 = xor i6 %i3_0, -32" [multest.cc:258]   --->   Operation 94 'xor' 'xor_ln258' <Predicate = (!icmp_ln258)> <Delay = 0.49> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 95 [1/1] (0.00ns)   --->   "%zext_ln258_1 = zext i6 %xor_ln258 to i64" [multest.cc:258]   --->   Operation 95 'zext' 'zext_ln258_1' <Predicate = (!icmp_ln258)> <Delay = 0.00>
+ST_11 : Operation 96 [1/1] (0.00ns)   --->   "%rhs_digits_data_V_ad_5 = getelementptr [64 x i64]* %rhs_digits_data_V, i64 0, i64 %zext_ln258_1" [multest.cc:258]   --->   Operation 96 'getelementptr' 'rhs_digits_data_V_ad_5' <Predicate = (!icmp_ln258)> <Delay = 0.00>
+ST_11 : Operation 97 [2/2] (1.76ns)   --->   "%rhs_digits_data_V_lo_5 = load i64* %rhs_digits_data_V_ad_5, align 8" [multest.cc:258]   --->   Operation 97 'load' 'rhs_digits_data_V_lo_5' <Predicate = (!icmp_ln258)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_11 : Operation 98 [2/2] (0.95ns)   --->   "%z0_tmp_bits = call fastcc i4 @karastuba_mul_templa.4(i2 0, [32 x i64]* %lhs0_digits_data_V, i2 0, [32 x i64]* %rhs0_digits_data_V, [64 x i64]* %z0_digits_data_V)" [multest.cc:262]   --->   Operation 98 'call' 'z0_tmp_bits' <Predicate = (icmp_ln258)> <Delay = 0.95> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 99 [2/2] (0.95ns)   --->   "%z2_tmp_bits = call fastcc i4 @karastuba_mul_templa.4(i2 0, [32 x i64]* %lhs1_digits_data_V, i2 0, [32 x i64]* %rhs1_digits_data_V, [64 x i64]* %z2_digits_data_V)" [multest.cc:264]   --->   Operation 99 'call' 'z2_tmp_bits' <Predicate = (icmp_ln258)> <Delay = 0.95> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 100 [2/2] (0.00ns)   --->   "%cross_mul_tmp_bits = call fastcc i4 @karastuba_mul_templa([32 x i64]* %lhs0_tmp_digits_data, [32 x i64]* %lhs1_tmp_digits_data, [32 x i64]* %rhs0_tmp_digits_data, [32 x i64]* %rhs1_tmp_digits_data, [64 x i64]* %cross_mul_digits_dat)" [multest.cc:266]   --->   Operation 100 'call' 'cross_mul_tmp_bits' <Predicate = (icmp_ln258)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 12 <SV = 5> <Delay = 1.76>
-ST_12 : Operation 101 [1/2] (1.76ns)   --->   "%rhs_digits_data_V_lo_5 = load i64* %rhs_digits_data_V_ad_5, align 8" [multest.cc:249]   --->   Operation 101 'load' 'rhs_digits_data_V_lo_5' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_12 : Operation 101 [1/2] (1.76ns)   --->   "%rhs_digits_data_V_lo_5 = load i64* %rhs_digits_data_V_ad_5, align 8" [multest.cc:258]   --->   Operation 101 'load' 'rhs_digits_data_V_lo_5' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 13 <SV = 6> <Delay = 1.76>
-ST_13 : Operation 102 [1/1] (0.00ns)   --->   "%zext_ln249 = zext i6 %i3_0 to i64" [multest.cc:249]   --->   Operation 102 'zext' 'zext_ln249' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 103 [1/1] (0.00ns)   --->   "%rhs1_tmp_digits_data_3 = getelementptr [32 x i64]* %rhs1_tmp_digits_data, i64 0, i64 %zext_ln249" [multest.cc:249]   --->   Operation 103 'getelementptr' 'rhs1_tmp_digits_data_3' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 104 [1/1] (1.76ns)   --->   "store i64 %rhs_digits_data_V_lo_5, i64* %rhs1_tmp_digits_data_3, align 8" [multest.cc:249]   --->   Operation 104 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_13 : Operation 105 [1/1] (0.00ns)   --->   "%rhs1_digits_data_V_a = getelementptr [32 x i64]* %rhs1_digits_data_V, i64 0, i64 %zext_ln249" [multest.cc:249]   --->   Operation 105 'getelementptr' 'rhs1_digits_data_V_a' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 106 [1/1] (1.76ns)   --->   "store i64 %rhs_digits_data_V_lo_5, i64* %rhs1_digits_data_V_a, align 8" [multest.cc:249]   --->   Operation 106 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_13 : Operation 107 [1/1] (0.00ns)   --->   "br label %.preheader268" [multest.cc:249]   --->   Operation 107 'br' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 102 [1/1] (0.00ns)   --->   "%zext_ln258 = zext i6 %i3_0 to i64" [multest.cc:258]   --->   Operation 102 'zext' 'zext_ln258' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 103 [1/1] (0.00ns)   --->   "%rhs1_tmp_digits_data_3 = getelementptr [32 x i64]* %rhs1_tmp_digits_data, i64 0, i64 %zext_ln258" [multest.cc:258]   --->   Operation 103 'getelementptr' 'rhs1_tmp_digits_data_3' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 104 [1/1] (1.76ns)   --->   "store i64 %rhs_digits_data_V_lo_5, i64* %rhs1_tmp_digits_data_3, align 8" [multest.cc:258]   --->   Operation 104 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_13 : Operation 105 [1/1] (0.00ns)   --->   "%rhs1_digits_data_V_a = getelementptr [32 x i64]* %rhs1_digits_data_V, i64 0, i64 %zext_ln258" [multest.cc:258]   --->   Operation 105 'getelementptr' 'rhs1_digits_data_V_a' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 106 [1/1] (1.76ns)   --->   "store i64 %rhs_digits_data_V_lo_5, i64* %rhs1_digits_data_V_a, align 8" [multest.cc:258]   --->   Operation 106 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_13 : Operation 107 [1/1] (0.00ns)   --->   "br label %.preheader268" [multest.cc:258]   --->   Operation 107 'br' <Predicate = true> <Delay = 0.00>
 
 State 14 <SV = 5> <Delay = 1.49>
-ST_14 : Operation 108 [1/2] (1.49ns)   --->   "%z0_tmp_bits = call fastcc i4 @karastuba_mul_templa.4(i2 0, [32 x i64]* %lhs0_digits_data_V, i2 0, [32 x i64]* %rhs0_digits_data_V, [64 x i64]* %z0_digits_data_V)" [multest.cc:253]   --->   Operation 108 'call' 'z0_tmp_bits' <Predicate = true> <Delay = 1.49> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_14 : Operation 109 [1/2] (1.49ns)   --->   "%z2_tmp_bits = call fastcc i4 @karastuba_mul_templa.4(i2 0, [32 x i64]* %lhs1_digits_data_V, i2 0, [32 x i64]* %rhs1_digits_data_V, [64 x i64]* %z2_digits_data_V)" [multest.cc:255]   --->   Operation 109 'call' 'z2_tmp_bits' <Predicate = true> <Delay = 1.49> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_14 : Operation 110 [1/2] (1.49ns)   --->   "%cross_mul_tmp_bits = call fastcc i4 @karastuba_mul_templa([32 x i64]* %lhs0_tmp_digits_data, [32 x i64]* %lhs1_tmp_digits_data, [32 x i64]* %rhs0_tmp_digits_data, [32 x i64]* %rhs1_tmp_digits_data, [64 x i64]* %cross_mul_digits_dat)" [multest.cc:257]   --->   Operation 110 'call' 'cross_mul_tmp_bits' <Predicate = true> <Delay = 1.49> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_14 : Operation 111 [1/1] (0.00ns)   --->   "%zext_ln257 = zext i4 %cross_mul_tmp_bits to i5" [multest.cc:257]   --->   Operation 111 'zext' 'zext_ln257' <Predicate = true> <Delay = 0.00>
-ST_14 : Operation 112 [1/1] (0.95ns)   --->   "br label %.preheader.i" [multest.cc:51->multest.cc:262]   --->   Operation 112 'br' <Predicate = true> <Delay = 0.95>
+ST_14 : Operation 108 [1/2] (1.49ns)   --->   "%z0_tmp_bits = call fastcc i4 @karastuba_mul_templa.4(i2 0, [32 x i64]* %lhs0_digits_data_V, i2 0, [32 x i64]* %rhs0_digits_data_V, [64 x i64]* %z0_digits_data_V)" [multest.cc:262]   --->   Operation 108 'call' 'z0_tmp_bits' <Predicate = true> <Delay = 1.49> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 109 [1/2] (1.49ns)   --->   "%z2_tmp_bits = call fastcc i4 @karastuba_mul_templa.4(i2 0, [32 x i64]* %lhs1_digits_data_V, i2 0, [32 x i64]* %rhs1_digits_data_V, [64 x i64]* %z2_digits_data_V)" [multest.cc:264]   --->   Operation 109 'call' 'z2_tmp_bits' <Predicate = true> <Delay = 1.49> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 110 [1/2] (1.49ns)   --->   "%cross_mul_tmp_bits = call fastcc i4 @karastuba_mul_templa([32 x i64]* %lhs0_tmp_digits_data, [32 x i64]* %lhs1_tmp_digits_data, [32 x i64]* %rhs0_tmp_digits_data, [32 x i64]* %rhs1_tmp_digits_data, [64 x i64]* %cross_mul_digits_dat)" [multest.cc:266]   --->   Operation 110 'call' 'cross_mul_tmp_bits' <Predicate = true> <Delay = 1.49> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 111 [1/1] (0.00ns)   --->   "%zext_ln266 = zext i4 %cross_mul_tmp_bits to i5" [multest.cc:266]   --->   Operation 111 'zext' 'zext_ln266' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 112 [1/1] (0.95ns)   --->   "br label %.preheader.i" [multest.cc:53->multest.cc:271]   --->   Operation 112 'br' <Predicate = true> <Delay = 0.95>
 
 State 15 <SV = 6> <Delay = 1.76>
-ST_15 : Operation 113 [1/1] (0.00ns)   --->   "%p_088_0_i = phi i2 [ %trunc_ln, %hls_label_24 ], [ 0, %._crit_edge ]" [multest.cc:59->multest.cc:262]   --->   Operation 113 'phi' 'p_088_0_i' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 113 [1/1] (0.00ns)   --->   "%p_088_0_i = phi i2 [ %trunc_ln, %hls_label_24 ], [ 0, %._crit_edge ]" [multest.cc:61->multest.cc:271]   --->   Operation 113 'phi' 'p_088_0_i' <Predicate = true> <Delay = 0.00>
 ST_15 : Operation 114 [1/1] (0.00ns)   --->   "%i_0_i = phi i7 [ %i_19, %hls_label_24 ], [ 0, %._crit_edge ]"   --->   Operation 114 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
-ST_15 : Operation 115 [1/1] (0.82ns)   --->   "%icmp_ln51 = icmp eq i7 %i_0_i, -64" [multest.cc:51->multest.cc:262]   --->   Operation 115 'icmp' 'icmp_ln51' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 115 [1/1] (0.82ns)   --->   "%icmp_ln53 = icmp eq i7 %i_0_i, -64" [multest.cc:53->multest.cc:271]   --->   Operation 115 'icmp' 'icmp_ln53' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_15 : Operation 116 [1/1] (0.00ns)   --->   "%empty_41 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"   --->   Operation 116 'speclooptripcount' 'empty_41' <Predicate = true> <Delay = 0.00>
-ST_15 : Operation 117 [1/1] (1.10ns)   --->   "%i_19 = add i7 %i_0_i, 1" [multest.cc:51->multest.cc:262]   --->   Operation 117 'add' 'i_19' <Predicate = true> <Delay = 1.10> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_15 : Operation 118 [1/1] (0.00ns)   --->   "br i1 %icmp_ln51, label %"add_I_O<Bignum<64, 64>, Bignum<64, 64> >.exit", label %hls_label_24" [multest.cc:51->multest.cc:262]   --->   Operation 118 'br' <Predicate = true> <Delay = 0.00>
-ST_15 : Operation 119 [1/1] (0.00ns)   --->   "%zext_ln56 = zext i7 %i_0_i to i64" [multest.cc:56->multest.cc:262]   --->   Operation 119 'zext' 'zext_ln56' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_15 : Operation 120 [1/1] (0.00ns)   --->   "%z0_digits_data_V_add = getelementptr [64 x i64]* %z0_digits_data_V, i64 0, i64 %zext_ln56" [multest.cc:56->multest.cc:262]   --->   Operation 120 'getelementptr' 'z0_digits_data_V_add' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_15 : Operation 121 [2/2] (1.76ns)   --->   "%z0_digits_data_V_loa = load i64* %z0_digits_data_V_add, align 8" [multest.cc:56->multest.cc:262]   --->   Operation 121 'load' 'z0_digits_data_V_loa' <Predicate = (!icmp_ln51)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_15 : Operation 122 [1/1] (0.00ns)   --->   "%z2_digits_data_V_add = getelementptr [64 x i64]* %z2_digits_data_V, i64 0, i64 %zext_ln56" [multest.cc:57->multest.cc:262]   --->   Operation 122 'getelementptr' 'z2_digits_data_V_add' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_15 : Operation 123 [2/2] (1.76ns)   --->   "%z2_digits_data_V_loa = load i64* %z2_digits_data_V_add, align 8" [multest.cc:57->multest.cc:262]   --->   Operation 123 'load' 'z2_digits_data_V_loa' <Predicate = (!icmp_ln51)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_15 : Operation 117 [1/1] (1.10ns)   --->   "%i_19 = add i7 %i_0_i, 1" [multest.cc:53->multest.cc:271]   --->   Operation 117 'add' 'i_19' <Predicate = true> <Delay = 1.10> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 118 [1/1] (0.00ns)   --->   "br i1 %icmp_ln53, label %"add_I_O<Bignum<64, 64>, Bignum<64, 64> >.exit", label %hls_label_24" [multest.cc:53->multest.cc:271]   --->   Operation 118 'br' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 119 [1/1] (0.00ns)   --->   "%zext_ln58 = zext i7 %i_0_i to i64" [multest.cc:58->multest.cc:271]   --->   Operation 119 'zext' 'zext_ln58' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_15 : Operation 120 [1/1] (0.00ns)   --->   "%z0_digits_data_V_add = getelementptr [64 x i64]* %z0_digits_data_V, i64 0, i64 %zext_ln58" [multest.cc:58->multest.cc:271]   --->   Operation 120 'getelementptr' 'z0_digits_data_V_add' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_15 : Operation 121 [2/2] (1.76ns)   --->   "%z0_digits_data_V_loa = load i64* %z0_digits_data_V_add, align 8" [multest.cc:58->multest.cc:271]   --->   Operation 121 'load' 'z0_digits_data_V_loa' <Predicate = (!icmp_ln53)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_15 : Operation 122 [1/1] (0.00ns)   --->   "%z2_digits_data_V_add = getelementptr [64 x i64]* %z2_digits_data_V, i64 0, i64 %zext_ln58" [multest.cc:59->multest.cc:271]   --->   Operation 122 'getelementptr' 'z2_digits_data_V_add' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_15 : Operation 123 [2/2] (1.76ns)   --->   "%z2_digits_data_V_loa = load i64* %z2_digits_data_V_add, align 8" [multest.cc:59->multest.cc:271]   --->   Operation 123 'load' 'z2_digits_data_V_loa' <Predicate = (!icmp_ln53)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 16 <SV = 7> <Delay = 1.76>
-ST_16 : Operation 124 [1/2] (1.76ns)   --->   "%z0_digits_data_V_loa = load i64* %z0_digits_data_V_add, align 8" [multest.cc:56->multest.cc:262]   --->   Operation 124 'load' 'z0_digits_data_V_loa' <Predicate = (!icmp_ln51)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_16 : Operation 125 [1/2] (1.76ns)   --->   "%z2_digits_data_V_loa = load i64* %z2_digits_data_V_add, align 8" [multest.cc:57->multest.cc:262]   --->   Operation 125 'load' 'z2_digits_data_V_loa' <Predicate = (!icmp_ln51)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_16 : Operation 124 [1/2] (1.76ns)   --->   "%z0_digits_data_V_loa = load i64* %z0_digits_data_V_add, align 8" [multest.cc:58->multest.cc:271]   --->   Operation 124 'load' 'z0_digits_data_V_loa' <Predicate = (!icmp_ln53)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_16 : Operation 125 [1/2] (1.76ns)   --->   "%z2_digits_data_V_loa = load i64* %z2_digits_data_V_add, align 8" [multest.cc:59->multest.cc:271]   --->   Operation 125 'load' 'z2_digits_data_V_loa' <Predicate = (!icmp_ln53)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 17 <SV = 8> <Delay = 1.64>
-ST_17 : Operation 126 [1/1] (0.00ns)   --->   "%zext_ln209 = zext i64 %z0_digits_data_V_loa to i65" [multest.cc:57->multest.cc:262]   --->   Operation 126 'zext' 'zext_ln209' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_17 : Operation 127 [1/1] (0.00ns)   --->   "%zext_ln700 = zext i64 %z2_digits_data_V_loa to i65" [multest.cc:56->multest.cc:262]   --->   Operation 127 'zext' 'zext_ln700' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_17 : Operation 128 [1/1] (1.64ns)   --->   "%add_ln700 = add i65 %zext_ln209, %zext_ln700" [multest.cc:57->multest.cc:262]   --->   Operation 128 'add' 'add_ln700' <Predicate = (!icmp_ln51)> <Delay = 1.64> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 126 [1/1] (0.00ns)   --->   "%zext_ln209 = zext i64 %z0_digits_data_V_loa to i65" [multest.cc:59->multest.cc:271]   --->   Operation 126 'zext' 'zext_ln209' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_17 : Operation 127 [1/1] (0.00ns)   --->   "%zext_ln700 = zext i64 %z2_digits_data_V_loa to i65" [multest.cc:58->multest.cc:271]   --->   Operation 127 'zext' 'zext_ln700' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_17 : Operation 128 [1/1] (1.64ns)   --->   "%add_ln700 = add i65 %zext_ln209, %zext_ln700" [multest.cc:59->multest.cc:271]   --->   Operation 128 'add' 'add_ln700' <Predicate = (!icmp_ln53)> <Delay = 1.64> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 18 <SV = 9> <Delay = 1.64>
-ST_18 : Operation 129 [1/1] (0.00ns)   --->   "%zext_ln51 = zext i2 %p_088_0_i to i66" [multest.cc:51->multest.cc:262]   --->   Operation 129 'zext' 'zext_ln51' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_18 : Operation 130 [1/1] (0.00ns)   --->   "%zext_ln700_24 = zext i2 %p_088_0_i to i64" [multest.cc:56->multest.cc:262]   --->   Operation 130 'zext' 'zext_ln700_24' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_18 : Operation 131 [1/1] (0.00ns)   --->   "%zext_ln700_25 = zext i65 %add_ln700 to i66" [multest.cc:57->multest.cc:262]   --->   Operation 131 'zext' 'zext_ln700_25' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_18 : Operation 132 [1/1] (1.64ns)   --->   "%tmp_V = add i66 %zext_ln700_25, %zext_ln51" [multest.cc:57->multest.cc:262]   --->   Operation 132 'add' 'tmp_V' <Predicate = (!icmp_ln51)> <Delay = 1.64> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_18 : Operation 133 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln209_13 = add i64 %z2_digits_data_V_loa, %zext_ln700_24" [multest.cc:58->multest.cc:262]   --->   Operation 133 'add' 'add_ln209_13' <Predicate = (!icmp_ln51)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.60> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_18 : Operation 134 [1/1] (1.20ns) (root node of TernaryAdder)   --->   "%add_ln209 = add i64 %add_ln209_13, %z0_digits_data_V_loa" [multest.cc:58->multest.cc:262]   --->   Operation 134 'add' 'add_ln209' <Predicate = (!icmp_ln51)> <Delay = 1.20> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.60> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_18 : Operation 135 [1/1] (0.00ns)   --->   "%trunc_ln = call i2 @_ssdm_op_PartSelect.i2.i66.i32.i32(i66 %tmp_V, i32 64, i32 65)" [multest.cc:59->multest.cc:262]   --->   Operation 135 'partselect' 'trunc_ln' <Predicate = (!icmp_ln51)> <Delay = 0.00>
+ST_18 : Operation 129 [1/1] (0.00ns)   --->   "%zext_ln53 = zext i2 %p_088_0_i to i66" [multest.cc:53->multest.cc:271]   --->   Operation 129 'zext' 'zext_ln53' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_18 : Operation 130 [1/1] (0.00ns)   --->   "%zext_ln700_24 = zext i2 %p_088_0_i to i64" [multest.cc:58->multest.cc:271]   --->   Operation 130 'zext' 'zext_ln700_24' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_18 : Operation 131 [1/1] (0.00ns)   --->   "%zext_ln700_25 = zext i65 %add_ln700 to i66" [multest.cc:59->multest.cc:271]   --->   Operation 131 'zext' 'zext_ln700_25' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_18 : Operation 132 [1/1] (1.64ns)   --->   "%tmp_V = add i66 %zext_ln700_25, %zext_ln53" [multest.cc:59->multest.cc:271]   --->   Operation 132 'add' 'tmp_V' <Predicate = (!icmp_ln53)> <Delay = 1.64> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 133 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln209_13 = add i64 %z2_digits_data_V_loa, %zext_ln700_24" [multest.cc:60->multest.cc:271]   --->   Operation 133 'add' 'add_ln209_13' <Predicate = (!icmp_ln53)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.60> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_18 : Operation 134 [1/1] (1.20ns) (root node of TernaryAdder)   --->   "%add_ln209 = add i64 %add_ln209_13, %z0_digits_data_V_loa" [multest.cc:60->multest.cc:271]   --->   Operation 134 'add' 'add_ln209' <Predicate = (!icmp_ln53)> <Delay = 1.20> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.60> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_18 : Operation 135 [1/1] (0.00ns)   --->   "%trunc_ln = call i2 @_ssdm_op_PartSelect.i2.i66.i32.i32(i66 %tmp_V, i32 64, i32 65)" [multest.cc:61->multest.cc:271]   --->   Operation 135 'partselect' 'trunc_ln' <Predicate = (!icmp_ln53)> <Delay = 0.00>
 
 State 19 <SV = 10> <Delay = 1.76>
-ST_19 : Operation 136 [1/1] (0.00ns)   --->   "%tmp_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str17)" [multest.cc:52->multest.cc:262]   --->   Operation 136 'specregionbegin' 'tmp_i' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_19 : Operation 137 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [multest.cc:53->multest.cc:262]   --->   Operation 137 'specpipeline' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_19 : Operation 138 [1/1] (0.00ns)   --->   "%add2_digits_data_V_a = getelementptr [64 x i64]* %add2_digits_data_V, i64 0, i64 %zext_ln56" [multest.cc:58->multest.cc:262]   --->   Operation 138 'getelementptr' 'add2_digits_data_V_a' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_19 : Operation 139 [1/1] (1.76ns)   --->   "store i64 %add_ln209, i64* %add2_digits_data_V_a, align 8" [multest.cc:58->multest.cc:262]   --->   Operation 139 'store' <Predicate = (!icmp_ln51)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_19 : Operation 140 [1/1] (0.00ns)   --->   "%empty_42 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str17, i32 %tmp_i)" [multest.cc:60->multest.cc:262]   --->   Operation 140 'specregionend' 'empty_42' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_19 : Operation 141 [1/1] (0.00ns)   --->   "br label %.preheader.i" [multest.cc:51->multest.cc:262]   --->   Operation 141 'br' <Predicate = (!icmp_ln51)> <Delay = 0.00>
+ST_19 : Operation 136 [1/1] (0.00ns)   --->   "%tmp_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str17)" [multest.cc:54->multest.cc:271]   --->   Operation 136 'specregionbegin' 'tmp_i' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_19 : Operation 137 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [multest.cc:55->multest.cc:271]   --->   Operation 137 'specpipeline' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_19 : Operation 138 [1/1] (0.00ns)   --->   "%add2_digits_data_V_a = getelementptr [64 x i64]* %add2_digits_data_V, i64 0, i64 %zext_ln58" [multest.cc:60->multest.cc:271]   --->   Operation 138 'getelementptr' 'add2_digits_data_V_a' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_19 : Operation 139 [1/1] (1.76ns)   --->   "store i64 %add_ln209, i64* %add2_digits_data_V_a, align 8" [multest.cc:60->multest.cc:271]   --->   Operation 139 'store' <Predicate = (!icmp_ln53)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_19 : Operation 140 [1/1] (0.00ns)   --->   "%empty_42 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str17, i32 %tmp_i)" [multest.cc:62->multest.cc:271]   --->   Operation 140 'specregionend' 'empty_42' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_19 : Operation 141 [1/1] (0.00ns)   --->   "br label %.preheader.i" [multest.cc:53->multest.cc:271]   --->   Operation 141 'br' <Predicate = (!icmp_ln53)> <Delay = 0.00>
 
 State 20 <SV = 7> <Delay = 1.81>
-ST_20 : Operation 142 [1/1] (0.00ns)   --->   "%zext_ln61 = zext i2 %p_088_0_i to i6" [multest.cc:61->multest.cc:262]   --->   Operation 142 'zext' 'zext_ln61' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 143 [1/1] (0.00ns)   --->   "%zext_ln61_1 = zext i4 %z0_tmp_bits to i5" [multest.cc:61->multest.cc:262]   --->   Operation 143 'zext' 'zext_ln61_1' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 144 [1/1] (0.00ns)   --->   "%zext_ln61_2 = zext i4 %z2_tmp_bits to i5" [multest.cc:61->multest.cc:262]   --->   Operation 144 'zext' 'zext_ln61_2' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 145 [1/1] (0.87ns)   --->   "%add_ln61 = add i5 %zext_ln61_2, %zext_ln61_1" [multest.cc:61->multest.cc:262]   --->   Operation 145 'add' 'add_ln61' <Predicate = true> <Delay = 0.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_20 : Operation 146 [1/1] (0.00ns)   --->   "%zext_ln61_8 = zext i5 %add_ln61 to i6" [multest.cc:61->multest.cc:262]   --->   Operation 146 'zext' 'zext_ln61_8' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 147 [1/1] (0.94ns)   --->   "%add2_tmp_bits = add i6 %zext_ln61, %zext_ln61_8" [multest.cc:61->multest.cc:262]   --->   Operation 147 'add' 'add2_tmp_bits' <Predicate = true> <Delay = 0.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_20 : Operation 148 [1/1] (0.00ns)   --->   "%zext_ln61_9 = zext i6 %add2_tmp_bits to i7" [multest.cc:61->multest.cc:262]   --->   Operation 148 'zext' 'zext_ln61_9' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 142 [1/1] (0.00ns)   --->   "%zext_ln63 = zext i2 %p_088_0_i to i6" [multest.cc:63->multest.cc:271]   --->   Operation 142 'zext' 'zext_ln63' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 143 [1/1] (0.00ns)   --->   "%zext_ln63_1 = zext i4 %z0_tmp_bits to i5" [multest.cc:63->multest.cc:271]   --->   Operation 143 'zext' 'zext_ln63_1' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 144 [1/1] (0.00ns)   --->   "%zext_ln63_2 = zext i4 %z2_tmp_bits to i5" [multest.cc:63->multest.cc:271]   --->   Operation 144 'zext' 'zext_ln63_2' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 145 [1/1] (0.87ns)   --->   "%add_ln63 = add i5 %zext_ln63_2, %zext_ln63_1" [multest.cc:63->multest.cc:271]   --->   Operation 145 'add' 'add_ln63' <Predicate = true> <Delay = 0.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 146 [1/1] (0.00ns)   --->   "%zext_ln63_8 = zext i5 %add_ln63 to i6" [multest.cc:63->multest.cc:271]   --->   Operation 146 'zext' 'zext_ln63_8' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 147 [1/1] (0.94ns)   --->   "%add2_tmp_bits = add i6 %zext_ln63, %zext_ln63_8" [multest.cc:63->multest.cc:271]   --->   Operation 147 'add' 'add2_tmp_bits' <Predicate = true> <Delay = 0.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 148 [1/1] (0.00ns)   --->   "%zext_ln63_9 = zext i6 %add2_tmp_bits to i7" [multest.cc:63->multest.cc:271]   --->   Operation 148 'zext' 'zext_ln63_9' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 149 [1/1] (0.95ns)   --->   "br label %.preheader.i2"   --->   Operation 149 'br' <Predicate = true> <Delay = 0.95>
 
 State 21 <SV = 8> <Delay = 1.76>
-ST_21 : Operation 150 [1/1] (0.00ns)   --->   "%op2_assign = phi i1 [ %tmp, %hls_label_25 ], [ false, %"add_I_O<Bignum<64, 64>, Bignum<64, 64> >.exit" ]" [multest.cc:81->multest.cc:264]   --->   Operation 150 'phi' 'op2_assign' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 150 [1/1] (0.00ns)   --->   "%op2_assign = phi i1 [ %tmp, %hls_label_25 ], [ false, %"add_I_O<Bignum<64, 64>, Bignum<64, 64> >.exit" ]" [multest.cc:84->multest.cc:273]   --->   Operation 150 'phi' 'op2_assign' <Predicate = true> <Delay = 0.00>
 ST_21 : Operation 151 [1/1] (0.00ns)   --->   "%i_0_i1 = phi i7 [ %i_20, %hls_label_25 ], [ 0, %"add_I_O<Bignum<64, 64>, Bignum<64, 64> >.exit" ]"   --->   Operation 151 'phi' 'i_0_i1' <Predicate = true> <Delay = 0.00>
-ST_21 : Operation 152 [1/1] (0.82ns)   --->   "%exitcond_i = icmp eq i7 %i_0_i1, -64" [multest.cc:74->multest.cc:264]   --->   Operation 152 'icmp' 'exitcond_i' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 152 [1/1] (0.82ns)   --->   "%exitcond_i = icmp eq i7 %i_0_i1, -64" [multest.cc:77->multest.cc:273]   --->   Operation 152 'icmp' 'exitcond_i' <Predicate = true> <Delay = 0.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_21 : Operation 153 [1/1] (0.00ns)   --->   "%empty_43 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"   --->   Operation 153 'speclooptripcount' 'empty_43' <Predicate = true> <Delay = 0.00>
-ST_21 : Operation 154 [1/1] (1.10ns)   --->   "%i_20 = add i7 %i_0_i1, 1" [multest.cc:74->multest.cc:264]   --->   Operation 154 'add' 'i_20' <Predicate = true> <Delay = 1.10> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_21 : Operation 155 [1/1] (0.00ns)   --->   "br i1 %exitcond_i, label %"sub_I_O<Bignum<64, 64>, Bignum<64, 64> >.exit", label %hls_label_25" [multest.cc:74->multest.cc:264]   --->   Operation 155 'br' <Predicate = true> <Delay = 0.00>
-ST_21 : Operation 156 [1/1] (0.00ns)   --->   "%zext_ln77 = zext i7 %i_0_i1 to i64" [multest.cc:77->multest.cc:264]   --->   Operation 156 'zext' 'zext_ln77' <Predicate = (!exitcond_i)> <Delay = 0.00>
-ST_21 : Operation 157 [1/1] (0.00ns)   --->   "%cross_mul_digits_dat_5 = getelementptr [64 x i64]* %cross_mul_digits_dat, i64 0, i64 %zext_ln77" [multest.cc:77->multest.cc:264]   --->   Operation 157 'getelementptr' 'cross_mul_digits_dat_5' <Predicate = (!exitcond_i)> <Delay = 0.00>
-ST_21 : Operation 158 [2/2] (1.76ns)   --->   "%cross_mul_digits_dat_6 = load i64* %cross_mul_digits_dat_5, align 8" [multest.cc:77->multest.cc:264]   --->   Operation 158 'load' 'cross_mul_digits_dat_6' <Predicate = (!exitcond_i)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_21 : Operation 159 [1/1] (0.00ns)   --->   "%add2_digits_data_V_a_3 = getelementptr [64 x i64]* %add2_digits_data_V, i64 0, i64 %zext_ln77" [multest.cc:78->multest.cc:264]   --->   Operation 159 'getelementptr' 'add2_digits_data_V_a_3' <Predicate = (!exitcond_i)> <Delay = 0.00>
-ST_21 : Operation 160 [2/2] (1.76ns)   --->   "%add2_digits_data_V_l = load i64* %add2_digits_data_V_a_3, align 8" [multest.cc:78->multest.cc:264]   --->   Operation 160 'load' 'add2_digits_data_V_l' <Predicate = (!exitcond_i)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_21 : Operation 154 [1/1] (1.10ns)   --->   "%i_20 = add i7 %i_0_i1, 1" [multest.cc:77->multest.cc:273]   --->   Operation 154 'add' 'i_20' <Predicate = true> <Delay = 1.10> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 155 [1/1] (0.00ns)   --->   "br i1 %exitcond_i, label %"sub_I_O<Bignum<64, 64>, Bignum<64, 64> >.exit", label %hls_label_25" [multest.cc:77->multest.cc:273]   --->   Operation 155 'br' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 156 [1/1] (0.00ns)   --->   "%zext_ln80 = zext i7 %i_0_i1 to i64" [multest.cc:80->multest.cc:273]   --->   Operation 156 'zext' 'zext_ln80' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_21 : Operation 157 [1/1] (0.00ns)   --->   "%cross_mul_digits_dat_5 = getelementptr [64 x i64]* %cross_mul_digits_dat, i64 0, i64 %zext_ln80" [multest.cc:80->multest.cc:273]   --->   Operation 157 'getelementptr' 'cross_mul_digits_dat_5' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_21 : Operation 158 [2/2] (1.76ns)   --->   "%cross_mul_digits_dat_6 = load i64* %cross_mul_digits_dat_5, align 8" [multest.cc:80->multest.cc:273]   --->   Operation 158 'load' 'cross_mul_digits_dat_6' <Predicate = (!exitcond_i)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_21 : Operation 159 [1/1] (0.00ns)   --->   "%add2_digits_data_V_a_3 = getelementptr [64 x i64]* %add2_digits_data_V, i64 0, i64 %zext_ln80" [multest.cc:81->multest.cc:273]   --->   Operation 159 'getelementptr' 'add2_digits_data_V_a_3' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_21 : Operation 160 [2/2] (1.76ns)   --->   "%add2_digits_data_V_l = load i64* %add2_digits_data_V_a_3, align 8" [multest.cc:81->multest.cc:273]   --->   Operation 160 'load' 'add2_digits_data_V_l' <Predicate = (!exitcond_i)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 22 <SV = 9> <Delay = 1.76>
-ST_22 : Operation 161 [1/2] (1.76ns)   --->   "%cross_mul_digits_dat_6 = load i64* %cross_mul_digits_dat_5, align 8" [multest.cc:77->multest.cc:264]   --->   Operation 161 'load' 'cross_mul_digits_dat_6' <Predicate = (!exitcond_i)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_22 : Operation 162 [1/2] (1.76ns)   --->   "%add2_digits_data_V_l = load i64* %add2_digits_data_V_a_3, align 8" [multest.cc:78->multest.cc:264]   --->   Operation 162 'load' 'add2_digits_data_V_l' <Predicate = (!exitcond_i)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_22 : Operation 161 [1/2] (1.76ns)   --->   "%cross_mul_digits_dat_6 = load i64* %cross_mul_digits_dat_5, align 8" [multest.cc:80->multest.cc:273]   --->   Operation 161 'load' 'cross_mul_digits_dat_6' <Predicate = (!exitcond_i)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_22 : Operation 162 [1/2] (1.76ns)   --->   "%add2_digits_data_V_l = load i64* %add2_digits_data_V_a_3, align 8" [multest.cc:81->multest.cc:273]   --->   Operation 162 'load' 'add2_digits_data_V_l' <Predicate = (!exitcond_i)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 23 <SV = 10> <Delay = 1.64>
-ST_23 : Operation 163 [1/1] (0.00ns)   --->   "%zext_ln180 = zext i64 %cross_mul_digits_dat_6 to i65" [multest.cc:77->multest.cc:264]   --->   Operation 163 'zext' 'zext_ln180' <Predicate = (!exitcond_i)> <Delay = 0.00>
-ST_23 : Operation 164 [1/1] (0.00ns)   --->   "%zext_ln701 = zext i64 %add2_digits_data_V_l to i65" [multest.cc:78->multest.cc:264]   --->   Operation 164 'zext' 'zext_ln701' <Predicate = (!exitcond_i)> <Delay = 0.00>
-ST_23 : Operation 165 [1/1] (1.64ns)   --->   "%tmp_V_10 = sub i65 %zext_ln180, %zext_ln701" [multest.cc:78->multest.cc:264]   --->   Operation 165 'sub' 'tmp_V_10' <Predicate = (!exitcond_i)> <Delay = 1.64> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 163 [1/1] (0.00ns)   --->   "%zext_ln180 = zext i64 %cross_mul_digits_dat_6 to i65" [multest.cc:80->multest.cc:273]   --->   Operation 163 'zext' 'zext_ln180' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_23 : Operation 164 [1/1] (0.00ns)   --->   "%zext_ln701 = zext i64 %add2_digits_data_V_l to i65" [multest.cc:81->multest.cc:273]   --->   Operation 164 'zext' 'zext_ln701' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_23 : Operation 165 [1/1] (1.64ns)   --->   "%tmp_V_10 = sub i65 %zext_ln180, %zext_ln701" [multest.cc:81->multest.cc:273]   --->   Operation 165 'sub' 'tmp_V_10' <Predicate = (!exitcond_i)> <Delay = 1.64> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 24 <SV = 11> <Delay = 1.64>
-ST_24 : Operation 166 [1/1] (0.00ns) (grouped into LUT with out node tmp_V_11)   --->   "%select_ln701 = select i1 %op2_assign, i65 -1, i65 0" [multest.cc:79->multest.cc:264]   --->   Operation 166 'select' 'select_ln701' <Predicate = (!exitcond_i)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_24 : Operation 167 [1/1] (0.00ns) (grouped into LUT with out node add_ln700_15)   --->   "%select_ln701_3 = select i1 %op2_assign, i64 -1, i64 0" [multest.cc:79->multest.cc:264]   --->   Operation 167 'select' 'select_ln701_3' <Predicate = (!exitcond_i)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_24 : Operation 168 [1/1] (0.00ns) (grouped into LUT with out node add_ln700_15)   --->   "%trunc_ln701 = trunc i65 %tmp_V_10 to i64" [multest.cc:79->multest.cc:264]   --->   Operation 168 'trunc' 'trunc_ln701' <Predicate = (!exitcond_i)> <Delay = 0.00>
-ST_24 : Operation 169 [1/1] (1.64ns) (out node of the LUT)   --->   "%tmp_V_11 = add i65 %select_ln701, %tmp_V_10" [multest.cc:79->multest.cc:264]   --->   Operation 169 'add' 'tmp_V_11' <Predicate = (!exitcond_i)> <Delay = 1.64> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_24 : Operation 170 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i65.i32(i65 %tmp_V_11, i32 64)" [multest.cc:81->multest.cc:264]   --->   Operation 170 'bitselect' 'tmp' <Predicate = (!exitcond_i)> <Delay = 0.00>
-ST_24 : Operation 171 [1/1] (1.64ns) (out node of the LUT)   --->   "%add_ln700_15 = add i64 %trunc_ln701, %select_ln701_3" [multest.cc:84->multest.cc:264]   --->   Operation 171 'add' 'add_ln700_15' <Predicate = (!exitcond_i)> <Delay = 1.64> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 166 [1/1] (0.00ns) (grouped into LUT with out node tmp_V_11)   --->   "%select_ln701 = select i1 %op2_assign, i65 -1, i65 0" [multest.cc:82->multest.cc:273]   --->   Operation 166 'select' 'select_ln701' <Predicate = (!exitcond_i)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_24 : Operation 167 [1/1] (0.00ns) (grouped into LUT with out node add_ln700_15)   --->   "%select_ln701_3 = select i1 %op2_assign, i64 -1, i64 0" [multest.cc:82->multest.cc:273]   --->   Operation 167 'select' 'select_ln701_3' <Predicate = (!exitcond_i)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_24 : Operation 168 [1/1] (0.00ns) (grouped into LUT with out node add_ln700_15)   --->   "%trunc_ln701 = trunc i65 %tmp_V_10 to i64" [multest.cc:82->multest.cc:273]   --->   Operation 168 'trunc' 'trunc_ln701' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_24 : Operation 169 [1/1] (1.64ns) (out node of the LUT)   --->   "%tmp_V_11 = add i65 %select_ln701, %tmp_V_10" [multest.cc:82->multest.cc:273]   --->   Operation 169 'add' 'tmp_V_11' <Predicate = (!exitcond_i)> <Delay = 1.64> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 170 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i65.i32(i65 %tmp_V_11, i32 64)" [multest.cc:84->multest.cc:273]   --->   Operation 170 'bitselect' 'tmp' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_24 : Operation 171 [1/1] (1.64ns) (out node of the LUT)   --->   "%add_ln700_15 = add i64 %trunc_ln701, %select_ln701_3" [multest.cc:87->multest.cc:273]   --->   Operation 171 'add' 'add_ln700_15' <Predicate = (!exitcond_i)> <Delay = 1.64> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 25 <SV = 12> <Delay = 1.76>
-ST_25 : Operation 172 [1/1] (0.00ns)   --->   "%tmp_i3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str16)" [multest.cc:75->multest.cc:264]   --->   Operation 172 'specregionbegin' 'tmp_i3' <Predicate = (!exitcond_i)> <Delay = 0.00>
-ST_25 : Operation 173 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [multest.cc:76->multest.cc:264]   --->   Operation 173 'specpipeline' <Predicate = (!exitcond_i)> <Delay = 0.00>
-ST_25 : Operation 174 [1/1] (0.00ns)   --->   "%z1_digits_data_V_add = getelementptr [64 x i64]* %z1_digits_data_V, i64 0, i64 %zext_ln77" [multest.cc:85->multest.cc:264]   --->   Operation 174 'getelementptr' 'z1_digits_data_V_add' <Predicate = (!exitcond_i)> <Delay = 0.00>
-ST_25 : Operation 175 [1/1] (1.76ns)   --->   "store i64 %add_ln700_15, i64* %z1_digits_data_V_add, align 8" [multest.cc:85->multest.cc:264]   --->   Operation 175 'store' <Predicate = (!exitcond_i)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_25 : Operation 176 [1/1] (0.00ns)   --->   "%empty_44 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str16, i32 %tmp_i3)" [multest.cc:91->multest.cc:264]   --->   Operation 176 'specregionend' 'empty_44' <Predicate = (!exitcond_i)> <Delay = 0.00>
-ST_25 : Operation 177 [1/1] (0.00ns)   --->   "br label %.preheader.i2" [multest.cc:74->multest.cc:264]   --->   Operation 177 'br' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_25 : Operation 172 [1/1] (0.00ns)   --->   "%tmp_i3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str16)" [multest.cc:78->multest.cc:273]   --->   Operation 172 'specregionbegin' 'tmp_i3' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_25 : Operation 173 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [multest.cc:79->multest.cc:273]   --->   Operation 173 'specpipeline' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_25 : Operation 174 [1/1] (0.00ns)   --->   "%z1_digits_data_V_add = getelementptr [64 x i64]* %z1_digits_data_V, i64 0, i64 %zext_ln80" [multest.cc:88->multest.cc:273]   --->   Operation 174 'getelementptr' 'z1_digits_data_V_add' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_25 : Operation 175 [1/1] (1.76ns)   --->   "store i64 %add_ln700_15, i64* %z1_digits_data_V_add, align 8" [multest.cc:88->multest.cc:273]   --->   Operation 175 'store' <Predicate = (!exitcond_i)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_25 : Operation 176 [1/1] (0.00ns)   --->   "%empty_44 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str16, i32 %tmp_i3)" [multest.cc:94->multest.cc:273]   --->   Operation 176 'specregionend' 'empty_44' <Predicate = (!exitcond_i)> <Delay = 0.00>
+ST_25 : Operation 177 [1/1] (0.00ns)   --->   "br label %.preheader.i2" [multest.cc:77->multest.cc:273]   --->   Operation 177 'br' <Predicate = (!exitcond_i)> <Delay = 0.00>
 
 State 26 <SV = 9> <Delay = 1.97>
-ST_26 : Operation 178 [1/1] (0.00ns) (grouped into LUT with out node add_ln92)   --->   "%empty_45 = select i1 %op2_assign, i5 -1, i5 0" [multest.cc:81->multest.cc:264]   --->   Operation 178 'select' 'empty_45' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_26 : Operation 179 [1/1] (0.94ns) (out node of the LUT)   --->   "%add_ln92 = add i5 %empty_45, %zext_ln257" [multest.cc:92->multest.cc:264]   --->   Operation 179 'add' 'add_ln92' <Predicate = true> <Delay = 0.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 180 [1/1] (0.00ns)   --->   "%sext_ln92 = sext i5 %add_ln92 to i7" [multest.cc:92->multest.cc:264]   --->   Operation 180 'sext' 'sext_ln92' <Predicate = true> <Delay = 0.00>
-ST_26 : Operation 181 [1/1] (1.02ns)   --->   "%z1_tmp_bits = sub i7 %sext_ln92, %zext_ln61_9" [multest.cc:92->multest.cc:264]   --->   Operation 181 'sub' 'z1_tmp_bits' <Predicate = true> <Delay = 1.02> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 182 [2/2] (0.00ns)   --->   "call fastcc void @CAT_I_I_I_O([64 x i64]* %z0_digits_data_V, i7 %z1_tmp_bits, [64 x i64]* %z1_digits_data_V, [64 x i64]* %z2_digits_data_V, [128 x i64]* %res_digits_data_V)" [multest.cc:266]   --->   Operation 182 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_26 : Operation 178 [1/1] (0.00ns) (grouped into LUT with out node add_ln95)   --->   "%empty_45 = select i1 %op2_assign, i5 -1, i5 0" [multest.cc:84->multest.cc:273]   --->   Operation 178 'select' 'empty_45' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_26 : Operation 179 [1/1] (0.94ns) (out node of the LUT)   --->   "%add_ln95 = add i5 %empty_45, %zext_ln266" [multest.cc:95->multest.cc:273]   --->   Operation 179 'add' 'add_ln95' <Predicate = true> <Delay = 0.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 180 [1/1] (0.00ns)   --->   "%sext_ln95 = sext i5 %add_ln95 to i7" [multest.cc:95->multest.cc:273]   --->   Operation 180 'sext' 'sext_ln95' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 181 [1/1] (1.02ns)   --->   "%z1_tmp_bits = sub i7 %sext_ln95, %zext_ln63_9" [multest.cc:95->multest.cc:273]   --->   Operation 181 'sub' 'z1_tmp_bits' <Predicate = true> <Delay = 1.02> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 182 [2/2] (0.00ns)   --->   "call fastcc void @CAT_I_I_I_O([64 x i64]* %z0_digits_data_V, i7 %z1_tmp_bits, [64 x i64]* %z1_digits_data_V, [64 x i64]* %z2_digits_data_V, [128 x i64]* %res_digits_data_V)" [multest.cc:275]   --->   Operation 182 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 27 <SV = 10> <Delay = 0.00>
-ST_27 : Operation 183 [1/2] (0.00ns)   --->   "call fastcc void @CAT_I_I_I_O([64 x i64]* %z0_digits_data_V, i7 %z1_tmp_bits, [64 x i64]* %z1_digits_data_V, [64 x i64]* %z2_digits_data_V, [128 x i64]* %res_digits_data_V)" [multest.cc:266]   --->   Operation 183 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_27 : Operation 183 [1/2] (0.00ns)   --->   "call fastcc void @CAT_I_I_I_O([64 x i64]* %z0_digits_data_V, i7 %z1_tmp_bits, [64 x i64]* %z1_digits_data_V, [64 x i64]* %z2_digits_data_V, [128 x i64]* %res_digits_data_V)" [multest.cc:275]   --->   Operation 183 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_27 : Operation 184 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 184 'ret' <Predicate = true> <Delay = 0.00>
 
 
@@ -630,78 +630,78 @@ z2_digits_data_V       (alloca           ) [ 0011111111111111111111111111]
 cross_mul_digits_dat   (alloca           ) [ 0011111111111111111111111100]
 add2_digits_data_V     (alloca           ) [ 0011111111111111111111111100]
 z1_digits_data_V       (alloca           ) [ 0011111111111111111111111111]
-br_ln246               (br               ) [ 0111100000000000000000000000]
+br_ln255               (br               ) [ 0111100000000000000000000000]
 i_0                    (phi              ) [ 0010000000000000000000000000]
-icmp_ln246             (icmp             ) [ 0011100000000000000000000000]
+icmp_ln255             (icmp             ) [ 0011100000000000000000000000]
 empty                  (speclooptripcount) [ 0000000000000000000000000000]
 i                      (add              ) [ 0111100000000000000000000000]
-br_ln246               (br               ) [ 0000000000000000000000000000]
-zext_ln246             (zext             ) [ 0001100000000000000000000000]
+br_ln255               (br               ) [ 0000000000000000000000000000]
+zext_ln255             (zext             ) [ 0001100000000000000000000000]
 lhs_digits_data_V_ad   (getelementptr    ) [ 0001000000000000000000000000]
-br_ln247               (br               ) [ 0011111100000000000000000000]
+br_ln256               (br               ) [ 0011111100000000000000000000]
 lhs_digits_data_V_lo   (load             ) [ 0000100000000000000000000000]
 lhs0_tmp_digits_data_3 (getelementptr    ) [ 0000000000000000000000000000]
-store_ln246            (store            ) [ 0000000000000000000000000000]
+store_ln255            (store            ) [ 0000000000000000000000000000]
 lhs0_digits_data_V_a   (getelementptr    ) [ 0000000000000000000000000000]
-store_ln246            (store            ) [ 0000000000000000000000000000]
-br_ln246               (br               ) [ 0111100000000000000000000000]
+store_ln255            (store            ) [ 0000000000000000000000000000]
+br_ln255               (br               ) [ 0111100000000000000000000000]
 i1_0                   (phi              ) [ 0000011100000000000000000000]
-icmp_ln247             (icmp             ) [ 0000011100000000000000000000]
+icmp_ln256             (icmp             ) [ 0000011100000000000000000000]
 empty_38               (speclooptripcount) [ 0000000000000000000000000000]
 i_16                   (add              ) [ 0010011100000000000000000000]
-br_ln247               (br               ) [ 0000000000000000000000000000]
-xor_ln247              (xor              ) [ 0000000000000000000000000000]
-zext_ln247_1           (zext             ) [ 0000000000000000000000000000]
+br_ln256               (br               ) [ 0000000000000000000000000000]
+xor_ln256              (xor              ) [ 0000000000000000000000000000]
+zext_ln256_1           (zext             ) [ 0000000000000000000000000000]
 lhs_digits_data_V_ad_5 (getelementptr    ) [ 0000001000000000000000000000]
-br_ln248               (br               ) [ 0000011111100000000000000000]
+br_ln257               (br               ) [ 0000011111100000000000000000]
 lhs_digits_data_V_lo_5 (load             ) [ 0000000100000000000000000000]
-zext_ln247             (zext             ) [ 0000000000000000000000000000]
+zext_ln256             (zext             ) [ 0000000000000000000000000000]
 lhs1_tmp_digits_data_3 (getelementptr    ) [ 0000000000000000000000000000]
-store_ln247            (store            ) [ 0000000000000000000000000000]
+store_ln256            (store            ) [ 0000000000000000000000000000]
 lhs1_digits_data_V_a   (getelementptr    ) [ 0000000000000000000000000000]
-store_ln247            (store            ) [ 0000000000000000000000000000]
-br_ln247               (br               ) [ 0010011100000000000000000000]
+store_ln256            (store            ) [ 0000000000000000000000000000]
+br_ln256               (br               ) [ 0010011100000000000000000000]
 i2_0                   (phi              ) [ 0000000010000000000000000000]
-icmp_ln248             (icmp             ) [ 0000000011100000000000000000]
+icmp_ln257             (icmp             ) [ 0000000011100000000000000000]
 empty_39               (speclooptripcount) [ 0000000000000000000000000000]
 i_17                   (add              ) [ 0000010011100000000000000000]
-br_ln248               (br               ) [ 0000000000000000000000000000]
-zext_ln248             (zext             ) [ 0000000001100000000000000000]
+br_ln257               (br               ) [ 0000000000000000000000000000]
+zext_ln257             (zext             ) [ 0000000001100000000000000000]
 rhs_digits_data_V_ad   (getelementptr    ) [ 0000000001000000000000000000]
-br_ln249               (br               ) [ 0000000011111100000000000000]
+br_ln258               (br               ) [ 0000000011111100000000000000]
 rhs_digits_data_V_lo   (load             ) [ 0000000000100000000000000000]
 rhs0_tmp_digits_data_3 (getelementptr    ) [ 0000000000000000000000000000]
-store_ln248            (store            ) [ 0000000000000000000000000000]
+store_ln257            (store            ) [ 0000000000000000000000000000]
 rhs0_digits_data_V_a   (getelementptr    ) [ 0000000000000000000000000000]
-store_ln248            (store            ) [ 0000000000000000000000000000]
-br_ln248               (br               ) [ 0000010011100000000000000000]
+store_ln257            (store            ) [ 0000000000000000000000000000]
+br_ln257               (br               ) [ 0000010011100000000000000000]
 i3_0                   (phi              ) [ 0000000000011100000000000000]
-icmp_ln249             (icmp             ) [ 0000000000011100000000000000]
+icmp_ln258             (icmp             ) [ 0000000000011100000000000000]
 empty_40               (speclooptripcount) [ 0000000000000000000000000000]
 i_18                   (add              ) [ 0000000010011100000000000000]
-br_ln249               (br               ) [ 0000000000000000000000000000]
-xor_ln249              (xor              ) [ 0000000000000000000000000000]
-zext_ln249_1           (zext             ) [ 0000000000000000000000000000]
+br_ln258               (br               ) [ 0000000000000000000000000000]
+xor_ln258              (xor              ) [ 0000000000000000000000000000]
+zext_ln258_1           (zext             ) [ 0000000000000000000000000000]
 rhs_digits_data_V_ad_5 (getelementptr    ) [ 0000000000001000000000000000]
 rhs_digits_data_V_lo_5 (load             ) [ 0000000000000100000000000000]
-zext_ln249             (zext             ) [ 0000000000000000000000000000]
+zext_ln258             (zext             ) [ 0000000000000000000000000000]
 rhs1_tmp_digits_data_3 (getelementptr    ) [ 0000000000000000000000000000]
-store_ln249            (store            ) [ 0000000000000000000000000000]
+store_ln258            (store            ) [ 0000000000000000000000000000]
 rhs1_digits_data_V_a   (getelementptr    ) [ 0000000000000000000000000000]
-store_ln249            (store            ) [ 0000000000000000000000000000]
-br_ln249               (br               ) [ 0000000010011100000000000000]
+store_ln258            (store            ) [ 0000000000000000000000000000]
+br_ln258               (br               ) [ 0000000010011100000000000000]
 z0_tmp_bits            (call             ) [ 0000000000000001111110000000]
 z2_tmp_bits            (call             ) [ 0000000000000001111110000000]
 cross_mul_tmp_bits     (call             ) [ 0000000000000000000000000000]
-zext_ln257             (zext             ) [ 0000000000000001111111111110]
-br_ln51                (br               ) [ 0000000000000011111100000000]
+zext_ln266             (zext             ) [ 0000000000000001111111111110]
+br_ln53                (br               ) [ 0000000000000011111100000000]
 p_088_0_i              (phi              ) [ 0000000000000001111010000000]
 i_0_i                  (phi              ) [ 0000000000000001000000000000]
-icmp_ln51              (icmp             ) [ 0000000000000001111100000000]
+icmp_ln53              (icmp             ) [ 0000000000000001111100000000]
 empty_41               (speclooptripcount) [ 0000000000000000000000000000]
 i_19                   (add              ) [ 0000000000000011111100000000]
-br_ln51                (br               ) [ 0000000000000000000000000000]
-zext_ln56              (zext             ) [ 0000000000000001111100000000]
+br_ln53                (br               ) [ 0000000000000000000000000000]
+zext_ln58              (zext             ) [ 0000000000000001111100000000]
 z0_digits_data_V_add   (getelementptr    ) [ 0000000000000001100000000000]
 z2_digits_data_V_add   (getelementptr    ) [ 0000000000000001100000000000]
 z0_digits_data_V_loa   (load             ) [ 0000000000000001011000000000]
@@ -709,7 +709,7 @@ z2_digits_data_V_loa   (load             ) [ 0000000000000001011000000000]
 zext_ln209             (zext             ) [ 0000000000000000000000000000]
 zext_ln700             (zext             ) [ 0000000000000000000000000000]
 add_ln700              (add              ) [ 0000000000000001001000000000]
-zext_ln51              (zext             ) [ 0000000000000000000000000000]
+zext_ln53              (zext             ) [ 0000000000000000000000000000]
 zext_ln700_24          (zext             ) [ 0000000000000000000000000000]
 zext_ln700_25          (zext             ) [ 0000000000000000000000000000]
 tmp_V                  (add              ) [ 0000000000000000000000000000]
@@ -717,26 +717,26 @@ add_ln209_13           (add              ) [ 0000000000000000000000000000]
 add_ln209              (add              ) [ 0000000000000001000100000000]
 trunc_ln               (partselect       ) [ 0000000000000011000100000000]
 tmp_i                  (specregionbegin  ) [ 0000000000000000000000000000]
-specpipeline_ln53      (specpipeline     ) [ 0000000000000000000000000000]
+specpipeline_ln55      (specpipeline     ) [ 0000000000000000000000000000]
 add2_digits_data_V_a   (getelementptr    ) [ 0000000000000000000000000000]
-store_ln58             (store            ) [ 0000000000000000000000000000]
+store_ln60             (store            ) [ 0000000000000000000000000000]
 empty_42               (specregionend    ) [ 0000000000000000000000000000]
-br_ln51                (br               ) [ 0000000000000011111100000000]
-zext_ln61              (zext             ) [ 0000000000000000000000000000]
-zext_ln61_1            (zext             ) [ 0000000000000000000000000000]
-zext_ln61_2            (zext             ) [ 0000000000000000000000000000]
-add_ln61               (add              ) [ 0000000000000000000000000000]
-zext_ln61_8            (zext             ) [ 0000000000000000000000000000]
+br_ln53                (br               ) [ 0000000000000011111100000000]
+zext_ln63              (zext             ) [ 0000000000000000000000000000]
+zext_ln63_1            (zext             ) [ 0000000000000000000000000000]
+zext_ln63_2            (zext             ) [ 0000000000000000000000000000]
+add_ln63               (add              ) [ 0000000000000000000000000000]
+zext_ln63_8            (zext             ) [ 0000000000000000000000000000]
 add2_tmp_bits          (add              ) [ 0000000000000000000000000000]
-zext_ln61_9            (zext             ) [ 0000000000000000000001111110]
+zext_ln63_9            (zext             ) [ 0000000000000000000001111110]
 br_ln0                 (br               ) [ 0000000000000000000011111100]
 op2_assign             (phi              ) [ 0000000000000000000001111010]
 i_0_i1                 (phi              ) [ 0000000000000000000001000000]
 exitcond_i             (icmp             ) [ 0000000000000000000001111100]
 empty_43               (speclooptripcount) [ 0000000000000000000000000000]
 i_20                   (add              ) [ 0000000000000000000011111100]
-br_ln74                (br               ) [ 0000000000000000000000000000]
-zext_ln77              (zext             ) [ 0000000000000000000001111100]
+br_ln77                (br               ) [ 0000000000000000000000000000]
+zext_ln80              (zext             ) [ 0000000000000000000001111100]
 cross_mul_digits_dat_5 (getelementptr    ) [ 0000000000000000000001100000]
 add2_digits_data_V_a_3 (getelementptr    ) [ 0000000000000000000001100000]
 cross_mul_digits_dat_6 (load             ) [ 0000000000000000000001010000]
@@ -751,16 +751,16 @@ tmp_V_11               (add              ) [ 0000000000000000000000000000]
 tmp                    (bitselect        ) [ 0000000000000000000011000100]
 add_ln700_15           (add              ) [ 0000000000000000000001000100]
 tmp_i3                 (specregionbegin  ) [ 0000000000000000000000000000]
-specpipeline_ln76      (specpipeline     ) [ 0000000000000000000000000000]
+specpipeline_ln79      (specpipeline     ) [ 0000000000000000000000000000]
 z1_digits_data_V_add   (getelementptr    ) [ 0000000000000000000000000000]
-store_ln85             (store            ) [ 0000000000000000000000000000]
+store_ln88             (store            ) [ 0000000000000000000000000000]
 empty_44               (specregionend    ) [ 0000000000000000000000000000]
-br_ln74                (br               ) [ 0000000000000000000011111100]
+br_ln77                (br               ) [ 0000000000000000000011111100]
 empty_45               (select           ) [ 0000000000000000000000000000]
-add_ln92               (add              ) [ 0000000000000000000000000000]
-sext_ln92              (sext             ) [ 0000000000000000000000000000]
+add_ln95               (add              ) [ 0000000000000000000000000000]
+sext_ln95              (sext             ) [ 0000000000000000000000000000]
 z1_tmp_bits            (sub              ) [ 0000000000000000000000000001]
-call_ln266             (call             ) [ 0000000000000000000000000000]
+call_ln275             (call             ) [ 0000000000000000000000000000]
 ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </LifeTime>
 
@@ -1285,7 +1285,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="145" class="1004" name="store_ln246_access_fu_145">
+<comp id="145" class="1004" name="store_ln255_access_fu_145">
 <pin_list>
 <pin id="146" dir="0" index="0" bw="5" slack="0"/>
 <pin id="147" dir="0" index="1" bw="64" slack="1"/>
@@ -1294,7 +1294,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln246/4 "/>
+<opset="store_ln255/4 "/>
 </bind>
 </comp>
 
@@ -1311,7 +1311,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="157" class="1004" name="store_ln246_access_fu_157">
+<comp id="157" class="1004" name="store_ln255_access_fu_157">
 <pin_list>
 <pin id="158" dir="0" index="0" bw="5" slack="0"/>
 <pin id="159" dir="0" index="1" bw="64" slack="1"/>
@@ -1320,7 +1320,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln246/4 "/>
+<opset="store_ln255/4 "/>
 </bind>
 </comp>
 
@@ -1350,7 +1350,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="177" class="1004" name="store_ln247_access_fu_177">
+<comp id="177" class="1004" name="store_ln256_access_fu_177">
 <pin_list>
 <pin id="178" dir="0" index="0" bw="5" slack="0"/>
 <pin id="179" dir="0" index="1" bw="64" slack="1"/>
@@ -1359,7 +1359,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln247/7 "/>
+<opset="store_ln256/7 "/>
 </bind>
 </comp>
 
@@ -1376,7 +1376,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="189" class="1004" name="store_ln247_access_fu_189">
+<comp id="189" class="1004" name="store_ln256_access_fu_189">
 <pin_list>
 <pin id="190" dir="0" index="0" bw="5" slack="0"/>
 <pin id="191" dir="0" index="1" bw="64" slack="1"/>
@@ -1385,7 +1385,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln247/7 "/>
+<opset="store_ln256/7 "/>
 </bind>
 </comp>
 
@@ -1428,7 +1428,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="214" class="1004" name="store_ln248_access_fu_214">
+<comp id="214" class="1004" name="store_ln257_access_fu_214">
 <pin_list>
 <pin id="215" dir="0" index="0" bw="5" slack="0"/>
 <pin id="216" dir="0" index="1" bw="64" slack="1"/>
@@ -1437,7 +1437,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln248/10 "/>
+<opset="store_ln257/10 "/>
 </bind>
 </comp>
 
@@ -1454,7 +1454,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="226" class="1004" name="store_ln248_access_fu_226">
+<comp id="226" class="1004" name="store_ln257_access_fu_226">
 <pin_list>
 <pin id="227" dir="0" index="0" bw="5" slack="0"/>
 <pin id="228" dir="0" index="1" bw="64" slack="1"/>
@@ -1463,7 +1463,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln248/10 "/>
+<opset="store_ln257/10 "/>
 </bind>
 </comp>
 
@@ -1493,7 +1493,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="246" class="1004" name="store_ln249_access_fu_246">
+<comp id="246" class="1004" name="store_ln258_access_fu_246">
 <pin_list>
 <pin id="247" dir="0" index="0" bw="5" slack="0"/>
 <pin id="248" dir="0" index="1" bw="64" slack="1"/>
@@ -1502,7 +1502,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln249/13 "/>
+<opset="store_ln258/13 "/>
 </bind>
 </comp>
 
@@ -1519,7 +1519,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="258" class="1004" name="store_ln249_access_fu_258">
+<comp id="258" class="1004" name="store_ln258_access_fu_258">
 <pin_list>
 <pin id="259" dir="0" index="0" bw="5" slack="0"/>
 <pin id="260" dir="0" index="1" bw="64" slack="1"/>
@@ -1528,7 +1528,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln249/13 "/>
+<opset="store_ln258/13 "/>
 </bind>
 </comp>
 
@@ -1606,7 +1606,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="load"/>
-<opset="store_ln58/19 add2_digits_data_V_l/21 "/>
+<opset="store_ln60/19 add2_digits_data_V_l/21 "/>
 </bind>
 </comp>
 
@@ -1662,7 +1662,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="325" class="1004" name="store_ln85_access_fu_325">
+<comp id="325" class="1004" name="store_ln88_access_fu_325">
 <pin_list>
 <pin id="326" dir="0" index="0" bw="6" slack="0"/>
 <pin id="327" dir="0" index="1" bw="64" slack="1"/>
@@ -1671,7 +1671,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln85/25 "/>
+<opset="store_ln88/25 "/>
 </bind>
 </comp>
 
@@ -1927,7 +1927,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln266/26 "/>
+<opset="call_ln275/26 "/>
 </bind>
 </comp>
 
@@ -1951,7 +1951,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="480" class="1004" name="icmp_ln246_fu_480">
+<comp id="480" class="1004" name="icmp_ln255_fu_480">
 <pin_list>
 <pin id="481" dir="0" index="0" bw="6" slack="0"/>
 <pin id="482" dir="0" index="1" bw="6" slack="0"/>
@@ -1959,7 +1959,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln246/2 "/>
+<opset="icmp_ln255/2 "/>
 </bind>
 </comp>
 
@@ -1975,18 +1975,18 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="492" class="1004" name="zext_ln246_fu_492">
+<comp id="492" class="1004" name="zext_ln255_fu_492">
 <pin_list>
 <pin id="493" dir="0" index="0" bw="6" slack="0"/>
 <pin id="494" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln246/2 "/>
+<opset="zext_ln255/2 "/>
 </bind>
 </comp>
 
-<comp id="497" class="1004" name="icmp_ln247_fu_497">
+<comp id="497" class="1004" name="icmp_ln256_fu_497">
 <pin_list>
 <pin id="498" dir="0" index="0" bw="6" slack="0"/>
 <pin id="499" dir="0" index="1" bw="6" slack="0"/>
@@ -1994,7 +1994,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln247/5 "/>
+<opset="icmp_ln256/5 "/>
 </bind>
 </comp>
 
@@ -2010,7 +2010,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="509" class="1004" name="xor_ln247_fu_509">
+<comp id="509" class="1004" name="xor_ln256_fu_509">
 <pin_list>
 <pin id="510" dir="0" index="0" bw="6" slack="0"/>
 <pin id="511" dir="0" index="1" bw="6" slack="0"/>
@@ -2018,33 +2018,33 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
-<opset="xor_ln247/5 "/>
+<opset="xor_ln256/5 "/>
 </bind>
 </comp>
 
-<comp id="515" class="1004" name="zext_ln247_1_fu_515">
+<comp id="515" class="1004" name="zext_ln256_1_fu_515">
 <pin_list>
 <pin id="516" dir="0" index="0" bw="6" slack="0"/>
 <pin id="517" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln247_1/5 "/>
+<opset="zext_ln256_1/5 "/>
 </bind>
 </comp>
 
-<comp id="520" class="1004" name="zext_ln247_fu_520">
+<comp id="520" class="1004" name="zext_ln256_fu_520">
 <pin_list>
 <pin id="521" dir="0" index="0" bw="6" slack="2"/>
 <pin id="522" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln247/7 "/>
+<opset="zext_ln256/7 "/>
 </bind>
 </comp>
 
-<comp id="526" class="1004" name="icmp_ln248_fu_526">
+<comp id="526" class="1004" name="icmp_ln257_fu_526">
 <pin_list>
 <pin id="527" dir="0" index="0" bw="6" slack="0"/>
 <pin id="528" dir="0" index="1" bw="6" slack="0"/>
@@ -2052,7 +2052,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln248/8 "/>
+<opset="icmp_ln257/8 "/>
 </bind>
 </comp>
 
@@ -2068,18 +2068,18 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="538" class="1004" name="zext_ln248_fu_538">
+<comp id="538" class="1004" name="zext_ln257_fu_538">
 <pin_list>
 <pin id="539" dir="0" index="0" bw="6" slack="0"/>
 <pin id="540" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln248/8 "/>
+<opset="zext_ln257/8 "/>
 </bind>
 </comp>
 
-<comp id="543" class="1004" name="icmp_ln249_fu_543">
+<comp id="543" class="1004" name="icmp_ln258_fu_543">
 <pin_list>
 <pin id="544" dir="0" index="0" bw="6" slack="0"/>
 <pin id="545" dir="0" index="1" bw="6" slack="0"/>
@@ -2087,7 +2087,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln249/11 "/>
+<opset="icmp_ln258/11 "/>
 </bind>
 </comp>
 
@@ -2103,7 +2103,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="555" class="1004" name="xor_ln249_fu_555">
+<comp id="555" class="1004" name="xor_ln258_fu_555">
 <pin_list>
 <pin id="556" dir="0" index="0" bw="6" slack="0"/>
 <pin id="557" dir="0" index="1" bw="6" slack="0"/>
@@ -2111,44 +2111,44 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
-<opset="xor_ln249/11 "/>
+<opset="xor_ln258/11 "/>
 </bind>
 </comp>
 
-<comp id="561" class="1004" name="zext_ln249_1_fu_561">
+<comp id="561" class="1004" name="zext_ln258_1_fu_561">
 <pin_list>
 <pin id="562" dir="0" index="0" bw="6" slack="0"/>
 <pin id="563" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln249_1/11 "/>
+<opset="zext_ln258_1/11 "/>
 </bind>
 </comp>
 
-<comp id="566" class="1004" name="zext_ln249_fu_566">
+<comp id="566" class="1004" name="zext_ln258_fu_566">
 <pin_list>
 <pin id="567" dir="0" index="0" bw="6" slack="2"/>
 <pin id="568" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln249/13 "/>
+<opset="zext_ln258/13 "/>
 </bind>
 </comp>
 
-<comp id="572" class="1004" name="zext_ln257_fu_572">
+<comp id="572" class="1004" name="zext_ln266_fu_572">
 <pin_list>
 <pin id="573" dir="0" index="0" bw="4" slack="0"/>
 <pin id="574" dir="1" index="1" bw="5" slack="4"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln257/14 "/>
+<opset="zext_ln266/14 "/>
 </bind>
 </comp>
 
-<comp id="576" class="1004" name="icmp_ln51_fu_576">
+<comp id="576" class="1004" name="icmp_ln53_fu_576">
 <pin_list>
 <pin id="577" dir="0" index="0" bw="7" slack="0"/>
 <pin id="578" dir="0" index="1" bw="7" slack="0"/>
@@ -2156,7 +2156,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln51/15 "/>
+<opset="icmp_ln53/15 "/>
 </bind>
 </comp>
 
@@ -2172,14 +2172,14 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="588" class="1004" name="zext_ln56_fu_588">
+<comp id="588" class="1004" name="zext_ln58_fu_588">
 <pin_list>
 <pin id="589" dir="0" index="0" bw="7" slack="0"/>
 <pin id="590" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln56/15 "/>
+<opset="zext_ln58/15 "/>
 </bind>
 </comp>
 
@@ -2217,14 +2217,14 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="606" class="1004" name="zext_ln51_fu_606">
+<comp id="606" class="1004" name="zext_ln53_fu_606">
 <pin_list>
 <pin id="607" dir="0" index="0" bw="2" slack="3"/>
 <pin id="608" dir="1" index="1" bw="66" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln51/18 "/>
+<opset="zext_ln53/18 "/>
 </bind>
 </comp>
 
@@ -2300,40 +2300,40 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="643" class="1004" name="zext_ln61_fu_643">
+<comp id="643" class="1004" name="zext_ln63_fu_643">
 <pin_list>
 <pin id="644" dir="0" index="0" bw="2" slack="1"/>
 <pin id="645" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln61/20 "/>
+<opset="zext_ln63/20 "/>
 </bind>
 </comp>
 
-<comp id="647" class="1004" name="zext_ln61_1_fu_647">
+<comp id="647" class="1004" name="zext_ln63_1_fu_647">
 <pin_list>
 <pin id="648" dir="0" index="0" bw="4" slack="2"/>
 <pin id="649" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln61_1/20 "/>
+<opset="zext_ln63_1/20 "/>
 </bind>
 </comp>
 
-<comp id="650" class="1004" name="zext_ln61_2_fu_650">
+<comp id="650" class="1004" name="zext_ln63_2_fu_650">
 <pin_list>
 <pin id="651" dir="0" index="0" bw="4" slack="2"/>
 <pin id="652" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln61_2/20 "/>
+<opset="zext_ln63_2/20 "/>
 </bind>
 </comp>
 
-<comp id="653" class="1004" name="add_ln61_fu_653">
+<comp id="653" class="1004" name="add_ln63_fu_653">
 <pin_list>
 <pin id="654" dir="0" index="0" bw="4" slack="0"/>
 <pin id="655" dir="0" index="1" bw="4" slack="0"/>
@@ -2341,18 +2341,18 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln61/20 "/>
+<opset="add_ln63/20 "/>
 </bind>
 </comp>
 
-<comp id="659" class="1004" name="zext_ln61_8_fu_659">
+<comp id="659" class="1004" name="zext_ln63_8_fu_659">
 <pin_list>
 <pin id="660" dir="0" index="0" bw="5" slack="0"/>
 <pin id="661" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln61_8/20 "/>
+<opset="zext_ln63_8/20 "/>
 </bind>
 </comp>
 
@@ -2368,14 +2368,14 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="669" class="1004" name="zext_ln61_9_fu_669">
+<comp id="669" class="1004" name="zext_ln63_9_fu_669">
 <pin_list>
 <pin id="670" dir="0" index="0" bw="6" slack="0"/>
 <pin id="671" dir="1" index="1" bw="7" slack="2"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln61_9/20 "/>
+<opset="zext_ln63_9/20 "/>
 </bind>
 </comp>
 
@@ -2403,14 +2403,14 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="685" class="1004" name="zext_ln77_fu_685">
+<comp id="685" class="1004" name="zext_ln80_fu_685">
 <pin_list>
 <pin id="686" dir="0" index="0" bw="7" slack="0"/>
 <pin id="687" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln77/21 "/>
+<opset="zext_ln80/21 "/>
 </bind>
 </comp>
 
@@ -2535,7 +2535,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="749" class="1004" name="add_ln92_fu_749">
+<comp id="749" class="1004" name="add_ln95_fu_749">
 <pin_list>
 <pin id="750" dir="0" index="0" bw="5" slack="0"/>
 <pin id="751" dir="0" index="1" bw="4" slack="4"/>
@@ -2543,18 +2543,18 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln92/26 "/>
+<opset="add_ln95/26 "/>
 </bind>
 </comp>
 
-<comp id="754" class="1004" name="sext_ln92_fu_754">
+<comp id="754" class="1004" name="sext_ln95_fu_754">
 <pin_list>
 <pin id="755" dir="0" index="0" bw="5" slack="0"/>
 <pin id="756" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="sext_ln92/26 "/>
+<opset="sext_ln95/26 "/>
 </bind>
 </comp>
 
@@ -2580,13 +2580,13 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="772" class="1005" name="zext_ln246_reg_772">
+<comp id="772" class="1005" name="zext_ln255_reg_772">
 <pin_list>
 <pin id="773" dir="0" index="0" bw="64" slack="2"/>
 <pin id="774" dir="1" index="1" bw="64" slack="2"/>
 </pin_list>
 <bind>
-<opset="zext_ln246 "/>
+<opset="zext_ln255 "/>
 </bind>
 </comp>
 
@@ -2630,13 +2630,13 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="804" class="1005" name="zext_ln248_reg_804">
+<comp id="804" class="1005" name="zext_ln257_reg_804">
 <pin_list>
 <pin id="805" dir="0" index="0" bw="64" slack="2"/>
 <pin id="806" dir="1" index="1" bw="64" slack="2"/>
 </pin_list>
 <bind>
-<opset="zext_ln248 "/>
+<opset="zext_ln257 "/>
 </bind>
 </comp>
 
@@ -2690,23 +2690,23 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="838" class="1005" name="zext_ln257_reg_838">
+<comp id="838" class="1005" name="zext_ln266_reg_838">
 <pin_list>
 <pin id="839" dir="0" index="0" bw="5" slack="4"/>
 <pin id="840" dir="1" index="1" bw="5" slack="4"/>
 </pin_list>
 <bind>
-<opset="zext_ln257 "/>
+<opset="zext_ln266 "/>
 </bind>
 </comp>
 
-<comp id="843" class="1005" name="icmp_ln51_reg_843">
+<comp id="843" class="1005" name="icmp_ln53_reg_843">
 <pin_list>
 <pin id="844" dir="0" index="0" bw="1" slack="1"/>
 <pin id="845" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln51 "/>
+<opset="icmp_ln53 "/>
 </bind>
 </comp>
 
@@ -2720,13 +2720,13 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="852" class="1005" name="zext_ln56_reg_852">
+<comp id="852" class="1005" name="zext_ln58_reg_852">
 <pin_list>
 <pin id="853" dir="0" index="0" bw="64" slack="4"/>
 <pin id="854" dir="1" index="1" bw="64" slack="4"/>
 </pin_list>
 <bind>
-<opset="zext_ln56 "/>
+<opset="zext_ln58 "/>
 </bind>
 </comp>
 
@@ -2800,13 +2800,13 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="894" class="1005" name="zext_ln61_9_reg_894">
+<comp id="894" class="1005" name="zext_ln63_9_reg_894">
 <pin_list>
 <pin id="895" dir="0" index="0" bw="7" slack="2"/>
 <pin id="896" dir="1" index="1" bw="7" slack="2"/>
 </pin_list>
 <bind>
-<opset="zext_ln61_9 "/>
+<opset="zext_ln63_9 "/>
 </bind>
 </comp>
 
@@ -2830,13 +2830,13 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="908" class="1005" name="zext_ln77_reg_908">
+<comp id="908" class="1005" name="zext_ln80_reg_908">
 <pin_list>
 <pin id="909" dir="0" index="0" bw="64" slack="4"/>
 <pin id="910" dir="1" index="1" bw="64" slack="4"/>
 </pin_list>
 <bind>
-<opset="zext_ln77 "/>
+<opset="zext_ln80 "/>
 </bind>
 </comp>
 
@@ -3446,62 +3446,62 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
   - Chain level:
 	State 1
 	State 2
-		icmp_ln246 : 1
+		icmp_ln255 : 1
 		i : 1
-		br_ln246 : 2
-		zext_ln246 : 1
+		br_ln255 : 2
+		zext_ln255 : 1
 		lhs_digits_data_V_ad : 2
 		lhs_digits_data_V_lo : 3
 	State 3
 	State 4
-		store_ln246 : 1
-		store_ln246 : 1
+		store_ln255 : 1
+		store_ln255 : 1
 	State 5
-		icmp_ln247 : 1
+		icmp_ln256 : 1
 		i_16 : 1
-		br_ln247 : 2
-		xor_ln247 : 1
-		zext_ln247_1 : 1
+		br_ln256 : 2
+		xor_ln256 : 1
+		zext_ln256_1 : 1
 		lhs_digits_data_V_ad_5 : 2
 		lhs_digits_data_V_lo_5 : 3
 	State 6
 	State 7
 		lhs1_tmp_digits_data_3 : 1
-		store_ln247 : 2
+		store_ln256 : 2
 		lhs1_digits_data_V_a : 1
-		store_ln247 : 2
+		store_ln256 : 2
 	State 8
-		icmp_ln248 : 1
+		icmp_ln257 : 1
 		i_17 : 1
-		br_ln248 : 2
-		zext_ln248 : 1
+		br_ln257 : 2
+		zext_ln257 : 1
 		rhs_digits_data_V_ad : 2
 		rhs_digits_data_V_lo : 3
 	State 9
 	State 10
-		store_ln248 : 1
-		store_ln248 : 1
+		store_ln257 : 1
+		store_ln257 : 1
 	State 11
-		icmp_ln249 : 1
+		icmp_ln258 : 1
 		i_18 : 1
-		br_ln249 : 2
-		xor_ln249 : 1
-		zext_ln249_1 : 1
+		br_ln258 : 2
+		xor_ln258 : 1
+		zext_ln258_1 : 1
 		rhs_digits_data_V_ad_5 : 2
 		rhs_digits_data_V_lo_5 : 3
 	State 12
 	State 13
 		rhs1_tmp_digits_data_3 : 1
-		store_ln249 : 2
+		store_ln258 : 2
 		rhs1_digits_data_V_a : 1
-		store_ln249 : 2
+		store_ln258 : 2
 	State 14
-		zext_ln257 : 1
+		zext_ln266 : 1
 	State 15
-		icmp_ln51 : 1
+		icmp_ln53 : 1
 		i_19 : 1
-		br_ln51 : 2
-		zext_ln56 : 1
+		br_ln53 : 2
+		zext_ln58 : 1
 		z0_digits_data_V_add : 2
 		z0_digits_data_V_loa : 3
 		z2_digits_data_V_add : 2
@@ -3515,18 +3515,18 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 		add_ln209 : 2
 		trunc_ln : 2
 	State 19
-		store_ln58 : 1
+		store_ln60 : 1
 		empty_42 : 1
 	State 20
-		add_ln61 : 1
-		zext_ln61_8 : 2
+		add_ln63 : 1
+		zext_ln63_8 : 2
 		add2_tmp_bits : 3
-		zext_ln61_9 : 4
+		zext_ln63_9 : 4
 	State 21
 		exitcond_i : 1
 		i_20 : 1
-		br_ln74 : 2
-		zext_ln77 : 1
+		br_ln77 : 2
+		zext_ln80 : 1
 		cross_mul_digits_dat_5 : 2
 		cross_mul_digits_dat_6 : 3
 		add2_digits_data_V_a_3 : 2
@@ -3539,13 +3539,13 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 		tmp : 2
 		add_ln700_15 : 1
 	State 25
-		store_ln85 : 1
+		store_ln88 : 1
 		empty_44 : 1
 	State 26
-		add_ln92 : 1
-		sext_ln92 : 2
+		add_ln95 : 1
+		sext_ln95 : 2
 		z1_tmp_bits : 3
-		call_ln266 : 4
+		call_ln275 : 4
 	State 27
 
 
@@ -3571,12 +3571,12 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 |          |            tmp_V_fu_617           |    0    |    0    |    0    |    0    |    72   |    0    |
 |    add   |        add_ln209_13_fu_623        |    0    |    0    |    0    |    0    |    64   |    0    |
 |          |          add_ln209_fu_628         |    0    |    0    |    0    |    0    |    64   |    0    |
-|          |          add_ln61_fu_653          |    0    |    0    |    0    |    0    |    12   |    0    |
+|          |          add_ln63_fu_653          |    0    |    0    |    0    |    0    |    12   |    0    |
 |          |        add2_tmp_bits_fu_663       |    0    |    0    |    0    |    0    |    15   |    0    |
 |          |            i_20_fu_679            |    0    |    0    |    0    |    0    |    15   |    0    |
 |          |          tmp_V_11_fu_722          |    0    |    0    |    0    |    0    |    72   |    0    |
 |          |        add_ln700_15_fu_735        |    0    |    0    |    0    |    0    |    71   |    0    |
-|          |          add_ln92_fu_749          |    0    |    0    |    0    |    0    |    15   |    0    |
+|          |          add_ln95_fu_749          |    0    |    0    |    0    |    0    |    15   |    0    |
 |----------|-----------------------------------|---------|---------|---------|---------|---------|---------|
 |          |        select_ln701_fu_703        |    0    |    0    |    0    |    0    |    65   |    0    |
 |  select  |       select_ln701_3_fu_711       |    0    |    0    |    0    |    0    |    64   |    0    |
@@ -3585,35 +3585,35 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 |    sub   |          tmp_V_10_fu_697          |    0    |    0    |    0    |    0    |    71   |    0    |
 |          |         z1_tmp_bits_fu_758        |    0    |    0    |    0    |    0    |    15   |    0    |
 |----------|-----------------------------------|---------|---------|---------|---------|---------|---------|
-|          |         icmp_ln246_fu_480         |    0    |    0    |    0    |    0    |    11   |    0    |
-|          |         icmp_ln247_fu_497         |    0    |    0    |    0    |    0    |    11   |    0    |
-|   icmp   |         icmp_ln248_fu_526         |    0    |    0    |    0    |    0    |    11   |    0    |
-|          |         icmp_ln249_fu_543         |    0    |    0    |    0    |    0    |    11   |    0    |
-|          |          icmp_ln51_fu_576         |    0    |    0    |    0    |    0    |    11   |    0    |
+|          |         icmp_ln255_fu_480         |    0    |    0    |    0    |    0    |    11   |    0    |
+|          |         icmp_ln256_fu_497         |    0    |    0    |    0    |    0    |    11   |    0    |
+|   icmp   |         icmp_ln257_fu_526         |    0    |    0    |    0    |    0    |    11   |    0    |
+|          |         icmp_ln258_fu_543         |    0    |    0    |    0    |    0    |    11   |    0    |
+|          |          icmp_ln53_fu_576         |    0    |    0    |    0    |    0    |    11   |    0    |
 |          |         exitcond_i_fu_673         |    0    |    0    |    0    |    0    |    11   |    0    |
 |----------|-----------------------------------|---------|---------|---------|---------|---------|---------|
-|    xor   |          xor_ln247_fu_509         |    0    |    0    |    0    |    0    |    6    |    0    |
-|          |          xor_ln249_fu_555         |    0    |    0    |    0    |    0    |    6    |    0    |
+|    xor   |          xor_ln256_fu_509         |    0    |    0    |    0    |    0    |    6    |    0    |
+|          |          xor_ln258_fu_555         |    0    |    0    |    0    |    0    |    6    |    0    |
 |----------|-----------------------------------|---------|---------|---------|---------|---------|---------|
-|          |         zext_ln246_fu_492         |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |        zext_ln247_1_fu_515        |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln247_fu_520         |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln248_fu_538         |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |        zext_ln249_1_fu_561        |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln249_fu_566         |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln257_fu_572         |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |          zext_ln56_fu_588         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |         zext_ln255_fu_492         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln256_1_fu_515        |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |         zext_ln256_fu_520         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |         zext_ln257_fu_538         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln258_1_fu_561        |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |         zext_ln258_fu_566         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |         zext_ln266_fu_572         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |          zext_ln58_fu_588         |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |         zext_ln209_fu_594         |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |         zext_ln700_fu_597         |    0    |    0    |    0    |    0    |    0    |    0    |
-|   zext   |          zext_ln51_fu_606         |    0    |    0    |    0    |    0    |    0    |    0    |
+|   zext   |          zext_ln53_fu_606         |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |        zext_ln700_24_fu_610       |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |        zext_ln700_25_fu_614       |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |          zext_ln61_fu_643         |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln61_1_fu_647        |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln61_2_fu_650        |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln61_8_fu_659        |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln61_9_fu_669        |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |          zext_ln77_fu_685         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |          zext_ln63_fu_643         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |         zext_ln63_1_fu_647        |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |         zext_ln63_2_fu_650        |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |         zext_ln63_8_fu_659        |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |         zext_ln63_9_fu_669        |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |          zext_ln80_fu_685         |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |         zext_ln180_fu_691         |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |         zext_ln701_fu_694         |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-----------------------------------|---------|---------|---------|---------|---------|---------|
@@ -3623,7 +3623,7 @@ ret_ln0                (ret              ) [ 0000000000000000000000000000]
 |----------|-----------------------------------|---------|---------|---------|---------|---------|---------|
 | bitselect|             tmp_fu_727            |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-----------------------------------|---------|---------|---------|---------|---------|---------|
-|   sext   |          sext_ln92_fu_754         |    0    |    0    |    0    |    0    |    0    |    0    |
+|   sext   |          sext_ln95_fu_754         |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-----------------------------------|---------|---------|---------|---------|---------|---------|
 |   Total  |                                   |   256   |    27   | 762.819 |  99278  |  84286  |    0    |
 |----------|-----------------------------------|---------|---------|---------|---------|---------|---------|
@@ -3673,7 +3673,7 @@ Memories:
 |         i_19_reg_847         |    7   |
 |         i_20_reg_903         |    7   |
 |           i_reg_767          |    6   |
-|       icmp_ln51_reg_843      |    1   |
+|       icmp_ln53_reg_843      |    1   |
 |lhs_digits_data_V_ad_5_reg_791|    6   |
 | lhs_digits_data_V_ad_reg_778 |    6   |
 |      op2_assign_reg_400      |    1   |
@@ -3692,12 +3692,12 @@ Memories:
 | z2_digits_data_V_add_reg_862 |    6   |
 | z2_digits_data_V_loa_reg_873 |   64   |
 |      z2_tmp_bits_reg_833     |    4   |
-|      zext_ln246_reg_772      |   64   |
-|      zext_ln248_reg_804      |   64   |
-|      zext_ln257_reg_838      |    5   |
-|       zext_ln56_reg_852      |   64   |
-|      zext_ln61_9_reg_894     |    7   |
-|       zext_ln77_reg_908      |   64   |
+|      zext_ln255_reg_772      |   64   |
+|      zext_ln257_reg_804      |   64   |
+|      zext_ln266_reg_838      |    5   |
+|       zext_ln58_reg_852      |   64   |
+|      zext_ln63_9_reg_894     |    7   |
+|       zext_ln80_reg_908      |   64   |
 +------------------------------+--------+
 |             Total            |  1057  |
 +------------------------------+--------+

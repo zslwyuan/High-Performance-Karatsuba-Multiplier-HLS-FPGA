@@ -14,9 +14,9 @@
   },
   "HlsSolution": {"Config": [
       "config_sdx -target=none",
-      "config_export -vivado_optimization_level=2",
       "config_export -format=ip_catalog",
       "config_export -rtl=verilog",
+      "config_export -vivado_optimization_level=2",
       "config_export -vivado_phys_opt=place",
       "config_export -vivado_report_level=0"
     ]},
@@ -25,9 +25,9 @@
       "index": "0",
       "type": {
         "kinds": ["array"],
-        "dataType": "unsigned",
+        "dataType": "ap_uint",
         "dataWidth": "64",
-        "arraySizes": ["32"],
+        "arraySizes": ["128"],
         "interfaceRef": "hs_input_V",
         "portRef": "TDATA"
       }
@@ -36,9 +36,9 @@
       "index": "1",
       "type": {
         "kinds": ["array"],
-        "dataType": "unsigned",
+        "dataType": "ap_uint",
         "dataWidth": "64",
-        "arraySizes": ["32"],
+        "arraySizes": ["128"],
         "interfaceRef": "res_output_V",
         "portRef": "TDATA"
       }
@@ -128,9 +128,9 @@
       "impl\/misc\/drivers\/karastuba_mul_v1_0\/src\/xkarastuba_mul_sinit.c"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/home\/tingyuan\/Documents\/High-Performance-Karatsuba-Multiplier-HLS-FPGA\/HLS_Implementation\/bigtest\/solution1\/.autopilot\/db\/karastuba_mul.design.xml",
-    "DebugDir": "\/home\/tingyuan\/Documents\/High-Performance-Karatsuba-Multiplier-HLS-FPGA\/HLS_Implementation\/bigtest\/solution1\/.debug",
-    "ProtoInst": ["\/home\/tingyuan\/Documents\/High-Performance-Karatsuba-Multiplier-HLS-FPGA\/HLS_Implementation\/bigtest\/solution1\/.debug\/karastuba_mul.protoinst"]
+    "DesignXml": "\/home\/tingyuan\/Dropbox\/High-Performance-Karatsuba-Multiplier-HLS-FPGA\/HLS_Implementation\/bigtest\/solution1\/.autopilot\/db\/karastuba_mul.design.xml",
+    "DebugDir": "\/home\/tingyuan\/Dropbox\/High-Performance-Karatsuba-Multiplier-HLS-FPGA\/HLS_Implementation\/bigtest\/solution1\/.debug",
+    "ProtoInst": ["\/home\/tingyuan\/Dropbox\/High-Performance-Karatsuba-Multiplier-HLS-FPGA\/HLS_Implementation\/bigtest\/solution1\/.debug\/karastuba_mul.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -160,7 +160,7 @@
       "has_tready": "1",
       "ctype": {
         "TDATA": {
-          "Type": "null",
+          "Type": "integer unsigned",
           "Width": "64"
         },
         "TVALID": {"Type": "bool"},
@@ -181,7 +181,7 @@
       "has_tready": "1",
       "ctype": {
         "TDATA": {
-          "Type": "null",
+          "Type": "integer unsigned",
           "Width": "64"
         },
         "TVALID": {"Type": "bool"},
@@ -1517,8 +1517,8 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-05-26 00:45:17 CST",
+    "Time": "2020-06-05 20:14:39 CST",
     "ToolName": "vivado_hls",
-    "ToolVersion": "2019.2"
+    "ToolVersion": "2019.2.1"
   }
 }

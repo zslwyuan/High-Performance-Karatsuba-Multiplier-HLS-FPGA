@@ -1,16 +1,16 @@
 // ==============================================================
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2.1 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 1 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
-# 1 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
-# 1 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/BigIntegerHLS.h" 1
+# 1 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 1 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/BigIntegerHLS.h" 1
        
-# 26 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/BigIntegerHLS.h"
+# 26 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/BigIntegerHLS.h"
 template <typename T, int LEN>
 struct Array
 {
@@ -21,14 +21,10 @@ template <int MAX_DIGITS, int BITS>
 struct Bignum {
   const static int N_ele = MAX_DIGITS;
   unsigned int tmp_bits;
-  Bignum(): tmp_bits(0)
-  {
-
-  }
 
   Array<unsigned int, MAX_DIGITS> digits;
 };
-# 2 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
+# 2 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
 # 1 "/home/tingyuan/Softwares/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 1 3
 # 39 "/home/tingyuan/Softwares/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
        
@@ -1032,7 +1028,7 @@ namespace std
   using ::__gnu_cxx::vsnprintf;
   using ::__gnu_cxx::vsscanf;
 }
-# 3 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
+# 3 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
 # 1 "/home/tingyuan/Softwares/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iostream" 1 3
 # 36 "/home/tingyuan/Softwares/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iostream" 3
        
@@ -27362,7 +27358,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 4 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
+# 4 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
 # 1 "/usr/include/x86_64-linux-gnu/gmp.h" 1
 # 35 "/usr/include/x86_64-linux-gnu/gmp.h"
 # 1 "/home/tingyuan/Softwares/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 1 3
@@ -28974,7 +28970,7 @@ enum
   GMP_ERROR_SQRT_OF_NEGATIVE = 4,
   GMP_ERROR_INVALID_ARGUMENT = 8
 };
-# 5 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
+# 5 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
 
 # 1 "/usr/include/assert.h" 1 3 4
 # 66 "/usr/include/assert.h" 3 4
@@ -29000,7 +28996,7 @@ extern void __assert (const char *__assertion, const char *__file, int __line)
 
 
 }
-# 7 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
+# 7 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
 
 # 1 "/home/tingyuan/Softwares/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ctime" 1 3
 # 39 "/home/tingyuan/Softwares/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ctime" 3
@@ -29023,7 +29019,7 @@ namespace std
   using ::localtime;
   using ::strftime;
 }
-# 9 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
+# 9 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
 # 1 "/home/tingyuan/Softwares/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/stdlib.h" 1 3
 # 36 "/home/tingyuan/Softwares/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/stdlib.h" 3
 # 1 "/home/tingyuan/Softwares/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 1 3
@@ -29076,13 +29072,13 @@ using std::system;
 
 using std::wcstombs;
 using std::wctomb;
-# 10 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
+# 10 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 2
 
 
 
-# 12 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 12 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 const int BITS_PER_DIGIT = 32;
-# 26 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 26 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 using namespace std;
 
 void little_end_to_array(mpz_t a, unsigned int output[1024])
@@ -29091,9 +29087,9 @@ void little_end_to_array(mpz_t a, unsigned int output[1024])
 
     unsigned char *ropa = new unsigned char[sizea];
     __gmpz_export(ropa, 
-# 33 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+# 33 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
                     __null
-# 33 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 33 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
                         , -1, 1, 1, 0, a);
     for (size_t i = 0; i < sizea; ++i) {
         int digit_N = i/4;
@@ -29106,9 +29102,11 @@ void little_end_to_array(mpz_t a, unsigned int output[1024])
 }
 
 
+
 template <typename In_T, typename Out_T>
 void add_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
     for (int j = u->N_ele; j < w->N_ele; ++j) w->digits.data[j] = (0);
     bool needUp = false;
     unsigned long long tmp = 0;
@@ -29117,17 +29115,17 @@ void add_I_O(const In_T *u, const In_T *v, Out_T *w)
 #pragma HLS pipeline
 if (tmp>1)
 
-# 55 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+# 57 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
 (static_cast <bool> (
-# 55 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 57 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 false
-# 55 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+# 57 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
 ) ? void (0) : __assert_fail (
-# 55 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 57 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 "false"
-# 55 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
-, "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc", 55, __extension__ __PRETTY_FUNCTION__))
-# 55 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 57 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+, "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc", 57, __extension__ __PRETTY_FUNCTION__))
+# 57 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
             ;
   tmp += static_cast<unsigned long long>(u->digits.data[i]);
   tmp += static_cast<unsigned long long>(v->digits.data[i]);
@@ -29142,6 +29140,7 @@ false
 template <typename In_T, typename Out_T>
 void sub_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
 
     int reset_start = u->N_ele < w->N_ele? u->N_ele : w->N_ele;
     for (int j = reset_start; j < w->N_ele; ++j) w->digits.data[j] = (0);
@@ -29173,6 +29172,7 @@ void sub_I_O(const In_T *u, const In_T *v, Out_T *w)
 template <typename In_T, typename Out_T>
 void mul_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
     for (int j = 0; j < w->N_ele; ++j) w->digits.data[j] = (0);
     int i,j;
     unsigned long long k = 0;
@@ -29197,17 +29197,17 @@ void mul_I_O(const In_T *u, const In_T *v, Out_T *w)
         }
     }
     
-# 123 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+# 127 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
    (static_cast <bool> (
-# 123 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 127 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
    k==0
-# 123 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+# 127 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
    ) ? void (0) : __assert_fail (
-# 123 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 127 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
    "k==0"
-# 123 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
-   , "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc", 123, __extension__ __PRETTY_FUNCTION__))
-# 123 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 127 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+   , "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc", 127, __extension__ __PRETTY_FUNCTION__))
+# 127 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
                ;
     if (v->tmp_bits)
     {
@@ -29245,6 +29245,7 @@ void mul_I_O(const In_T *u, const In_T *v, Out_T *w)
 template <typename In_T0, typename In_T1, typename In_T2, typename Out_T>
 void CAT_I_I_I_O(const In_T0 *x0, const In_T1 *x1, const In_T2 *x2, Out_T *w)
 {
+    w->tmp_bits = 0;
 
 
     for (int j = x0->N_ele; j < w->N_ele; ++j) w->digits.data[j] = (0);
@@ -29259,17 +29260,17 @@ void CAT_I_I_I_O(const In_T0 *x0, const In_T1 *x1, const In_T2 *x2, Out_T *w)
 #pragma HLS pipeline
 if (tmp>1)
 
-# 173 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+# 178 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
 (static_cast <bool> (
-# 173 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 178 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 false
-# 173 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+# 178 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
 ) ? void (0) : __assert_fail (
-# 173 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 178 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 "false"
-# 173 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
-, "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc", 173, __extension__ __PRETTY_FUNCTION__))
-# 173 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 178 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+, "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc", 178, __extension__ __PRETTY_FUNCTION__))
+# 178 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
             ;
   tmp += static_cast<unsigned long long>(x1->digits.data[i]);
   tmp += static_cast<unsigned long long>(w->digits.data[j]);
@@ -29287,17 +29288,17 @@ false
 #pragma HLS pipeline
 if (tmp>1)
 
-# 189 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+# 194 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
 (static_cast <bool> (
-# 189 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 194 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 false
-# 189 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+# 194 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
 ) ? void (0) : __assert_fail (
-# 189 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 194 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 "false"
-# 189 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
-, "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc", 189, __extension__ __PRETTY_FUNCTION__))
-# 189 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 194 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc" 3 4
+, "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc", 194, __extension__ __PRETTY_FUNCTION__))
+# 194 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
             ;
   tmp += static_cast<unsigned long long>(x2->digits.data[i]);
   tmp += static_cast<unsigned long long>(w->digits.data[j]);
@@ -29337,9 +29338,13 @@ void karastuba_mul_template_z1(
 {
 #pragma HLS inline off
     Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> add0;
-    add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(lhs0_tmp,lhs1_tmp, &add0);
     Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> add1;
+
+    add0.tmp_bits=add1.tmp_bits=0;
+
+    add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(lhs0_tmp,lhs1_tmp, &add0);
     add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(rhs0_tmp,rhs1_tmp,&add1);
+
     karastuba_mul_template<MAX_N_ele_input / 2,BITS_PER_DIGIT>(&add0, &add1, cross_mul);
     return;
 }
@@ -29354,7 +29359,7 @@ void karastuba_mul_template(
 {
 #pragma HLS inline off
     Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT> lhs0,lhs1,rhs0,rhs1,lhs0_tmp,lhs1_tmp,rhs0_tmp,rhs1_tmp;
-
+    lhs0.tmp_bits=lhs1.tmp_bits=rhs0.tmp_bits=rhs1.tmp_bits=lhs0_tmp.tmp_bits=lhs1_tmp.tmp_bits=rhs0_tmp.tmp_bits=rhs1_tmp.tmp_bits=0;
     for (int i=0;i<lhs0.N_ele;i++)lhs0.digits.data[i]=lhs0_tmp.digits.data[i]=lhs->digits.data[i];
     for (int i=0;i<lhs1.N_ele;i++)lhs1.digits.data[i]=lhs1_tmp.digits.data[i]=lhs->digits.data[i+MAX_N_ele_input / 2];
     for (int i=0;i<rhs0.N_ele;i++)rhs0.digits.data[i]=rhs0_tmp.digits.data[i]=rhs->digits.data[i];
@@ -29414,33 +29419,33 @@ void karastuba_mul_template(
 
 
 void karastuba_mul(
-  unsigned int hs_input[2*512 / 32],
-  unsigned int res_output[2*512 / 32])
+  unsigned int hs_input[2*4096 / 32],
+  unsigned int res_output[2*4096 / 32])
 {
 #pragma HLS INTERFACE s_axilite port=return
 #pragma HLS INTERFACE axis register both port=hs_input depth=1024
 #pragma HLS INTERFACE axis register both port=res_output depth=1024
 
- Bignum<512/32, 32> lhs;
- Bignum<512/32, 32> rhs;
+ Bignum<4096/32, 32> lhs;
+ Bignum<4096/32, 32> rhs;
 
  lhs.tmp_bits = 0; rhs.tmp_bits = 0;
 
- for (int i=0;i<512/32;i++)
+ for (int i=0;i<4096/32;i++)
  {
 #pragma HLS pipeline
   lhs.digits.data[i] = hs_input[i];
  }
- for (int i=512/32;i<2*512/32;i++)
+ for (int i=4096/32;i<2*4096/32;i++)
  {
 #pragma HLS pipeline
-  rhs.digits.data[i-512/32] = hs_input[i];
+  rhs.digits.data[i-4096/32] = hs_input[i];
  }
 
- Bignum<2 * 512/32, 32> res;
- karastuba_mul_template<512/32,32>(&lhs, &rhs, &res);
+ Bignum<2 * 4096/32, 32> res;
+ karastuba_mul_template<4096/32,32>(&lhs, &rhs, &res);
 
- for (int i=0;i<2*512/32;i++)
+ for (int i=0;i<2*4096/32;i++)
  {
 #pragma HLS pipeline
   res_output[i] = res.digits.data[i];
@@ -29450,33 +29455,33 @@ void karastuba_mul(
 
 
 void karastuba_mul_software(
-  unsigned int hs_input[2*512 / 32],
-  unsigned int res_output[2*512 / 32])
+  unsigned int hs_input[2*4096 / 32],
+  unsigned int res_output[2*4096 / 32])
 {
 #pragma HLS INTERFACE s_axilite port=return
 #pragma HLS INTERFACE axis register both port=hs_input depth=1024
 #pragma HLS INTERFACE axis register both port=res_output depth=1024
 
- Bignum<512/32, 32> lhs;
- Bignum<512/32, 32> rhs;
+ Bignum<4096/32, 32> lhs;
+ Bignum<4096/32, 32> rhs;
 
  lhs.tmp_bits = 0; rhs.tmp_bits = 0;
 
- for (int i=0;i<512/32;i++)
+ for (int i=0;i<4096/32;i++)
  {
 #pragma HLS pipeline
   lhs.digits.data[i] = hs_input[i];
  }
- for (int i=512/32;i<2*512/32;i++)
+ for (int i=4096/32;i<2*4096/32;i++)
  {
 #pragma HLS pipeline
-  rhs.digits.data[i-512/32] = hs_input[i];
+  rhs.digits.data[i-4096/32] = hs_input[i];
  }
 
- Bignum<2 * 512/32, 32> res;
- karastuba_mul_template<512/32,32>(&lhs, &rhs, &res);
+ Bignum<2 * 4096/32, 32> res;
+ karastuba_mul_template<4096/32,32>(&lhs, &rhs, &res);
 
- for (int i=0;i<2*512/32;i++)
+ for (int i=0;i<2*4096/32;i++)
  {
 #pragma HLS pipeline
   res_output[i] = res.digits.data[i];
@@ -29489,49 +29494,54 @@ void karastuba_mul_software(
 #ifndef HLS_FASTSIM
 #include "apatb_karastuba_mul.h"
 #endif
-# 376 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 385 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 int main()
 {
- unsigned int hs_input[2*512/32],
-               res_output_hardware[2*512/32],
-               res_output_software[2*512/32];
+
+ for (int seed=0;seed<10;seed++)
+ {
+  unsigned int hs_input[2*4096/32],
+                res_output_hardware[2*4096/32],
+                res_output_software[2*4096/32];
 
 
-    srand(0);
+     srand(0);
 
- for (int i=0;i<2*512/32;i++)
-   hs_input[i]=i+rand();
+  for (int i=0;i<2*4096/32;i++)
+    hs_input[i]=i+rand();
 
 
- printf("HARDWARE RESULT:\nc=");
- 
+  printf("HARDWARE RESULT:\nc=");
+  
 #ifndef HLS_FASTSIM
 #define karastuba_mul AESL_WRAP_karastuba_mul
 #endif
-# 390 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 402 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 karastuba_mul(hs_input,res_output_hardware);
 #undef karastuba_mul
-# 390 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 402 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 
 
 
-  for (int i=0;i<2*512/32;i++) printf("%08x",res_output_hardware[i]);
+  for (int i=0;i<2*4096/32;i++) printf("%08x",res_output_hardware[i]);
 
 
- printf("\nSOFTWARE RESULT:\nc=");
- karastuba_mul_software(hs_input,res_output_software);
+  printf("\nSOFTWARE RESULT:\nc=");
+  karastuba_mul_software(hs_input,res_output_software);
 
-  for (int i=0;i<2*512/32;i++) printf("%08x",res_output_software[i]);
- printf("\n");
+  for (int i=0;i<2*4096/32;i++) printf("%08x",res_output_software[i]);
+  printf("\n");
 
- for (int i=2*512/32 -1;i>=0;i--)
- {
-  if (res_output_software[i]!=res_output_hardware[i])
-   return -1;
+  for (int i=2*4096/32 -1;i>=0;i--)
+  {
+   if (res_output_software[i]!=res_output_hardware[i])
+    return -1;
+  }
  }
+
 
     return 0;
 }
 #endif
-# 409 "/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
+# 423 "/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/multest.cc"
 

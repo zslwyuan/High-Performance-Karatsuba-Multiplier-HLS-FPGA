@@ -1,21 +1,14 @@
-
-****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
-  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
-  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-source /home/tingyuan/Softwares/Xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/home/tingyuan/Softwares/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'tingyuan' on host 'tingyuan-MYSERVER' (Linux_x86_64 version 5.3.0-53-generic) on Tue May 26 00:44:29 CST 2020
+INFO: [HLS 200-10] For user 'tingyuan' on host 'tingyuan-MYSERVER' (Linux_x86_64 version 5.3.0-53-generic) on Fri Jun 05 20:13:49 CST 2020
 INFO: [HLS 200-10] On os Ubuntu 18.04.4 LTS
-INFO: [HLS 200-10] In directory '/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation'
-Sourcing Tcl script 'script.tcl'
-INFO: [HLS 200-10] Opening project '/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest'.
-INFO: [HLS 200-10] Adding design file 'multest.cc' to the project
+INFO: [HLS 200-10] In directory '/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation'
+Sourcing Tcl script '/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project '/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest'.
 INFO: [HLS 200-10] Adding design file 'BigIntegerHLS.h' to the project
-INFO: [HLS 200-10] Adding test bench file 'multest.cc' to the project
+INFO: [HLS 200-10] Adding design file 'multest.cc' to the project
 INFO: [HLS 200-10] Adding test bench file 'BigIntegerHLS.h' to the project
-INFO: [HLS 200-10] Opening solution '/home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1'.
+INFO: [HLS 200-10] Adding test bench file 'multest.cc' to the project
+INFO: [HLS 200-10] Opening solution '/home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
 INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.375ns.
 INFO: [HLS 200-10] Setting target device to 'xcvu095-ffva2104-2-e'
@@ -25,104 +18,104 @@ INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -v
 INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
 INFO: [HLS 200-10] Analyzing design file 'multest.cc' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 965.719 ; gain = 526.004 ; free physical = 14758 ; free virtual = 24478
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 965.719 ; gain = 526.004 ; free physical = 14758 ; free virtual = 24478
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 960.539 ; gain = 526.059 ; free physical = 20018 ; free virtual = 27579
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 960.539 ; gain = 526.059 ; free physical = 20018 ; free virtual = 27579
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 965.719 ; gain = 526.004 ; free physical = 14765 ; free virtual = 24467
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 960.539 ; gain = 526.059 ; free physical = 20016 ; free virtual = 27568
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'karastuba_mul_template<8, 64>' into 'karastuba_mul_template_z1<16, 64>' (multest.cc:231) automatically.
-INFO: [XFORM 203-602] Inlining function 'karastuba_mul_template<8, 64>' into 'karastuba_mul_template<16, 64>' (multest.cc:253) automatically.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 965.719 ; gain = 526.004 ; free physical = 14752 ; free virtual = 24455
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:71) in function 'sub_I_O<Bignum<64, 64>, Bignum<64, 64> >' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:71) in function 'sub_I_O<Bignum<32, 64>, Bignum<32, 64> >' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:71) in function 'sub_I_O<Bignum<16, 64>, Bignum<16, 64> >' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:48) in function 'add_I_O<Bignum<8, 64>, Bignum<8, 64> >' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:48) in function 'add_I_O<Bignum<64, 64>, Bignum<64, 64> >' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:48) in function 'add_I_O<Bignum<32, 64>, Bignum<32, 64> >' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:48) in function 'add_I_O<Bignum<16, 64>, Bignum<16, 64> >' automatically.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:71) in function 'sub_I_O<Bignum<64, 64>, Bignum<64, 64> >' completely with a factor of 0.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:71) in function 'sub_I_O<Bignum<32, 64>, Bignum<32, 64> >' completely with a factor of 0.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:71) in function 'sub_I_O<Bignum<16, 64>, Bignum<16, 64> >' completely with a factor of 0.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:48) in function 'add_I_O<Bignum<8, 64>, Bignum<8, 64> >' completely with a factor of 0.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:48) in function 'add_I_O<Bignum<64, 64>, Bignum<64, 64> >' completely with a factor of 0.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:48) in function 'add_I_O<Bignum<32, 64>, Bignum<32, 64> >' completely with a factor of 0.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:48) in function 'add_I_O<Bignum<16, 64>, Bignum<16, 64> >' completely with a factor of 0.
-INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<8, 64>, Bignum<8, 64> >' into 'karastuba_mul_template_z1<16, 64>' (multest.cc:228) automatically.
-INFO: [XFORM 203-602] Inlining function 'karastuba_mul_template<8, 64>' into 'karastuba_mul_template_z1<16, 64>' (multest.cc:231) automatically.
-INFO: [XFORM 203-602] Inlining function 'karastuba_mul_template<8, 64>' into 'karastuba_mul_template<16, 64>' (multest.cc:253) automatically.
-INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<16, 64>, Bignum<16, 64> >' into 'karastuba_mul_template<16, 64>' (multest.cc:262) automatically.
-INFO: [XFORM 203-602] Inlining function 'sub_I_O<Bignum<16, 64>, Bignum<16, 64> >' into 'karastuba_mul_template<16, 64>' (multest.cc:264) automatically.
-INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<32, 64>, Bignum<32, 64> >' into 'karastuba_mul_template<32, 64>' (multest.cc:262) automatically.
-INFO: [XFORM 203-602] Inlining function 'sub_I_O<Bignum<32, 64>, Bignum<32, 64> >' into 'karastuba_mul_template<32, 64>' (multest.cc:264) automatically.
-INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<64, 64>, Bignum<64, 64> >' into 'karastuba_mul_template<64, 64>' (multest.cc:262) automatically.
-INFO: [XFORM 203-602] Inlining function 'sub_I_O<Bignum<64, 64>, Bignum<64, 64> >' into 'karastuba_mul_template<64, 64>' (multest.cc:264) automatically.
-INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<16, 64>, Bignum<16, 64> >' into 'karastuba_mul_template_z1<32, 64>' (multest.cc:228) automatically.
-INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<32, 64>, Bignum<32, 64> >' into 'karastuba_mul_template_z1<64, 64>' (multest.cc:228) automatically.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 965.719 ; gain = 526.004 ; free physical = 14703 ; free virtual = 24424
-WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (multest.cc:103:10) in function 'mul_I_O<Bignum<8, 64>, Bignum<16, 64> >' : 
+INFO: [XFORM 203-602] Inlining function 'karastuba_mul_template<8, 64>' into 'karastuba_mul_template_z1<16, 64>' (multest.cc:240) automatically.
+INFO: [XFORM 203-602] Inlining function 'karastuba_mul_template<8, 64>' into 'karastuba_mul_template<16, 64>' (multest.cc:262) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 960.539 ; gain = 526.059 ; free physical = 20006 ; free virtual = 27560
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:74) in function 'sub_I_O<Bignum<64, 64>, Bignum<64, 64> >' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:74) in function 'sub_I_O<Bignum<32, 64>, Bignum<32, 64> >' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:74) in function 'sub_I_O<Bignum<16, 64>, Bignum<16, 64> >' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:50) in function 'add_I_O<Bignum<8, 64>, Bignum<8, 64> >' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:50) in function 'add_I_O<Bignum<64, 64>, Bignum<64, 64> >' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:50) in function 'add_I_O<Bignum<32, 64>, Bignum<32, 64> >' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (multest.cc:50) in function 'add_I_O<Bignum<16, 64>, Bignum<16, 64> >' automatically.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:74) in function 'sub_I_O<Bignum<64, 64>, Bignum<64, 64> >' completely with a factor of 0.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:74) in function 'sub_I_O<Bignum<32, 64>, Bignum<32, 64> >' completely with a factor of 0.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:74) in function 'sub_I_O<Bignum<16, 64>, Bignum<16, 64> >' completely with a factor of 0.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:50) in function 'add_I_O<Bignum<8, 64>, Bignum<8, 64> >' completely with a factor of 0.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:50) in function 'add_I_O<Bignum<64, 64>, Bignum<64, 64> >' completely with a factor of 0.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:50) in function 'add_I_O<Bignum<32, 64>, Bignum<32, 64> >' completely with a factor of 0.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (multest.cc:50) in function 'add_I_O<Bignum<16, 64>, Bignum<16, 64> >' completely with a factor of 0.
+INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<8, 64>, Bignum<8, 64> >' into 'karastuba_mul_template_z1<16, 64>' (multest.cc:237) automatically.
+INFO: [XFORM 203-602] Inlining function 'karastuba_mul_template<8, 64>' into 'karastuba_mul_template_z1<16, 64>' (multest.cc:240) automatically.
+INFO: [XFORM 203-602] Inlining function 'karastuba_mul_template<8, 64>' into 'karastuba_mul_template<16, 64>' (multest.cc:262) automatically.
+INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<16, 64>, Bignum<16, 64> >' into 'karastuba_mul_template<16, 64>' (multest.cc:271) automatically.
+INFO: [XFORM 203-602] Inlining function 'sub_I_O<Bignum<16, 64>, Bignum<16, 64> >' into 'karastuba_mul_template<16, 64>' (multest.cc:273) automatically.
+INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<32, 64>, Bignum<32, 64> >' into 'karastuba_mul_template<32, 64>' (multest.cc:271) automatically.
+INFO: [XFORM 203-602] Inlining function 'sub_I_O<Bignum<32, 64>, Bignum<32, 64> >' into 'karastuba_mul_template<32, 64>' (multest.cc:273) automatically.
+INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<64, 64>, Bignum<64, 64> >' into 'karastuba_mul_template<64, 64>' (multest.cc:271) automatically.
+INFO: [XFORM 203-602] Inlining function 'sub_I_O<Bignum<64, 64>, Bignum<64, 64> >' into 'karastuba_mul_template<64, 64>' (multest.cc:273) automatically.
+INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<16, 64>, Bignum<16, 64> >' into 'karastuba_mul_template_z1<32, 64>' (multest.cc:237) automatically.
+INFO: [XFORM 203-602] Inlining function 'add_I_O<Bignum<32, 64>, Bignum<32, 64> >' into 'karastuba_mul_template_z1<64, 64>' (multest.cc:237) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 961.020 ; gain = 526.539 ; free physical = 19969 ; free virtual = 27525
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (multest.cc:107:10) in function 'mul_I_O<Bignum<8, 64>, Bignum<16, 64> >' : 
 
 the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
-WARNING: [XFORM 203-631] Renaming function 'mul_I_O<Bignum<8, 64>, Bignum<16, 64> >' to 'mul_I_O' (multest.cc:100:48)
-WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template_z1<64, 64>' to 'karastuba_mul_templa' (multest.cc:51:32)
-WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template_z1<32, 64>' to 'karastuba_mul_templa.1' (multest.cc:51:32)
-WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template_z1<16, 64>' to 'karastuba_mul_templa.2' (multest.cc:51:32)
-WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template<64, 64>' to 'karastuba_mul_templa.3' (multest.cc:51:50)
-WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template<32, 64>' to 'karastuba_mul_templa.4' (multest.cc:51:50)
-WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template<16, 64>' to 'karastuba_mul_templa.5' (multest.cc:51:50)
-WARNING: [XFORM 203-631] Renaming function 'CAT_I_I_I_O<Bignum<64, 64>, Bignum<64, 64>, Bignum<64, 64>, Bignum<128, 64> >' to 'CAT_I_I_I_O' (multest.cc:162:33)
-WARNING: [XFORM 203-631] Renaming function 'CAT_I_I_I_O<Bignum<32, 64>, Bignum<32, 64>, Bignum<32, 64>, Bignum<64, 64> >' to 'CAT_I_I_I_O.1' (multest.cc:162:33)
-WARNING: [XFORM 203-631] Renaming function 'CAT_I_I_I_O<Bignum<16, 64>, Bignum<16, 64>, Bignum<16, 64>, Bignum<32, 64> >' to 'CAT_I_I_I_O.2' (multest.cc:162:33)
-INFO: [HLS 200-472] Inferring partial write operation for 'lhs0_tmp.digits.data' (multest.cc:246:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'lhs1_tmp.digits.data' (multest.cc:247:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'rhs0_tmp.digits.data' (multest.cc:248:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'rhs1_tmp.digits.data' (multest.cc:249:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'add2.digits.data.V' (multest.cc:58:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'z1.digits.data.V' (multest.cc:85:4)
-INFO: [HLS 200-472] Inferring partial write operation for 'add0.digits.data.V' (multest.cc:58:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'add1.digits.data.V' (multest.cc:58:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'add0.digits.data.V' (multest.cc:58:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'add1.digits.data.V' (multest.cc:58:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'add0.digits.data.V' (multest.cc:58:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'add1.digits.data.V' (multest.cc:58:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'lhs.digits.data.V' (multest.cc:320:2)
-INFO: [HLS 200-472] Inferring partial write operation for 'rhs.digits.data.V' (multest.cc:325:2)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:100:40)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:112:17)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:119:17)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:133:13)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:147:13)
-INFO: [HLS 200-472] Inferring partial write operation for 'lhs0_tmp.digits.data' (multest.cc:246:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'lhs1_tmp.digits.data' (multest.cc:247:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'rhs0_tmp.digits.data' (multest.cc:248:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'rhs1_tmp.digits.data' (multest.cc:249:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'add2.digits.data.V' (multest.cc:58:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'z1.digits.data.V' (multest.cc:85:4)
-INFO: [HLS 200-472] Inferring partial write operation for 'res.digits.data.V' (multest.cc:278:13)
-INFO: [HLS 200-472] Inferring partial write operation for 'res.digits.data.V' (multest.cc:292:13)
-INFO: [HLS 200-472] Inferring partial write operation for 'lhs0_tmp.digits.data' (multest.cc:246:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'lhs1_tmp.digits.data' (multest.cc:247:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'rhs0_tmp.digits.data' (multest.cc:248:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'rhs1_tmp.digits.data' (multest.cc:249:55)
-INFO: [HLS 200-472] Inferring partial write operation for 'add2.digits.data.V' (multest.cc:58:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'z1.digits.data.V' (multest.cc:85:4)
-INFO: [HLS 200-472] Inferring partial write operation for 'res.digits.data.V' (multest.cc:278:13)
-INFO: [HLS 200-472] Inferring partial write operation for 'res.digits.data.V' (multest.cc:292:13)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:162:48)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:164:35)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:176:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:180:41)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:192:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:162:48)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:164:35)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:176:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:180:41)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:192:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:162:48)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:164:35)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:176:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:180:41)
-INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:192:9)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 965.719 ; gain = 526.004 ; free physical = 14617 ; free virtual = 24337
+WARNING: [XFORM 203-631] Renaming function 'mul_I_O<Bignum<8, 64>, Bignum<16, 64> >' to 'mul_I_O' (multest.cc:104:48)
+WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template_z1<64, 64>' to 'karastuba_mul_templa' (multest.cc:53:32)
+WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template_z1<32, 64>' to 'karastuba_mul_templa.1' (multest.cc:53:32)
+WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template_z1<16, 64>' to 'karastuba_mul_templa.2' (multest.cc:53:32)
+WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template<64, 64>' to 'karastuba_mul_templa.3' (multest.cc:53:50)
+WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template<32, 64>' to 'karastuba_mul_templa.4' (multest.cc:53:50)
+WARNING: [XFORM 203-631] Renaming function 'karastuba_mul_template<16, 64>' to 'karastuba_mul_templa.5' (multest.cc:53:50)
+WARNING: [XFORM 203-631] Renaming function 'CAT_I_I_I_O<Bignum<64, 64>, Bignum<64, 64>, Bignum<64, 64>, Bignum<128, 64> >' to 'CAT_I_I_I_O' (multest.cc:167:33)
+WARNING: [XFORM 203-631] Renaming function 'CAT_I_I_I_O<Bignum<32, 64>, Bignum<32, 64>, Bignum<32, 64>, Bignum<64, 64> >' to 'CAT_I_I_I_O.1' (multest.cc:167:33)
+WARNING: [XFORM 203-631] Renaming function 'CAT_I_I_I_O<Bignum<16, 64>, Bignum<16, 64>, Bignum<16, 64>, Bignum<32, 64> >' to 'CAT_I_I_I_O.2' (multest.cc:167:33)
+INFO: [HLS 200-472] Inferring partial write operation for 'lhs0_tmp.digits.data' (multest.cc:255:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'lhs1_tmp.digits.data' (multest.cc:256:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'rhs0_tmp.digits.data' (multest.cc:257:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'rhs1_tmp.digits.data' (multest.cc:258:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'add2.digits.data.V' (multest.cc:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'z1.digits.data.V' (multest.cc:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'add0.digits.data.V' (multest.cc:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'add1.digits.data.V' (multest.cc:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'add0.digits.data.V' (multest.cc:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'add1.digits.data.V' (multest.cc:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'add0.digits.data.V' (multest.cc:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'add1.digits.data.V' (multest.cc:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'lhs.digits.data.V' (multest.cc:329:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'rhs.digits.data.V' (multest.cc:334:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:104:40)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:116:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:123:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:137:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:151:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'lhs0_tmp.digits.data' (multest.cc:255:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'lhs1_tmp.digits.data' (multest.cc:256:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'rhs0_tmp.digits.data' (multest.cc:257:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'rhs1_tmp.digits.data' (multest.cc:258:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'add2.digits.data.V' (multest.cc:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'z1.digits.data.V' (multest.cc:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'res.digits.data.V' (multest.cc:287:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'res.digits.data.V' (multest.cc:301:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'lhs0_tmp.digits.data' (multest.cc:255:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'lhs1_tmp.digits.data' (multest.cc:256:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'rhs0_tmp.digits.data' (multest.cc:257:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'rhs1_tmp.digits.data' (multest.cc:258:55)
+INFO: [HLS 200-472] Inferring partial write operation for 'add2.digits.data.V' (multest.cc:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'z1.digits.data.V' (multest.cc:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'res.digits.data.V' (multest.cc:287:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'res.digits.data.V' (multest.cc:301:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:167:48)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:169:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:181:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:185:41)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:197:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:167:48)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:169:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:181:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:185:41)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:197:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:167:48)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:169:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:181:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:185:41)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.digits.data.V' (multest.cc:197:9)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 961.020 ; gain = 526.539 ; free physical = 19828 ; free virtual = 27435
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'karastuba_mul' ...
 WARNING: [SYN 201-103] Legalizing function name 'karastuba_mul_templa.2' to 'karastuba_mul_templa_2'.
@@ -138,24 +131,24 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
 WARNING: [SCHED 204-68] The II Violation in module 'mul_I_O' (Loop: Loop 2.1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
-   between 'add' operation ('k.V', multest.cc:111) and 'add' operation ('add_ln700', multest.cc:111).
+   between 'add' operation ('k.V', multest.cc:115) and 'add' operation ('add_ln700', multest.cc:115).
 WARNING: [SCHED 204-68] The II Violation in module 'mul_I_O' (Loop: Loop 2.1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
-   between 'store' operation ('w_digits_data_V_addr_1_write_ln112', multest.cc:112) of variable 'add_ln209_1', multest.cc:112 on array 'w_digits_data_V' and 'load' operation ('w_digits_data_V_load_1', multest.cc:111) on array 'w_digits_data_V'.
+   between 'store' operation ('w_digits_data_V_addr_1_write_ln116', multest.cc:116) of variable 'add_ln209_1', multest.cc:116 on array 'w_digits_data_V' and 'load' operation ('w_digits_data_V_load_1', multest.cc:115) on array 'w_digits_data_V'.
 WARNING: [SCHED 204-68] The II Violation in module 'mul_I_O' (Loop: Loop 2.1): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
-   between 'store' operation ('w_digits_data_V_addr_1_write_ln112', multest.cc:112) of variable 'add_ln209_1', multest.cc:112 on array 'w_digits_data_V' and 'load' operation ('w_digits_data_V_load_1', multest.cc:111) on array 'w_digits_data_V'.
+   between 'store' operation ('w_digits_data_V_addr_1_write_ln116', multest.cc:116) of variable 'add_ln209_1', multest.cc:116 on array 'w_digits_data_V' and 'load' operation ('w_digits_data_V_load_1', multest.cc:115) on array 'w_digits_data_V'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 11.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 19.45 seconds; current allocated memory: 242.180 MB.
+INFO: [HLS 200-111]  Elapsed time: 20.08 seconds; current allocated memory: 243.308 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 242.749 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 243.870 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'karastuba_mul_templa_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -165,13 +158,13 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 243.046 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 244.188 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 243.299 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 244.438 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'CAT_I_I_I_O_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -181,13 +174,13 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 243.687 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 244.842 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 244.057 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 245.209 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'karastuba_mul_templa_5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -201,13 +194,13 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 8'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 244.760 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 245.911 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 245.708 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 246.854 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'karastuba_mul_templa_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -217,13 +210,13 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 246.120 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 247.264 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 246.417 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 247.560 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'CAT_I_I_I_O_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -233,13 +226,13 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 246.903 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 248.046 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 247.276 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 248.414 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'karastuba_mul_templa_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -253,13 +246,13 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 8'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 247.969 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 249.122 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.78 seconds; current allocated memory: 249.161 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 250.310 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'karastuba_mul_templa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -269,13 +262,13 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.08 seconds; current allocated memory: 249.935 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.11 seconds; current allocated memory: 251.090 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 250.338 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 251.527 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'CAT_I_I_I_O' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -285,13 +278,13 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.1 seconds; current allocated memory: 251.165 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.02 seconds; current allocated memory: 252.324 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 251.539 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 252.689 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'karastuba_mul_templa_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -301,13 +294,13 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 6'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 252.037 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 253.175 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 2.02 seconds; current allocated memory: 253.596 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.96 seconds; current allocated memory: 254.745 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'karastuba_mul' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -319,32 +312,32 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 2.95 seconds; current allocated memory: 255.339 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.95 seconds; current allocated memory: 256.508 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.01 seconds; current allocated memory: 256.053 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.22 seconds; current allocated memory: 257.222 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'mul_I_O' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_mul_64ns_64ns_128_6_1' to 'karastuba_mul_mulbkb' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'karastuba_mul_mulbkb': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'mul_I_O'.
-INFO: [HLS 200-111]  Elapsed time: 2.86 seconds; current allocated memory: 258.805 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.83 seconds; current allocated memory: 260.038 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'karastuba_mul_templa_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_2_add0_digits_data_V' to 'karastuba_mul_temcud' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_2_add1_digits_data_V' to 'karastuba_mul_temdEe' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'karastuba_mul_templa_2'.
-INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 261.771 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 263.037 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'CAT_I_I_I_O_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'CAT_I_I_I_O_2'.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 263.612 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 264.851 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'karastuba_mul_templa_5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -362,19 +355,19 @@ INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_5_cross_mul_digits
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_5_add2_digits_data_V' to 'karastuba_mul_tempcA' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_5_z1_digits_data_V' to 'karastuba_mul_temqcK' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'karastuba_mul_templa_5'.
-INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 267.186 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 268.455 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'karastuba_mul_templa_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_1_add0_digits_data_V' to 'karastuba_mul_temrcU' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_1_add1_digits_data_V' to 'karastuba_mul_temsc4' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'karastuba_mul_templa_1'.
-INFO: [HLS 200-111]  Elapsed time: 0.75 seconds; current allocated memory: 271.739 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.84 seconds; current allocated memory: 273.051 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'CAT_I_I_I_O_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'CAT_I_I_I_O_1'.
-INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 273.665 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.52 seconds; current allocated memory: 275.012 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'karastuba_mul_templa_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -392,19 +385,19 @@ INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_4_cross_mul_digits
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_4_add2_digits_data_V' to 'karastuba_mul_temEe0' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_4_z1_digits_data_V' to 'karastuba_mul_temFfa' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'karastuba_mul_templa_4'.
-INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 277.276 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 278.636 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'karastuba_mul_templa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_add0_digits_data_V' to 'karastuba_mul_temGfk' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_add1_digits_data_V' to 'karastuba_mul_temHfu' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'karastuba_mul_templa'.
-INFO: [HLS 200-111]  Elapsed time: 1.43 seconds; current allocated memory: 282.236 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.53 seconds; current allocated memory: 283.559 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'CAT_I_I_I_O' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'CAT_I_I_I_O'.
-INFO: [HLS 200-111]  Elapsed time: 1.16 seconds; current allocated memory: 284.539 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.21 seconds; current allocated memory: 285.931 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'karastuba_mul_templa_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -422,7 +415,7 @@ INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_3_cross_mul_digits
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_3_add2_digits_data_V' to 'karastuba_mul_temThq' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_templa_3_z1_digits_data_V' to 'karastuba_mul_temUhA' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'karastuba_mul_templa_3'.
-INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 287.670 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 289.061 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'karastuba_mul' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -434,7 +427,7 @@ INFO: [SYN 201-210] Renamed object name 'karastuba_mul_lhs_digits_data_V' to 'ka
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_rhs_digits_data_V' to 'karastuba_mul_rhsWhU' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'karastuba_mul_res_digits_data_V' to 'karastuba_mul_resXh4' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'karastuba_mul'.
-INFO: [HLS 200-111]  Elapsed time: 3.36 seconds; current allocated memory: 292.324 MB.
+INFO: [HLS 200-111]  Elapsed time: 3.39 seconds; current allocated memory: 293.833 MB.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 404.20 MHz
 INFO: [RTMG 210-282] Generating pipelined core: 'karastuba_mul_mulbkb_MulnS_0'
@@ -446,9 +439,7 @@ INFO: [RTMG 210-278] Implementing memory 'karastuba_mul_temEe0_ram (RAM)' using 
 INFO: [RTMG 210-278] Implementing memory 'karastuba_mul_temQgW_ram (RAM)' using block RAMs.
 INFO: [RTMG 210-278] Implementing memory 'karastuba_mul_temThq_ram (RAM)' using block RAMs.
 INFO: [RTMG 210-278] Implementing memory 'karastuba_mul_resXh4_ram (RAM)' using block RAMs.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:40 ; elapsed = 00:00:48 . Memory (MB): peak = 1093.719 ; gain = 654.004 ; free physical = 14673 ; free virtual = 24387
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 1088.539 ; gain = 654.059 ; free physical = 19731 ; free virtual = 27334
 INFO: [VHDL 208-304] Generating VHDL RTL for karastuba_mul.
 INFO: [VLOG 209-307] Generating Verilog RTL for karastuba_mul.
-[2Kvivado_hls> [12C[2Kvivado_hls> e[13C[2Kvivado_hls> ex[14C[2Kvivado_hls> exi[15C[2Kvivado_hls> exit[16C
-INFO: [HLS 200-112] Total elapsed time: 568.45 seconds; peak allocated memory: 292.324 MB.
-INFO: [Common 17-206] Exiting vivado_hls at Tue May 26 00:53:57 2020...
+INFO: [HLS 200-112] Total elapsed time: 50.56 seconds; peak allocated memory: 293.833 MB.

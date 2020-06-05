@@ -1,5 +1,5 @@
 // ==============================================================
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2.1 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
  `timescale 1ns/1ps
@@ -24,11 +24,11 @@
 `define AUTOTB_TVOUT_res_output_out_wrapc  "../tv/rtldatafile/rtl.karastuba_mul.autotvout_res_output.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 1;
+parameter AUTOTB_TRANSACTION_NUM = 10;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 612;
-parameter LENGTH_hs_input = 32;
-parameter LENGTH_res_output = 32;
+parameter LATENCY_ESTIMATION = 4735;
+parameter LENGTH_hs_input = 256;
+parameter LENGTH_res_output = 256;
 
 task read_token;
     input integer fp;

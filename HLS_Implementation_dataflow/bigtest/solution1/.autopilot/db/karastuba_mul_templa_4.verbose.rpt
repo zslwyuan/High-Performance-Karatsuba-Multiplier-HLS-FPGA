@@ -1,0 +1,906 @@
+
+
+================================================================
+== Vivado HLS Report for 'karastuba_mul_templa_4'
+================================================================
+* Date:           Fri Jun  5 20:27:29 2020
+
+* Version:        2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)
+* Project:        bigtest
+* Solution:       solution1
+* Product family: virtexu
+* Target device:  xcvu095-ffva2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 3.00 ns | 2.616 ns |   0.38 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+------+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval  | Pipeline |
+    |   min   |   max   |    min   |    max   | min |  max |   Type   |
+    +---------+---------+----------+----------+-----+------+----------+
+    |     1435|     1689| 4.305 us | 5.067 us |  989|  1111| dataflow |
+    +---------+---------+----------+----------+-----+------+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------+------------------------+---------+---------+----------+----------+-----+------+---------+
+        |                           |                        |  Latency (cycles) |  Latency (absolute) |  Interval  | Pipeline|
+        |          Instance         |         Module         |   min   |   max   |    min   |    max   | min |  max |   Type  |
+        +---------------------------+------------------------+---------+---------+----------+----------+-----+------+---------+
+        |karastuba_mul_MUL_st_1_U0  |karastuba_mul_MUL_st_1  |      988|     1110| 2.964 us | 3.330 us |  988|  1110|   none  |
+        |karastuba_mul_ADD_SU_1_U0  |karastuba_mul_ADD_SU_1  |      446|      578| 1.338 us | 1.734 us |  446|   578|   none  |
+        +---------------------------+------------------------+---------+---------+----------+----------+-----+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+---------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|    FF   |   LUT  | URAM|
++-----------------+---------+-------+---------+--------+-----+
+|DSP              |        -|      -|        -|       -|    -|
+|Expression       |        -|      -|        0|      46|    -|
+|FIFO             |        0|      -|       25|     220|    -|
+|Instance         |       98|     39|    32172|   33985|    0|
+|Memory           |       10|      -|        0|       0|    0|
+|Multiplexer      |        -|      -|        -|      90|    -|
+|Register         |        -|      -|       10|       -|    -|
++-----------------+---------+-------+---------+--------+-----+
+|Total            |      108|     39|    32207|   34341|    0|
++-----------------+---------+-------+---------+--------+-----+
+|Available        |     3456|    768|  1075200|  537600|    0|
++-----------------+---------+-------+---------+--------+-----+
+|Utilization (%)  |        3|      5|        2|       6|    0|
++-----------------+---------+-------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+------------------------+---------+-------+-------+-------+-----+
+    |          Instance         |         Module         | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
+    +---------------------------+------------------------+---------+-------+-------+-------+-----+
+    |karastuba_mul_ADD_SU_1_U0  |karastuba_mul_ADD_SU_1  |        6|      3|   2366|   2786|    0|
+    |karastuba_mul_MUL_st_1_U0  |karastuba_mul_MUL_st_1  |       92|     36|  29806|  31199|    0|
+    +---------------------------+------------------------+---------+-------+-------+-------+-----+
+    |Total                      |                        |       98|     39|  32172|  33985|    0|
+    +---------------------------+------------------------+---------+-------+-------+-------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |         Memory         |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |z0_digits_data_V_U      |karastuba_mul_temOgC  |        2|  0|   0|    0|    32|   64|     2|         4096|
+    |z2_digits_data_V_U      |karastuba_mul_temOgC  |        2|  0|   0|    0|    32|   64|     2|         4096|
+    |cross_mul_digits_dat_U  |karastuba_mul_temOgC  |        2|  0|   0|    0|    32|   64|     2|         4096|
+    |inter_lhs_digits_dat_U  |karastuba_mul_temOgC  |        2|  0|   0|    0|    32|   64|     2|         4096|
+    |inter_rhs_digits_dat_U  |karastuba_mul_temOgC  |        2|  0|   0|    0|    32|   64|     2|         4096|
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                   |                      |       10|  0|   0|    0|   160|  320|    10|        20480|
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    +----------------------+---------+---+----+-----+------+-----+---------+
+    |         Name         | BRAM_18K| FF| LUT| URAM| Depth| Bits| Size:D*B|
+    +----------------------+---------+---+----+-----+------+-----+---------+
+    |cross_mul_tmp_bits_U  |        0|  5|   0|    -|     2|   32|       64|
+    |inter_lhs_tmp_bits_U  |        0|  5|   0|    -|     2|   32|       64|
+    |inter_rhs_tmp_bits_U  |        0|  5|   0|    -|     2|   32|       64|
+    |z0_tmp_bits_U         |        0|  5|   0|    -|     2|   32|       64|
+    |z2_tmp_bits_U         |        0|  5|   0|    -|     2|   32|       64|
+    +----------------------+---------+---+----+-----+------+-----+---------+
+    |Total                 |        0| 25|   0|    0|    10|  160|      320|
+    +----------------------+---------+---+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+    |                Variable Name               | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+    |ap_channel_done_cross_mul_digits_dat        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_cross_mul_tmp_bits          |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_inter_lhs_digits_dat        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_inter_lhs_tmp_bits          |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_inter_rhs_digits_dat        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_inter_rhs_tmp_bits          |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_z0_digits_data_V            |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_z0_tmp_bits                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_z2_digits_data_V            |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_z2_tmp_bits                 |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                     |    and   |      0|  0|   2|           1|           1|
+    |karastuba_mul_ADD_SU_1_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |karastuba_mul_MUL_st_1_U0_ap_continue       |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_cross_mul_digits_dat  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_cross_mul_tmp_bits    |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_inter_lhs_digits_dat  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_inter_lhs_tmp_bits    |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_inter_rhs_digits_dat  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_inter_rhs_tmp_bits    |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_z0_digits_data_V      |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_z0_tmp_bits           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_z2_digits_data_V      |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_z2_tmp_bits           |    or    |      0|  0|   2|           1|           1|
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                       |          |      0|  0|  46|          23|          23|
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |                      Name                      | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_channel_write_cross_mul_digits_dat  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_cross_mul_tmp_bits    |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_inter_lhs_digits_dat  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_inter_lhs_tmp_bits    |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_inter_rhs_digits_dat  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_inter_rhs_tmp_bits    |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_z0_digits_data_V      |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_z0_tmp_bits           |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_z2_digits_data_V      |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_z2_tmp_bits           |   9|          2|    1|          2|
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                           |  90|         20|   10|         20|
+    +------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------+---+----+-----+-----------+
+    |                      Name                      | FF| LUT| Bits| Const Bits|
+    +------------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_channel_write_cross_mul_digits_dat  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_cross_mul_tmp_bits    |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_inter_lhs_digits_dat  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_inter_lhs_tmp_bits    |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_inter_rhs_digits_dat  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_inter_rhs_tmp_bits    |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_z0_digits_data_V      |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_z0_tmp_bits           |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_z2_digits_data_V      |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_z2_tmp_bits           |  1|   0|    1|          0|
+    +------------------------------------------------+---+----+-----+-----------+
+    |Total                                           | 10|   0|   10|          0|
+    +------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+------------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++----------------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                      |  in |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_rst                      |  in |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_start                    |  in |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_done                     | out |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_ready                    | out |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_idle                     | out |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|ap_continue                 |  in |    1| ap_ctrl_hs | karastuba_mul_templa.4 | return value |
+|lhs_tmp_bits_read           |  in |    2|   ap_none  |    lhs_tmp_bits_read   |    scalar    |
+|lhs_tmp_bits_read_ap_vld    |  in |    1|   ap_none  |    lhs_tmp_bits_read   |    scalar    |
+|lhs_digits_data_V_address0  | out |    5|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_ce0       | out |    1|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_d0        | out |   64|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_q0        |  in |   64|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_we0       | out |    1|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_address1  | out |    5|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_ce1       | out |    1|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_d1        | out |   64|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_q1        |  in |   64|  ap_memory |    lhs_digits_data_V   |     array    |
+|lhs_digits_data_V_we1       | out |    1|  ap_memory |    lhs_digits_data_V   |     array    |
+|rhs_tmp_bits_read           |  in |    2|   ap_none  |    rhs_tmp_bits_read   |    scalar    |
+|rhs_tmp_bits_read_ap_vld    |  in |    1|   ap_none  |    rhs_tmp_bits_read   |    scalar    |
+|rhs_digits_data_V_address0  | out |    5|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_ce0       | out |    1|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_d0        | out |   64|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_q0        |  in |   64|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_we0       | out |    1|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_address1  | out |    5|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_ce1       | out |    1|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_d1        | out |   64|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_q1        |  in |   64|  ap_memory |    rhs_digits_data_V   |     array    |
+|rhs_digits_data_V_we1       | out |    1|  ap_memory |    rhs_digits_data_V   |     array    |
+|res_tmp_bits                | out |   32|   ap_vld   |      res_tmp_bits      |    pointer   |
+|res_tmp_bits_ap_vld         | out |    1|   ap_vld   |      res_tmp_bits      |    pointer   |
+|res_digits_data_V_address0  | out |    6|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_ce0       | out |    1|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_d0        | out |   64|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_q0        |  in |   64|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_we0       | out |    1|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_address1  | out |    6|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_ce1       | out |    1|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_d1        | out |   64|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_q1        |  in |   64|  ap_memory |    res_digits_data_V   |     array    |
+|res_digits_data_V_we1       | out |    1|  ap_memory |    res_digits_data_V   |     array    |
++----------------------------+-----+-----+------------+------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%rhs_tmp_bits_read_2 = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %rhs_tmp_bits_read)"   --->   Operation 5 'read' 'rhs_tmp_bits_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%lhs_tmp_bits_read_2 = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %lhs_tmp_bits_read)"   --->   Operation 6 'read' 'lhs_tmp_bits_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.76ns)   --->   "%z0_digits_data_V = alloca [32 x i64], align 8" [multest.cc:385]   --->   Operation 7 'alloca' 'z0_digits_data_V' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 8 [1/1] (1.76ns)   --->   "%z2_digits_data_V = alloca [32 x i64], align 8" [multest.cc:386]   --->   Operation 8 'alloca' 'z2_digits_data_V' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 9 [1/1] (1.76ns)   --->   "%cross_mul_digits_dat = alloca [32 x i64], align 8" [multest.cc:387]   --->   Operation 9 'alloca' 'cross_mul_digits_dat' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 10 [1/1] (1.76ns)   --->   "%inter_lhs_digits_dat = alloca [32 x i64], align 8" [multest.cc:388]   --->   Operation 10 'alloca' 'inter_lhs_digits_dat' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 11 [1/1] (1.76ns)   --->   "%inter_rhs_digits_dat = alloca [32 x i64], align 8" [multest.cc:389]   --->   Operation 11 'alloca' 'inter_rhs_digits_dat' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 12 [2/2] (0.00ns)   --->   "%tmp = call { i32, i32, i32, i32, i32 } @karastuba_mul_MUL_st.1(i2 %lhs_tmp_bits_read_2, [32 x i64]* %lhs_digits_data_V, i2 %rhs_tmp_bits_read_2, [32 x i64]* %rhs_digits_data_V, [32 x i64]* %z0_digits_data_V, [32 x i64]* %z2_digits_data_V, [32 x i64]* %cross_mul_digits_dat, [32 x i64]* %inter_lhs_digits_dat, [32 x i64]* %inter_rhs_digits_dat)" [multest.cc:390]   --->   Operation 12 'call' 'tmp' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 13 [1/2] (0.00ns)   --->   "%tmp = call { i32, i32, i32, i32, i32 } @karastuba_mul_MUL_st.1(i2 %lhs_tmp_bits_read_2, [32 x i64]* %lhs_digits_data_V, i2 %rhs_tmp_bits_read_2, [32 x i64]* %rhs_digits_data_V, [32 x i64]* %z0_digits_data_V, [32 x i64]* %z2_digits_data_V, [32 x i64]* %cross_mul_digits_dat, [32 x i64]* %inter_lhs_digits_dat, [32 x i64]* %inter_rhs_digits_dat)" [multest.cc:390]   --->   Operation 13 'call' 'tmp' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%z0_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 0" [multest.cc:390]   --->   Operation 14 'extractvalue' 'z0_tmp_bits' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%z2_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 1" [multest.cc:390]   --->   Operation 15 'extractvalue' 'z2_tmp_bits' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%cross_mul_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 2" [multest.cc:390]   --->   Operation 16 'extractvalue' 'cross_mul_tmp_bits' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%inter_lhs_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 3" [multest.cc:390]   --->   Operation 17 'extractvalue' 'inter_lhs_tmp_bits' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%inter_rhs_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 4" [multest.cc:390]   --->   Operation 18 'extractvalue' 'inter_rhs_tmp_bits' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 19 [2/2] (0.00ns)   --->   "call fastcc void @karastuba_mul_ADD_SU.1(i32 %z0_tmp_bits, [32 x i64]* %z0_digits_data_V, i32 %z2_tmp_bits, [32 x i64]* %z2_digits_data_V, i32 %cross_mul_tmp_bits, [32 x i64]* %cross_mul_digits_dat, i32 %inter_lhs_tmp_bits, [32 x i64]* %inter_lhs_digits_dat, i32 %inter_rhs_tmp_bits, [32 x i64]* %inter_rhs_digits_dat, i32* %res_tmp_bits, [64 x i64]* %res_digits_data_V)" [multest.cc:391]   --->   Operation 19 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [multest.cc:382]   --->   Operation 20 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/2] (0.00ns)   --->   "call fastcc void @karastuba_mul_ADD_SU.1(i32 %z0_tmp_bits, [32 x i64]* %z0_digits_data_V, i32 %z2_tmp_bits, [32 x i64]* %z2_digits_data_V, i32 %cross_mul_tmp_bits, [32 x i64]* %cross_mul_digits_dat, i32 %inter_lhs_tmp_bits, [32 x i64]* %inter_lhs_digits_dat, i32 %inter_rhs_tmp_bits, [32 x i64]* %inter_rhs_digits_dat, i32* %res_tmp_bits, [64 x i64]* %res_digits_data_V)" [multest.cc:391]   --->   Operation 21 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "ret void" [multest.cc:394]   --->   Operation 22 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ lhs_tmp_bits_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ lhs_digits_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ rhs_tmp_bits_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ rhs_digits_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ res_tmp_bits]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ res_digits_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+rhs_tmp_bits_read_2        (read                ) [ 00100]
+lhs_tmp_bits_read_2        (read                ) [ 00100]
+z0_digits_data_V           (alloca              ) [ 00111]
+z2_digits_data_V           (alloca              ) [ 00111]
+cross_mul_digits_dat       (alloca              ) [ 00111]
+inter_lhs_digits_dat       (alloca              ) [ 00111]
+inter_rhs_digits_dat       (alloca              ) [ 00111]
+tmp                        (call                ) [ 00000]
+z0_tmp_bits                (extractvalue        ) [ 00011]
+z2_tmp_bits                (extractvalue        ) [ 00011]
+cross_mul_tmp_bits         (extractvalue        ) [ 00011]
+inter_lhs_tmp_bits         (extractvalue        ) [ 00011]
+inter_rhs_tmp_bits         (extractvalue        ) [ 00011]
+specdataflowpipeline_ln382 (specdataflowpipeline) [ 00000]
+call_ln391                 (call                ) [ 00000]
+ret_ln394                  (ret                 ) [ 00000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="lhs_tmp_bits_read">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="lhs_tmp_bits_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="lhs_digits_data_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="lhs_digits_data_V"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="rhs_tmp_bits_read">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="rhs_tmp_bits_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="rhs_digits_data_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="rhs_digits_data_V"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="res_tmp_bits">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="res_tmp_bits"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="res_digits_data_V">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="res_digits_data_V"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="karastuba_mul_MUL_st.1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="karastuba_mul_ADD_SU.1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1004" name="z0_digits_data_V_alloca_fu_28">
+<pin_list>
+<pin id="29" dir="0" index="0" bw="1" slack="0"/>
+<pin id="30" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="z0_digits_data_V/1 "/>
+</bind>
+</comp>
+
+<comp id="32" class="1004" name="z2_digits_data_V_alloca_fu_32">
+<pin_list>
+<pin id="33" dir="0" index="0" bw="1" slack="0"/>
+<pin id="34" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="z2_digits_data_V/1 "/>
+</bind>
+</comp>
+
+<comp id="36" class="1004" name="cross_mul_digits_dat_alloca_fu_36">
+<pin_list>
+<pin id="37" dir="0" index="0" bw="1" slack="0"/>
+<pin id="38" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="cross_mul_digits_dat/1 "/>
+</bind>
+</comp>
+
+<comp id="40" class="1004" name="inter_lhs_digits_dat_alloca_fu_40">
+<pin_list>
+<pin id="41" dir="0" index="0" bw="1" slack="0"/>
+<pin id="42" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="inter_lhs_digits_dat/1 "/>
+</bind>
+</comp>
+
+<comp id="44" class="1004" name="inter_rhs_digits_dat_alloca_fu_44">
+<pin_list>
+<pin id="45" dir="0" index="0" bw="1" slack="0"/>
+<pin id="46" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="inter_rhs_digits_dat/1 "/>
+</bind>
+</comp>
+
+<comp id="48" class="1004" name="rhs_tmp_bits_read_2_read_fu_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="2" slack="0"/>
+<pin id="50" dir="0" index="1" bw="2" slack="0"/>
+<pin id="51" dir="1" index="2" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="rhs_tmp_bits_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="lhs_tmp_bits_read_2_read_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="2" slack="0"/>
+<pin id="56" dir="0" index="1" bw="2" slack="0"/>
+<pin id="57" dir="1" index="2" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="lhs_tmp_bits_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="60" class="1004" name="grp_karastuba_mul_MUL_st_1_fu_60">
+<pin_list>
+<pin id="61" dir="0" index="0" bw="160" slack="0"/>
+<pin id="62" dir="0" index="1" bw="2" slack="0"/>
+<pin id="63" dir="0" index="2" bw="64" slack="0"/>
+<pin id="64" dir="0" index="3" bw="2" slack="0"/>
+<pin id="65" dir="0" index="4" bw="64" slack="0"/>
+<pin id="66" dir="0" index="5" bw="64" slack="0"/>
+<pin id="67" dir="0" index="6" bw="64" slack="0"/>
+<pin id="68" dir="0" index="7" bw="64" slack="0"/>
+<pin id="69" dir="0" index="8" bw="64" slack="0"/>
+<pin id="70" dir="0" index="9" bw="64" slack="0"/>
+<pin id="71" dir="1" index="10" bw="160" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="tmp/1 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="grp_karastuba_mul_ADD_SU_1_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="0" slack="0"/>
+<pin id="84" dir="0" index="1" bw="32" slack="1"/>
+<pin id="85" dir="0" index="2" bw="64" slack="2147483647"/>
+<pin id="86" dir="0" index="3" bw="32" slack="1"/>
+<pin id="87" dir="0" index="4" bw="64" slack="2147483647"/>
+<pin id="88" dir="0" index="5" bw="32" slack="1"/>
+<pin id="89" dir="0" index="6" bw="64" slack="2147483647"/>
+<pin id="90" dir="0" index="7" bw="32" slack="1"/>
+<pin id="91" dir="0" index="8" bw="64" slack="2147483647"/>
+<pin id="92" dir="0" index="9" bw="32" slack="1"/>
+<pin id="93" dir="0" index="10" bw="64" slack="2147483647"/>
+<pin id="94" dir="0" index="11" bw="32" slack="0"/>
+<pin id="95" dir="0" index="12" bw="64" slack="0"/>
+<pin id="96" dir="1" index="13" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln391/3 "/>
+</bind>
+</comp>
+
+<comp id="100" class="1004" name="z0_tmp_bits_fu_100">
+<pin_list>
+<pin id="101" dir="0" index="0" bw="160" slack="0"/>
+<pin id="102" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="z0_tmp_bits/2 "/>
+</bind>
+</comp>
+
+<comp id="104" class="1004" name="z2_tmp_bits_fu_104">
+<pin_list>
+<pin id="105" dir="0" index="0" bw="160" slack="0"/>
+<pin id="106" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="z2_tmp_bits/2 "/>
+</bind>
+</comp>
+
+<comp id="108" class="1004" name="cross_mul_tmp_bits_fu_108">
+<pin_list>
+<pin id="109" dir="0" index="0" bw="160" slack="0"/>
+<pin id="110" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="cross_mul_tmp_bits/2 "/>
+</bind>
+</comp>
+
+<comp id="112" class="1004" name="inter_lhs_tmp_bits_fu_112">
+<pin_list>
+<pin id="113" dir="0" index="0" bw="160" slack="0"/>
+<pin id="114" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="inter_lhs_tmp_bits/2 "/>
+</bind>
+</comp>
+
+<comp id="116" class="1004" name="inter_rhs_tmp_bits_fu_116">
+<pin_list>
+<pin id="117" dir="0" index="0" bw="160" slack="0"/>
+<pin id="118" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="inter_rhs_tmp_bits/2 "/>
+</bind>
+</comp>
+
+<comp id="120" class="1005" name="rhs_tmp_bits_read_2_reg_120">
+<pin_list>
+<pin id="121" dir="0" index="0" bw="2" slack="1"/>
+<pin id="122" dir="1" index="1" bw="2" slack="1"/>
+</pin_list>
+<bind>
+<opset="rhs_tmp_bits_read_2 "/>
+</bind>
+</comp>
+
+<comp id="125" class="1005" name="lhs_tmp_bits_read_2_reg_125">
+<pin_list>
+<pin id="126" dir="0" index="0" bw="2" slack="1"/>
+<pin id="127" dir="1" index="1" bw="2" slack="1"/>
+</pin_list>
+<bind>
+<opset="lhs_tmp_bits_read_2 "/>
+</bind>
+</comp>
+
+<comp id="130" class="1005" name="z0_tmp_bits_reg_130">
+<pin_list>
+<pin id="131" dir="0" index="0" bw="32" slack="1"/>
+<pin id="132" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="z0_tmp_bits "/>
+</bind>
+</comp>
+
+<comp id="135" class="1005" name="z2_tmp_bits_reg_135">
+<pin_list>
+<pin id="136" dir="0" index="0" bw="32" slack="1"/>
+<pin id="137" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="z2_tmp_bits "/>
+</bind>
+</comp>
+
+<comp id="140" class="1005" name="cross_mul_tmp_bits_reg_140">
+<pin_list>
+<pin id="141" dir="0" index="0" bw="32" slack="1"/>
+<pin id="142" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="cross_mul_tmp_bits "/>
+</bind>
+</comp>
+
+<comp id="145" class="1005" name="inter_lhs_tmp_bits_reg_145">
+<pin_list>
+<pin id="146" dir="0" index="0" bw="32" slack="1"/>
+<pin id="147" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="inter_lhs_tmp_bits "/>
+</bind>
+</comp>
+
+<comp id="150" class="1005" name="inter_rhs_tmp_bits_reg_150">
+<pin_list>
+<pin id="151" dir="0" index="0" bw="32" slack="1"/>
+<pin id="152" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="inter_rhs_tmp_bits "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="31"><net_src comp="14" pin="0"/><net_sink comp="28" pin=0"/></net>
+
+<net id="35"><net_src comp="14" pin="0"/><net_sink comp="32" pin=0"/></net>
+
+<net id="39"><net_src comp="14" pin="0"/><net_sink comp="36" pin=0"/></net>
+
+<net id="43"><net_src comp="14" pin="0"/><net_sink comp="40" pin=0"/></net>
+
+<net id="47"><net_src comp="14" pin="0"/><net_sink comp="44" pin=0"/></net>
+
+<net id="52"><net_src comp="12" pin="0"/><net_sink comp="48" pin=0"/></net>
+
+<net id="53"><net_src comp="4" pin="0"/><net_sink comp="48" pin=1"/></net>
+
+<net id="58"><net_src comp="12" pin="0"/><net_sink comp="54" pin=0"/></net>
+
+<net id="59"><net_src comp="0" pin="0"/><net_sink comp="54" pin=1"/></net>
+
+<net id="72"><net_src comp="16" pin="0"/><net_sink comp="60" pin=0"/></net>
+
+<net id="73"><net_src comp="54" pin="2"/><net_sink comp="60" pin=1"/></net>
+
+<net id="74"><net_src comp="2" pin="0"/><net_sink comp="60" pin=2"/></net>
+
+<net id="75"><net_src comp="48" pin="2"/><net_sink comp="60" pin=3"/></net>
+
+<net id="76"><net_src comp="6" pin="0"/><net_sink comp="60" pin=4"/></net>
+
+<net id="77"><net_src comp="28" pin="1"/><net_sink comp="60" pin=5"/></net>
+
+<net id="78"><net_src comp="32" pin="1"/><net_sink comp="60" pin=6"/></net>
+
+<net id="79"><net_src comp="36" pin="1"/><net_sink comp="60" pin=7"/></net>
+
+<net id="80"><net_src comp="40" pin="1"/><net_sink comp="60" pin=8"/></net>
+
+<net id="81"><net_src comp="44" pin="1"/><net_sink comp="60" pin=9"/></net>
+
+<net id="97"><net_src comp="18" pin="0"/><net_sink comp="82" pin=0"/></net>
+
+<net id="98"><net_src comp="8" pin="0"/><net_sink comp="82" pin=11"/></net>
+
+<net id="99"><net_src comp="10" pin="0"/><net_sink comp="82" pin=12"/></net>
+
+<net id="103"><net_src comp="60" pin="10"/><net_sink comp="100" pin=0"/></net>
+
+<net id="107"><net_src comp="60" pin="10"/><net_sink comp="104" pin=0"/></net>
+
+<net id="111"><net_src comp="60" pin="10"/><net_sink comp="108" pin=0"/></net>
+
+<net id="115"><net_src comp="60" pin="10"/><net_sink comp="112" pin=0"/></net>
+
+<net id="119"><net_src comp="60" pin="10"/><net_sink comp="116" pin=0"/></net>
+
+<net id="123"><net_src comp="48" pin="2"/><net_sink comp="120" pin=0"/></net>
+
+<net id="124"><net_src comp="120" pin="1"/><net_sink comp="60" pin=3"/></net>
+
+<net id="128"><net_src comp="54" pin="2"/><net_sink comp="125" pin=0"/></net>
+
+<net id="129"><net_src comp="125" pin="1"/><net_sink comp="60" pin=1"/></net>
+
+<net id="133"><net_src comp="100" pin="1"/><net_sink comp="130" pin=0"/></net>
+
+<net id="134"><net_src comp="130" pin="1"/><net_sink comp="82" pin=1"/></net>
+
+<net id="138"><net_src comp="104" pin="1"/><net_sink comp="135" pin=0"/></net>
+
+<net id="139"><net_src comp="135" pin="1"/><net_sink comp="82" pin=3"/></net>
+
+<net id="143"><net_src comp="108" pin="1"/><net_sink comp="140" pin=0"/></net>
+
+<net id="144"><net_src comp="140" pin="1"/><net_sink comp="82" pin=5"/></net>
+
+<net id="148"><net_src comp="112" pin="1"/><net_sink comp="145" pin=0"/></net>
+
+<net id="149"><net_src comp="145" pin="1"/><net_sink comp="82" pin=7"/></net>
+
+<net id="153"><net_src comp="116" pin="1"/><net_sink comp="150" pin=0"/></net>
+
+<net id="154"><net_src comp="150" pin="1"/><net_sink comp="82" pin=9"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: res_tmp_bits | {3 4 }
+	Port: res_digits_data_V | {3 4 }
+ - Input state : 
+	Port: karastuba_mul_templa.4 : lhs_tmp_bits_read | {1 }
+	Port: karastuba_mul_templa.4 : lhs_digits_data_V | {1 2 }
+	Port: karastuba_mul_templa.4 : rhs_tmp_bits_read | {1 }
+	Port: karastuba_mul_templa.4 : rhs_digits_data_V | {1 2 }
+	Port: karastuba_mul_templa.4 : res_tmp_bits | {}
+	Port: karastuba_mul_templa.4 : res_digits_data_V | {}
+  - Chain level:
+	State 1
+		tmp : 1
+	State 2
+		z0_tmp_bits : 1
+		z2_tmp_bits : 1
+		cross_mul_tmp_bits : 1
+		inter_lhs_tmp_bits : 1
+		inter_rhs_tmp_bits : 1
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------------|---------|---------|---------|---------|---------|---------|
+| Operation|          Functional Unit         |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|----------------------------------|---------|---------|---------|---------|---------|---------|
+|   call   | grp_karastuba_mul_MUL_st_1_fu_60 |    92   |    36   | 241.007 |  35551  |  23164  |    0    |
+|          | grp_karastuba_mul_ADD_SU_1_fu_82 |    6    |    3    | 23.4044 |   2656  |   2327  |    0    |
+|----------|----------------------------------|---------|---------|---------|---------|---------|---------|
+|   read   |  rhs_tmp_bits_read_2_read_fu_48  |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |  lhs_tmp_bits_read_2_read_fu_54  |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|----------------------------------|---------|---------|---------|---------|---------|---------|
+|          |        z0_tmp_bits_fu_100        |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |        z2_tmp_bits_fu_104        |    0    |    0    |    0    |    0    |    0    |    0    |
+|extractvalue|     cross_mul_tmp_bits_fu_108    |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |     inter_lhs_tmp_bits_fu_112    |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |     inter_rhs_tmp_bits_fu_116    |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|----------------------------------|---------|---------|---------|---------|---------|---------|
+|   Total  |                                  |    98   |    39   | 264.411 |  38207  |  25491  |    0    |
+|----------|----------------------------------|---------|---------|---------|---------|---------|---------|
+
+Memories:
++--------------------+--------+--------+--------+--------+
+|                    |  BRAM  |   FF   |   LUT  |  URAM  |
++--------------------+--------+--------+--------+--------+
+|cross_mul_digits_dat|    2   |    0   |    0   |    0   |
+|inter_lhs_digits_dat|    2   |    0   |    0   |    0   |
+|inter_rhs_digits_dat|    2   |    0   |    0   |    0   |
+|  z0_digits_data_V  |    2   |    0   |    0   |    0   |
+|  z2_digits_data_V  |    2   |    0   |    0   |    0   |
++--------------------+--------+--------+--------+--------+
+|        Total       |   10   |    0   |    0   |    0   |
++--------------------+--------+--------+--------+--------+
+
+* Register list:
++---------------------------+--------+
+|                           |   FF   |
++---------------------------+--------+
+| cross_mul_tmp_bits_reg_140|   32   |
+| inter_lhs_tmp_bits_reg_145|   32   |
+| inter_rhs_tmp_bits_reg_150|   32   |
+|lhs_tmp_bits_read_2_reg_125|    2   |
+|rhs_tmp_bits_read_2_reg_120|    2   |
+|    z0_tmp_bits_reg_130    |   32   |
+|    z2_tmp_bits_reg_135    |   32   |
++---------------------------+--------+
+|           Total           |   164  |
++---------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|----------------------------------|------|------|------|--------||---------||---------|
+|               Comp               |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|----------------------------------|------|------|------|--------||---------||---------|
+| grp_karastuba_mul_MUL_st_1_fu_60 |  p1  |   2  |   2  |    4   ||    9    |
+| grp_karastuba_mul_MUL_st_1_fu_60 |  p3  |   2  |   2  |    4   ||    9    |
+|----------------------------------|------|------|------|--------||---------||---------|
+|               Total              |      |      |      |    8   ||  1.904  ||    18   |
+|----------------------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+--------+
+|           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+--------+
+|  Function |   98   |   39   |   264  |  38207 |  25491 |    0   |
+|   Memory  |   10   |    -   |    -   |    0   |    0   |    0   |
+|Multiplexer|    -   |    -   |    1   |    -   |   18   |    -   |
+|  Register |    -   |    -   |    -   |   164  |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+--------+
+|   Total   |   108  |   39   |   266  |  38371 |  25509 |    0   |
++-----------+--------+--------+--------+--------+--------+--------+

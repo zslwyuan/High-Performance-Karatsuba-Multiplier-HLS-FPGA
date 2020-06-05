@@ -1,0 +1,55 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'karastuba_mul_MUL_st_1'" level="0">
+<item name = "Date">Fri Jun  5 20:27:00 2020
+</item>
+<item name = "Version">2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)</item>
+<item name = "Project">bigtest</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexu</item>
+<item name = "Target device">xcvu095-ffva2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.00 ns, 2.616 ns, 0.38 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">988, 1110, 2.964 us, 3.330 us, 988, 1110, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_karastuba_mul_templa_1_fu_480">karastuba_mul_templa_1, 805, 927, 2.415 us, 2.781 us, 805, 927, none</column>
+<column name="grp_karastuba_mul_templa_5_fu_490">karastuba_mul_templa_5, 734, 856, 2.202 us, 2.568 us, 496, 550, dataflow</column>
+<column name="grp_karastuba_mul_templa_5_fu_502">karastuba_mul_templa_5, 734, 856, 2.202 us, 2.568 us, 496, 550, dataflow</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">17, 17, 3, 1, 1, 16, yes</column>
+<column name="- Loop 2">17, 17, 3, 1, 1, 16, yes</column>
+<column name="- Loop 3">17, 17, 3, 1, 1, 16, yes</column>
+<column name="- Loop 4">17, 17, 3, 1, 1, 16, yes</column>
+<column name="- Loop 5">33, 33, 3, 1, 1, 32, yes</column>
+<column name="- Loop 6">33, 33, 3, 1, 1, 32, yes</column>
+<column name="- Loop 7">33, 33, 3, 1, 1, 32, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

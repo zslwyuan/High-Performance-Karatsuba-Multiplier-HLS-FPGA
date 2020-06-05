@@ -1,0 +1,8 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../multest.cc in debug mode
+   Generating csim.exe
+Makefile.rules:401: recipe for target 'csim.exe' failed
+ERR: [SIM 102] C simulation failed, no 'main' function.
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

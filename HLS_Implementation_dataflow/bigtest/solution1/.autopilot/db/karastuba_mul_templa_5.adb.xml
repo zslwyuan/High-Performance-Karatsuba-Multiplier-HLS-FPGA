@@ -1,0 +1,475 @@
+<stg><name>karastuba_mul_templa.5</name>
+
+
+<trans_list>
+
+<trans id="23" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="24" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="25" from="3" to="4">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="2" op_0_bw="2" op_1_bw="2">
+<![CDATA[
+:1  %rhs_tmp_bits_read_1 = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %rhs_tmp_bits_read)
+
+]]></Node>
+<StgValue><ssdm name="rhs_tmp_bits_read_1"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="2" op_0_bw="2" op_1_bw="2">
+<![CDATA[
+:2  %lhs_tmp_bits_read_1 = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %lhs_tmp_bits_read)
+
+]]></Node>
+<StgValue><ssdm name="lhs_tmp_bits_read_1"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="64" op_0_bw="64">
+<![CDATA[
+:3  %z0_digits_data_V = alloca [16 x i64], align 8
+
+]]></Node>
+<StgValue><ssdm name="z0_digits_data_V"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="64" op_0_bw="64">
+<![CDATA[
+:4  %z2_digits_data_V = alloca [16 x i64], align 8
+
+]]></Node>
+<StgValue><ssdm name="z2_digits_data_V"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="64" op_0_bw="64">
+<![CDATA[
+:5  %cross_mul_digits_dat = alloca [16 x i64], align 8
+
+]]></Node>
+<StgValue><ssdm name="cross_mul_digits_dat"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="64" op_0_bw="64">
+<![CDATA[
+:6  %inter_lhs_digits_dat = alloca [16 x i64], align 8
+
+]]></Node>
+<StgValue><ssdm name="inter_lhs_digits_dat"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="11" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="64" op_0_bw="64">
+<![CDATA[
+:7  %inter_rhs_digits_dat = alloca [16 x i64], align 8
+
+]]></Node>
+<StgValue><ssdm name="inter_rhs_digits_dat"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="12" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="160" op_0_bw="160" op_1_bw="2" op_2_bw="64" op_3_bw="2" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64">
+<![CDATA[
+:8  %tmp = call { i32, i32, i32, i32, i32 } @karastuba_mul_MUL_st.2(i2 %lhs_tmp_bits_read_1, [16 x i64]* %lhs_digits_data_V, i2 %rhs_tmp_bits_read_1, [16 x i64]* %rhs_digits_data_V, [16 x i64]* %z0_digits_data_V, [16 x i64]* %z2_digits_data_V, [16 x i64]* %cross_mul_digits_dat, [16 x i64]* %inter_lhs_digits_dat, [16 x i64]* %inter_rhs_digits_dat)
+
+]]></Node>
+<StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="13" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="160" op_0_bw="160" op_1_bw="2" op_2_bw="64" op_3_bw="2" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64">
+<![CDATA[
+:8  %tmp = call { i32, i32, i32, i32, i32 } @karastuba_mul_MUL_st.2(i2 %lhs_tmp_bits_read_1, [16 x i64]* %lhs_digits_data_V, i2 %rhs_tmp_bits_read_1, [16 x i64]* %rhs_digits_data_V, [16 x i64]* %z0_digits_data_V, [16 x i64]* %z2_digits_data_V, [16 x i64]* %cross_mul_digits_dat, [16 x i64]* %inter_lhs_digits_dat, [16 x i64]* %inter_rhs_digits_dat)
+
+]]></Node>
+<StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+
+<operation id="14" st_id="2" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="32" op_0_bw="160">
+<![CDATA[
+:9  %z0_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 0
+
+]]></Node>
+<StgValue><ssdm name="z0_tmp_bits"/></StgValue>
+</operation>
+
+<operation id="15" st_id="2" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="32" op_0_bw="160">
+<![CDATA[
+:10  %z2_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 1
+
+]]></Node>
+<StgValue><ssdm name="z2_tmp_bits"/></StgValue>
+</operation>
+
+<operation id="16" st_id="2" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="18" bw="32" op_0_bw="160">
+<![CDATA[
+:11  %cross_mul_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 2
+
+]]></Node>
+<StgValue><ssdm name="cross_mul_tmp_bits"/></StgValue>
+</operation>
+
+<operation id="17" st_id="2" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="19" bw="32" op_0_bw="160">
+<![CDATA[
+:12  %inter_lhs_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 3
+
+]]></Node>
+<StgValue><ssdm name="inter_lhs_tmp_bits"/></StgValue>
+</operation>
+
+<operation id="18" st_id="2" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="32" op_0_bw="160">
+<![CDATA[
+:13  %inter_rhs_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 4
+
+]]></Node>
+<StgValue><ssdm name="inter_rhs_tmp_bits"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="19" st_id="3" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="32" op_4_bw="64" op_5_bw="32" op_6_bw="64" op_7_bw="32" op_8_bw="64" op_9_bw="32" op_10_bw="64" op_11_bw="32" op_12_bw="64" op_13_bw="160" op_14_bw="160">
+<![CDATA[
+:14  call fastcc void @karastuba_mul_ADD_SU.2(i32 %z0_tmp_bits, [16 x i64]* %z0_digits_data_V, i32 %z2_tmp_bits, [16 x i64]* %z2_digits_data_V, i32 %cross_mul_tmp_bits, [16 x i64]* %cross_mul_digits_dat, i32 %inter_lhs_tmp_bits, [16 x i64]* %inter_lhs_digits_dat, i32 %inter_rhs_tmp_bits, [16 x i64]* %inter_rhs_digits_dat, i32* %res_tmp_bits, [32 x i64]* %res_digits_data_V)
+
+]]></Node>
+<StgValue><ssdm name="call_ln391"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="20" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<![CDATA[
+:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind
+
+]]></Node>
+<StgValue><ssdm name="specdataflowpipeline_ln382"/></StgValue>
+</operation>
+
+<operation id="21" st_id="4" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="32" op_4_bw="64" op_5_bw="32" op_6_bw="64" op_7_bw="32" op_8_bw="64" op_9_bw="32" op_10_bw="64" op_11_bw="32" op_12_bw="64" op_13_bw="160" op_14_bw="160">
+<![CDATA[
+:14  call fastcc void @karastuba_mul_ADD_SU.2(i32 %z0_tmp_bits, [16 x i64]* %z0_digits_data_V, i32 %z2_tmp_bits, [16 x i64]* %z2_digits_data_V, i32 %cross_mul_tmp_bits, [16 x i64]* %cross_mul_digits_dat, i32 %inter_lhs_tmp_bits, [16 x i64]* %inter_lhs_digits_dat, i32 %inter_rhs_tmp_bits, [16 x i64]* %inter_rhs_digits_dat, i32* %res_tmp_bits, [32 x i64]* %res_digits_data_V)
+
+]]></Node>
+<StgValue><ssdm name="call_ln391"/></StgValue>
+</operation>
+
+<operation id="22" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="22" bw="0">
+<![CDATA[
+:15  ret void
+
+]]></Node>
+<StgValue><ssdm name="ret_ln394"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="27" name="lhs_tmp_bits_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="lhs_tmp_bits_read"/></StgValue>
+</port>
+<port id="28" name="lhs_digits_data_V" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="lhs_digits_data_V"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="29" name="rhs_tmp_bits_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="rhs_tmp_bits_read"/></StgValue>
+</port>
+<port id="30" name="rhs_digits_data_V" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="rhs_digits_data_V"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="31" name="res_tmp_bits" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="res_tmp_bits"/></StgValue>
+</port>
+<port id="32" name="res_digits_data_V" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="res_digits_data_V"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="34" from="_ssdm_op_Read.ap_auto.i2" to="rhs_tmp_bits_read_1" fromId="33" toId="5">
+</dataflow>
+<dataflow id="35" from="rhs_tmp_bits_read" to="rhs_tmp_bits_read_1" fromId="29" toId="5">
+</dataflow>
+<dataflow id="36" from="_ssdm_op_Read.ap_auto.i2" to="lhs_tmp_bits_read_1" fromId="33" toId="6">
+</dataflow>
+<dataflow id="37" from="lhs_tmp_bits_read" to="lhs_tmp_bits_read_1" fromId="27" toId="6">
+</dataflow>
+<dataflow id="39" from="StgValue_38" to="z0_digits_data_V" fromId="38" toId="7">
+</dataflow>
+<dataflow id="40" from="StgValue_38" to="z2_digits_data_V" fromId="38" toId="8">
+</dataflow>
+<dataflow id="41" from="StgValue_38" to="cross_mul_digits_dat" fromId="38" toId="9">
+</dataflow>
+<dataflow id="42" from="StgValue_38" to="inter_lhs_digits_dat" fromId="38" toId="10">
+</dataflow>
+<dataflow id="43" from="StgValue_38" to="inter_rhs_digits_dat" fromId="38" toId="11">
+</dataflow>
+<dataflow id="45" from="karastuba_mul_MUL_st.2" to="tmp" fromId="44" toId="12">
+</dataflow>
+<dataflow id="46" from="lhs_tmp_bits_read_1" to="tmp" fromId="6" toId="12">
+</dataflow>
+<dataflow id="47" from="lhs_digits_data_V" to="tmp" fromId="28" toId="12">
+</dataflow>
+<dataflow id="48" from="rhs_tmp_bits_read_1" to="tmp" fromId="5" toId="12">
+</dataflow>
+<dataflow id="49" from="rhs_digits_data_V" to="tmp" fromId="30" toId="12">
+</dataflow>
+<dataflow id="50" from="z0_digits_data_V" to="tmp" fromId="7" toId="12">
+</dataflow>
+<dataflow id="51" from="z2_digits_data_V" to="tmp" fromId="8" toId="12">
+</dataflow>
+<dataflow id="52" from="cross_mul_digits_dat" to="tmp" fromId="9" toId="12">
+</dataflow>
+<dataflow id="53" from="inter_lhs_digits_dat" to="tmp" fromId="10" toId="12">
+</dataflow>
+<dataflow id="54" from="inter_rhs_digits_dat" to="tmp" fromId="11" toId="12">
+</dataflow>
+<dataflow id="55" from="karastuba_mul_MUL_st.2" to="tmp" fromId="44" toId="13">
+</dataflow>
+<dataflow id="56" from="lhs_tmp_bits_read_1" to="tmp" fromId="6" toId="13">
+</dataflow>
+<dataflow id="57" from="lhs_digits_data_V" to="tmp" fromId="28" toId="13">
+</dataflow>
+<dataflow id="58" from="rhs_tmp_bits_read_1" to="tmp" fromId="5" toId="13">
+</dataflow>
+<dataflow id="59" from="rhs_digits_data_V" to="tmp" fromId="30" toId="13">
+</dataflow>
+<dataflow id="60" from="z0_digits_data_V" to="tmp" fromId="7" toId="13">
+</dataflow>
+<dataflow id="61" from="z2_digits_data_V" to="tmp" fromId="8" toId="13">
+</dataflow>
+<dataflow id="62" from="cross_mul_digits_dat" to="tmp" fromId="9" toId="13">
+</dataflow>
+<dataflow id="63" from="inter_lhs_digits_dat" to="tmp" fromId="10" toId="13">
+</dataflow>
+<dataflow id="64" from="inter_rhs_digits_dat" to="tmp" fromId="11" toId="13">
+</dataflow>
+<dataflow id="65" from="tmp" to="z0_tmp_bits" fromId="13" toId="14">
+</dataflow>
+<dataflow id="66" from="tmp" to="z2_tmp_bits" fromId="13" toId="15">
+</dataflow>
+<dataflow id="67" from="tmp" to="cross_mul_tmp_bits" fromId="13" toId="16">
+</dataflow>
+<dataflow id="68" from="tmp" to="inter_lhs_tmp_bits" fromId="13" toId="17">
+</dataflow>
+<dataflow id="69" from="tmp" to="inter_rhs_tmp_bits" fromId="13" toId="18">
+</dataflow>
+<dataflow id="71" from="karastuba_mul_ADD_SU.2" to="call_ln391" fromId="70" toId="19">
+</dataflow>
+<dataflow id="72" from="z0_tmp_bits" to="call_ln391" fromId="14" toId="19">
+</dataflow>
+<dataflow id="73" from="z0_digits_data_V" to="call_ln391" fromId="7" toId="19">
+</dataflow>
+<dataflow id="74" from="z2_tmp_bits" to="call_ln391" fromId="15" toId="19">
+</dataflow>
+<dataflow id="75" from="z2_digits_data_V" to="call_ln391" fromId="8" toId="19">
+</dataflow>
+<dataflow id="76" from="cross_mul_tmp_bits" to="call_ln391" fromId="16" toId="19">
+</dataflow>
+<dataflow id="77" from="cross_mul_digits_dat" to="call_ln391" fromId="9" toId="19">
+</dataflow>
+<dataflow id="78" from="inter_lhs_tmp_bits" to="call_ln391" fromId="17" toId="19">
+</dataflow>
+<dataflow id="79" from="inter_lhs_digits_dat" to="call_ln391" fromId="10" toId="19">
+</dataflow>
+<dataflow id="80" from="inter_rhs_tmp_bits" to="call_ln391" fromId="18" toId="19">
+</dataflow>
+<dataflow id="81" from="inter_rhs_digits_dat" to="call_ln391" fromId="11" toId="19">
+</dataflow>
+<dataflow id="82" from="res_tmp_bits" to="call_ln391" fromId="31" toId="19">
+</dataflow>
+<dataflow id="83" from="res_digits_data_V" to="call_ln391" fromId="32" toId="19">
+</dataflow>
+<dataflow id="85" from="_ssdm_op_SpecDataflowPipeline" to="specdataflowpipeline_ln382" fromId="84" toId="20">
+</dataflow>
+<dataflow id="87" from="StgValue_86" to="specdataflowpipeline_ln382" fromId="86" toId="20">
+</dataflow>
+<dataflow id="89" from="StgValue_88" to="specdataflowpipeline_ln382" fromId="88" toId="20">
+</dataflow>
+<dataflow id="91" from="p_str1" to="specdataflowpipeline_ln382" fromId="90" toId="20">
+</dataflow>
+<dataflow id="92" from="karastuba_mul_ADD_SU.2" to="call_ln391" fromId="70" toId="21">
+</dataflow>
+<dataflow id="93" from="z0_tmp_bits" to="call_ln391" fromId="14" toId="21">
+</dataflow>
+<dataflow id="94" from="z0_digits_data_V" to="call_ln391" fromId="7" toId="21">
+</dataflow>
+<dataflow id="95" from="z2_tmp_bits" to="call_ln391" fromId="15" toId="21">
+</dataflow>
+<dataflow id="96" from="z2_digits_data_V" to="call_ln391" fromId="8" toId="21">
+</dataflow>
+<dataflow id="97" from="cross_mul_tmp_bits" to="call_ln391" fromId="16" toId="21">
+</dataflow>
+<dataflow id="98" from="cross_mul_digits_dat" to="call_ln391" fromId="9" toId="21">
+</dataflow>
+<dataflow id="99" from="inter_lhs_tmp_bits" to="call_ln391" fromId="17" toId="21">
+</dataflow>
+<dataflow id="100" from="inter_lhs_digits_dat" to="call_ln391" fromId="10" toId="21">
+</dataflow>
+<dataflow id="101" from="inter_rhs_tmp_bits" to="call_ln391" fromId="18" toId="21">
+</dataflow>
+<dataflow id="102" from="inter_rhs_digits_dat" to="call_ln391" fromId="11" toId="21">
+</dataflow>
+<dataflow id="103" from="res_tmp_bits" to="call_ln391" fromId="31" toId="21">
+</dataflow>
+<dataflow id="104" from="res_digits_data_V" to="call_ln391" fromId="32" toId="21">
+</dataflow>
+</dataflows>
+
+
+</stg>

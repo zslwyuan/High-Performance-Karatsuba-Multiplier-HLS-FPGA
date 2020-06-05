@@ -1,0 +1,11 @@
+                             latency        interval
+transaction       0:            6034            6034
+transaction       1:            6035            6035
+transaction       2:            6035            6035
+transaction       3:            6035            6035
+transaction       4:            6035            6035
+transaction       5:            6035            6035
+transaction       6:            6035            6035
+transaction       7:            6035            6035
+transaction       8:            6035            6035
+transaction       9:            6035               x

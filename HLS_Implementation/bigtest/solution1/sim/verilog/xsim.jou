@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# xsim v2019.2 (64-bit)
-# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
-# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue May 26 00:38:35 2020
-# Process ID: 26961
-# Current directory: /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog
+# xsim v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Fri Jun  5 20:10:43 2020
+# Process ID: 12406
+# Current directory: /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/karastuba_mul/xsim_script.tcl}
-# Log file: /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/xsim.log
-# Journal file: /home/tingyuan/Documents/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/xsim.jou
+# Log file: /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/xsim.log
+# Journal file: /home/tingyuan/Dropbox/High-Performance-Karatsuba-Multiplier-HLS-FPGA/HLS_Implementation/bigtest/solution1/sim/verilog/xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/karastuba_mul/xsim_script.tcl
 source karastuba_mul.tcl

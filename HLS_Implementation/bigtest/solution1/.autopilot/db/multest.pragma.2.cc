@@ -6371,10 +6371,6 @@ template <int MAX_DIGITS, int BITS>
 struct Bignum {
   const static int N_ele = MAX_DIGITS;
   unsigned int tmp_bits;
-  Bignum(): tmp_bits(0)
-  {
-
-  }
 
   Array<ap_uint<64>, MAX_DIGITS> digits;
 };
@@ -28650,9 +28646,11 @@ void little_end_to_array(mpz_t a, unsigned int output[1024])
 }
 
 
+
 template <typename In_T, typename Out_T>
 void add_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
     for (int j = u->N_ele; j < w->N_ele; ++j) w->digits.data[j] = (0);
     bool needUp = false;
     ap_uint<128> tmp = 0;
@@ -28660,7 +28658,7 @@ void add_I_O(const In_T *u, const In_T *v, Out_T *w)
  {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 if (tmp>1)
-(static_cast <bool> (false) ? void (0) : __assert_fail ("false", "multest.cc", 55, __extension__ __PRETTY_FUNCTION__));
+(static_cast <bool> (false) ? void (0) : __assert_fail ("false", "multest.cc", 57, __extension__ __PRETTY_FUNCTION__));
   tmp += static_cast<ap_uint<128> >(u->digits.data[i]);
   tmp += static_cast<ap_uint<128> >(v->digits.data[i]);
         w->digits.data[i] = (static_cast<ap_uint<64> >(tmp));
@@ -28674,6 +28672,7 @@ if (tmp>1)
 template <typename In_T, typename Out_T>
 void sub_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
 
     int reset_start = u->N_ele < w->N_ele? u->N_ele : w->N_ele;
     for (int j = reset_start; j < w->N_ele; ++j) w->digits.data[j] = (0);
@@ -28705,6 +28704,7 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 template <typename In_T, typename Out_T>
 void mul_I_O(const In_T *u, const In_T *v, Out_T *w)
 {
+    w->tmp_bits = 0;
     for (int j = 0; j < w->N_ele; ++j) w->digits.data[j] = (0);
     int i,j;
     ap_uint<128> k = 0;
@@ -28728,7 +28728,7 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
                 k>>=64;
         }
     }
-    (static_cast <bool> (k==0) ? void (0) : __assert_fail ("k==0", "multest.cc", 123, __extension__ __PRETTY_FUNCTION__));
+    (static_cast <bool> (k==0) ? void (0) : __assert_fail ("k==0", "multest.cc", 127, __extension__ __PRETTY_FUNCTION__));
     if (v->tmp_bits)
     {
         int offset = v->N_ele;
@@ -28765,6 +28765,7 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 template <typename In_T0, typename In_T1, typename In_T2, typename Out_T>
 void CAT_I_I_I_O(const In_T0 *x0, const In_T1 *x1, const In_T2 *x2, Out_T *w)
 {
+    w->tmp_bits = 0;
 
 
     for (int j = x0->N_ele; j < w->N_ele; ++j) w->digits.data[j] = (0);
@@ -28778,7 +28779,7 @@ void CAT_I_I_I_O(const In_T0 *x0, const In_T1 *x1, const In_T2 *x2, Out_T *w)
  {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 if (tmp>1)
-(static_cast <bool> (false) ? void (0) : __assert_fail ("false", "multest.cc", 173, __extension__ __PRETTY_FUNCTION__));
+(static_cast <bool> (false) ? void (0) : __assert_fail ("false", "multest.cc", 178, __extension__ __PRETTY_FUNCTION__));
   tmp += static_cast<ap_uint<128> >(x1->digits.data[i]);
   tmp += static_cast<ap_uint<128> >(w->digits.data[j]);
         w->digits.data[j] = ( static_cast<ap_uint<64> >(tmp));
@@ -28794,7 +28795,7 @@ if (tmp>1)
  {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 if (tmp>1)
-(static_cast <bool> (false) ? void (0) : __assert_fail ("false", "multest.cc", 189, __extension__ __PRETTY_FUNCTION__));
+(static_cast <bool> (false) ? void (0) : __assert_fail ("false", "multest.cc", 194, __extension__ __PRETTY_FUNCTION__));
   tmp += static_cast<ap_uint<128> >(x2->digits.data[i]);
   tmp += static_cast<ap_uint<128> >(w->digits.data[j]);
         w->digits.data[j] = ( static_cast<ap_uint<64> >(tmp));
@@ -28833,9 +28834,13 @@ void karastuba_mul_template_z1(
 {
 _ssdm_InlineSelf(2, "");
  Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> add0;
-    add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(lhs0_tmp,lhs1_tmp, &add0);
     Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> add1;
+
+    add0.tmp_bits=add1.tmp_bits=0;
+
+    add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(lhs0_tmp,lhs1_tmp, &add0);
     add_I_O<Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT>,Bignum<MAX_N_ele_input / 2, BITS_PER_DIGIT> >(rhs0_tmp,rhs1_tmp,&add1);
+
     karastuba_mul_template<MAX_N_ele_input / 2,BITS_PER_DIGIT>(&add0, &add1, cross_mul);
     return;
 }
@@ -28850,7 +28855,7 @@ void karastuba_mul_template(
 {
 _ssdm_InlineSelf(2, "");
  Bignum<MAX_N_ele_input / 2 , BITS_PER_DIGIT> lhs0,lhs1,rhs0,rhs1,lhs0_tmp,lhs1_tmp,rhs0_tmp,rhs1_tmp;
-
+    lhs0.tmp_bits=lhs1.tmp_bits=rhs0.tmp_bits=rhs1.tmp_bits=lhs0_tmp.tmp_bits=lhs1_tmp.tmp_bits=rhs0_tmp.tmp_bits=rhs1_tmp.tmp_bits=0;
     for (int i=0;i<lhs0.N_ele;i++)lhs0.digits.data[i]=lhs0_tmp.digits.data[i]=lhs->digits.data[i];
     for (int i=0;i<lhs1.N_ele;i++)lhs1.digits.data[i]=lhs1_tmp.digits.data[i]=lhs->digits.data[i+MAX_N_ele_input / 2];
     for (int i=0;i<rhs0.N_ele;i++)rhs0.digits.data[i]=rhs0_tmp.digits.data[i]=rhs->digits.data[i];

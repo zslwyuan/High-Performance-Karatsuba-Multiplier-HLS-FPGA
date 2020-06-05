@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vivado HLS Report for 'karastuba_mul'
+================================================================
+* Date:           Fri Jun  5 20:27:41 2020
+
+* Version:        2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)
+* Project:        bigtest
+* Solution:       solution1
+* Product family: virtexu
+* Target device:  xcvu095-ffva2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 3.00 ns | 2.616 ns |   0.38 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+----------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline |
+    |   min   |   max   |    min   |    max   |  min |  max |   Type   |
+    +---------+---------+----------+----------+------+------+----------+
+    |     3032|     3286| 9.096 us | 9.858 us |  1914|  2168| dataflow |
+    +---------+---------+----------+----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------+------------------------+---------+---------+----------+----------+------+------+----------+
+        |                           |                        |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline |
+        |          Instance         |         Module         |   min   |   max   |    min   |    max   |  min |  max |   Type   |
+        +---------------------------+------------------------+---------+---------+----------+----------+------+------+----------+
+        |karastuba_mul_templa_3_U0  |karastuba_mul_templa_3  |     2769|     3023| 8.307 us | 9.069 us |  1914|  2168| dataflow |
+        |Loop_1_proc_U0             |Loop_1_proc             |      130|      130| 0.390 us | 0.390 us |   130|   130|   none   |
+        |Loop_2_proc_U0             |Loop_2_proc             |      131|      131| 0.393 us | 0.393 us |   131|   131|   none   |
+        +---------------------------+------------------------+---------+---------+----------+----------+------+------+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+---------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|    FF   |   LUT  | URAM|
++-----------------+---------+-------+---------+--------+-----+
+|DSP              |        -|      -|        -|       -|    -|
+|Expression       |        -|      -|        0|      14|    -|
+|FIFO             |        -|      -|        -|       -|    -|
+|Instance         |      366|    117|    99684|  107108|    0|
+|Memory           |        6|      -|        0|       0|    0|
+|Multiplexer      |        -|      -|        -|      18|    -|
+|Register         |        -|      -|        2|       -|    -|
++-----------------+---------+-------+---------+--------+-----+
+|Total            |      372|    117|    99686|  107140|    0|
++-----------------+---------+-------+---------+--------+-----+
+|Available        |     3456|    768|  1075200|  537600|    0|
++-----------------+---------+-------+---------+--------+-----+
+|Utilization (%)  |       10|     15|        9|      19|    0|
++-----------------+---------+-------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------+------------------------------+---------+-------+-------+--------+-----+
+    |            Instance            |            Module            | BRAM_18K| DSP48E|   FF  |   LUT  | URAM|
+    +--------------------------------+------------------------------+---------+-------+-------+--------+-----+
+    |Loop_1_proc_U0                  |Loop_1_proc                   |        0|      0|     87|     128|    0|
+    |Loop_2_proc_U0                  |Loop_2_proc                   |        0|      0|     17|     106|    0|
+    |karastuba_mul_AXILiteS_s_axi_U  |karastuba_mul_AXILiteS_s_axi  |        0|      0|     36|      40|    0|
+    |karastuba_mul_templa_3_U0       |karastuba_mul_templa_3        |      366|    117|  99544|  106834|    0|
+    +--------------------------------+------------------------------+---------+-------+-------+--------+-----+
+    |Total                           |                              |      366|    117|  99684|  107108|    0|
+    +--------------------------------+------------------------------+---------+-------+-------+--------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +---------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |        Memory       |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +---------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |lhs_digits_data_V_U  |karastuba_mul_lhsbek  |        2|  0|   0|    0|    64|   64|     2|         8192|
+    |rhs_digits_data_V_U  |karastuba_mul_lhsbek  |        2|  0|   0|    0|    64|   64|     2|         8192|
+    |res_digits_data_V_U  |karastuba_mul_resbgk  |        2|  0|   0|    0|   128|   64|     2|        16384|
+    +---------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                |                      |        6|  0|   0|    0|   256|  192|     6|        32768|
+    +---------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------------+----------+-------+---+----+------------+------------+
+    |              Variable Name              | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------------+----------+-------+---+----+------------+------------+
+    |Loop_1_proc_U0_ap_continue               |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_lhs_digits_data_V        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_rhs_digits_data_V        |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                  |    and   |      0|  0|   2|           1|           1|
+    |karastuba_mul_templa_3_U0_ap_start       |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_lhs_digits_data_V  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_rhs_digits_data_V  |    or    |      0|  0|   2|           1|           1|
+    +-----------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                    |          |      0|  0|  14|           7|           7|
+    +-----------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                    | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_channel_write_lhs_digits_data_V  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_rhs_digits_data_V  |   9|          2|    1|          2|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |Total                                        |  18|          4|    2|          4|
+    +---------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------+---+----+-----+-----------+
+    |                     Name                    | FF| LUT| Bits| Const Bits|
+    +---------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_channel_write_lhs_digits_data_V  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_rhs_digits_data_V  |  1|   0|    1|          0|
+    +---------------------------------------------+---+----+-----+-----------+
+    |Total                                        |  2|   0|    2|          0|
+    +---------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+---------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object |    C Type    |
++------------------------+-----+-----+------------+---------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_AWADDR   |  in |    4|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_ARADDR   |  in |    4|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |    AXILiteS   |  return void |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |    AXILiteS   |  return void |
+|ap_clk                  |  in |    1| ap_ctrl_hs | karastuba_mul | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs | karastuba_mul | return value |
+|interrupt               | out |    1| ap_ctrl_hs | karastuba_mul | return value |
+|hs_input_V_TDATA        |  in |   64|    axis    |   hs_input_V  |    pointer   |
+|hs_input_V_TVALID       |  in |    1|    axis    |   hs_input_V  |    pointer   |
+|hs_input_V_TREADY       | out |    1|    axis    |   hs_input_V  |    pointer   |
+|res_output_V_TDATA      | out |   64|    axis    |  res_output_V |    pointer   |
+|res_output_V_TVALID     | out |    1|    axis    |  res_output_V |    pointer   |
+|res_output_V_TREADY     |  in |    1|    axis    |  res_output_V |    pointer   |
++------------------------+-----+-----+------------+---------------+--------------+
+

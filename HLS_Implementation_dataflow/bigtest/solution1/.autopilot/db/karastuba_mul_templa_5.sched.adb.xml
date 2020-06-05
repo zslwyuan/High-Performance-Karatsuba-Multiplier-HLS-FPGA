@@ -1,0 +1,321 @@
+<stg><name>karastuba_mul_templa.5</name>
+
+
+<trans_list>
+
+<trans id="23" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="24" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="25" from="3" to="4">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="2" op_0_bw="2" op_1_bw="2">
+<![CDATA[
+:1  %rhs_tmp_bits_read_1 = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %rhs_tmp_bits_read)
+
+]]></Node>
+<StgValue><ssdm name="rhs_tmp_bits_read_1"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="2" op_0_bw="2" op_1_bw="2">
+<![CDATA[
+:2  %lhs_tmp_bits_read_1 = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %lhs_tmp_bits_read)
+
+]]></Node>
+<StgValue><ssdm name="lhs_tmp_bits_read_1"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="64" op_0_bw="64">
+<![CDATA[
+:3  %z0_digits_data_V = alloca [16 x i64], align 8
+
+]]></Node>
+<StgValue><ssdm name="z0_digits_data_V"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="64" op_0_bw="64">
+<![CDATA[
+:4  %z2_digits_data_V = alloca [16 x i64], align 8
+
+]]></Node>
+<StgValue><ssdm name="z2_digits_data_V"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="64" op_0_bw="64">
+<![CDATA[
+:5  %cross_mul_digits_dat = alloca [16 x i64], align 8
+
+]]></Node>
+<StgValue><ssdm name="cross_mul_digits_dat"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="64" op_0_bw="64">
+<![CDATA[
+:6  %inter_lhs_digits_dat = alloca [16 x i64], align 8
+
+]]></Node>
+<StgValue><ssdm name="inter_lhs_digits_dat"/></StgValue>
+</operation>
+
+<operation id="11" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="64" op_0_bw="64">
+<![CDATA[
+:7  %inter_rhs_digits_dat = alloca [16 x i64], align 8
+
+]]></Node>
+<StgValue><ssdm name="inter_rhs_digits_dat"/></StgValue>
+</operation>
+
+<operation id="12" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="160" op_0_bw="160" op_1_bw="2" op_2_bw="64" op_3_bw="2" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64">
+<![CDATA[
+:8  %tmp = call { i32, i32, i32, i32, i32 } @karastuba_mul_MUL_st.2(i2 %lhs_tmp_bits_read_1, [16 x i64]* %lhs_digits_data_V, i2 %rhs_tmp_bits_read_1, [16 x i64]* %rhs_digits_data_V, [16 x i64]* %z0_digits_data_V, [16 x i64]* %z2_digits_data_V, [16 x i64]* %cross_mul_digits_dat, [16 x i64]* %inter_lhs_digits_dat, [16 x i64]* %inter_rhs_digits_dat)
+
+]]></Node>
+<StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="13" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="160" op_0_bw="160" op_1_bw="2" op_2_bw="64" op_3_bw="2" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64">
+<![CDATA[
+:8  %tmp = call { i32, i32, i32, i32, i32 } @karastuba_mul_MUL_st.2(i2 %lhs_tmp_bits_read_1, [16 x i64]* %lhs_digits_data_V, i2 %rhs_tmp_bits_read_1, [16 x i64]* %rhs_digits_data_V, [16 x i64]* %z0_digits_data_V, [16 x i64]* %z2_digits_data_V, [16 x i64]* %cross_mul_digits_dat, [16 x i64]* %inter_lhs_digits_dat, [16 x i64]* %inter_rhs_digits_dat)
+
+]]></Node>
+<StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+
+<operation id="14" st_id="2" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="32" op_0_bw="160">
+<![CDATA[
+:9  %z0_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 0
+
+]]></Node>
+<StgValue><ssdm name="z0_tmp_bits"/></StgValue>
+</operation>
+
+<operation id="15" st_id="2" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="32" op_0_bw="160">
+<![CDATA[
+:10  %z2_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 1
+
+]]></Node>
+<StgValue><ssdm name="z2_tmp_bits"/></StgValue>
+</operation>
+
+<operation id="16" st_id="2" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="18" bw="32" op_0_bw="160">
+<![CDATA[
+:11  %cross_mul_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 2
+
+]]></Node>
+<StgValue><ssdm name="cross_mul_tmp_bits"/></StgValue>
+</operation>
+
+<operation id="17" st_id="2" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="19" bw="32" op_0_bw="160">
+<![CDATA[
+:12  %inter_lhs_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 3
+
+]]></Node>
+<StgValue><ssdm name="inter_lhs_tmp_bits"/></StgValue>
+</operation>
+
+<operation id="18" st_id="2" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="32" op_0_bw="160">
+<![CDATA[
+:13  %inter_rhs_tmp_bits = extractvalue { i32, i32, i32, i32, i32 } %tmp, 4
+
+]]></Node>
+<StgValue><ssdm name="inter_rhs_tmp_bits"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="19" st_id="3" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="32" op_4_bw="64" op_5_bw="32" op_6_bw="64" op_7_bw="32" op_8_bw="64" op_9_bw="32" op_10_bw="64" op_11_bw="32" op_12_bw="64" op_13_bw="160" op_14_bw="160">
+<![CDATA[
+:14  call fastcc void @karastuba_mul_ADD_SU.2(i32 %z0_tmp_bits, [16 x i64]* %z0_digits_data_V, i32 %z2_tmp_bits, [16 x i64]* %z2_digits_data_V, i32 %cross_mul_tmp_bits, [16 x i64]* %cross_mul_digits_dat, i32 %inter_lhs_tmp_bits, [16 x i64]* %inter_lhs_digits_dat, i32 %inter_rhs_tmp_bits, [16 x i64]* %inter_rhs_digits_dat, i32* %res_tmp_bits, [32 x i64]* %res_digits_data_V)
+
+]]></Node>
+<StgValue><ssdm name="call_ln391"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="20" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<![CDATA[
+:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind
+
+]]></Node>
+<StgValue><ssdm name="specdataflowpipeline_ln382"/></StgValue>
+</operation>
+
+<operation id="21" st_id="4" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="32" op_4_bw="64" op_5_bw="32" op_6_bw="64" op_7_bw="32" op_8_bw="64" op_9_bw="32" op_10_bw="64" op_11_bw="32" op_12_bw="64" op_13_bw="160" op_14_bw="160">
+<![CDATA[
+:14  call fastcc void @karastuba_mul_ADD_SU.2(i32 %z0_tmp_bits, [16 x i64]* %z0_digits_data_V, i32 %z2_tmp_bits, [16 x i64]* %z2_digits_data_V, i32 %cross_mul_tmp_bits, [16 x i64]* %cross_mul_digits_dat, i32 %inter_lhs_tmp_bits, [16 x i64]* %inter_lhs_digits_dat, i32 %inter_rhs_tmp_bits, [16 x i64]* %inter_rhs_digits_dat, i32* %res_tmp_bits, [32 x i64]* %res_digits_data_V)
+
+]]></Node>
+<StgValue><ssdm name="call_ln391"/></StgValue>
+</operation>
+
+<operation id="22" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="22" bw="0">
+<![CDATA[
+:15  ret void
+
+]]></Node>
+<StgValue><ssdm name="ret_ln394"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>
